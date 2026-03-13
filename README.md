@@ -4,9 +4,9 @@
 
 It's 1943. The problem is not that the AI never researches. It does. The problem is that too many countries, including major powers, lag several years behind where they should be in key branches. A large country may be mostly fine in infantry and industry, but still be strangely behind in air, armor, radar, or naval development despite having the slots and economy to keep up.
 
-ARM fixes that by giving each country a credible technological baseline based on its power, industry, and military profile. Major industrial powers stay closer to the frontier across the branches they can realistically support. Regional states remain relevant in their strongest areas. Minor countries still lag behind, but they no longer fall so far off the curve that they stop mattering.
+ARM fixes that by giving each country a credible technological baseline based on its power, industry, and military profile. Major industrial powers stay closer to the frontier across the branches they can realistically support, but the frontier itself is still left for active research. Regional states remain relevant in their strongest areas. Minor countries still lag behind, but they no longer fall so far off the curve that they stop mattering.
 
-**Your research game stays relevant.** ARM runs AI-only by default, but it also works well if you enable it for players. You still decide what to rush, what to delay, and how to specialize. ARM raises the baseline and keeps countries closer to the curve, so research choices matter more because the competition is stronger.
+**Your research game stays relevant.** ARM runs AI-only by default, but it also works well if you enable it for players. You still decide what to rush, what to delay, and how to specialize. ARM raises the baseline while preserving a frontier gap by default, so research choices matter more because the competition is stronger.
 
 **Version:** 1.0.0 | **HOI4:** 1.17.4.1+ | **DLC Required:** None
 
@@ -24,7 +24,7 @@ ARM fixes that by giving each country a credible technological baseline based on
 
 ## How it works
 
-Every nation is scored on five dimensions: **economy, science, mobilization, resources, and war posture**. That score places them into one of six power tiers, from Micro to Superpower. Each tier sets a technology lag (how many years behind the frontier) and a quarterly grant cap (how many techs per cycle).
+Every nation is scored on five dimensions: **economy, science, mobilization, resources, and war posture**. That score places them into one of six power tiers, from Micro to Superpower. Each tier sets a technology lag (how many years behind the frontier) and a quarterly grant cap (how many techs per cycle). Under the default balanced rules, ARM also keeps auto-grants at least one year behind the frontier so manual research retains a real role.
 
 | Tier | Name | Base Lag | Grants/Quarter |
 |---|---|---|---|

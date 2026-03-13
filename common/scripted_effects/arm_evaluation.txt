@@ -1169,21 +1169,98 @@ arm_compute_effective_lag = {
 #---------------------------------------------------------
 # Effect 4: arm_compute_target_years
 #
-# Subtracts each branch's effective lag from the current
-# game year to produce the target tech year per branch.
+# Converts each branch's effective lag into an integer
+# year-gap using ceil(lag), then subtracts that from the
+# current game year. This matches the grant logic, which
+# compares target years against integer tech years.
 #---------------------------------------------------------
+arm_convert_effective_lag_to_year_gap = {
+    set_variable = { arm_temp_lag_year_gap = 0 }
+
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 0.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 1 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 1.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 2 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 2.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 3 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 3.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 4 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 4.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 5 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 5.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 6 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 6.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 7 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 7.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 8 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 8.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 9 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 9.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 10 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 10.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 11 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 11.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 12 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 12.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 13 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 13.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 14 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 14.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 15 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 15.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 16 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 16.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 17 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 17.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 18 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 18.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 19 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 19.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 20 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 20.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 21 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 21.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 22 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 22.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 23 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 23.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 24 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 24.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 25 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 25.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 26 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 26.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 27 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 27.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 28 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 28.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 29 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 29.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 30 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 30.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 31 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 31.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 32 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 32.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 33 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 33.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 34 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 34.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 35 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 35.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 36 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 36.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 37 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 37.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 38 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 38.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 39 } }
+    if = { limit = { check_variable = { var = arm_temp_effective_lag_source value = 39.49 compare = greater_than } } set_variable = { arm_temp_lag_year_gap = 40 } }
+}
+
+arm_apply_frontier_buffer_to_year_gap = {
+    if = {
+        limit = {
+            has_game_rule = { rule = arm_auto_research_intensity option = ARM_RELAXED }
+            check_variable = { var = arm_temp_lag_year_gap value = 2 compare = less_than }
+        }
+        set_variable = { arm_temp_lag_year_gap = 2 }
+    }
+    else_if = {
+        limit = {
+            NOT = { has_game_rule = { rule = arm_auto_research_intensity option = ARM_AGGRESSIVE } }
+            check_variable = { var = arm_temp_lag_year_gap value = 1 compare = less_than }
+        }
+        # Balanced and Historical keep auto-grants one full year behind the frontier.
+        set_variable = { arm_temp_lag_year_gap = 1 }
+    }
+}
+
 arm_compute_target_years = {
+    set_variable = { arm_temp_effective_lag_source = arm_effective_land_lag }
+    arm_convert_effective_lag_to_year_gap = yes
+    arm_apply_frontier_buffer_to_year_gap = yes
     set_variable = { var = arm_target_year_land value = global.arm_current_year }
-    subtract_from_variable = { arm_target_year_land = arm_effective_land_lag }
+    subtract_from_variable = { arm_target_year_land = arm_temp_lag_year_gap }
 
+    set_variable = { arm_temp_effective_lag_source = arm_effective_air_lag }
+    arm_convert_effective_lag_to_year_gap = yes
+    arm_apply_frontier_buffer_to_year_gap = yes
     set_variable = { var = arm_target_year_air value = global.arm_current_year }
-    subtract_from_variable = { arm_target_year_air = arm_effective_air_lag }
+    subtract_from_variable = { arm_target_year_air = arm_temp_lag_year_gap }
 
+    set_variable = { arm_temp_effective_lag_source = arm_effective_naval_lag }
+    arm_convert_effective_lag_to_year_gap = yes
+    arm_apply_frontier_buffer_to_year_gap = yes
     set_variable = { var = arm_target_year_naval value = global.arm_current_year }
-    subtract_from_variable = { arm_target_year_naval = arm_effective_naval_lag }
+    subtract_from_variable = { arm_target_year_naval = arm_temp_lag_year_gap }
 
+    set_variable = { arm_temp_effective_lag_source = arm_effective_industry_lag }
+    arm_convert_effective_lag_to_year_gap = yes
+    arm_apply_frontier_buffer_to_year_gap = yes
     set_variable = { var = arm_target_year_industry value = global.arm_current_year }
-    subtract_from_variable = { arm_target_year_industry = arm_effective_industry_lag }
+    subtract_from_variable = { arm_target_year_industry = arm_temp_lag_year_gap }
 }
 
 #---------------------------------------------------------

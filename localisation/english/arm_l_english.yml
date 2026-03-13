@@ -23,13 +23,13 @@
  ARM_RULE_auto_research_intensity:0 "Auto-Research Intensity"
  ARM_RULE_auto_research_intensity_desc:0 "Controls how quickly nations catch up technologically."
  ARM_OPT_RELAXED:0 "Relaxed"
- ARM_DESC_RELAXED:0 "All lag values increased by 1.0 year. Nations catch up more slowly."
+ARM_DESC_RELAXED:0 "All lag values increased by 1.0 year, and auto-grants stay at least 2 years behind the current frontier. Nations catch up more slowly."
  ARM_OPT_BALANCED:0 "Balanced"
- ARM_DESC_BALANCED:0 "Standard lag values as designed."
+ARM_DESC_BALANCED:0 "Standard lag values with a 1-year frontier buffer. ARM maintains a strong baseline, but manual research still owns the leading edge."
  ARM_OPT_AGGRESSIVE:0 "Aggressive"
- ARM_DESC_AGGRESSIVE:0 "All lag values reduced by 0.5 years. Nations catch up faster."
+ARM_DESC_AGGRESSIVE:0 "All lag values reduced by 0.5 years. Nations catch up faster and can reach current-year tech if they fully close their lag."
  ARM_OPT_HISTORICAL:0 "Historical Bias"
- ARM_DESC_HISTORICAL:0 "Standard values plus historical competence bonuses for major nations."
+ARM_DESC_HISTORICAL:0 "Standard values plus historical competence bonuses for major nations, while keeping a 1-year frontier buffer."
 
  ###########################################
  # GAME RULE 3: arm_compat_profile
@@ -195,7 +195,7 @@
  # TIER SPIRIT NAMES AND DESCRIPTIONS
  ###########################################
  arm_tier_superpower:0 "Superpower"
- arm_tier_superpower_desc:0 "This nation stands at the pinnacle of global power. Research is blazing fast and the technological frontier is within reach."
+arm_tier_superpower_desc:0 "This nation stands at the pinnacle of global power. Research is blazing fast and the technological frontier is close, but still rewards deliberate investment."
  arm_tier_great_power:0 "Great Power"
  arm_tier_great_power_desc:0 "This nation is among the world's strongest. Research benefits from extensive institutional knowledge."
  arm_tier_regional_power:0 "Regional Power"
@@ -289,7 +289,7 @@
 
  # arm_event.102 - Debug: Effective Lag Report
  arm_event.102.t:0 "ARM Debug: Effective Lag Report"
- arm_event.102.desc:0 "Base Lag: [?arm_base_lag]\n\nEffective Land Lag: [?arm_effective_land_lag]\nEffective Air Lag: [?arm_effective_air_lag]\nEffective Naval Lag: [?arm_effective_naval_lag]\nEffective Industry Lag: [?arm_effective_industry_lag]\n\nTarget Year (Land): [?arm_target_year_land]\nTarget Year (Air): [?arm_target_year_air]\nTarget Year (Naval): [?arm_target_year_naval]\nTarget Year (Industry): [?arm_target_year_industry]\n\nQuarterly Cap: [?arm_quarterly_cap]\nGrants Used: [?arm_grant_counter]"
+arm_event.102.desc:0 "Base Lag: [?arm_base_lag]\n\nEffective Land Lag: [?arm_effective_land_lag]\nEffective Air Lag: [?arm_effective_air_lag]\nEffective Naval Lag: [?arm_effective_naval_lag]\nEffective Industry Lag: [?arm_effective_industry_lag]\n\nGrant Year (Land): [?arm_target_year_land]\nGrant Year (Air): [?arm_target_year_air]\nGrant Year (Naval): [?arm_target_year_naval]\nGrant Year (Industry): [?arm_target_year_industry]\n\nQuarterly Cap: [?arm_quarterly_cap]\nGrants Used: [?arm_grant_counter]"
  arm_event.102.a:0 "Close"
 
  # arm_event.200 - News: Nation Enters Jet Age
