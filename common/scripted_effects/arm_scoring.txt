@@ -888,3 +888,39 @@ arm_calculate_industry_competence = {
     # ---- Resource breadth bonus (+3 per resource with 8+ access, max +18) ----
     add_to_variable = { arm_industry_competence = arm_cached_industry_breadth_bonus }
 }
+
+###################################
+# Balanced small-country restraint
+# Keeps tiny, stable countries with a couple of slots from reading
+# as fully industrialized powers in the default mode.
+###################################
+arm_apply_balanced_small_country_scaling = {
+    set_temp_variable = { arm_balanced_factory_total = num_of_civilian_factories }
+    add_to_temp_variable = { arm_balanced_factory_total = num_of_military_factories }
+    add_to_temp_variable = { arm_balanced_factory_total = num_of_naval_factories }
+
+    if = {
+        limit = {
+            has_game_rule = { rule = arm_auto_research_intensity option = ARM_BALANCED }
+            NOT = { amount_research_slots > 2 }
+            check_variable = { var = arm_balanced_factory_total value = 10 compare = less_than }
+        }
+        clamp_variable = { var = arm_industry_competence min = 0 max = 34 }
+        clamp_variable = { var = arm_air_competence min = 0 max = 14 }
+        clamp_variable = { var = arm_naval_competence min = 0 max = 14 }
+        subtract_from_variable = { arm_global_power = 18 }
+        clamp_variable = { var = arm_global_power min = 0 max = 9999 }
+    }
+    else_if = {
+        limit = {
+            has_game_rule = { rule = arm_auto_research_intensity option = ARM_BALANCED }
+            NOT = { amount_research_slots > 2 }
+            check_variable = { var = arm_balanced_factory_total value = 16 compare = less_than }
+        }
+        clamp_variable = { var = arm_industry_competence min = 0 max = 44 }
+        clamp_variable = { var = arm_air_competence min = 0 max = 18 }
+        clamp_variable = { var = arm_naval_competence min = 0 max = 18 }
+        subtract_from_variable = { arm_global_power = 8 }
+        clamp_variable = { var = arm_global_power min = 0 max = 9999 }
+    }
+}

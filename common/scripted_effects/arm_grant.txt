@@ -24,6 +24,7 @@ arm_refresh_country_state_runtime = {
     arm_calculate_air_competence = yes
     arm_calculate_naval_competence = yes
     arm_calculate_industry_competence = yes
+    arm_apply_balanced_small_country_scaling = yes
 
     # Step 1b: Apply historical major-power bias if Historical mode is enabled
     if = {
