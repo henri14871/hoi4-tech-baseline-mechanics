@@ -76,23 +76,23 @@ arm_update_research_speed_spirit = {
 
 		# Add correct tier spirit based on arm_tier_index
 		if = {
-			limit = { check_variable = { arm_tier_index = 5 } }
+			limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
 			add_ideas = arm_tier_superpower
 		}
 		else_if = {
-			limit = { check_variable = { arm_tier_index = 4 } }
+			limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
 			add_ideas = arm_tier_great_power
 		}
 		else_if = {
-			limit = { check_variable = { arm_tier_index = 3 } }
+			limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
 			add_ideas = arm_tier_regional_power
 		}
 		else_if = {
-			limit = { check_variable = { arm_tier_index = 2 } }
+			limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
 			add_ideas = arm_tier_minor_industrial
 		}
 		else_if = {
-			limit = { check_variable = { arm_tier_index = 1 } }
+			limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
 			add_ideas = arm_tier_minor
 		}
 		else = {
@@ -151,23 +151,23 @@ arm_update_research_speed_spirit = {
 
 		# Add correct tier spirit based on arm_tier_index
 		if = {
-			limit = { check_variable = { arm_tier_index = 5 } }
+			limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
 			add_ideas = arm_tier_superpower
 		}
 		else_if = {
-			limit = { check_variable = { arm_tier_index = 4 } }
+			limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
 			add_ideas = arm_tier_great_power
 		}
 		else_if = {
-			limit = { check_variable = { arm_tier_index = 3 } }
+			limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
 			add_ideas = arm_tier_regional_power
 		}
 		else_if = {
-			limit = { check_variable = { arm_tier_index = 2 } }
+			limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
 			add_ideas = arm_tier_minor_industrial
 		}
 		else_if = {
-			limit = { check_variable = { arm_tier_index = 1 } }
+			limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
 			add_ideas = arm_tier_minor
 		}
 		else = {
@@ -187,19 +187,19 @@ arm_update_research_speed_spirit = {
 
 		# Add correct land spirit based on arm_land_competence
 		if = {
-			limit = { check_variable = { arm_land_competence > 84 } }
+			limit = { check_variable = { var = arm_land_competence value = 84 compare = greater_than } }
 			add_ideas = arm_land_cutting_edge
 		}
 		else_if = {
-			limit = { check_variable = { arm_land_competence > 59 } }
+			limit = { check_variable = { var = arm_land_competence value = 59 compare = greater_than } }
 			add_ideas = arm_land_advanced
 		}
 		else_if = {
-			limit = { check_variable = { arm_land_competence > 34 } }
+			limit = { check_variable = { var = arm_land_competence value = 34 compare = greater_than } }
 			add_ideas = arm_land_standard
 		}
 		else_if = {
-			limit = { check_variable = { arm_land_competence > 14 } }
+			limit = { check_variable = { var = arm_land_competence value = 14 compare = greater_than } }
 			add_ideas = arm_land_basic
 		}
 		else = {
@@ -219,19 +219,19 @@ arm_update_research_speed_spirit = {
 
 		# Add correct air spirit based on arm_air_competence
 		if = {
-			limit = { check_variable = { arm_air_competence > 84 } }
+			limit = { check_variable = { var = arm_air_competence value = 84 compare = greater_than } }
 			add_ideas = arm_air_cutting_edge
 		}
 		else_if = {
-			limit = { check_variable = { arm_air_competence > 59 } }
+			limit = { check_variable = { var = arm_air_competence value = 59 compare = greater_than } }
 			add_ideas = arm_air_advanced
 		}
 		else_if = {
-			limit = { check_variable = { arm_air_competence > 34 } }
+			limit = { check_variable = { var = arm_air_competence value = 34 compare = greater_than } }
 			add_ideas = arm_air_standard
 		}
 		else_if = {
-			limit = { check_variable = { arm_air_competence > 14 } }
+			limit = { check_variable = { var = arm_air_competence value = 14 compare = greater_than } }
 			add_ideas = arm_air_basic
 		}
 		else = {
@@ -251,19 +251,19 @@ arm_update_research_speed_spirit = {
 
 		# Add correct naval spirit based on arm_naval_competence
 		if = {
-			limit = { check_variable = { arm_naval_competence > 84 } }
+			limit = { check_variable = { var = arm_naval_competence value = 84 compare = greater_than } }
 			add_ideas = arm_naval_cutting_edge
 		}
 		else_if = {
-			limit = { check_variable = { arm_naval_competence > 59 } }
+			limit = { check_variable = { var = arm_naval_competence value = 59 compare = greater_than } }
 			add_ideas = arm_naval_advanced
 		}
 		else_if = {
-			limit = { check_variable = { arm_naval_competence > 34 } }
+			limit = { check_variable = { var = arm_naval_competence value = 34 compare = greater_than } }
 			add_ideas = arm_naval_standard
 		}
 		else_if = {
-			limit = { check_variable = { arm_naval_competence > 14 } }
+			limit = { check_variable = { var = arm_naval_competence value = 14 compare = greater_than } }
 			add_ideas = arm_naval_basic
 		}
 		else = {
@@ -283,19 +283,19 @@ arm_update_research_speed_spirit = {
 
 		# Add correct industry spirit based on arm_industry_competence
 		if = {
-			limit = { check_variable = { arm_industry_competence > 84 } }
+			limit = { check_variable = { var = arm_industry_competence value = 84 compare = greater_than } }
 			add_ideas = arm_industry_cutting_edge
 		}
 		else_if = {
-			limit = { check_variable = { arm_industry_competence > 59 } }
+			limit = { check_variable = { var = arm_industry_competence value = 59 compare = greater_than } }
 			add_ideas = arm_industry_advanced
 		}
 		else_if = {
-			limit = { check_variable = { arm_industry_competence > 34 } }
+			limit = { check_variable = { var = arm_industry_competence value = 34 compare = greater_than } }
 			add_ideas = arm_industry_standard
 		}
 		else_if = {
-			limit = { check_variable = { arm_industry_competence > 14 } }
+			limit = { check_variable = { var = arm_industry_competence value = 14 compare = greater_than } }
 			add_ideas = arm_industry_basic
 		}
 		else = {

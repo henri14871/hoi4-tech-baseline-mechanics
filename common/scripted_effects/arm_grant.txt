@@ -77,29 +77,6 @@ arm_evaluate_and_grant = {
 # ---------------------------------------------------------------------------
 arm_grant_doctrines = {
     set_variable = { arm_doctrine_grant_counter = 0 }
-
-    if = {
-        limit = {
-            check_variable = { arm_land_competence >= arm_air_competence }
-            check_variable = { arm_land_competence >= arm_naval_competence }
-        }
-        arm_grant_doctrine_land_doctrine = yes
-        arm_grant_doctrine_air_doctrine = yes
-        arm_grant_doctrine_naval_doctrine = yes
-    }
-    else_if = {
-        limit = {
-            check_variable = { arm_air_competence >= arm_naval_competence }
-        }
-        arm_grant_doctrine_air_doctrine = yes
-        arm_grant_doctrine_land_doctrine = yes
-        arm_grant_doctrine_naval_doctrine = yes
-    }
-    else = {
-        arm_grant_doctrine_naval_doctrine = yes
-        arm_grant_doctrine_land_doctrine = yes
-        arm_grant_doctrine_air_doctrine = yes
-    }
 }
 
 # ---------------------------------------------------------------------------
@@ -108,7 +85,7 @@ arm_grant_doctrines = {
 # ---------------------------------------------------------------------------
 arm_update_current_year = {
     if = {
-        limit = { check_variable = { global.arm_start_year < 1 } }
+        limit = { check_variable = { var = global.arm_start_year value = 1 compare = less_than } }
         set_variable = { var = global.arm_start_year value = year }
     }
 

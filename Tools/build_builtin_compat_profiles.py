@@ -377,6 +377,14 @@ GRANT_ORDER = [
     "arm_grant_industry_electronics_rockets",
 ]
 
+CHECK_COMPARE_MAP = {
+    ">": "greater_than",
+    ">=": "greater_than_or_equals",
+    "<": "less_than",
+    "<=": "less_than_or_equals",
+    "=": "equals",
+}
+
 
 def extract_top_level_block(text: str, identifier: str) -> str:
     pattern = re.compile(rf"(?m)^{re.escape(identifier)}\s*=\s*\{{")
@@ -427,6 +435,15 @@ def sanitize_runtime_effect_text(text: str) -> str:
     sanitized = "\n".join(lines)
     sanitized = sanitized.replace("has_technology =", "has_tech =")
     sanitized = sanitized.replace("has_technology=", "has_tech=")
+    sanitized = re.sub(
+        r"check_variable\s*=\s*\{\s*([A-Za-z0-9_:.]+)\s*(>=|<=|>|<|=)\s*([A-Za-z0-9_:.+-]+)\s*\}",
+        lambda m: (
+            "check_variable = { "
+            f"var = {m.group(1)} value = {m.group(3)} compare = "
+            f"{CHECK_COMPARE_MAP[m.group(2)]} }}"
+        ),
+        sanitized,
+    )
     return sanitized
 
 

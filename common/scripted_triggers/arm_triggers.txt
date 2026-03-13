@@ -39,7 +39,7 @@ arm_is_in_faction_with_major = {
     any_country = {
         is_faction_leader = yes
         is_in_faction_with = ROOT
-        check_variable = { arm_tier_index > 3 }
+        check_variable = { var = arm_tier_index value = 3 compare = greater_than }
     }
 }
 
@@ -80,10 +80,10 @@ arm_advanced_tech_allowed = {
         has_game_rule = { rule = arm_advanced_tech option = ARM_ADV_INCLUDED }
         AND = {
             has_game_rule = { rule = arm_advanced_tech option = ARM_ADV_SUPERPOWERS }
-            check_variable = { arm_tier_index > 4 }
+            check_variable = { var = arm_tier_index value = 4 compare = greater_than }
         }
     }
-    check_variable = { arm_industry_competence > 84 }
+    check_variable = { var = arm_industry_competence value = 84 compare = greater_than }
 }
 
 # Rule 3 includes air/naval tech

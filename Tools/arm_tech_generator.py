@@ -797,15 +797,26 @@ def is_runtime_supported_tech(tech: TechDef) -> bool:
 
 def append_grant_limit_lines(lines: list, tech: TechDef, counter_var: str = "arm_grant_counter",
                              cap_var: str = "arm_quarterly_cap"):
-    lines.append(f"            check_variable = {{ {counter_var} < {cap_var} }}")
-    lines.append(f"            check_variable = {{ {target_year_var_for_branch(tech.branch)} >= {tech.start_year} }}")
+    lines.append(
+        f"            check_variable = {{ var = {counter_var} value = {cap_var} compare = less_than }}"
+    )
+    lines.append(
+        f"            check_variable = {{ var = {target_year_var_for_branch(tech.branch)} "
+        f"value = {tech.start_year} compare = greater_than_or_equals }}"
+    )
 
     tier_index = TIER_ORDER.index(tech.min_tier) if tech.min_tier in TIER_ORDER else 0
     if tier_index > 0:
-        lines.append(f"            check_variable = {{ arm_tier_index >= {tier_index} }}")
+        lines.append(
+            f"            check_variable = {{ var = arm_tier_index value = {tier_index} "
+            f"compare = greater_than_or_equals }}"
+        )
 
     if tech.min_branch_score > 0:
-        lines.append(f"            check_variable = {{ {competence_var_for_branch(tech.branch)} >= {tech.min_branch_score} }}")
+        lines.append(
+            f"            check_variable = {{ var = {competence_var_for_branch(tech.branch)} "
+            f"value = {tech.min_branch_score} compare = greater_than_or_equals }}"
+        )
 
     category_flag = category_flag_for(tech.category)
     if category_flag:

@@ -46,7 +46,7 @@ on_actions = {
                 set_variable = { arm_bucket = global.arm_bucket_counter }
                 add_to_variable = { global.arm_bucket_counter = 1 }
                 if = {
-                    limit = { check_variable = { global.arm_bucket_counter > 2 } }
+                    limit = { check_variable = { var = global.arm_bucket_counter value = 2 compare = greater_than } }
                     set_variable = { global.arm_bucket_counter = 0 }
                 }
 
@@ -87,18 +87,18 @@ on_actions = {
                 set_temp_variable = { arm_current_bucket = global.arm_month_counter }
                 # Modulo 3: use if/else since modulo_temp_variable may not work on globals
                 if = {
-                    limit = { check_variable = { arm_current_bucket > 2 } }
+                    limit = { check_variable = { var = arm_current_bucket value = 2 compare = greater_than } }
                     subtract_from_temp_variable = { arm_current_bucket = 3 }
                 }
                 if = {
-                    limit = { check_variable = { arm_current_bucket > 2 } }
+                    limit = { check_variable = { var = arm_current_bucket value = 2 compare = greater_than } }
                     subtract_from_temp_variable = { arm_current_bucket = 3 }
                 }
 
                 # Process countries in current bucket
                 every_country = {
                     limit = {
-                        check_variable = { arm_bucket = var:arm_current_bucket }
+                        check_variable = { var = arm_bucket value = var:arm_current_bucket compare = equals }
                         arm_country_eligible = yes
                     }
                     arm_evaluate_and_grant = yes
@@ -109,7 +109,7 @@ on_actions = {
                 add_to_variable = { global.arm_month_counter = 1 }
                 # Wrap at 3
                 if = {
-                    limit = { check_variable = { global.arm_month_counter > 2 } }
+                    limit = { check_variable = { var = global.arm_month_counter value = 2 compare = greater_than } }
                     set_variable = { global.arm_month_counter = 0 }
                 }
             }

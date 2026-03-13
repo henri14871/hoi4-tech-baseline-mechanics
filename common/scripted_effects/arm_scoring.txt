@@ -34,7 +34,7 @@ arm_calculate_economy_score = {
     set_temp_variable = { arm_civ_raw = num_of_civilian_factories }
     set_variable = { arm_civ_score = 0 }
     if = {
-        limit = { check_variable = { arm_civ_raw > 160 } }
+        limit = { check_variable = { var = arm_civ_raw value = 160 compare = greater_than } }
         # 80 full + 80*0.5 + remainder*0.25
         set_temp_variable = { arm_civ_excess = arm_civ_raw }
         subtract_from_temp_variable = { arm_civ_excess = 160 }
@@ -43,7 +43,7 @@ arm_calculate_economy_score = {
         add_to_variable = { arm_civ_score = arm_civ_excess }
     }
     else_if = {
-        limit = { check_variable = { arm_civ_raw > 80 } }
+        limit = { check_variable = { var = arm_civ_raw value = 80 compare = greater_than } }
         # 80 full + remainder*0.5
         set_temp_variable = { arm_civ_mid = arm_civ_raw }
         subtract_from_temp_variable = { arm_civ_mid = 80 }
@@ -60,7 +60,7 @@ arm_calculate_economy_score = {
     set_temp_variable = { arm_mil_raw = num_of_military_factories }
     set_variable = { arm_mil_score = 0 }
     if = {
-        limit = { check_variable = { arm_mil_raw > 160 } }
+        limit = { check_variable = { var = arm_mil_raw value = 160 compare = greater_than } }
         set_temp_variable = { arm_mil_excess = arm_mil_raw }
         subtract_from_temp_variable = { arm_mil_excess = 160 }
         multiply_temp_variable = { arm_mil_excess = 0.25 }
@@ -68,7 +68,7 @@ arm_calculate_economy_score = {
         add_to_variable = { arm_mil_score = arm_mil_excess }
     }
     else_if = {
-        limit = { check_variable = { arm_mil_raw > 80 } }
+        limit = { check_variable = { var = arm_mil_raw value = 80 compare = greater_than } }
         set_temp_variable = { arm_mil_mid = arm_mil_raw }
         subtract_from_temp_variable = { arm_mil_mid = 80 }
         multiply_temp_variable = { arm_mil_mid = 0.5 }
@@ -84,7 +84,7 @@ arm_calculate_economy_score = {
     set_temp_variable = { arm_dock_raw = num_of_naval_factories }
     set_variable = { arm_dock_score = 0 }
     if = {
-        limit = { check_variable = { arm_dock_raw > 160 } }
+        limit = { check_variable = { var = arm_dock_raw value = 160 compare = greater_than } }
         set_temp_variable = { arm_dock_excess = arm_dock_raw }
         subtract_from_temp_variable = { arm_dock_excess = 160 }
         multiply_temp_variable = { arm_dock_excess = 0.25 }
@@ -92,7 +92,7 @@ arm_calculate_economy_score = {
         add_to_variable = { arm_dock_score = arm_dock_excess }
     }
     else_if = {
-        limit = { check_variable = { arm_dock_raw > 80 } }
+        limit = { check_variable = { var = arm_dock_raw value = 80 compare = greater_than } }
         set_temp_variable = { arm_dock_mid = arm_dock_raw }
         subtract_from_temp_variable = { arm_dock_mid = 80 }
         multiply_temp_variable = { arm_dock_mid = 0.5 }
@@ -493,7 +493,7 @@ arm_calculate_land_competence = {
     # ---- Military factories x1.0 (first 60 full, rest 0.5) ----
     set_temp_variable = { arm_lc_mil = num_of_military_factories }
     if = {
-        limit = { check_variable = { arm_lc_mil > 60 } }
+        limit = { check_variable = { var = arm_lc_mil value = 60 compare = greater_than } }
         set_temp_variable = { arm_lc_mil_excess = arm_lc_mil }
         subtract_from_temp_variable = { arm_lc_mil_excess = 60 }
         multiply_temp_variable = { arm_lc_mil_excess = 0.5 }
@@ -601,7 +601,7 @@ arm_calculate_air_competence = {
     # ---- Military factories x0.8 (first 60 full, rest 0.4) ----
     set_temp_variable = { arm_ac_mil = num_of_military_factories }
     if = {
-        limit = { check_variable = { arm_ac_mil > 60 } }
+        limit = { check_variable = { var = arm_ac_mil value = 60 compare = greater_than } }
         set_temp_variable = { arm_ac_mil_excess = arm_ac_mil }
         subtract_from_temp_variable = { arm_ac_mil_excess = 60 }
         multiply_temp_variable = { arm_ac_mil_excess = 0.4 }
@@ -729,7 +729,7 @@ arm_calculate_naval_competence = {
     # ---- Dockyards x2.0 (first 30 full, rest 1.0) ----
     set_temp_variable = { arm_nc_dock = num_of_naval_factories }
     if = {
-        limit = { check_variable = { arm_nc_dock > 30 } }
+        limit = { check_variable = { var = arm_nc_dock value = 30 compare = greater_than } }
         set_temp_variable = { arm_nc_dock_excess = arm_nc_dock }
         subtract_from_temp_variable = { arm_nc_dock_excess = 30 }
         multiply_temp_variable = { arm_nc_dock_excess = 1.0 }
@@ -857,7 +857,7 @@ arm_calculate_industry_competence = {
     # ---- Civilian factories x0.8 (first 60 full, rest 0.4) ----
     set_temp_variable = { arm_ic_civ = num_of_civilian_factories }
     if = {
-        limit = { check_variable = { arm_ic_civ > 60 } }
+        limit = { check_variable = { var = arm_ic_civ value = 60 compare = greater_than } }
         set_temp_variable = { arm_ic_civ_excess = arm_ic_civ }
         subtract_from_temp_variable = { arm_ic_civ_excess = 60 }
         multiply_temp_variable = { arm_ic_civ_excess = 0.4 }
