@@ -118,26 +118,26 @@ arm_calculate_science_score = {
     set_variable = { arm_science_score = 0 }
     if = {
         limit = { amount_research_slots > 5 }
-        set_variable = { arm_science_score = 90 }
+        set_variable = { arm_science_score = 70 }
     }
     else_if = {
         limit = { amount_research_slots > 4 }
-        set_variable = { arm_science_score = 75 }
+        set_variable = { arm_science_score = 55 }
     }
     else_if = {
         limit = { amount_research_slots > 3 }
-        set_variable = { arm_science_score = 60 }
+        set_variable = { arm_science_score = 40 }
     }
     else_if = {
         limit = { amount_research_slots > 2 }
-        set_variable = { arm_science_score = 45 }
+        set_variable = { arm_science_score = 28 }
     }
     else_if = {
         limit = { amount_research_slots > 1 }
-        set_variable = { arm_science_score = 30 }
+        set_variable = { arm_science_score = 16 }
     }
     else = {
-        set_variable = { arm_science_score = 15 }
+        set_variable = { arm_science_score = 8 }
     }
 }
 
@@ -363,115 +363,115 @@ arm_calculate_resource_score = {
 arm_calculate_war_posture_score = {
     set_variable = { arm_war_posture_score = 0 }
 
-    # ---- Stability (x0.5, max 50) — threshold chain at 0.1 intervals ----
+    # ---- Stability (max 30) — threshold chain at 0.1 intervals ----
     if = {
         limit = { has_stability > 0.9 }
-        add_to_variable = { arm_war_posture_score = 50 }
+        add_to_variable = { arm_war_posture_score = 30 }
     }
     else_if = {
         limit = { has_stability > 0.8 }
-        add_to_variable = { arm_war_posture_score = 45 }
-    }
-    else_if = {
-        limit = { has_stability > 0.7 }
-        add_to_variable = { arm_war_posture_score = 40 }
-    }
-    else_if = {
-        limit = { has_stability > 0.6 }
-        add_to_variable = { arm_war_posture_score = 35 }
-    }
-    else_if = {
-        limit = { has_stability > 0.5 }
-        add_to_variable = { arm_war_posture_score = 30 }
-    }
-    else_if = {
-        limit = { has_stability > 0.4 }
-        add_to_variable = { arm_war_posture_score = 25 }
-    }
-    else_if = {
-        limit = { has_stability > 0.3 }
-        add_to_variable = { arm_war_posture_score = 20 }
-    }
-    else_if = {
-        limit = { has_stability > 0.2 }
-        add_to_variable = { arm_war_posture_score = 15 }
-    }
-    else_if = {
-        limit = { has_stability > 0.1 }
-        add_to_variable = { arm_war_posture_score = 10 }
-    }
-    else = {
-        add_to_variable = { arm_war_posture_score = 5 }
-    }
-
-    # ---- War support (x0.3, max 30) — threshold chain at 0.1 intervals ----
-    if = {
-        limit = { has_war_support > 0.9 }
-        add_to_variable = { arm_war_posture_score = 30 }
-    }
-    else_if = {
-        limit = { has_war_support > 0.8 }
         add_to_variable = { arm_war_posture_score = 27 }
     }
     else_if = {
-        limit = { has_war_support > 0.7 }
+        limit = { has_stability > 0.7 }
         add_to_variable = { arm_war_posture_score = 24 }
     }
     else_if = {
-        limit = { has_war_support > 0.6 }
+        limit = { has_stability > 0.6 }
         add_to_variable = { arm_war_posture_score = 21 }
     }
     else_if = {
-        limit = { has_war_support > 0.5 }
+        limit = { has_stability > 0.5 }
         add_to_variable = { arm_war_posture_score = 18 }
     }
     else_if = {
-        limit = { has_war_support > 0.4 }
+        limit = { has_stability > 0.4 }
         add_to_variable = { arm_war_posture_score = 15 }
     }
     else_if = {
-        limit = { has_war_support > 0.3 }
+        limit = { has_stability > 0.3 }
         add_to_variable = { arm_war_posture_score = 12 }
     }
     else_if = {
-        limit = { has_war_support > 0.2 }
+        limit = { has_stability > 0.2 }
         add_to_variable = { arm_war_posture_score = 9 }
     }
     else_if = {
-        limit = { has_war_support > 0.1 }
+        limit = { has_stability > 0.1 }
         add_to_variable = { arm_war_posture_score = 6 }
     }
     else = {
         add_to_variable = { arm_war_posture_score = 3 }
     }
 
-    # ---- At war bonus (+20) ----
+    # ---- War support (max 20) — threshold chain at 0.1 intervals ----
     if = {
-        limit = { has_war = yes }
-        add_to_variable = { arm_war_posture_score = 20 }
-    }
-
-    # ---- Political power gain approximation (cap +20) ----
-    # PP gain cannot be read as variable; approximate via political_power thresholds
-    if = {
-        limit = { has_political_power > 400 }
+        limit = { has_war_support > 0.9 }
         add_to_variable = { arm_war_posture_score = 20 }
     }
     else_if = {
-        limit = { has_political_power > 300 }
+        limit = { has_war_support > 0.8 }
+        add_to_variable = { arm_war_posture_score = 18 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.7 }
         add_to_variable = { arm_war_posture_score = 16 }
     }
     else_if = {
-        limit = { has_political_power > 200 }
+        limit = { has_war_support > 0.6 }
+        add_to_variable = { arm_war_posture_score = 14 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.5 }
         add_to_variable = { arm_war_posture_score = 12 }
     }
     else_if = {
-        limit = { has_political_power > 100 }
+        limit = { has_war_support > 0.4 }
+        add_to_variable = { arm_war_posture_score = 10 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.3 }
         add_to_variable = { arm_war_posture_score = 8 }
     }
     else_if = {
-        limit = { has_political_power > 50 }
+        limit = { has_war_support > 0.2 }
+        add_to_variable = { arm_war_posture_score = 6 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.1 }
         add_to_variable = { arm_war_posture_score = 4 }
+    }
+    else = {
+        add_to_variable = { arm_war_posture_score = 2 }
+    }
+
+    # ---- At war bonus (+15) ----
+    if = {
+        limit = { has_war = yes }
+        add_to_variable = { arm_war_posture_score = 15 }
+    }
+
+    # ---- Political power gain approximation (cap +10) ----
+    # PP gain cannot be read as variable; approximate via political_power thresholds
+    if = {
+        limit = { has_political_power > 400 }
+        add_to_variable = { arm_war_posture_score = 10 }
+    }
+    else_if = {
+        limit = { has_political_power > 300 }
+        add_to_variable = { arm_war_posture_score = 8 }
+    }
+    else_if = {
+        limit = { has_political_power > 200 }
+        add_to_variable = { arm_war_posture_score = 6 }
+    }
+    else_if = {
+        limit = { has_political_power > 100 }
+        add_to_variable = { arm_war_posture_score = 4 }
+    }
+    else_if = {
+        limit = { has_political_power > 50 }
+        add_to_variable = { arm_war_posture_score = 2 }
     }
 }
 
