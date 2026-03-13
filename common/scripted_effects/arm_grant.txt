@@ -9,11 +9,11 @@
 ###############################################################################
 
 # ---------------------------------------------------------------------------
-# arm_evaluate_and_grant
-# Runs in COUNTRY SCOPE. Called for each country during its bucket's
-# evaluation month.
+# arm_refresh_country_state
+# Recomputes all persistent ARM state for a country without granting techs.
+# Safe for startup initialization and debug refreshes.
 # ---------------------------------------------------------------------------
-arm_evaluate_and_grant = {
+arm_refresh_country_state = {
 
     # Step 1: Calculate scores
     arm_calculate_global_power = yes
@@ -47,6 +47,16 @@ arm_evaluate_and_grant = {
 
     # Step 6: Update research speed spirits
     arm_update_research_speed_spirit = yes
+}
+
+# ---------------------------------------------------------------------------
+# arm_evaluate_and_grant
+# Runs in COUNTRY SCOPE. Called for each country during its bucket's
+# evaluation month.
+# ---------------------------------------------------------------------------
+arm_evaluate_and_grant = {
+
+    arm_refresh_country_state = yes
 
     # Step 7: Reset grant counter
     set_variable = { arm_grant_counter = 0 }

@@ -815,7 +815,7 @@ def append_grant_limit_lines(lines: list, tech: TechDef, counter_var: str = "arm
         lines.append("            arm_advanced_tech_allowed = yes")
 
     for dep in tech.dependencies:
-        lines.append(f"            has_technology = {dep}")
+        lines.append(f"            has_tech = {dep}")
 
     if tech.dlc_required:
         lines.append(f'            has_dlc = "{tech.dlc_required}"')
@@ -913,7 +913,7 @@ def generate_output_files(techs: list, output_dir: Path, mode: str, mod_name: st
             lines.append(f"    # {tech.tech_id} — {tech.start_year}")
             lines.append(f"    if = {{")
             lines.append(f"        limit = {{")
-            lines.append(f"            NOT = {{ has_technology = {tech.tech_id} }}")
+            lines.append(f"            NOT = {{ has_tech = {tech.tech_id} }}")
             append_grant_limit_lines(lines, tech)
 
             lines.append(f"        }}")
@@ -1049,7 +1049,7 @@ def generate_mod_output_files(techs: list, output_dir: Path, mod_suffix: str,
             lines.append(f"    # {tech.tech_id} — {tech.start_year}")
             lines.append(f"    if = {{")
             lines.append(f"        limit = {{")
-            lines.append(f"            NOT = {{ has_technology = {tech.tech_id} }}")
+            lines.append(f"            NOT = {{ has_tech = {tech.tech_id} }}")
             append_grant_limit_lines(lines, tech)
 
             lines.append(f"        }}")

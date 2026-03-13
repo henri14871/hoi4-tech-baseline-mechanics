@@ -188,166 +188,166 @@ arm_calculate_resource_score = {
     # ---- Steel (1 pt per 8) ----
     # Thresholds: 320->40, 240->30, 160->20, 80->10, 40->5, 16->2, 8->1
     if = {
-        limit = { has_resources_amount = { resource = steel amount > 320 } }
+        limit = { has_resources_in_country = { resource = steel amount > 320 extracted = yes } }
         add_to_variable = { arm_resource_score = 40 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 240 } }
+        limit = { has_resources_in_country = { resource = steel amount > 240 extracted = yes } }
         add_to_variable = { arm_resource_score = 30 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 160 } }
+        limit = { has_resources_in_country = { resource = steel amount > 160 extracted = yes } }
         add_to_variable = { arm_resource_score = 20 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 80 } }
+        limit = { has_resources_in_country = { resource = steel amount > 80 extracted = yes } }
         add_to_variable = { arm_resource_score = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 40 } }
+        limit = { has_resources_in_country = { resource = steel amount > 40 extracted = yes } }
         add_to_variable = { arm_resource_score = 5 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 16 } }
+        limit = { has_resources_in_country = { resource = steel amount > 16 extracted = yes } }
         add_to_variable = { arm_resource_score = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 8 } }
+        limit = { has_resources_in_country = { resource = steel amount > 8 extracted = yes } }
         add_to_variable = { arm_resource_score = 1 }
     }
 
     # ---- Aluminium (1 pt per 5) ----
     # Thresholds: 150->30, 100->20, 50->10, 25->5, 10->2, 5->1
     if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 150 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 150 extracted = yes } }
         add_to_variable = { arm_resource_score = 30 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 100 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 100 extracted = yes } }
         add_to_variable = { arm_resource_score = 20 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 50 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 50 extracted = yes } }
         add_to_variable = { arm_resource_score = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 25 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 25 extracted = yes } }
         add_to_variable = { arm_resource_score = 5 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 10 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 10 extracted = yes } }
         add_to_variable = { arm_resource_score = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 5 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 5 extracted = yes } }
         add_to_variable = { arm_resource_score = 1 }
     }
 
     # ---- Tungsten (1 pt per 4) ----
     # Thresholds: 120->30, 80->20, 40->10, 20->5, 8->2, 4->1
     if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 120 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 120 extracted = yes } }
         add_to_variable = { arm_resource_score = 30 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 80 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 80 extracted = yes } }
         add_to_variable = { arm_resource_score = 20 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 40 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 40 extracted = yes } }
         add_to_variable = { arm_resource_score = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 20 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 20 extracted = yes } }
         add_to_variable = { arm_resource_score = 5 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 8 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 8 extracted = yes } }
         add_to_variable = { arm_resource_score = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 4 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 4 extracted = yes } }
         add_to_variable = { arm_resource_score = 1 }
     }
 
     # ---- Chromium (1 pt per 4) ----
     # Thresholds: 120->30, 80->20, 40->10, 20->5, 8->2, 4->1
     if = {
-        limit = { has_resources_amount = { resource = chromium amount > 120 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 120 extracted = yes } }
         add_to_variable = { arm_resource_score = 30 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 80 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 80 extracted = yes } }
         add_to_variable = { arm_resource_score = 20 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 40 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 40 extracted = yes } }
         add_to_variable = { arm_resource_score = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 20 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 20 extracted = yes } }
         add_to_variable = { arm_resource_score = 5 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 8 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 8 extracted = yes } }
         add_to_variable = { arm_resource_score = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 4 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 4 extracted = yes } }
         add_to_variable = { arm_resource_score = 1 }
     }
 
     # ---- Rubber (1 pt per 4) ----
     # Thresholds: 120->30, 80->20, 40->10, 20->5, 8->2, 4->1
     if = {
-        limit = { has_resources_amount = { resource = rubber amount > 120 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 120 extracted = yes } }
         add_to_variable = { arm_resource_score = 30 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 80 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 80 extracted = yes } }
         add_to_variable = { arm_resource_score = 20 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 40 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 40 extracted = yes } }
         add_to_variable = { arm_resource_score = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 20 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 20 extracted = yes } }
         add_to_variable = { arm_resource_score = 5 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 8 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 8 extracted = yes } }
         add_to_variable = { arm_resource_score = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 4 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 4 extracted = yes } }
         add_to_variable = { arm_resource_score = 1 }
     }
 
     # ---- Oil (1 pt per 6) ----
     # Thresholds: 180->30, 120->20, 60->10, 30->5, 12->2, 6->1
     if = {
-        limit = { has_resources_amount = { resource = oil amount > 180 } }
+        limit = { has_resources_in_country = { resource = oil amount > 180 extracted = yes } }
         add_to_variable = { arm_resource_score = 30 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 120 } }
+        limit = { has_resources_in_country = { resource = oil amount > 120 extracted = yes } }
         add_to_variable = { arm_resource_score = 20 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 60 } }
+        limit = { has_resources_in_country = { resource = oil amount > 60 extracted = yes } }
         add_to_variable = { arm_resource_score = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 30 } }
+        limit = { has_resources_in_country = { resource = oil amount > 30 extracted = yes } }
         add_to_variable = { arm_resource_score = 5 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 12 } }
+        limit = { has_resources_in_country = { resource = oil amount > 12 extracted = yes } }
         add_to_variable = { arm_resource_score = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 6 } }
+        limit = { has_resources_in_country = { resource = oil amount > 6 extracted = yes } }
         add_to_variable = { arm_resource_score = 1 }
     }
 
@@ -530,53 +530,53 @@ arm_calculate_land_competence = {
 
     # ---- Steel / 10 capped at 15 ----
     if = {
-        limit = { has_resources_amount = { resource = steel amount > 150 } }
+        limit = { has_resources_in_country = { resource = steel amount > 150 extracted = yes } }
         add_to_variable = { arm_land_competence = 15 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 120 } }
+        limit = { has_resources_in_country = { resource = steel amount > 120 extracted = yes } }
         add_to_variable = { arm_land_competence = 12 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 80 } }
+        limit = { has_resources_in_country = { resource = steel amount > 80 extracted = yes } }
         add_to_variable = { arm_land_competence = 8 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 50 } }
+        limit = { has_resources_in_country = { resource = steel amount > 50 extracted = yes } }
         add_to_variable = { arm_land_competence = 5 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 20 } }
+        limit = { has_resources_in_country = { resource = steel amount > 20 extracted = yes } }
         add_to_variable = { arm_land_competence = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 10 } }
+        limit = { has_resources_in_country = { resource = steel amount > 10 extracted = yes } }
         add_to_variable = { arm_land_competence = 1 }
     }
 
     # ---- Tungsten / 6 capped at 10 ----
     if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 60 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 60 extracted = yes } }
         add_to_variable = { arm_land_competence = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 48 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 48 extracted = yes } }
         add_to_variable = { arm_land_competence = 8 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 36 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 36 extracted = yes } }
         add_to_variable = { arm_land_competence = 6 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 24 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 24 extracted = yes } }
         add_to_variable = { arm_land_competence = 4 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 12 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 12 extracted = yes } }
         add_to_variable = { arm_land_competence = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 6 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 6 extracted = yes } }
         add_to_variable = { arm_land_competence = 1 }
     }
 
@@ -613,79 +613,79 @@ arm_calculate_air_competence = {
 
     # ---- Aluminium / 5 capped at 15 ----
     if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 75 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 75 extracted = yes } }
         add_to_variable = { arm_air_competence = 15 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 60 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 60 extracted = yes } }
         add_to_variable = { arm_air_competence = 12 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 45 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 45 extracted = yes } }
         add_to_variable = { arm_air_competence = 9 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 30 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 30 extracted = yes } }
         add_to_variable = { arm_air_competence = 6 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 15 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 15 extracted = yes } }
         add_to_variable = { arm_air_competence = 3 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 5 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 5 extracted = yes } }
         add_to_variable = { arm_air_competence = 1 }
     }
 
     # ---- Rubber / 5 capped at 10 ----
     if = {
-        limit = { has_resources_amount = { resource = rubber amount > 50 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 50 extracted = yes } }
         add_to_variable = { arm_air_competence = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 40 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 40 extracted = yes } }
         add_to_variable = { arm_air_competence = 8 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 30 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 30 extracted = yes } }
         add_to_variable = { arm_air_competence = 6 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 20 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 20 extracted = yes } }
         add_to_variable = { arm_air_competence = 4 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 10 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 10 extracted = yes } }
         add_to_variable = { arm_air_competence = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = rubber amount > 5 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 5 extracted = yes } }
         add_to_variable = { arm_air_competence = 1 }
     }
 
     # ---- Oil / 8 capped at 10 ----
     if = {
-        limit = { has_resources_amount = { resource = oil amount > 80 } }
+        limit = { has_resources_in_country = { resource = oil amount > 80 extracted = yes } }
         add_to_variable = { arm_air_competence = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 64 } }
+        limit = { has_resources_in_country = { resource = oil amount > 64 extracted = yes } }
         add_to_variable = { arm_air_competence = 8 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 48 } }
+        limit = { has_resources_in_country = { resource = oil amount > 48 extracted = yes } }
         add_to_variable = { arm_air_competence = 6 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 32 } }
+        limit = { has_resources_in_country = { resource = oil amount > 32 extracted = yes } }
         add_to_variable = { arm_air_competence = 4 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 16 } }
+        limit = { has_resources_in_country = { resource = oil amount > 16 extracted = yes } }
         add_to_variable = { arm_air_competence = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 8 } }
+        limit = { has_resources_in_country = { resource = oil amount > 8 extracted = yes } }
         add_to_variable = { arm_air_competence = 1 }
     }
 
@@ -741,79 +741,79 @@ arm_calculate_naval_competence = {
 
     # ---- Oil / 8 capped at 10 ----
     if = {
-        limit = { has_resources_amount = { resource = oil amount > 80 } }
+        limit = { has_resources_in_country = { resource = oil amount > 80 extracted = yes } }
         add_to_variable = { arm_naval_competence = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 64 } }
+        limit = { has_resources_in_country = { resource = oil amount > 64 extracted = yes } }
         add_to_variable = { arm_naval_competence = 8 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 48 } }
+        limit = { has_resources_in_country = { resource = oil amount > 48 extracted = yes } }
         add_to_variable = { arm_naval_competence = 6 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 32 } }
+        limit = { has_resources_in_country = { resource = oil amount > 32 extracted = yes } }
         add_to_variable = { arm_naval_competence = 4 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 16 } }
+        limit = { has_resources_in_country = { resource = oil amount > 16 extracted = yes } }
         add_to_variable = { arm_naval_competence = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = oil amount > 8 } }
+        limit = { has_resources_in_country = { resource = oil amount > 8 extracted = yes } }
         add_to_variable = { arm_naval_competence = 1 }
     }
 
     # ---- Steel / 10 capped at 10 ----
     if = {
-        limit = { has_resources_amount = { resource = steel amount > 100 } }
+        limit = { has_resources_in_country = { resource = steel amount > 100 extracted = yes } }
         add_to_variable = { arm_naval_competence = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 80 } }
+        limit = { has_resources_in_country = { resource = steel amount > 80 extracted = yes } }
         add_to_variable = { arm_naval_competence = 8 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 60 } }
+        limit = { has_resources_in_country = { resource = steel amount > 60 extracted = yes } }
         add_to_variable = { arm_naval_competence = 6 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 40 } }
+        limit = { has_resources_in_country = { resource = steel amount > 40 extracted = yes } }
         add_to_variable = { arm_naval_competence = 4 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 20 } }
+        limit = { has_resources_in_country = { resource = steel amount > 20 extracted = yes } }
         add_to_variable = { arm_naval_competence = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = steel amount > 10 } }
+        limit = { has_resources_in_country = { resource = steel amount > 10 extracted = yes } }
         add_to_variable = { arm_naval_competence = 1 }
     }
 
     # ---- Chromium / 5 capped at 10 ----
     if = {
-        limit = { has_resources_amount = { resource = chromium amount > 50 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 50 extracted = yes } }
         add_to_variable = { arm_naval_competence = 10 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 40 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 40 extracted = yes } }
         add_to_variable = { arm_naval_competence = 8 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 30 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 30 extracted = yes } }
         add_to_variable = { arm_naval_competence = 6 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 20 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 20 extracted = yes } }
         add_to_variable = { arm_naval_competence = 4 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 10 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 10 extracted = yes } }
         add_to_variable = { arm_naval_competence = 2 }
     }
     else_if = {
-        limit = { has_resources_amount = { resource = chromium amount > 5 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 5 extracted = yes } }
         add_to_variable = { arm_naval_competence = 1 }
     }
 
@@ -936,27 +936,27 @@ arm_calculate_industry_competence = {
     # ---- Resource breadth bonus (+3 per resource with 8+ access, max +18) ----
     set_temp_variable = { arm_breadth = 0 }
     if = {
-        limit = { has_resources_amount = { resource = steel amount > 8 } }
+        limit = { has_resources_in_country = { resource = steel amount > 8 extracted = yes } }
         add_to_temp_variable = { arm_breadth = 3 }
     }
     if = {
-        limit = { has_resources_amount = { resource = aluminium amount > 8 } }
+        limit = { has_resources_in_country = { resource = aluminium amount > 8 extracted = yes } }
         add_to_temp_variable = { arm_breadth = 3 }
     }
     if = {
-        limit = { has_resources_amount = { resource = tungsten amount > 8 } }
+        limit = { has_resources_in_country = { resource = tungsten amount > 8 extracted = yes } }
         add_to_temp_variable = { arm_breadth = 3 }
     }
     if = {
-        limit = { has_resources_amount = { resource = chromium amount > 8 } }
+        limit = { has_resources_in_country = { resource = chromium amount > 8 extracted = yes } }
         add_to_temp_variable = { arm_breadth = 3 }
     }
     if = {
-        limit = { has_resources_amount = { resource = rubber amount > 8 } }
+        limit = { has_resources_in_country = { resource = rubber amount > 8 extracted = yes } }
         add_to_temp_variable = { arm_breadth = 3 }
     }
     if = {
-        limit = { has_resources_amount = { resource = oil amount > 8 } }
+        limit = { has_resources_in_country = { resource = oil amount > 8 extracted = yes } }
         add_to_temp_variable = { arm_breadth = 3 }
     }
     clamp_temp_variable = { var = arm_breadth min = 0 max = 18 }

@@ -31,9 +31,12 @@ on_actions = {
                 set_variable = { global.arm_start_month_offset = 7 }
             }
 
-            # Detect actual start year and build a fractional year value
-            arm_update_current_year = yes
-            arm_auto_detect_compat_profile = yes
+            # Detect actual start year and compat profile from a valid country scope.
+            random_country = {
+                limit = { always = yes }
+                arm_update_current_year = yes
+                arm_auto_detect_compat_profile = yes
+            }
 
             # Initialize all countries
             every_country = {
@@ -55,22 +58,8 @@ on_actions = {
                 set_variable = { arm_industry_competence = 0 }
                 set_variable = { arm_grant_counter = 0 }
 
-                # Run initial scoring (but do NOT grant tech on startup)
-                arm_calculate_global_power = yes
-                arm_calculate_land_competence = yes
-                arm_calculate_air_competence = yes
-                arm_calculate_naval_competence = yes
-                arm_calculate_industry_competence = yes
-
-                if = {
-                    limit = {
-                        has_game_rule = { rule = arm_auto_research_intensity option = ARM_HISTORICAL }
-                    }
-                    arm_apply_historical_bias = yes
-                }
-
-                arm_assign_power_tier_for_profile = yes
-                arm_initialize_doctrine_paths_for_profile = yes
+                # Run initial scoring state (but do NOT grant tech on startup)
+                arm_refresh_country_state = yes
             }
         }
     }
@@ -87,8 +76,11 @@ on_actions = {
                     NOT = { has_game_rule = { rule = arm_auto_research_scope option = ARM_DISABLED } }
                 }
 
-                # Update current year
-                arm_update_current_year = yes
+                # Update current year from a valid country scope.
+                random_country = {
+                    limit = { always = yes }
+                    arm_update_current_year = yes
+                }
 
                 # Determine current bucket
                 set_temp_variable = { arm_current_bucket = global.arm_month_counter }

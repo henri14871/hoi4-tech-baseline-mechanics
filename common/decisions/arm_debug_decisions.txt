@@ -32,6 +32,7 @@ arm_debug_category = {
 		fire_only_once = no
 
 		complete_effect = {
+			arm_refresh_country_state = yes
 			country_event = { id = arm_event.100 }
 		}
 	}
@@ -63,6 +64,7 @@ arm_debug_category = {
 		fire_only_once = no
 
 		complete_effect = {
+			arm_refresh_country_state = yes
 			country_event = { id = arm_event.101 }
 		}
 	}
@@ -94,6 +96,7 @@ arm_debug_category = {
 		fire_only_once = no
 
 		complete_effect = {
+			arm_refresh_country_state = yes
 			country_event = { id = arm_event.102 }
 		}
 	}
