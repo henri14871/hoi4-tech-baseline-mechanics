@@ -1,42 +1,64 @@
 [h1]Arms Race Mechanics[/h1]
-Dynamically grants technologies to nations based on their global power, military competence, and industrial capacity. Stronger nations stay near the tech frontier. Weaker nations lag behind but never become obsolete. It does not make HOI4's normal research mechanics useless. It makes them more engaging by giving countries a believable baseline while keeping timing, specialization, and player priorities important.
+
+[h2]The Problem[/h2]
+It's 1943. The problem is not that the AI never researches. It does. The problem is that too many countries, including major powers, lag several years behind where they should be in key branches. A large country may be mostly fine in infantry and industry, but still be strangely behind in air, armor, radar, or naval development despite having the slots and economy to keep up.
+
+HOI4's AI research often leaves countries noticeably behind what their economy, military scale, and war involvement would suggest. The result is a world that becomes less competitive and less believable as the game goes on, not because research is absent, but because it is spread and prioritized badly enough to create major branch gaps.
+
+[h2]The Fix[/h2]
+Arms Race Mechanics gives every nation a credible technological baseline based on its power, industry, and military profile. Major industrial powers stay closer to the frontier across the branches they can realistically support. Regional states remain relevant in their strongest areas. Minor countries still lag behind, but they no longer fall so far off the curve that they stop mattering.
+
+[b]Your research game stays relevant.[/b] ARM runs AI-only by default, but it also works well if you enable it for players. You still decide what to rush, what to delay, and how to specialize. ARM raises the baseline and keeps countries closer to the curve, so research choices matter more because the competition is stronger.
+
+[h2]What Changes In Your Game[/h2]
+[list]
+[*] [b]AI nations stay closer to the curve.[/b] The issue is no longer big countries mysteriously running years behind in key branches they should be able to maintain.
+[*] [b]Wars get harder and last longer.[/b] Nations under pressure catch up faster. Losing a war doesn't mean a tech death spiral. It means a country has a chance to stay relevant and keep fighting.
+[*] [b]Minor nations matter.[/b] Romania gets artillery. Siam gets basic fighters. They're not world leaders, but they're not pushovers either. Lend-lease and puppets actually make strategic sense.
+[*] [b]Late game stays competitive.[/b] The anti-death-spiral system and catch-up bonuses mean 1944-45 wars are decided more by strategy and execution, not by one side having jets while the other still looks stuck in the interwar period.
+[*] [b]Your research choices matter more, not less.[/b] When the baseline is higher, the edge you get from smart research timing and specialization becomes the real differentiator.
+[/list]
+
+[h2]How It Works[/h2]
+Every nation is scored on five dimensions: economy, science, mobilization, resources, and war posture. That score places them into one of six power tiers, from Micro to Superpower. Each tier sets a technology lag (how many years behind the frontier) and a quarterly grant cap (how many techs per cycle).
+
+On top of global power, four [b]branch competence[/b] scores (Land, Air, Naval, Industry) control which specific tech categories a nation receives. A country with 50 dockyards and no air force gets destroyers and cruisers, not fighters. A landlocked nation with heavy industry gets tanks and artillery, not submarines. Tech grants follow what a country can plausibly support, not a flat one-size-fits-all tech dump.
+
+Nations at war, in factions with stronger allies, or losing badly get catch-up bonuses that reduce their tech lag. Puppet nations benefit from their overlord's strength. The system prevents the snowball effect where one lost battle leads to permanent technological irrelevance.
 
 [h2]Features[/h2]
 [list]
-[*] Six power tiers (Micro to Superpower) based on economy, science, mobilisation, resources, and war posture
-[*] Four branch competence scores (Land, Air, Naval, Industry) control which tech categories each nation receives
-[*] Technologies granted quarterly in priority order with configurable caps
-[*] Supplements normal research instead of replacing it - you still choose what to rush, delay, and specialize in
-[*] War, faction, and desperation bonuses help nations under pressure catch up
-[*] Anti-death-spiral system keeps losing nations competitive in the late game
-[*] Puppet tech sharing lets subjects benefit from their overlord's strength
-[*] Historical bias mode boosts historically advanced nations in their strongest branches
-[*] DLC-aware - techs from Man the Guns, No Step Back, and By Blood Alone are gated so players without a DLC waste zero grant slots
-[*] Built-in compatibility profiles for major overhaul and expansion mods
-[*] 13 fully configurable game rules
+[*] Six power tiers from Micro to Superpower with hysteresis to prevent oscillation
+[*] Four independent branch competence scores gate access to specific tech categories
+[*] Technologies granted quarterly in strict priority order with configurable caps
+[*] War, faction, and desperation catch-up bonuses for nations under pressure
+[*] Anti-death-spiral system keeps late-game wars competitive
+[*] Puppet tech sharing scales with overlord strength
+[*] Per-tier and per-branch research speed national spirits
+[*] DLC-aware: Man the Guns, No Step Back, and By Blood Alone techs are gated so no grant slots are wasted
+[*] 13 game rules for full control over scope, intensity, and behavior
+[*] AI-only by default - opt in for player nations if you want the baseline too
 [/list]
 
 [h2]Game Rules[/h2]
 [list]
-[*] Scope (AI Only / Everyone / Disabled)
-[*] Intensity (Relaxed / Balanced / Aggressive / Historical)
-[*] Compatibility Profile (Auto Detect / Vanilla / bundled major-mod profiles)
-[*] Tech Scope (Core Only / Core + Air/Naval / All Except Doctrines / Everything)
-[*] Doctrine Handling (Disabled / AI Only / Everyone)
-[*] Advanced Tech - Nuclear and Rockets (Excluded / Superpowers Only / Included)
-[*] War/Faction Catch-Up (Disabled / Standard / Enhanced)
-[*] Grant Cap (Strict / Standard / Unlimited)
-[*] Puppet Sharing (Disabled / Standard / Enhanced)
-[*] Anti-Death Spiral (Disabled / Standard / Enhanced)
-[*] Research Speed Bonuses (Full / Tier Only / Disabled)
+[*] Scope - AI Only / Everyone / Disabled
+[*] Intensity - Relaxed / Balanced / Aggressive / Historical
+[*] Compatibility Profile - Auto Detect / Vanilla / 14 bundled mod profiles
+[*] Tech Scope - Core Only / Core + Air/Naval / All Except Doctrines / Everything
+[*] Doctrine Handling - Disabled / AI Only / Everyone
+[*] Advanced Tech - Excluded / Superpowers Only / Included
+[*] War/Faction Catch-Up - Disabled / Standard / Enhanced
+[*] Grant Cap - Strict / Standard / Unlimited
+[*] Puppet Sharing - Disabled / Standard / Enhanced
+[*] Anti-Death Spiral - Disabled / Standard / Enhanced
+[*] Research Speed Bonuses - Full / Tier Only / Disabled
 [/list]
 
-[h2]One-Folder Compatibility[/h2]
-ARM now ships with bundled compatibility profiles inside the main mod folder. Leave Compatibility Profile on Auto Detect and ARM will switch to the matching supported overhaul automatically. If needed, you can still force a specific profile manually in the lobby.
+[h2]Works With Your Favorite Mods[/h2]
+ARM ships with built-in compatibility profiles that auto-detect your mod setup. No patches, no sub-mods, no load order headaches.
 
-Supported built-in profiles:
 [list]
-[*] Vanilla
 [*] Road to 56
 [*] Kaiserreich
 [*] Kaiserredux
@@ -53,11 +75,7 @@ Supported built-in profiles:
 [*] The Great War Redux
 [/list]
 
-[h2]How It Works[/h2]
-Every month, one-third of the world is evaluated. Each country is scored on global power and branch competence, assigned a tier, and granted eligible technologies up to a quarterly cap. Superpowers get current-year tech with 6 grants per quarter. Micro nations lag 7 years behind and get 1. The system runs AI-only by default, so players keep full control of their own research unless they change the scope rule. The goal is to create a more believable and competitive tech race, not to remove research decisions from the game.
-
-[h2]For Maintainers[/h2]
-The repository includes tools to rebuild the bundled compatibility profiles from installed Workshop mods and to generate support for additional tech-tree mods.
+Just enable both mods and leave Compatibility Profile on Auto Detect. ARM handles the rest.
 
 [h2]Current Version[/h2]
 [b]Version:[/b] 1.0.0

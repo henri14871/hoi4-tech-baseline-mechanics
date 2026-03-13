@@ -73,15 +73,15 @@
  # GAME RULE 4: arm_tech_scope
  ###########################################
  ARM_RULE_tech_scope:0 "Tech Scope"
- ARM_RULE_tech_scope_desc:0 "Controls which technology categories are included in the auto-research system."
+ ARM_RULE_tech_scope_desc:0 "Controls how broad ARM's tech grants are, from a narrow military-industrial baseline to nearly the full tree."
  ARM_OPT_CORE_ONLY:0 "Core Only"
- ARM_DESC_CORE_ONLY:0 "Only core categories (infantry, artillery, support, industry) are granted. Air, naval, and advanced land tech are excluded."
+ ARM_DESC_CORE_ONLY:0 "Only the basic backbone is granted: infantry, artillery, support, and industry. Air, naval, electronics, motorised, mechanised, and tanks stay fully manual."
  ARM_OPT_CORE_AIR_NAVAL:0 "Core + Air/Naval"
- ARM_DESC_CORE_AIR_NAVAL:0 "Core categories plus air and naval technology are granted. Advanced land tech (motorised, tanks) and electronics are excluded."
+ ARM_DESC_CORE_AIR_NAVAL:0 "The default middle ground. Core categories plus air and naval tech are granted, while advanced land branches and electronics remain manual priorities."
  ARM_OPT_ALL_EXCEPT_DOCTRINES:0 "All Except Doctrines"
- ARM_DESC_ALL_EXCEPT_DOCTRINES:0 "All technology categories are granted except doctrines."
+ ARM_DESC_ALL_EXCEPT_DOCTRINES:0 "Almost the entire tree is covered, including advanced land and electronics. Only doctrines are left out."
  ARM_OPT_EVERYTHING:0 "Everything"
- ARM_DESC_EVERYTHING:0 "All technology categories are granted including nuclear and rockets."
+ ARM_DESC_EVERYTHING:0 "The broadest scope. All supported categories are included, including doctrines, nuclear, and rockets where other ARM rules allow them."
 
  ###########################################
  # GAME RULE 4: arm_doctrine_handling
