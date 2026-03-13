@@ -123,19 +123,19 @@ arm_assign_power_tier_blackice = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -210,7 +210,7 @@ arm_assign_power_tier_blackice = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -371,19 +371,19 @@ arm_assign_power_tier_cold_war_iron_curtain = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -458,7 +458,7 @@ arm_assign_power_tier_cold_war_iron_curtain = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -619,19 +619,19 @@ arm_assign_power_tier_kaiserreich = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -706,7 +706,7 @@ arm_assign_power_tier_kaiserreich = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -867,19 +867,19 @@ arm_assign_power_tier_endsieg = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -954,7 +954,7 @@ arm_assign_power_tier_endsieg = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -1115,19 +1115,19 @@ arm_assign_power_tier_extended_tech_tree_1960 = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -1202,7 +1202,7 @@ arm_assign_power_tier_extended_tech_tree_1960 = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -1363,19 +1363,19 @@ arm_assign_power_tier_novum_vexillum = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -1450,7 +1450,7 @@ arm_assign_power_tier_novum_vexillum = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -1611,19 +1611,19 @@ arm_assign_power_tier_rise_of_nations = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -1698,7 +1698,7 @@ arm_assign_power_tier_rise_of_nations = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -1859,19 +1859,19 @@ arm_assign_power_tier_kaiserredux = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -1946,7 +1946,7 @@ arm_assign_power_tier_kaiserredux = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -2107,19 +2107,19 @@ arm_assign_power_tier_the_new_order = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -2194,7 +2194,7 @@ arm_assign_power_tier_the_new_order = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -2355,19 +2355,19 @@ arm_assign_power_tier_millennium_dawn = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -2442,7 +2442,7 @@ arm_assign_power_tier_millennium_dawn = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -2603,19 +2603,19 @@ arm_assign_power_tier_the_fire_rises = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -2690,7 +2690,7 @@ arm_assign_power_tier_the_fire_rises = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -2851,19 +2851,19 @@ arm_assign_power_tier_great_war_redux = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -2938,7 +2938,7 @@ arm_assign_power_tier_great_war_redux = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -3099,19 +3099,19 @@ arm_assign_power_tier_great_war = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -3186,7 +3186,7 @@ arm_assign_power_tier_great_war = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -3347,19 +3347,19 @@ arm_assign_power_tier_road_to_56 = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -3434,7 +3434,7 @@ arm_assign_power_tier_road_to_56 = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 

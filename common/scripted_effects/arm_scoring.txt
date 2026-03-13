@@ -923,4 +923,37 @@ arm_apply_balanced_small_country_scaling = {
         subtract_from_variable = { arm_global_power = 8 }
         clamp_variable = { var = arm_global_power min = 0 max = 9999 }
     }
+    else_if = {
+        limit = {
+            has_game_rule = { rule = arm_auto_research_intensity option = ARM_BALANCED }
+            check_variable = { var = arm_balanced_factory_total value = 24 compare = less_than }
+        }
+        clamp_variable = { var = arm_industry_competence min = 0 max = 54 }
+        clamp_variable = { var = arm_air_competence min = 0 max = 28 }
+        clamp_variable = { var = arm_naval_competence min = 0 max = 24 }
+        subtract_from_variable = { arm_global_power = 20 }
+        clamp_variable = { var = arm_global_power min = 0 max = 9999 }
+    }
+    else_if = {
+        limit = {
+            has_game_rule = { rule = arm_auto_research_intensity option = ARM_BALANCED }
+            check_variable = { var = arm_balanced_factory_total value = 32 compare = less_than }
+        }
+        clamp_variable = { var = arm_industry_competence min = 0 max = 64 }
+        clamp_variable = { var = arm_air_competence min = 0 max = 34 }
+        clamp_variable = { var = arm_naval_competence min = 0 max = 30 }
+        subtract_from_variable = { arm_global_power = 10 }
+        clamp_variable = { var = arm_global_power min = 0 max = 9999 }
+    }
+
+    if = {
+        limit = {
+            has_game_rule = { rule = arm_auto_research_intensity option = ARM_BALANCED }
+            is_subject = yes
+            check_variable = { var = arm_balanced_factory_total value = 25 compare = less_than }
+        }
+        clamp_variable = { var = arm_industry_competence min = 0 max = 54 }
+        subtract_from_variable = { arm_global_power = 10 }
+        clamp_variable = { var = arm_global_power min = 0 max = 9999 }
+    }
 }

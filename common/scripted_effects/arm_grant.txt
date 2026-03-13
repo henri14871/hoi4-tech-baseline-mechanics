@@ -36,6 +36,7 @@ arm_refresh_country_state_runtime = {
 
     # Step 2: Assign tier using the active compatibility profile
     arm_assign_power_tier_for_profile = yes
+    arm_apply_balanced_tier_sanity = yes
 
     # Step 2b: Lock doctrine preferences after branch scores exist
     arm_initialize_doctrine_paths_for_profile = yes

@@ -477,6 +477,35 @@ def build_auto_detect_limit_lines(slug: str, indent: str = "        ") -> list[s
     return lines
 
 
+def normalize_generated_tier_block(text: str) -> str:
+    text = text.replace(
+        "        limit = {\n"
+        "            has_game_rule = { rule = arm_auto_research_intensity option = ARM_RELAXED }\n"
+        "        }",
+        "        limit = {\n"
+        "            OR = {\n"
+        "                has_game_rule = { rule = arm_auto_research_intensity option = ARM_REALISTIC }\n"
+        "                has_game_rule = { rule = arm_auto_research_intensity option = ARM_HISTORICAL }\n"
+        "            }\n"
+        "        }",
+    )
+    replacements = {
+        "set_variable = { arm_base_lag = 0.5 }": "set_variable = { arm_base_lag = __ARM_LAG_T5__ }",
+        "set_variable = { arm_base_lag = 1.0 }": "set_variable = { arm_base_lag = __ARM_LAG_T4__ }",
+        "set_variable = { arm_base_lag = 1.5 }": "set_variable = { arm_base_lag = __ARM_LAG_T3__ }",
+        "set_variable = { arm_base_lag = 3.0 }": "set_variable = { arm_base_lag = __ARM_LAG_T2__ }",
+        "set_variable = { arm_base_lag = __ARM_LAG_T5__ }": "set_variable = { arm_base_lag = 0.25 }",
+        "set_variable = { arm_base_lag = __ARM_LAG_T4__ }": "set_variable = { arm_base_lag = 1.5 }",
+        "set_variable = { arm_base_lag = __ARM_LAG_T3__ }": "set_variable = { arm_base_lag = 2.5 }",
+        "set_variable = { arm_base_lag = __ARM_LAG_T2__ }": "set_variable = { arm_base_lag = 3.5 }",
+        "subtract_from_variable = { arm_base_lag = 0.5 }": "subtract_from_variable = { arm_base_lag = 0.75 }",
+        "has_game_rule = { rule = arm_auto_research_intensity option = ARM_AGGRESSIVE }": "has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text
+
+
 def build_profile_dispatch(index: dict) -> str:
     profiles = [item["slug"] for item in index["generated_bundles"] if item["slug"] in PROFILE_OPTION_KEYS]
 
@@ -646,6 +675,7 @@ def main():
         if eval_path.exists():
             eval_text = eval_path.read_text(encoding="utf-8-sig")
             tier_block = extract_top_level_block(eval_text, "arm_assign_power_tier")
+            tier_block = normalize_generated_tier_block(tier_block)
             tier_lines.append(rename_tier_effect(tier_block, slug))
             tier_lines.append("")
 

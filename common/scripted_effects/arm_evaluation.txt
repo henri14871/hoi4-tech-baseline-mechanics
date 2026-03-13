@@ -134,19 +134,19 @@ arm_assign_power_tier = {
     if = {
         limit = { check_variable = { var = arm_tier_index value = 5 compare = equals } }
         # Superpowers stay near the frontier, but should not be universally perfect.
-        set_variable = { arm_base_lag = 0.5 }
+        set_variable = { arm_base_lag = 0.25 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 4 compare = equals } }
-        set_variable = { arm_base_lag = 1.0 }
-    }
-    else_if = {
-        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
         set_variable = { arm_base_lag = 1.5 }
     }
     else_if = {
+        limit = { check_variable = { var = arm_tier_index value = 3 compare = equals } }
+        set_variable = { arm_base_lag = 2.5 }
+    }
+    else_if = {
         limit = { check_variable = { var = arm_tier_index value = 2 compare = equals } }
-        set_variable = { arm_base_lag = 3.0 }
+        set_variable = { arm_base_lag = 3.5 }
     }
     else_if = {
         limit = { check_variable = { var = arm_tier_index value = 1 compare = equals } }
@@ -221,7 +221,7 @@ arm_assign_power_tier = {
         limit = {
             has_game_rule = { rule = arm_auto_research_intensity option = ARM_ARCADE }
         }
-        subtract_from_variable = { arm_base_lag = 0.5 }
+        subtract_from_variable = { arm_base_lag = 0.75 }
         clamp_variable = { var = arm_base_lag min = 0 max = 40 }
     }
 
@@ -1101,6 +1101,31 @@ arm_compute_target_years = {
     arm_apply_frontier_buffer_to_year_gap = yes
     set_variable = { var = arm_target_year_industry value = global.arm_current_year }
     subtract_from_variable = { arm_target_year_industry = arm_temp_lag_year_gap }
+}
+
+#---------------------------------------------------------
+# Effect 4b: arm_apply_balanced_tier_sanity
+#
+# Balanced mode should not let medium industrial powers read
+# as full superpowers just because a profile has permissive
+# power thresholds.
+#---------------------------------------------------------
+arm_apply_balanced_tier_sanity = {
+    set_temp_variable = { arm_balanced_tier_factory_total = num_of_civilian_factories }
+    add_to_temp_variable = { arm_balanced_tier_factory_total = num_of_military_factories }
+    add_to_temp_variable = { arm_balanced_tier_factory_total = num_of_naval_factories }
+
+    if = {
+        limit = {
+            has_game_rule = { rule = arm_auto_research_intensity option = ARM_BALANCED }
+            check_variable = { var = arm_tier_index value = 4 compare = greater_than }
+            check_variable = { var = arm_balanced_tier_factory_total value = 120 compare = less_than }
+        }
+        set_variable = { arm_tier_index = 4 }
+        set_variable = { arm_base_lag = 1.5 }
+        set_variable = { arm_quarterly_cap = 5 }
+        set_variable = { arm_tier_avg = 65 }
+    }
 }
 
 #---------------------------------------------------------
