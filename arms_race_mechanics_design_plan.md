@@ -1,4 +1,4 @@
-﻿# Arms Race Mechanics â€” Consolidated Design Plan
+﻿# Arms Race Mechanics | Consolidated Design Plan
 
 ## Concept
 
