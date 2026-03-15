@@ -7,7 +7,7 @@ You know the problem. It's 1944, you're gearing up for D-Day, and the Axis AI is
 This mod fixes that.
 
 [h2]The Short Version[/h2]
-ARM doesn't try to make the AI smarter at picking research. Instead, it gives every nation a [b]tech baseline[/b] — a floor that makes sure no country is embarrassingly behind in the branches it should be good at. Think of it as the tech a country [i]would obviously have[/i] given its size, industry, and military.
+ARM doesn't try to make the AI smarter at picking research. Instead, it gives every nation a [b]tech baseline[/b], a floor that makes sure no country is embarrassingly behind in the branches it should be good at. Think of it as the tech a country [i]would obviously have[/i] given its size, industry, and military.
 
 On top of that baseline, normal research still happens. The AI focuses its research slots on what actually matters instead of plugging gaps it shouldn't have in the first place. If you enable it for players, same deal — you get a baseline so you can spend your slots on the research that counts, not catching up on stuff your country should already know.
 
@@ -55,3 +55,6 @@ Works out of the box with popular overhaul mods. No patches needed, no sub-mods,
 [/list]
 
 [b]Version:[/b] 1.0.0 | [b]HOI4:[/b] 1.17.4.1+ | [b]DLC Required:[/b] None
+
+[h2]Links[/h2]
+[url=https://github.com/henri14871/hoi4-arms-race-mechanics]Source & Devbuild[/url]
