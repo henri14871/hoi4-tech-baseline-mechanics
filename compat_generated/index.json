@@ -8,7 +8,7 @@
       "preset": "blackice",
       "stats": {
         "techs_total": 2627,
-        "unknown_total": 331,
+        "unknown_total": 328,
         "doctrine_total": 312
       }
     },
@@ -20,7 +20,7 @@
       "preset": "cold_war_iron_curtain",
       "stats": {
         "techs_total": 1417,
-        "unknown_total": 300,
+        "unknown_total": 286,
         "doctrine_total": 251
       }
     },
@@ -32,7 +32,7 @@
       "preset": "endsieg",
       "stats": {
         "techs_total": 1021,
-        "unknown_total": 105,
+        "unknown_total": 78,
         "doctrine_total": 192
       }
     },
@@ -44,7 +44,7 @@
       "preset": "extended_tech_tree_1960",
       "stats": {
         "techs_total": 766,
-        "unknown_total": 85,
+        "unknown_total": 79,
         "doctrine_total": 59
       }
     },
@@ -68,7 +68,7 @@
       "preset": "great_war_redux",
       "stats": {
         "techs_total": 384,
-        "unknown_total": 21,
+        "unknown_total": 20,
         "doctrine_total": 0
       }
     },
@@ -80,7 +80,7 @@
       "preset": "kaiserredux",
       "stats": {
         "techs_total": 572,
-        "unknown_total": 93,
+        "unknown_total": 91,
         "doctrine_total": 38
       }
     },
@@ -104,8 +104,8 @@
       "preset": "millennium_dawn",
       "stats": {
         "techs_total": 972,
-        "unknown_total": 312,
-        "doctrine_total": 6
+        "unknown_total": 20,
+        "doctrine_total": 0
       }
     },
     {
@@ -116,7 +116,7 @@
       "preset": "novum_vexillum",
       "stats": {
         "techs_total": 618,
-        "unknown_total": 88,
+        "unknown_total": 79,
         "doctrine_total": 0
       }
     },
@@ -128,7 +128,7 @@
       "preset": "rise_of_nations",
       "stats": {
         "techs_total": 2339,
-        "unknown_total": 344,
+        "unknown_total": 298,
         "doctrine_total": 317
       }
     },
@@ -140,7 +140,7 @@
       "preset": "road_to_56",
       "stats": {
         "techs_total": 948,
-        "unknown_total": 137,
+        "unknown_total": 136,
         "doctrine_total": 67
       }
     },
@@ -152,8 +152,8 @@
       "preset": "the_fire_rises",
       "stats": {
         "techs_total": 657,
-        "unknown_total": 78,
-        "doctrine_total": 118
+        "unknown_total": 66,
+        "doctrine_total": 77
       }
     },
     {
@@ -164,7 +164,7 @@
       "preset": "the_new_order",
       "stats": {
         "techs_total": 897,
-        "unknown_total": 135,
+        "unknown_total": 128,
         "doctrine_total": 0
       }
     }

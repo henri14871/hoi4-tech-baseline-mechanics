@@ -5765,11 +5765,22 @@ arm_grant_land_anti_air_y2032_novum_vexillum = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 arm_grant_land_anti_tank_novum_vexillum = {
     if = {
         limit = {
             check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
-            check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
             has_country_flag = arm_cat_anti_tank
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
@@ -5777,9 +5788,30 @@ arm_grant_land_anti_tank_novum_vexillum = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1922_novum_vexillum = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1936_novum_vexillum = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1945_novum_vexillum = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1960 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1960_novum_vexillum = yes
         }
         if = {
             limit = {
@@ -5854,6 +5886,32 @@ arm_grant_land_anti_tank_novum_vexillum = {
     }
 }
 
+arm_grant_land_anti_tank_y1922_novum_vexillum = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = photo_reconnaisance }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { photo_reconnaisance = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+    }
+}
+
 arm_grant_land_anti_tank_y1936_novum_vexillum = {
     if = {
         limit = {
@@ -5890,6 +5948,71 @@ arm_grant_land_anti_tank_y1936_novum_vexillum = {
     }
 }
 
+arm_grant_land_anti_tank_y1945_novum_vexillum = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = sp_centrifugal_jet_tech }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { sp_centrifugal_jet_tech = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1960_novum_vexillum = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1960 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = aa_lmg }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1960 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { aa_lmg = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = engines_1 }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1960 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_1 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+    }
+}
+
 arm_grant_land_anti_tank_y1980_novum_vexillum = {
     if = {
         limit = {
@@ -5909,6 +6032,19 @@ arm_grant_land_anti_tank_y1980_novum_vexillum = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { coldwar_antitank = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = engines_2 }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1980 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_2 = 1 popup = no }
             add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
         }
     }
@@ -5933,6 +6069,32 @@ arm_grant_land_anti_tank_y2000_novum_vexillum = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { interwar_antitank = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = aa_cannon_1 }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2000 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { aa_cannon_1 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = engines_3 }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2000 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_3 = 1 popup = no }
             add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
         }
     }
@@ -6007,6 +6169,32 @@ arm_grant_land_anti_tank_y2012_novum_vexillum = {
             set_technology = { antitank3 = 1 popup = no }
             add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
         }
+        if = {
+            limit = {
+                NOT = { has_tech = aa_cannon_2 }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2012 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { aa_cannon_2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = engines_4 }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2012 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_4 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
     }
 }
 
@@ -6077,6 +6265,32 @@ arm_grant_land_anti_tank_y2024_novum_vexillum = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank6 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = aa_cannon_3 }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2024 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { aa_cannon_3 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = engines_5 }
+                check_variable = { var = arm_grant_counter_novum_vexillum value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2024 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_5 = 1 popup = no }
             add_to_variable = { arm_grant_counter_novum_vexillum = 1 }
         }
     }

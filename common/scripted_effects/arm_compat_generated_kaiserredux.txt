@@ -3996,14 +3996,23 @@ arm_grant_land_anti_air_y1943_kaiserredux = {
 
 
 
+
+
 arm_grant_land_anti_tank_kaiserredux = {
     if = {
         limit = {
             check_variable = { var = arm_grant_counter_kaiserredux value = arm_quarterly_cap compare = less_than }
-            check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
             has_country_flag = arm_cat_anti_tank
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_kaiserredux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1922_kaiserredux = yes
         }
         if = {
             limit = {
@@ -4046,6 +4055,39 @@ arm_grant_land_anti_tank_kaiserredux = {
                 check_variable = { var = arm_target_year_land value = 1943 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1943_kaiserredux = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_kaiserredux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1945_kaiserredux = yes
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1922_kaiserredux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_kaiserredux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = photo_reconnaisance }
+                check_variable = { var = arm_grant_counter_kaiserredux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { photo_reconnaisance = 1 popup = no }
+            add_to_variable = { arm_grant_counter_kaiserredux = 1 }
         }
     }
 }
@@ -4213,6 +4255,32 @@ arm_grant_land_anti_tank_y1943_kaiserredux = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank5 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_kaiserredux = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1945_kaiserredux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_kaiserredux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = sp_centrifugal_jet_tech }
+                check_variable = { var = arm_grant_counter_kaiserredux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { sp_centrifugal_jet_tech = 1 popup = no }
             add_to_variable = { arm_grant_counter_kaiserredux = 1 }
         }
     }

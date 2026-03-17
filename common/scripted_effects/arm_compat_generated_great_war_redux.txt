@@ -5354,11 +5354,25 @@ arm_grant_land_anti_air_y1943_great_war_redux = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 arm_grant_land_anti_tank_great_war_redux = {
     if = {
         limit = {
             check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-            check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
+            check_variable = { var = arm_target_year_land value = 1880 compare = greater_than_or_equals }
             has_country_flag = arm_cat_anti_tank
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
@@ -5366,9 +5380,58 @@ arm_grant_land_anti_tank_great_war_redux = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1880 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1880_great_war_redux = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1904 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1904_great_war_redux = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1910 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1910_great_war_redux = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1912 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1912_great_war_redux = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1914 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1914_great_war_redux = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1916 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1916_great_war_redux = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1918_great_war_redux = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1922_great_war_redux = yes
         }
         if = {
             limit = {
@@ -5412,6 +5475,169 @@ arm_grant_land_anti_tank_great_war_redux = {
             }
             arm_grant_land_anti_tank_y1943_great_war_redux = yes
         }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1945_great_war_redux = yes
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1880_great_war_redux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1880 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "Man the Guns"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = ironclad_coal_engine }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1880 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "Man the Guns"
+            }
+            set_technology = { ironclad_coal_engine = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1904_great_war_redux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1904 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "Man the Guns"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = basic_coal_engine }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1904 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "Man the Guns"
+            }
+            set_technology = { basic_coal_engine = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = early_oil_engine }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1904 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "Man the Guns"
+            }
+            set_technology = { early_oil_engine = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1910_great_war_redux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1910 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "Man the Guns"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = improved_coal_engine }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1910 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "Man the Guns"
+            }
+            set_technology = { improved_coal_engine = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = basic_oil_engine }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1910 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "Man the Guns"
+            }
+            set_technology = { basic_oil_engine = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1912_great_war_redux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1912 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "Man the Guns"
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1914_great_war_redux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1914 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "Man the Guns"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = improved_oil_engine }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1914 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "Man the Guns"
+            }
+            set_technology = { improved_oil_engine = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1916_great_war_redux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1916 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "Man the Guns"
+        }
     }
 }
 
@@ -5426,6 +5652,18 @@ arm_grant_land_anti_tank_y1918_great_war_redux = {
         }
         if = {
             limit = {
+                NOT = { has_tech = seaplane2 }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+            }
+            set_technology = { seaplane2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+        if = {
+            limit = {
                 NOT = { has_tech = early_antitank }
                 check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
@@ -5434,6 +5672,45 @@ arm_grant_land_anti_tank_y1918_great_war_redux = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { early_antitank = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = advanced_oil_engine }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "Man the Guns"
+            }
+            set_technology = { advanced_oil_engine = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1922_great_war_redux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = photo_reconnaisance }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { photo_reconnaisance = 1 popup = no }
             add_to_variable = { arm_grant_counter_great_war_redux = 1 }
         }
     }
@@ -5602,6 +5879,32 @@ arm_grant_land_anti_tank_y1943_great_war_redux = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank5 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1945_great_war_redux = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = sp_centrifugal_jet_tech }
+                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { sp_centrifugal_jet_tech = 1 popup = no }
             add_to_variable = { arm_grant_counter_great_war_redux = 1 }
         }
     }
@@ -10670,10 +10973,6 @@ arm_grant_land_tanks_generic_y1945_great_war_redux = {
 
 
 
-
-
-
-
 arm_grant_naval_battleships_great_war_redux = {
     if = {
         limit = {
@@ -10717,13 +11016,6 @@ arm_grant_naval_battleships_great_war_redux = {
                 check_variable = { var = arm_target_year_naval value = 1910 compare = greater_than_or_equals }
             }
             arm_grant_naval_battleships_y1910_great_war_redux = yes
-        }
-        if = {
-            limit = {
-                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1912 compare = greater_than_or_equals }
-            }
-            arm_grant_naval_battleships_y1912_great_war_redux = yes
         }
         if = {
             limit = {
@@ -10896,19 +11188,6 @@ arm_grant_naval_battleships_y1910_great_war_redux = {
             }
             set_technology = { ship_hull_super_heavy = 1 popup = no }
             add_to_variable = { arm_grant_counter_great_war_redux = 1 }
-        }
-    }
-}
-
-arm_grant_naval_battleships_y1912_great_war_redux = {
-    if = {
-        limit = {
-            check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-            check_variable = { var = arm_target_year_naval value = 1912 compare = greater_than_or_equals }
-            has_country_flag = arm_cat_battleships
-            check_variable = { var = arm_tier_index value = 4 compare = greater_than_or_equals }
-            check_variable = { var = arm_naval_competence value = 70 compare = greater_than_or_equals }
-            has_dlc = "Man the Guns"
         }
     }
 }
@@ -12476,13 +12755,6 @@ arm_grant_naval_light_cruisers_y1944_great_war_redux = {
 
 
 
-
-
-
-
-
-
-
 arm_grant_naval_naval_support_great_war_redux = {
     if = {
         limit = {
@@ -12645,19 +12917,6 @@ arm_grant_naval_naval_support_y1880_great_war_redux = {
         }
         if = {
             limit = {
-                NOT = { has_tech = ironclad_coal_engine }
-                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1880 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_dlc = "Man the Guns"
-            }
-            set_technology = { ironclad_coal_engine = 1 popup = no }
-            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
-        }
-        if = {
-            limit = {
                 NOT = { has_tech = early_torpedo_tubes }
                 check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_naval value = 1880 compare = greater_than_or_equals }
@@ -12706,32 +12965,6 @@ arm_grant_naval_naval_support_y1904_great_war_redux = {
                 has_dlc = "Man the Guns"
             }
             set_technology = { basic_battery = 1 popup = no }
-            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
-        }
-        if = {
-            limit = {
-                NOT = { has_tech = basic_coal_engine }
-                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1904 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_dlc = "Man the Guns"
-            }
-            set_technology = { basic_coal_engine = 1 popup = no }
-            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
-        }
-        if = {
-            limit = {
-                NOT = { has_tech = early_oil_engine }
-                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1904 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_dlc = "Man the Guns"
-            }
-            set_technology = { early_oil_engine = 1 popup = no }
             add_to_variable = { arm_grant_counter_great_war_redux = 1 }
         }
         if = {
@@ -12863,32 +13096,6 @@ arm_grant_naval_naval_support_y1910_great_war_redux = {
         }
         if = {
             limit = {
-                NOT = { has_tech = improved_coal_engine }
-                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1910 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_dlc = "Man the Guns"
-            }
-            set_technology = { improved_coal_engine = 1 popup = no }
-            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
-        }
-        if = {
-            limit = {
-                NOT = { has_tech = basic_oil_engine }
-                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1910 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_dlc = "Man the Guns"
-            }
-            set_technology = { basic_oil_engine = 1 popup = no }
-            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
-        }
-        if = {
-            limit = {
                 NOT = { has_tech = improved_ship_torpedo_launcher }
                 check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_naval value = 1910 compare = greater_than_or_equals }
@@ -12976,19 +13183,6 @@ arm_grant_naval_naval_support_y1914_great_war_redux = {
                 has_dlc = "Man the Guns"
             }
             set_technology = { improved_heavy_battery = 1 popup = no }
-            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
-        }
-        if = {
-            limit = {
-                NOT = { has_tech = improved_oil_engine }
-                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1914 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_dlc = "Man the Guns"
-            }
-            set_technology = { improved_oil_engine = 1 popup = no }
             add_to_variable = { arm_grant_counter_great_war_redux = 1 }
         }
         if = {
@@ -13152,19 +13346,6 @@ arm_grant_naval_naval_support_y1918_great_war_redux = {
                 has_dlc = "Man the Guns"
             }
             set_technology = { advanced_heavy_battery = 1 popup = no }
-            add_to_variable = { arm_grant_counter_great_war_redux = 1 }
-        }
-        if = {
-            limit = {
-                NOT = { has_tech = advanced_oil_engine }
-                check_variable = { var = arm_grant_counter_great_war_redux value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1918 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_dlc = "Man the Guns"
-            }
-            set_technology = { advanced_oil_engine = 1 popup = no }
             add_to_variable = { arm_grant_counter_great_war_redux = 1 }
         }
         if = {

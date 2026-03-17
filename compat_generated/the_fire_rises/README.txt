@@ -4,8 +4,8 @@ Workshop ID: 3350890356
 Bundle slug: the_fire_rises
 Generation mode: overhaul
 Parsed techs: 657
-Unknown techs: 78
-Doctrines detected: 118
+Unknown techs: 66
+Doctrines detected: 77
 Preset thresholds: the_fire_rises
 
 Files in this bundle:

@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    738
-Successfully mapped:   634
-Unmapped (unknown):    66
+Successfully mapped:   637
+Unmapped (unknown):    63
 
 BRANCH SUMMARY
 ----------------------------------------
   air                              89 techs
   industry_electronics            131 techs
-  land                            271 techs
-  naval                           143 techs
+  land                            285 techs
+  naval                           132 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 13 techs
+  [air / cas] -- 13 techs
     1914  aerial_bombs
           [from: great_war_redux]
     1918  CAS1
@@ -33,7 +33,7 @@ CATEGORY DETAIL
     1944  cv_CAS3
     1944  air_torpedoe_3
 
-  [air / fighters] — 37 techs
+  [air / fighters] -- 37 techs
     1910  aircraft_engine
           [from: great_war_redux]
     1910  scout_plane
@@ -83,7 +83,7 @@ CATEGORY DETAIL
     1950  supersonic_fighter1
     1950  supersonic_small_airframe
 
-  [air / heavy_fighters] — 8 techs
+  [air / heavy_fighters] -- 8 techs
     1926  iw_medium_airframe
     1936  heavy_fighter1
     1936  basic_medium_airframe
@@ -93,7 +93,7 @@ CATEGORY DETAIL
     1944  advanced_medium_airframe
     1945  modern_medium_airframe
 
-  [air / naval_bombers] — 7 techs
+  [air / naval_bombers] -- 7 techs
     1916  seaplane1
           [from: great_war_redux]
     1916  naval_bomber1
@@ -105,7 +105,7 @@ CATEGORY DETAIL
     1944  naval_bomber3
     1944  cv_naval_bomber3
 
-  [air / strategic_bombers] — 12 techs
+  [air / strategic_bombers] -- 12 techs
     1915  strategic_bomber1
           [from: great_war_redux]
     1917  strategic_bomber2
@@ -122,7 +122,7 @@ CATEGORY DETAIL
     1946  aerial_hangars
     1950  jet_strategic_bomber1
 
-  [air / tactical_bombers] — 6 techs
+  [air / tactical_bombers] -- 6 techs
     1915  tactical_bomber1
           [from: great_war_redux]
     1917  tactical_bomber2
@@ -133,7 +133,7 @@ CATEGORY DETAIL
     1945  jet_tactical_bomber1
     1950  jet_tactical_bomber2
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -141,7 +141,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
     1948  strategic_airlifter
 
-  [industry_electronics / electronics] — 34 techs
+  [industry_electronics / electronics] -- 34 techs
     1900  electrical_engineering
           [from: great_war_redux]
     1910  early_fire_control_system
@@ -199,7 +199,7 @@ CATEGORY DETAIL
     1942  advanced_encryption
     1942  advanced_decryption
 
-  [industry_electronics / industry] — 72 techs
+  [industry_electronics / industry] -- 72 techs
     1890  powder_type_b
           [from: great_war_redux]
     1900  early_machine_tools
@@ -327,7 +327,7 @@ CATEGORY DETAIL
     1943  modern_oil_processing
     1943  modern_rubber_processing
 
-  [industry_electronics / nuclear] — 6 techs
+  [industry_electronics / nuclear] -- 6 techs
     1940  atomic_research
     1943  nuclear_reactor
     1943  nuclear_reactor_heavy_water
@@ -335,13 +335,13 @@ CATEGORY DETAIL
     1945  nukes
     1950  thermonuclear_bombs
 
-  [industry_electronics / radar] — 4 techs
+  [industry_electronics / radar] -- 4 techs
     1938  cavity_magnatron
     1940  centimetric_radar
     1941  phased_array
     1942  monopulse_radar
 
-  [industry_electronics / rockets] — 15 techs
+  [industry_electronics / rockets] -- 15 techs
     1939  motorized_rocket_unit
     1940  rocket_artillery
     1941  rocket_artillery2
@@ -358,7 +358,7 @@ CATEGORY DETAIL
     1946  advanced_rocket_engines
     1946  sp_rockets_dual_chamber_rocket_engine_2
 
-  [land / anti_air] — 12 techs
+  [land / anti_air] -- 12 techs
     1915  early_antiair
           [from: great_war_redux]
     1916  early_antiair1
@@ -378,9 +378,34 @@ CATEGORY DETAIL
     1942  antiair4
     1943  antiair5
 
-  [land / anti_tank] — 9 techs
+  [land / anti_tank] -- 23 techs
+    1880  ironclad_coal_engine
+          [from: great_war_redux]
+    1904  basic_coal_engine
+          [from: great_war_redux]
+    1904  early_oil_engine
+          [from: great_war_redux]
+    1910  improved_coal_engine
+          [from: great_war_redux]
+    1910  basic_oil_engine
+          [from: great_war_redux]
+    1912  basic_medium_shell (XP)
+          [from: great_war_redux]
+    1912  basic_heavy_shell (XP)
+          [from: great_war_redux]
+    1914  improved_oil_engine
+          [from: great_war_redux]
+    1916  improved_medium_shell (XP)
+          [from: great_war_redux]
+    1916  improved_heavy_shell (XP)
+          [from: great_war_redux]
+    1918  seaplane2
+          [from: great_war_redux]
     1918  early_antitank
           [from: great_war_redux]
+    1918  advanced_oil_engine
+          [from: great_war_redux]
+    1922  photo_reconnaisance
     1936  mountain_tanks
     1936  interwar_antitank
     1936  SWE_bofors_antitank_gun
@@ -389,8 +414,9 @@ CATEGORY DETAIL
     1941  antitank3
     1942  antitank4
     1943  antitank5
+    1945  sp_centrifugal_jet_tech
 
-  [land / artillery] — 33 techs
+  [land / artillery] -- 33 techs
     1890  early_artillery
           [from: great_war_redux]
     1905  basic_field_gun
@@ -444,7 +470,7 @@ CATEGORY DETAIL
     1943  artillery5
     1944  advanced_dp_light_battery
 
-  [land / heavy_tanks] — 13 techs
+  [land / heavy_tanks] -- 13 techs
     1917  basic_heavy_tank
           [from: great_war_redux]
     1917  basic_heavy_tank_chassis
@@ -467,7 +493,7 @@ CATEGORY DETAIL
     1943  sp_armored_lc_high_impact_obliterator_cannon_tech
     1945  sp_armored_lc_weapon_fire_control_tech
 
-  [land / infantry] — 43 techs
+  [land / infantry] -- 43 techs
     1890  infantry_weapons
           [from: great_war_redux]
     1890  machine_guns
@@ -549,7 +575,7 @@ CATEGORY DETAIL
     1943  paratroopers3
     1943  rangers_tech3
 
-  [land / light_tanks] — 8 techs
+  [land / light_tanks] -- 8 techs
     1917  basic_light_tank
           [from: great_war_redux]
     1917  basic_light_tank_chassis
@@ -565,14 +591,14 @@ CATEGORY DETAIL
     1922  advanced_light_tank_chassis
           [from: great_war_redux]
 
-  [land / mechanised] — 5 techs
+  [land / mechanised] -- 5 techs
     1940  mechanised_infantry
     1941  amphibious_mechanized_infantry
     1942  mechanised_infantry2
     1943  amphibious_mechanized_infantry_2
     1944  mechanised_infantry3
 
-  [land / medium_tanks] — 6 techs
+  [land / medium_tanks] -- 6 techs
     1917  basic_medium_tank
           [from: great_war_redux]
     1917  basic_medium_tank_chassis
@@ -586,11 +612,11 @@ CATEGORY DETAIL
     1922  advanced_medium_tank_chassis
           [from: great_war_redux]
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
     1945  main_battle_tank_chassis
 
-  [land / motorised] — 3 techs
+  [land / motorised] -- 3 techs
     1914  tech_trucks
           [from: great_war_redux]
     1917  wartime_trucks
@@ -598,7 +624,7 @@ CATEGORY DETAIL
     1920  motorised_infantry
           [from: great_war_redux]
 
-  [land / support] — 59 techs
+  [land / support] -- 59 techs
     1880  basic_railways
           [from: great_war_redux]
     1890  basic_train
@@ -707,7 +733,7 @@ CATEGORY DETAIL
     1945  tech_signal_company4
     1946  night_vision2
 
-  [land / tanks_generic] — 78 techs
+  [land / tanks_generic] -- 78 techs
     1900  mechanical_engineering
           [from: great_war_redux]
     1910  magneto_ignition
@@ -829,7 +855,7 @@ CATEGORY DETAIL
     1945  modern_art
     1945  modern_spaa
 
-  [naval / battleships] — 21 techs
+  [naval / battleships] -- 17 techs
     1880  ironclad_ship_hull_heavy
           [from: great_war_redux]
     1890  pre_dreadnought_ship_hull_heavy
@@ -842,17 +868,9 @@ CATEGORY DETAIL
           [from: great_war_redux]
     1910  ship_hull_super_heavy
           [from: great_war_redux]
-    1912  basic_medium_shell (XP)
-          [from: great_war_redux]
-    1912  basic_heavy_shell (XP)
-          [from: great_war_redux]
     1914  improved_heavy_armor_scheme (XP)
           [from: great_war_redux]
     1916  improved_ship_hull_heavy
-          [from: great_war_redux]
-    1916  improved_medium_shell (XP)
-          [from: great_war_redux]
-    1916  improved_heavy_shell (XP)
           [from: great_war_redux]
     1922  early_battlecruiser
     1922  early_battleship
@@ -865,7 +883,7 @@ CATEGORY DETAIL
     1944  advanced_battleship
     1944  heavy_battleship2
 
-  [naval / carriers] — 10 techs
+  [naval / carriers] -- 10 techs
     1910  early_ship_hull_carrier
           [from: great_war_redux]
     1916  basic_ship_hull_carrier
@@ -880,7 +898,7 @@ CATEGORY DETAIL
     1944  sp_ice_composite_runawayas
     1944  advanced_carrier
 
-  [naval / destroyers] — 19 techs
+  [naval / destroyers] -- 19 techs
     1880  torpedo_boat_ship_hull_light
           [from: great_war_redux]
     1890  gunboat_ship_hull_light
@@ -911,13 +929,13 @@ CATEGORY DETAIL
     1943  modern_sonar
     1944  advanced_destroyer
 
-  [naval / heavy_cruisers] — 4 techs
+  [naval / heavy_cruisers] -- 4 techs
     1922  early_heavy_cruiser
     1936  basic_heavy_cruiser
     1940  improved_heavy_cruiser
     1944  advanced_heavy_cruiser
 
-  [naval / light_cruisers] — 16 techs
+  [naval / light_cruisers] -- 16 techs
     1880  victorian_ship_hull_cruiser
           [from: great_war_redux]
     1890  early_ship_hull_cruiser
@@ -947,22 +965,16 @@ CATEGORY DETAIL
     1940  improved_light_cruiser
     1944  advanced_light_cruiser
 
-  [naval / naval_support] — 61 techs
+  [naval / naval_support] -- 54 techs
     1880  ironclad_artillery
           [from: great_war_redux]
     1880  basic_secondary_battery
-          [from: great_war_redux]
-    1880  ironclad_coal_engine
           [from: great_war_redux]
     1880  early_torpedo_tubes
           [from: great_war_redux]
     1880  basic_naval_mines
           [from: great_war_redux]
     1904  basic_battery
-          [from: great_war_redux]
-    1904  basic_coal_engine
-          [from: great_war_redux]
-    1904  early_oil_engine
           [from: great_war_redux]
     1904  basic_torpedo
           [from: great_war_redux]
@@ -980,10 +992,6 @@ CATEGORY DETAIL
           [from: great_war_redux]
     1910  basic_heavy_battery
           [from: great_war_redux]
-    1910  improved_coal_engine
-          [from: great_war_redux]
-    1910  basic_oil_engine
-          [from: great_war_redux]
     1910  improved_ship_torpedo_launcher
           [from: great_war_redux]
     1910  damage_control_2 (XP)
@@ -997,8 +1005,6 @@ CATEGORY DETAIL
     1914  improved_medium_battery
           [from: great_war_redux]
     1914  improved_heavy_battery
-          [from: great_war_redux]
-    1914  improved_oil_engine
           [from: great_war_redux]
     1914  advanced_ship_torpedo_launcher
           [from: great_war_redux]
@@ -1023,8 +1029,6 @@ CATEGORY DETAIL
     1918  advanced_medium_battery
           [from: great_war_redux]
     1918  advanced_heavy_battery
-          [from: great_war_redux]
-    1918  advanced_oil_engine
           [from: great_war_redux]
     1918  modern_ship_torpedo_launcher
           [from: great_war_redux]
@@ -1055,7 +1059,7 @@ CATEGORY DETAIL
     1944  mtg_tank_landing_craft
     1944  tank_landing_craft
 
-  [naval / submarines] — 12 techs
+  [naval / submarines] -- 12 techs
     1904  early_ship_hull_submarine
           [from: great_war_redux]
     1910  basic_ship_hull_submarine
@@ -1208,21 +1212,12 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   pre_dreadnoughts
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
   sami_pathfinders_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  seaplane2
-    categories: ['naval_air', 'air_equipment', 'seaplane', 'mio_cat_all_light_aircraft_and_modules']
-    source: great_war_redux / E:\SteamLibrary\steamapps\workshop\content\394360\3365515312\common\technologies\air_techs.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_naval_proximity_fuze_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt

@@ -4,7 +4,7 @@ Workshop ID: 2438003901
 Bundle slug: the_new_order
 Generation mode: overhaul
 Parsed techs: 897
-Unknown techs: 135
+Unknown techs: 128
 Doctrines detected: 0
 Preset thresholds: the_new_order
 

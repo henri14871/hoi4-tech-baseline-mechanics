@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    901
-Successfully mapped:   750
-Unmapped (unknown):    92
+Successfully mapped:   756
+Unmapped (unknown):    86
 
 BRANCH SUMMARY
 ----------------------------------------
   air                             107 techs
   industry_electronics            184 techs
-  land                            299 techs
-  naval                           160 techs
+  land                            314 techs
+  naval                           151 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 14 techs
+  [air / cas] -- 14 techs
     1922  early_bombs
           [from: extended_tech_tree_1960]
     1936  CAS1
@@ -39,7 +39,7 @@ CATEGORY DETAIL
     1950  bomb_pods
           [from: extended_tech_tree_1960]
 
-  [air / fighters] — 38 techs
+  [air / fighters] -- 38 techs
     1922  aa_lmg
           [from: extended_tech_tree_1960]
     1922  engines_1
@@ -104,7 +104,7 @@ CATEGORY DETAIL
     1960  aa_cannon_5
           [from: extended_tech_tree_1960]
 
-  [air / heavy_fighters] — 12 techs
+  [air / heavy_fighters] -- 12 techs
     1926  iw_medium_airframe
           [from: extended_tech_tree_1960]
     1936  heavy_fighter1
@@ -127,7 +127,7 @@ CATEGORY DETAIL
     1960  modern_medium_airframe_5
           [from: extended_tech_tree_1960]
 
-  [air / naval_bombers] — 6 techs
+  [air / naval_bombers] -- 6 techs
     1936  naval_bomber1
     1936  cv_naval_bomber1
     1940  naval_bomber2
@@ -135,7 +135,7 @@ CATEGORY DETAIL
     1944  naval_bomber3
     1944  cv_naval_bomber3
 
-  [air / strategic_bombers] — 21 techs
+  [air / strategic_bombers] -- 21 techs
     1926  iw_large_airframe
           [from: extended_tech_tree_1960]
     1936  strategic_bomber1
@@ -175,7 +175,7 @@ CATEGORY DETAIL
     1960  modern_large_airframe_5
           [from: extended_tech_tree_1960]
 
-  [air / tactical_bombers] — 6 techs
+  [air / tactical_bombers] -- 6 techs
     1933  early_bomber
     1936  tactical_bomber1
     1940  tactical_bomber2
@@ -183,7 +183,7 @@ CATEGORY DETAIL
     1945  jet_tactical_bomber1
     1950  jet_tactical_bomber2
 
-  [air / transport] — 10 techs
+  [air / transport] -- 10 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
           [from: extended_tech_tree_1960]
@@ -202,7 +202,7 @@ CATEGORY DETAIL
     1960  transport_plane_7
           [from: extended_tech_tree_1960]
 
-  [industry_electronics / electronics] — 25 techs
+  [industry_electronics / electronics] -- 25 techs
     1936  electronic_mechanical_engineering
           [from: extended_tech_tree_1960]
     1936  radio
@@ -254,7 +254,7 @@ CATEGORY DETAIL
     1960  postwar_computing_tech4
           [from: extended_tech_tree_1960]
 
-  [industry_electronics / industry] — 85 techs
+  [industry_electronics / industry] -- 85 techs
     1936  basic_fortification_tech
           [from: extended_tech_tree_1960]
     1936  coastal_fort_tech_1
@@ -426,7 +426,7 @@ CATEGORY DETAIL
     1961  agriculture_6
           [from: extended_tech_tree_1960]
 
-  [industry_electronics / nuclear] — 6 techs
+  [industry_electronics / nuclear] -- 6 techs
     1940  atomic_research
           [from: extended_tech_tree_1960]
     1943  isotope_separation_centrifugal
@@ -438,7 +438,7 @@ CATEGORY DETAIL
           [from: extended_tech_tree_1960]
     1950  thermonuclear_bombs
 
-  [industry_electronics / radar] — 14 techs
+  [industry_electronics / radar] -- 14 techs
     1936  radio_detection
           [from: extended_tech_tree_1960]
     1938  cavity_magnatron
@@ -468,7 +468,7 @@ CATEGORY DETAIL
     1960  air_air_missile_4
           [from: extended_tech_tree_1960]
 
-  [industry_electronics / rockets] — 54 techs
+  [industry_electronics / rockets] -- 54 techs
     1936  hardened_silo
           [from: extended_tech_tree_1960]
     1939  motorized_rocket_unit
@@ -574,7 +574,7 @@ CATEGORY DETAIL
     1960  rocket_artillery_f
           [from: extended_tech_tree_1960]
 
-  [land / anti_air] — 13 techs
+  [land / anti_air] -- 13 techs
     1025  infantry_aa
           [from: extended_tech_tree_1960]
     1936  interwar_antiair
@@ -602,11 +602,17 @@ CATEGORY DETAIL
     1960  antiair_f
           [from: extended_tech_tree_1960]
 
-  [land / anti_tank] — 14 techs
+  [land / anti_tank] -- 29 techs
+    1922  photo_reconnaisance
+          [from: extended_tech_tree_1960]
     1936  mountain_tanks
     1936  interwar_antitank
           [from: extended_tech_tree_1960]
     1936  SWE_bofors_antitank_gun
+          [from: extended_tech_tree_1960]
+    1936  pre_dreadnoughts
+          [from: extended_tech_tree_1960]
+    1936  coastal_defense_ships
           [from: extended_tech_tree_1960]
     1939  antitank1
           [from: extended_tech_tree_1960]
@@ -620,6 +626,10 @@ CATEGORY DETAIL
           [from: extended_tech_tree_1960]
     1944  antitank_a
           [from: extended_tech_tree_1960]
+    1945  turboprops
+          [from: extended_tech_tree_1960]
+    1945  sp_centrifugal_jet_tech
+          [from: extended_tech_tree_1960]
     1947  antitank_b
           [from: extended_tech_tree_1960]
     1949  antitank_c
@@ -628,10 +638,30 @@ CATEGORY DETAIL
           [from: extended_tech_tree_1960]
     1950  antitank_d
           [from: extended_tech_tree_1960]
+    1950  second_gen_jet_engines
+          [from: extended_tech_tree_1960]
+    1950  ship_torpedo_launcher_5
+          [from: extended_tech_tree_1960]
+    1955  ship_asm_battery_1_tech
+          [from: extended_tech_tree_1960]
+    1955  ship_sam_missile_battery_1_tech
+          [from: extended_tech_tree_1960]
+    1955  ship_dp_missile_battery_1_tech
+          [from: extended_tech_tree_1960]
+    1955  ship_dp_missile_battery_2_tech
+          [from: extended_tech_tree_1960]
     1960  antitank_e
           [from: extended_tech_tree_1960]
+    1960  third_gen_jet_engines
+          [from: extended_tech_tree_1960]
+    1960  compressor_bleed_engine_tech
+          [from: extended_tech_tree_1960]
+    1960  ship_asm_battery_2_tech
+          [from: extended_tech_tree_1960]
+    1960  ship_sam_missile_battery_2_tech
+          [from: extended_tech_tree_1960]
 
-  [land / artillery] — 34 techs
+  [land / artillery] -- 34 techs
     1918  gw_artillery
           [from: extended_tech_tree_1960]
     1922  basic_battery
@@ -701,7 +731,7 @@ CATEGORY DETAIL
     1960  artillery_f
           [from: extended_tech_tree_1960]
 
-  [land / heavy_tanks] — 16 techs
+  [land / heavy_tanks] -- 16 techs
     1934  basic_heavy_tank
     1934  basic_heavy_tank_chassis
           [from: extended_tech_tree_1960]
@@ -731,7 +761,7 @@ CATEGORY DETAIL
     1950  heavy_tank_chassis_6
           [from: extended_tech_tree_1960]
 
-  [land / infantry] — 58 techs
+  [land / infantry] -- 58 techs
     1918  infantry_weapons
           [from: extended_tech_tree_1960]
     1918  support_weapons
@@ -849,7 +879,7 @@ CATEGORY DETAIL
     1960  infantry_equipment_5
           [from: extended_tech_tree_1960]
 
-  [land / light_tanks] — 11 techs
+  [land / light_tanks] -- 11 techs
     1918  gwtank
     1918  gwtank_chassis
           [from: extended_tech_tree_1960]
@@ -869,7 +899,7 @@ CATEGORY DETAIL
     1950  paradrop_tank_chassis_2
           [from: extended_tech_tree_1960]
 
-  [land / mechanised] — 11 techs
+  [land / mechanised] -- 11 techs
     1940  mechanised_infantry
           [from: extended_tech_tree_1960]
     1941  amphibious_mechanized_infantry
@@ -893,7 +923,7 @@ CATEGORY DETAIL
     1960  ifv_infantry
           [from: extended_tech_tree_1960]
 
-  [land / medium_tanks] — 9 techs
+  [land / medium_tanks] -- 9 techs
     1938  basic_medium_tank_chassis
           [from: extended_tech_tree_1960]
     1939  basic_medium_tank
@@ -910,12 +940,12 @@ CATEGORY DETAIL
     1960  main_battle_tank_chassis_4
           [from: extended_tech_tree_1960]
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
     1945  main_battle_tank_chassis
           [from: extended_tech_tree_1960]
 
-  [land / motorised] — 4 techs
+  [land / motorised] -- 4 techs
     1936  tech_trucks
           [from: extended_tech_tree_1960]
     1936  motorised_infantry
@@ -925,7 +955,7 @@ CATEGORY DETAIL
     1950  motorised_infantry_3
           [from: extended_tech_tree_1960]
 
-  [land / support] — 59 techs
+  [land / support] -- 59 techs
     1910  basic_train
           [from: extended_tech_tree_1960]
     1918  tech_support
@@ -1045,7 +1075,7 @@ CATEGORY DETAIL
     1955  tech_field_hospital6
           [from: extended_tech_tree_1960]
 
-  [land / tanks_generic] — 68 techs
+  [land / tanks_generic] -- 68 techs
     1914  armored_car1
           [from: extended_tech_tree_1960]
     1934  basic_light_td
@@ -1148,7 +1178,7 @@ CATEGORY DETAIL
     1960  comp_armor
           [from: extended_tech_tree_1960]
 
-  [naval / battleships] — 25 techs
+  [naval / battleships] -- 17 techs
     1922  early_battlecruiser
     1922  early_battleship
     1922  early_ship_hull_heavy
@@ -1160,10 +1190,6 @@ CATEGORY DETAIL
     1936  ship_hull_super_heavy
           [from: extended_tech_tree_1960]
     1936  basic_heavy_armor_scheme (XP)
-          [from: extended_tech_tree_1960]
-    1936  pre_dreadnoughts
-          [from: extended_tech_tree_1960]
-    1936  coastal_defense_ships
           [from: extended_tech_tree_1960]
     1939  improved_ship_hull_heavy
           [from: extended_tech_tree_1960]
@@ -1179,20 +1205,8 @@ CATEGORY DETAIL
     1944  heavy_battleship2
     1954  ship_hull_heavy_5
           [from: extended_tech_tree_1960]
-    1955  ship_asm_battery_1_tech
-          [from: extended_tech_tree_1960]
-    1955  ship_sam_missile_battery_1_tech
-          [from: extended_tech_tree_1960]
-    1955  ship_dp_missile_battery_1_tech
-          [from: extended_tech_tree_1960]
-    1955  ship_dp_missile_battery_2_tech
-          [from: extended_tech_tree_1960]
-    1960  ship_asm_battery_2_tech
-          [from: extended_tech_tree_1960]
-    1960  ship_sam_missile_battery_2_tech
-          [from: extended_tech_tree_1960]
 
-  [naval / carriers] — 14 techs
+  [naval / carriers] -- 14 techs
     1922  early_carrier
     1922  early_ship_hull_carrier
           [from: extended_tech_tree_1960]
@@ -1216,7 +1230,7 @@ CATEGORY DETAIL
     1958  ship_hull_carrier_6
           [from: extended_tech_tree_1960]
 
-  [naval / destroyers] — 24 techs
+  [naval / destroyers] -- 24 techs
     1922  early_destroyer
     1922  early_ship_hull_light
           [from: extended_tech_tree_1960]
@@ -1262,7 +1276,7 @@ CATEGORY DETAIL
     1958  depth_charges_7 (XP)
           [from: extended_tech_tree_1960]
 
-  [naval / heavy_cruisers] — 5 techs
+  [naval / heavy_cruisers] -- 5 techs
     1922  early_heavy_cruiser
     1922  basic_cruiser_armor_scheme (XP)
           [from: extended_tech_tree_1960]
@@ -1270,7 +1284,7 @@ CATEGORY DETAIL
     1940  improved_heavy_cruiser
     1944  advanced_heavy_cruiser
 
-  [naval / light_cruisers] — 12 techs
+  [naval / light_cruisers] -- 12 techs
     1922  early_light_cruiser
     1922  early_ship_hull_cruiser
           [from: extended_tech_tree_1960]
@@ -1292,7 +1306,7 @@ CATEGORY DETAIL
     1958  ship_hull_cruiser_7
           [from: extended_tech_tree_1960]
 
-  [naval / naval_support] — 52 techs
+  [naval / naval_support] -- 51 techs
     1922  transport
     1922  basic_torpedo
           [from: extended_tech_tree_1960]
@@ -1372,8 +1386,6 @@ CATEGORY DETAIL
           [from: extended_tech_tree_1960]
     1950  adv_tank_landing_craft
           [from: extended_tech_tree_1960]
-    1950  ship_torpedo_launcher_5
-          [from: extended_tech_tree_1960]
     1955  wire_torpedo (XP)
           [from: extended_tech_tree_1960]
     1955  naval_mines_1955
@@ -1395,7 +1407,7 @@ CATEGORY DETAIL
     1960  landing_platform_helicopter
           [from: extended_tech_tree_1960]
 
-  [naval / submarines] — 28 techs
+  [naval / submarines] -- 28 techs
     1922  early_submarine
     1922  early_ship_hull_submarine
           [from: extended_tech_tree_1960]
@@ -1517,9 +1529,6 @@ Add entries to custom_mappings.txt to include them.
   commercial_nuclear_reactor_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
-  compressor_bleed_engine_tech
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
   converted_guided_missile_tech
     categories: []
     source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval_Support.txt
@@ -1610,9 +1619,6 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules', 'mio_cat_all_light_aircraft_and_modules']
-    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
   radar_jammers
     categories: ['air_equipment', 'plane_modules_tech']
     source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
@@ -1636,12 +1642,6 @@ Add entries to custom_mappings.txt to include them.
     source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
   scout_helicopter_3
     categories: ['light_air']
-    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
-  second_gen_jet_engines
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
     source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
   sp_lenticular_missile_tech
     categories: []
@@ -1703,18 +1703,12 @@ Add entries to custom_mappings.txt to include them.
   tech_fleet_oiler_3
     categories: ['naval_equipment']
     source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
-  third_gen_jet_engines
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
   torpedo_cruiser
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\naval.txt
   torpedo_cruiser_mtg
     categories: []
     source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
-  turboprops
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
   uranium_tipped_bullets
     categories: []
     source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt

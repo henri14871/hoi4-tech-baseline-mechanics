@@ -1,15 +1,15 @@
-# ═══════════════════════════════════════════════════════════════════
-# Arms Race Mechanics — Auto-Generated Tech Lists
+# ===================================================================
+# Arms Race Mechanics -- Auto-Generated Tech Lists
 # Source: kaiserredux
 # Mode: overhaul
-# Total techs mapped: 478
-# Unmapped techs: 120
-# ═══════════════════════════════════════════════════════════════════
+# Total techs mapped: 480
+# Unmapped techs: 118
+# ===================================================================
 # THIS FILE IS AUTO-GENERATED. Do not edit manually.
-# Re-run arm_tech_generator.py to regenerate.
-# ═══════════════════════════════════════════════════════════════════
+# Re-run arm_compat_tool.py to regenerate.
+# ===================================================================
 
-# ── AIR / CAS (12 techs) ──
+# -- AIR / CAS (12 techs) --
 
 # early_bombs
 #   year=1922 branch=air category=cas
@@ -310,7 +310,7 @@ arm_grant_air_cas_y1944 = {
         }
     }
 }
-# ── AIR / FIGHTERS (31 techs) ──
+# -- AIR / FIGHTERS (31 techs) --
 
 # aa_lmg
 #   year=1922 branch=air category=fighters
@@ -1063,7 +1063,7 @@ arm_grant_air_fighters_y1950 = {
         }
     }
 }
-# ── AIR / HEAVY_FIGHTERS (8 techs) ──
+# -- AIR / HEAVY_FIGHTERS (8 techs) --
 
 # iw_medium_airframe
 #   year=1926 branch=air category=heavy_fighters
@@ -1315,7 +1315,7 @@ arm_grant_air_heavy_fighters_y1945 = {
         }
     }
 }
-# ── AIR / NAVAL_BOMBERS (6 techs) ──
+# -- AIR / NAVAL_BOMBERS (6 techs) --
 
 # naval_bomber1
 #   year=1936 branch=air category=naval_bombers
@@ -1488,7 +1488,7 @@ arm_grant_air_naval_bombers_y1944 = {
         }
     }
 }
-# ── AIR / STRATEGIC_BOMBERS (12 techs) ──
+# -- AIR / STRATEGIC_BOMBERS (12 techs) --
 
 # iw_large_airframe
 #   year=1926 branch=air category=strategic_bombers
@@ -1870,7 +1870,7 @@ arm_grant_air_strategic_bombers_y1950 = {
         }
     }
 }
-# ── AIR / TACTICAL_BOMBERS (6 techs) ──
+# -- AIR / TACTICAL_BOMBERS (6 techs) --
 
 # early_bomber
 #   year=1933 branch=air category=tactical_bombers
@@ -2100,7 +2100,7 @@ arm_grant_air_tactical_bombers_y1950 = {
         }
     }
 }
-# ── AIR / TRANSPORT (6 techs) ──
+# -- AIR / TRANSPORT (6 techs) --
 
 # early_transport_plane
 #   year=1933 branch=air category=transport
@@ -2296,7 +2296,7 @@ arm_grant_air_transport_y1948 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / ELECTRONICS (17 techs) ──
+# -- INDUSTRY_ELECTRONICS / ELECTRONICS (17 techs) --
 
 # electronic_mechanical_engineering
 #   year=1936 branch=industry_electronics category=electronics
@@ -2694,7 +2694,7 @@ arm_grant_industry_electronics_electronics_y1942 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / INDUSTRY (48 techs) ──
+# -- INDUSTRY_ELECTRONICS / INDUSTRY (48 techs) --
 
 # basic_fortification_tech
 #   year=1936 branch=industry_electronics category=industry
@@ -3657,7 +3657,7 @@ arm_grant_industry_electronics_industry_y1943 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / NUCLEAR (6 techs) ──
+# -- INDUSTRY_ELECTRONICS / NUCLEAR (6 techs) --
 
 # atomic_research
 #   year=1940 branch=industry_electronics category=nuclear
@@ -3860,7 +3860,7 @@ arm_grant_industry_electronics_nuclear_y1950 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / RADAR (5 techs) ──
+# -- INDUSTRY_ELECTRONICS / RADAR (5 techs) --
 
 # radio_detection
 #   year=1936 branch=industry_electronics category=radar
@@ -4054,7 +4054,7 @@ arm_grant_industry_electronics_radar_y1942 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / ROCKETS (15 techs) ──
+# -- INDUSTRY_ELECTRONICS / ROCKETS (15 techs) --
 
 # motorized_rocket_unit
 #   year=1939 branch=industry_electronics category=rockets
@@ -4500,7 +4500,7 @@ arm_grant_industry_electronics_rockets_y1946 = {
         }
     }
 }
-# ── LAND / ANTI_AIR (6 techs) ──
+# -- LAND / ANTI_AIR (6 techs) --
 
 # interwar_antiair
 #   year=1936 branch=land category=anti_air
@@ -4730,7 +4730,11 @@ arm_grant_land_anti_air_y1943 = {
         }
     }
 }
-# ── LAND / ANTI_TANK (8 techs) ──
+# -- LAND / ANTI_TANK (10 techs) --
+
+# photo_reconnaisance
+#   year=1922 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
 
 # mountain_tanks
 #   year=1936 branch=land category=anti_tank
@@ -4764,16 +4768,27 @@ arm_grant_land_anti_air_y1943 = {
 #   year=1943 branch=land category=anti_tank
 #   min_tier=minor min_branch_score=15
 
+# sp_centrifugal_jet_tech
+#   year=1945 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
 arm_grant_land_anti_tank = {
     if = {
         limit = {
             check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
-            check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
             has_country_flag = arm_cat_anti_tank
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
         }
         # Year-sliced dispatch avoids scanning future tech eras every pulse.
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1922 = yes
+        }
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
@@ -4815,6 +4830,40 @@ arm_grant_land_anti_tank = {
                 check_variable = { var = arm_target_year_land value = 1943 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1943 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1945 = yes
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1922 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        # photo_reconnaisance - 1922
+        if = {
+            limit = {
+                NOT = { has_tech = photo_reconnaisance }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { photo_reconnaisance = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
         }
     }
 }
@@ -4994,7 +5043,34 @@ arm_grant_land_anti_tank_y1943 = {
         }
     }
 }
-# ── LAND / ARTILLERY (26 techs) ──
+
+arm_grant_land_anti_tank_y1945 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        # sp_centrifugal_jet_tech - 1945
+        if = {
+            limit = {
+                NOT = { has_tech = sp_centrifugal_jet_tech }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { sp_centrifugal_jet_tech = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+# -- LAND / ARTILLERY (26 techs) --
 
 # basic_battery
 #   year=1922 branch=land category=artillery
@@ -5618,7 +5694,7 @@ arm_grant_land_artillery_y1944 = {
         }
     }
 }
-# ── LAND / HEAVY_TANKS (13 techs) ──
+# -- LAND / HEAVY_TANKS (13 techs) --
 
 # basic_heavy_tank
 #   year=1934 branch=land category=heavy_tanks
@@ -5959,7 +6035,7 @@ arm_grant_land_heavy_tanks_y1945 = {
         }
     }
 }
-# ── LAND / INFANTRY (31 techs) ──
+# -- LAND / INFANTRY (31 techs) --
 
 # infantry_weapons
 #   year=1918 branch=land category=infantry
@@ -6572,7 +6648,7 @@ arm_grant_land_infantry_y1944 = {
         }
     }
 }
-# ── LAND / LIGHT_TANKS (8 techs) ──
+# -- LAND / LIGHT_TANKS (8 techs) --
 
 # gwtank
 #   year=1918 branch=land category=light_tanks
@@ -6802,7 +6878,7 @@ arm_grant_land_light_tanks_y1941 = {
         }
     }
 }
-# ── LAND / MECHANISED (5 techs) ──
+# -- LAND / MECHANISED (5 techs) --
 
 # mechanised_infantry
 #   year=1940 branch=land category=mechanised
@@ -6996,7 +7072,7 @@ arm_grant_land_mechanised_y1944 = {
         }
     }
 }
-# ── LAND / MEDIUM_TANKS (6 techs) ──
+# -- LAND / MEDIUM_TANKS (6 techs) --
 
 # basic_medium_tank_chassis
 #   year=1938 branch=land category=medium_tanks
@@ -7212,7 +7288,7 @@ arm_grant_land_medium_tanks_y1943 = {
         }
     }
 }
-# ── LAND / MODERN_TANKS (2 techs) ──
+# -- LAND / MODERN_TANKS (2 techs) --
 
 # main_battle_tank
 #   year=1945 branch=land category=modern_tanks
@@ -7260,7 +7336,7 @@ arm_grant_land_modern_tanks = {
         }
     }
 }
-# ── LAND / MOTORISED (2 techs) ──
+# -- LAND / MOTORISED (2 techs) --
 
 # tech_trucks
 #   year=1936 branch=land category=motorised
@@ -7307,7 +7383,7 @@ arm_grant_land_motorised = {
         }
     }
 }
-# ── LAND / SUPPORT (42 techs) ──
+# -- LAND / SUPPORT (42 techs) --
 
 # basic_train
 #   year=1910 branch=land category=support
@@ -8210,7 +8286,7 @@ arm_grant_land_support_y1946 = {
         }
     }
 }
-# ── LAND / TANKS_GENERIC (54 techs) ──
+# -- LAND / TANKS_GENERIC (54 techs) --
 
 # armored_car1
 #   year=1914 branch=land category=tanks_generic
@@ -9365,7 +9441,7 @@ arm_grant_land_tanks_generic_y1945 = {
         }
     }
 }
-# ── NAVAL / BATTLESHIPS (15 techs) ──
+# -- NAVAL / BATTLESHIPS (15 techs) --
 
 # early_battlecruiser
 #   year=1922 branch=naval category=battleships
@@ -9731,7 +9807,7 @@ arm_grant_naval_battleships_y1944 = {
         }
     }
 }
-# ── NAVAL / CARRIERS (10 techs) ──
+# -- NAVAL / CARRIERS (10 techs) --
 
 # early_carrier
 #   year=1922 branch=naval category=carriers
@@ -10057,7 +10133,7 @@ arm_grant_naval_carriers_y1944 = {
         }
     }
 }
-# ── NAVAL / DESTROYERS (17 techs) ──
+# -- NAVAL / DESTROYERS (17 techs) --
 
 # early_destroyer
 #   year=1922 branch=naval category=destroyers
@@ -10437,7 +10513,7 @@ arm_grant_naval_destroyers_y1944 = {
         }
     }
 }
-# ── NAVAL / HEAVY_CRUISERS (6 techs) ──
+# -- NAVAL / HEAVY_CRUISERS (6 techs) --
 
 # early_heavy_cruiser
 #   year=1922 branch=naval category=heavy_cruisers
@@ -10618,7 +10694,7 @@ arm_grant_naval_heavy_cruisers_y1944 = {
         }
     }
 }
-# ── NAVAL / LIGHT_CRUISERS (8 techs) ──
+# -- NAVAL / LIGHT_CRUISERS (8 techs) --
 
 # early_light_cruiser
 #   year=1922 branch=naval category=light_cruisers
@@ -10888,7 +10964,7 @@ arm_grant_naval_light_cruisers_y1944 = {
         }
     }
 }
-# ── NAVAL / NAVAL_SUPPORT (34 techs) ──
+# -- NAVAL / NAVAL_SUPPORT (34 techs) --
 
 # transport
 #   year=1922 branch=naval category=naval_support
@@ -11510,7 +11586,7 @@ arm_grant_naval_naval_support_y1944 = {
         }
     }
 }
-# ── NAVAL / SUBMARINES (13 techs) ──
+# -- NAVAL / SUBMARINES (13 techs) --
 
 # early_submarine
 #   year=1922 branch=naval category=submarines

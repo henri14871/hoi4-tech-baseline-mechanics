@@ -4,8 +4,8 @@ Workshop ID: 2777392649
 Bundle slug: millennium_dawn
 Generation mode: overhaul
 Parsed techs: 972
-Unknown techs: 312
-Doctrines detected: 6
+Unknown techs: 20
+Doctrines detected: 0
 Preset thresholds: millennium_dawn
 
 Files in this bundle:

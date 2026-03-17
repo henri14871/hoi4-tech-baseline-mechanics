@@ -4,7 +4,7 @@ Workshop ID: 1137372539
 Bundle slug: blackice
 Generation mode: overhaul
 Parsed techs: 2627
-Unknown techs: 331
+Unknown techs: 328
 Doctrines detected: 312
 Preset thresholds: blackice
 

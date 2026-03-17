@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    967
-Successfully mapped:   755
-Unmapped (unknown):    145
+Successfully mapped:   757
+Unmapped (unknown):    143
 
 BRANCH SUMMARY
 ----------------------------------------
   air                              94 techs
   industry_electronics            169 techs
-  land                            359 techs
+  land                            361 techs
   naval                           133 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 12 techs
+  [air / cas] -- 12 techs
     1922  early_bombs
           [from: road_to_56]
     1936  CAS1
@@ -41,7 +41,7 @@ CATEGORY DETAIL
     1944  air_torpedoe_3
           [from: road_to_56]
 
-  [air / fighters] — 39 techs
+  [air / fighters] -- 39 techs
     1922  aa_lmg
           [from: road_to_56]
     1922  engines_1
@@ -121,7 +121,7 @@ CATEGORY DETAIL
     1955  cv_jet_fighter_a
           [from: road_to_56]
 
-  [air / heavy_fighters] — 11 techs
+  [air / heavy_fighters] -- 11 techs
     1926  iw_medium_airframe
           [from: road_to_56]
     1936  heavy_fighter1
@@ -145,7 +145,7 @@ CATEGORY DETAIL
     1945  modern_medium_airframe
           [from: road_to_56]
 
-  [air / naval_bombers] — 6 techs
+  [air / naval_bombers] -- 6 techs
     1936  naval_bomber1
           [from: road_to_56]
     1936  cv_naval_bomber1
@@ -159,7 +159,7 @@ CATEGORY DETAIL
     1944  cv_naval_bomber3
           [from: road_to_56]
 
-  [air / strategic_bombers] — 10 techs
+  [air / strategic_bombers] -- 10 techs
     1926  iw_large_airframe
           [from: road_to_56]
     1936  strategic_bomber1
@@ -181,7 +181,7 @@ CATEGORY DETAIL
     1955  jet_strategic_bomber_a
           [from: road_to_56]
 
-  [air / tactical_bombers] — 10 techs
+  [air / tactical_bombers] -- 10 techs
     1933  early_bomber
           [from: road_to_56]
     1936  tactical_bomber1
@@ -203,7 +203,7 @@ CATEGORY DETAIL
     1955  jet_tactical_bomber_a
           [from: road_to_56]
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -215,7 +215,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
           [from: road_to_56]
 
-  [industry_electronics / electronics] — 33 techs
+  [industry_electronics / electronics] -- 33 techs
     1936  electronic_mechanical_engineering
           [from: road_to_56]
     1936  radio
@@ -283,7 +283,7 @@ CATEGORY DETAIL
     1955  future_computing_machine_4
           [from: road_to_56]
 
-  [industry_electronics / industry] — 94 techs
+  [industry_electronics / industry] -- 94 techs
     1918  etax_doctrine
           [from: road_to_56]
     1930  steel_production_1
@@ -467,7 +467,7 @@ CATEGORY DETAIL
     1954  aluminum_production_4
           [from: road_to_56]
 
-  [industry_electronics / nuclear] — 7 techs
+  [industry_electronics / nuclear] -- 7 techs
     1940  atomic_research
           [from: road_to_56]
     1943  isotope_separation_centrifugal
@@ -481,7 +481,7 @@ CATEGORY DETAIL
           [from: road_to_56]
     1950  thermonuclear_bombs
 
-  [industry_electronics / radar] — 16 techs
+  [industry_electronics / radar] -- 16 techs
     1936  rdf0
           [from: road_to_56]
     1936  radio_detection
@@ -515,7 +515,7 @@ CATEGORY DETAIL
     1953  future_radar_3
           [from: road_to_56]
 
-  [industry_electronics / rockets] — 19 techs
+  [industry_electronics / rockets] -- 19 techs
     1940  rocket_artillery
           [from: road_to_56]
     1941  rocket_artillery2
@@ -555,7 +555,7 @@ CATEGORY DETAIL
     1954  rocket_artillery_e
           [from: road_to_56]
 
-  [land / anti_air] — 10 techs
+  [land / anti_air] -- 10 techs
     1936  interwar_antiair
           [from: road_to_56]
     1939  antiair1
@@ -577,7 +577,9 @@ CATEGORY DETAIL
     1954  antiair_e
           [from: road_to_56]
 
-  [land / anti_tank] — 13 techs
+  [land / anti_tank] -- 15 techs
+    1922  photo_reconnaisance
+          [from: road_to_56]
     1936  mountain_tanks
           [from: road_to_56]
     1936  interwar_antitank
@@ -596,6 +598,7 @@ CATEGORY DETAIL
           [from: road_to_56]
     1944  antitank_a
           [from: road_to_56]
+    1945  sp_centrifugal_jet_tech
     1945  antitank_b
           [from: road_to_56]
     1948  antitank_c
@@ -605,7 +608,7 @@ CATEGORY DETAIL
     1954  antitank_e
           [from: road_to_56]
 
-  [land / artillery] — 20 techs
+  [land / artillery] -- 20 techs
     1917  r56_gw_railway_gun
           [from: road_to_56]
     1930  r56_railway_mortar_subtech
@@ -647,7 +650,7 @@ CATEGORY DETAIL
     1954  artillery_e
           [from: road_to_56]
 
-  [land / heavy_tanks] — 16 techs
+  [land / heavy_tanks] -- 16 techs
     1934  basic_heavy_tank
           [from: road_to_56]
     1934  basic_heavy_tank_chassis
@@ -681,7 +684,7 @@ CATEGORY DETAIL
     1951  super_heavy_tank_b
           [from: road_to_56]
 
-  [land / infantry] — 102 techs
+  [land / infantry] -- 102 techs
     1918  support_weapons
           [from: road_to_56]
     1933  infantry_weapons
@@ -887,7 +890,7 @@ CATEGORY DETAIL
     1954  camo1955
           [from: road_to_56]
 
-  [land / light_tanks] — 21 techs
+  [land / light_tanks] -- 21 techs
     1918  gwtank
           [from: road_to_56]
     1930  gwtank_chassis
@@ -931,7 +934,7 @@ CATEGORY DETAIL
     1950  oscillating_turret_tech
           [from: road_to_56]
 
-  [land / medium_tanks] — 11 techs
+  [land / medium_tanks] -- 11 techs
     1938  basic_medium_tank_chassis
           [from: road_to_56]
     1939  basic_medium_tank
@@ -955,13 +958,13 @@ CATEGORY DETAIL
     1955  main_battle_tank_e
           [from: road_to_56]
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
           [from: road_to_56]
     1945  main_battle_tank_chassis
           [from: road_to_56]
 
-  [land / motorised] — 3 techs
+  [land / motorised] -- 3 techs
     1920  tech_trucks
           [from: road_to_56]
     1936  motorised_infantry
@@ -969,7 +972,7 @@ CATEGORY DETAIL
     1939  motorized_rocket_unit
           [from: road_to_56]
 
-  [land / support] — 77 techs
+  [land / support] -- 77 techs
     1918  tech_support
           [from: road_to_56]
     1920  basic_train
@@ -1125,7 +1128,7 @@ CATEGORY DETAIL
     1954  tech_signal_company_c
           [from: road_to_56]
 
-  [land / tanks_generic] — 84 techs
+  [land / tanks_generic] -- 84 techs
     1934  basic_light_td
           [from: road_to_56]
     1934  basic_light_art
@@ -1294,7 +1297,7 @@ CATEGORY DETAIL
     1955  main_battle_tank_spaa_e
           [from: road_to_56]
 
-  [naval / battleships] — 17 techs
+  [naval / battleships] -- 17 techs
     1922  early_ship_hull_heavy
           [from: road_to_56]
     1922  early_battlecruiser
@@ -1330,7 +1333,7 @@ CATEGORY DETAIL
     1948  semi_modern_battleship
           [from: road_to_56]
 
-  [naval / carriers] — 12 techs
+  [naval / carriers] -- 12 techs
     1922  early_ship_hull_carrier
           [from: road_to_56]
     1922  early_carrier
@@ -1356,7 +1359,7 @@ CATEGORY DETAIL
     1948  semi_modern_carrier
           [from: road_to_56]
 
-  [naval / destroyers] — 20 techs
+  [naval / destroyers] -- 20 techs
     1922  early_ship_hull_light
           [from: road_to_56]
     1922  smoke_generator
@@ -1398,7 +1401,7 @@ CATEGORY DETAIL
     1948  semi_modern_destroyer
           [from: road_to_56]
 
-  [naval / heavy_cruisers] — 6 techs
+  [naval / heavy_cruisers] -- 6 techs
     1922  basic_cruiser_armor_scheme (XP)
           [from: road_to_56]
     1922  early_heavy_cruiser
@@ -1412,7 +1415,7 @@ CATEGORY DETAIL
     1948  semi_modern_heavy_cruiser
           [from: road_to_56]
 
-  [naval / light_cruisers] — 11 techs
+  [naval / light_cruisers] -- 11 techs
     1922  early_ship_hull_cruiser
           [from: road_to_56]
     1922  early_light_cruiser
@@ -1436,7 +1439,7 @@ CATEGORY DETAIL
     1948  semi_modern_light_cruiser
           [from: road_to_56]
 
-  [naval / naval_support] — 53 techs
+  [naval / naval_support] -- 53 techs
     1922  basic_battery
           [from: road_to_56]
     1922  basic_torpedo
@@ -1544,7 +1547,7 @@ CATEGORY DETAIL
     1945  modern_naval_mines
           [from: road_to_56]
 
-  [naval / submarines] — 14 techs
+  [naval / submarines] -- 14 techs
     1922  early_ship_hull_submarine
           [from: road_to_56]
     1922  early_submarine
@@ -1888,9 +1891,6 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: road_to_56 / E:\SteamLibrary\steamapps\workshop\content\394360\820260968\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: road_to_56 / E:\SteamLibrary\steamapps\workshop\content\394360\820260968\common\technologies\bba_air_techs.txt
   pre_dreadnoughts
     categories: []
     source: road_to_56 / E:\SteamLibrary\steamapps\workshop\content\394360\820260968\common\technologies\MTG_naval.txt
@@ -1933,9 +1933,6 @@ Add entries to custom_mappings.txt to include them.
   siege_artillery
     categories: []
     source: road_to_56 / E:\SteamLibrary\steamapps\workshop\content\394360\820260968\common\technologies\r56_techs.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_naval_proximity_fuze_tech
     categories: []
     source: road_to_56 / E:\SteamLibrary\steamapps\workshop\content\394360\820260968\common\technologies\MTG_naval.txt

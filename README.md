@@ -8,7 +8,7 @@ ARM gives each country a credible technological baseline based on its power, ind
 
 **What that means in practice:** stronger AI competition, fewer immersion-breaking tech gaps, more credible minors, and late-game wars decided by production, planning, and execution rather than one side still fielding outdated equipment.
 
-**Version:** 1.6.0 | **HOI4:** 1.17.4.1+ | **DLC Required:** None
+**Version:** 2.0.0 | **HOI4:** 1.17.4.1+ | **DLC Required:** None
 
 **Steam Workshop:** https://steamcommunity.com/sharedfiles/filedetails/?id=3683996696
 

@@ -1,15 +1,15 @@
-# ═══════════════════════════════════════════════════════════════════
-# Arms Race Mechanics — Auto-Generated Tech Lists
+# ===================================================================
+# Arms Race Mechanics -- Auto-Generated Tech Lists
 # Source: endsieg
 # Mode: overhaul
-# Total techs mapped: 827
-# Unmapped techs: 142
-# ═══════════════════════════════════════════════════════════════════
+# Total techs mapped: 855
+# Unmapped techs: 114
+# ===================================================================
 # THIS FILE IS AUTO-GENERATED. Do not edit manually.
-# Re-run arm_tech_generator.py to regenerate.
-# ═══════════════════════════════════════════════════════════════════
+# Re-run arm_compat_tool.py to regenerate.
+# ===================================================================
 
-# ── AIR / CAS (14 techs) ──
+# -- AIR / CAS (14 techs) --
 
 # early_CAS
 #   year=1918 branch=air category=cas
@@ -382,7 +382,7 @@ arm_grant_air_cas_y1944 = {
         }
     }
 }
-# ── AIR / FIGHTERS (22 techs) ──
+# -- AIR / FIGHTERS (22 techs) --
 
 # ww1_scout_plane
 #   year=1912 branch=air category=fighters
@@ -993,7 +993,7 @@ arm_grant_air_fighters_y1950 = {
         }
     }
 }
-# ── AIR / HEAVY_FIGHTERS (8 techs) ──
+# -- AIR / HEAVY_FIGHTERS (8 techs) --
 
 # iw_medium_airframe
 #   year=1926 branch=air category=heavy_fighters
@@ -1246,7 +1246,7 @@ arm_grant_air_heavy_fighters_y1945 = {
         }
     }
 }
-# ── AIR / NAVAL_BOMBERS (5 techs) ──
+# -- AIR / NAVAL_BOMBERS (5 techs) --
 
 # early_naval_bomber
 #   year=1917 branch=air category=naval_bombers
@@ -1440,7 +1440,7 @@ arm_grant_air_naval_bombers_y1944 = {
         }
     }
 }
-# ── AIR / STRATEGIC_BOMBERS (12 techs) ──
+# -- AIR / STRATEGIC_BOMBERS (12 techs) --
 
 # iw_large_airframe
 #   year=1926 branch=air category=strategic_bombers
@@ -1804,7 +1804,7 @@ arm_grant_air_strategic_bombers_y1950 = {
         }
     }
 }
-# ── AIR / TACTICAL_BOMBERS (12 techs) ──
+# -- AIR / TACTICAL_BOMBERS (12 techs) --
 
 # ww1_early_bomber
 #   year=1914 branch=air category=tactical_bombers
@@ -2197,7 +2197,7 @@ arm_grant_air_tactical_bombers_y1950 = {
         }
     }
 }
-# ── AIR / TRANSPORT (6 techs) ──
+# -- AIR / TRANSPORT (6 techs) --
 
 # early_transport_plane
 #   year=1933 branch=air category=transport
@@ -2393,7 +2393,7 @@ arm_grant_air_transport_y1948 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / ELECTRONICS (31 techs) ──
+# -- INDUSTRY_ELECTRONICS / ELECTRONICS (31 techs) --
 
 # census_tabulating
 #   year=1905 branch=industry_electronics category=electronics
@@ -3221,7 +3221,7 @@ arm_grant_industry_electronics_electronics_y1954 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / INDUSTRY (100 techs) ──
+# -- INDUSTRY_ELECTRONICS / INDUSTRY (100 techs) --
 
 # bunker
 #   year=1905 branch=industry_electronics category=industry
@@ -5334,7 +5334,7 @@ arm_grant_industry_electronics_industry_y1954 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / NUCLEAR (9 techs) ──
+# -- INDUSTRY_ELECTRONICS / NUCLEAR (9 techs) --
 
 # atomic_research
 #   year=1940 branch=industry_electronics category=nuclear
@@ -5651,7 +5651,7 @@ arm_grant_industry_electronics_nuclear_y1955 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / RADAR (12 techs) ──
+# -- INDUSTRY_ELECTRONICS / RADAR (12 techs) --
 
 # radio_detection
 #   year=1936 branch=industry_electronics category=radar
@@ -6059,7 +6059,7 @@ arm_grant_industry_electronics_radar_y1954 = {
         }
     }
 }
-# ── INDUSTRY_ELECTRONICS / ROCKETS (23 techs) ──
+# -- INDUSTRY_ELECTRONICS / ROCKETS (23 techs) --
 
 # motorized_rocket_unit
 #   year=1939 branch=industry_electronics category=rockets
@@ -6728,10 +6728,18 @@ arm_grant_industry_electronics_rockets_y1959 = {
         }
     }
 }
-# ── LAND / ANTI_TANK (14 techs) ──
+# -- LAND / ANTI_TANK (23 techs) --
 
 # early_antitank
 #   year=1918 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
+# aa_lmg
+#   year=1922 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
+# engines_1
+#   year=1922 branch=land category=anti_tank
 #   min_tier=minor min_branch_score=15
 
 # mountain_tanks
@@ -6746,11 +6754,27 @@ arm_grant_industry_electronics_rockets_y1959 = {
 #   year=1936 branch=land category=anti_tank
 #   min_tier=minor min_branch_score=15
 
+# engines_2
+#   year=1936 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
 # antitank1
 #   year=1939 branch=land category=anti_tank
 #   min_tier=minor min_branch_score=15
 
+# aa_hmg
+#   year=1939 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
+# aa_cannon_1
+#   year=1939 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
 # antitank2
+#   year=1940 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
+# engines_3
 #   year=1940 branch=land category=anti_tank
 #   min_tier=minor min_branch_score=15
 
@@ -6766,8 +6790,20 @@ arm_grant_industry_electronics_rockets_y1959 = {
 #   year=1943 branch=land category=anti_tank
 #   min_tier=minor min_branch_score=15
 
+# aa_cannon_2
+#   year=1943 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
 # antitank_a
 #   year=1944 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
+# engines_4
+#   year=1944 branch=land category=anti_tank
+#   min_tier=minor min_branch_score=15
+
+# sp_centrifugal_jet_tech
+#   year=1945 branch=land category=anti_tank
 #   min_tier=minor min_branch_score=15
 
 # antitank_b
@@ -6802,6 +6838,13 @@ arm_grant_land_anti_tank = {
                 check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1918 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1922 = yes
         }
         if = {
             limit = {
@@ -6908,6 +6951,47 @@ arm_grant_land_anti_tank_y1918 = {
     }
 }
 
+arm_grant_land_anti_tank_y1922 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        # aa_lmg - 1922
+        if = {
+            limit = {
+                NOT = { has_tech = aa_lmg }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { aa_lmg = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+        # engines_1 - 1922
+        if = {
+            limit = {
+                NOT = { has_tech = engines_1 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_1 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+
 arm_grant_land_anti_tank_y1936 = {
     if = {
         limit = {
@@ -6956,6 +7040,20 @@ arm_grant_land_anti_tank_y1936 = {
             set_technology = { interwar_antitank = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
+        # engines_2 - 1936
+        if = {
+            limit = {
+                NOT = { has_tech = engines_2 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
     }
 }
 
@@ -6981,6 +7079,34 @@ arm_grant_land_anti_tank_y1939 = {
             set_technology = { antitank1 = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
+        # aa_hmg - 1939
+        if = {
+            limit = {
+                NOT = { has_tech = aa_hmg }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1939 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { aa_hmg = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+        # aa_cannon_1 - 1939
+        if = {
+            limit = {
+                NOT = { has_tech = aa_cannon_1 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1939 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { aa_cannon_1 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
     }
 }
 
@@ -7004,6 +7130,20 @@ arm_grant_land_anti_tank_y1940 = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+        # engines_3 - 1940
+        if = {
+            limit = {
+                NOT = { has_tech = engines_3 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1940 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_3 = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
     }
@@ -7081,6 +7221,20 @@ arm_grant_land_anti_tank_y1943 = {
             set_technology = { antitank5 = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
+        # aa_cannon_2 - 1943
+        if = {
+            limit = {
+                NOT = { has_tech = aa_cannon_2 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1943 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { aa_cannon_2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
     }
 }
 
@@ -7106,6 +7260,20 @@ arm_grant_land_anti_tank_y1944 = {
             set_technology = { antitank_a = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
+        # engines_4 - 1944
+        if = {
+            limit = {
+                NOT = { has_tech = engines_4 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1944 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { engines_4 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
     }
 }
 
@@ -7117,6 +7285,20 @@ arm_grant_land_anti_tank_y1945 = {
             has_country_flag = arm_cat_anti_tank
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # sp_centrifugal_jet_tech - 1945
+        if = {
+            limit = {
+                NOT = { has_tech = sp_centrifugal_jet_tech }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { sp_centrifugal_jet_tech = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
         }
         # antitank_b - 1945
         if = {
@@ -7208,7 +7390,7 @@ arm_grant_land_anti_tank_y1954 = {
         }
     }
 }
-# ── LAND / ARTILLERY (54 techs) ──
+# -- LAND / ARTILLERY (54 techs) --
 
 # horse_artillery
 #   year=1905 branch=land category=artillery
@@ -8615,7 +8797,7 @@ arm_grant_land_artillery_y1954 = {
         }
     }
 }
-# ── LAND / HEAVY_TANKS (15 techs) ──
+# -- LAND / HEAVY_TANKS (15 techs) --
 
 # basic_heavy_tank
 #   year=1934 branch=land category=heavy_tanks
@@ -9028,7 +9210,7 @@ arm_grant_land_heavy_tanks_y1951 = {
         }
     }
 }
-# ── LAND / INFANTRY (63 techs) ──
+# -- LAND / INFANTRY (63 techs) --
 
 # early_infantry_weapons
 #   year=1905 branch=land category=infantry
@@ -10478,7 +10660,7 @@ arm_grant_land_infantry_y1956 = {
         }
     }
 }
-# ── LAND / LIGHT_TANKS (40 techs) ──
+# -- LAND / LIGHT_TANKS (40 techs) --
 
 # eg_early_armored_car
 #   year=1905 branch=land category=light_tanks
@@ -11521,7 +11703,7 @@ arm_grant_land_light_tanks_y1945 = {
         }
     }
 }
-# ── LAND / MECHANISED (7 techs) ──
+# -- LAND / MECHANISED (7 techs) --
 
 # mechanised_infantry
 #   year=1941 branch=land category=mechanised
@@ -11749,7 +11931,7 @@ arm_grant_land_mechanised_y1951 = {
         }
     }
 }
-# ── LAND / MEDIUM_TANKS (11 techs) ──
+# -- LAND / MEDIUM_TANKS (11 techs) --
 
 # basic_medium_tank_chassis
 #   year=1936 branch=land category=medium_tanks
@@ -12145,7 +12327,7 @@ arm_grant_land_medium_tanks_y1955 = {
         }
     }
 }
-# ── LAND / MODERN_TANKS (2 techs) ──
+# -- LAND / MODERN_TANKS (2 techs) --
 
 # main_battle_tank
 #   year=1945 branch=land category=modern_tanks
@@ -12193,7 +12375,7 @@ arm_grant_land_modern_tanks = {
         }
     }
 }
-# ── LAND / MOTORISED (5 techs) ──
+# -- LAND / MOTORISED (5 techs) --
 
 # horses
 #   year=1900 branch=land category=motorised
@@ -12387,7 +12569,7 @@ arm_grant_land_motorised_y1936 = {
         }
     }
 }
-# ── LAND / SUPPORT (74 techs) ──
+# -- LAND / SUPPORT (93 techs) --
 
 # rations
 #   year=1900 branch=land category=support
@@ -12395,6 +12577,14 @@ arm_grant_land_motorised_y1936 = {
 
 # tech_support
 #   year=1900 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# early_support_weapons
+#   year=1905 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# early_support_weapons2
+#   year=1910 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
 # tech_recon
@@ -12417,6 +12607,10 @@ arm_grant_land_motorised_y1936 = {
 #   year=1912 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
+# early_support_weapons3
+#   year=1914 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
 # tech_engineers2
 #   year=1914 branch=land category=support
 #   min_tier=minor min_branch_score=15
@@ -12437,6 +12631,10 @@ arm_grant_land_motorised_y1936 = {
 #   year=1916 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
+# early_support_weapons4
+#   year=1916 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
 # tech_engineers3
 #   year=1916 branch=land category=support
 #   min_tier=minor min_branch_score=15
@@ -12447,6 +12645,10 @@ arm_grant_land_motorised_y1936 = {
 
 # tech_military_police3
 #   year=1916 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# early_support_weapons5
+#   year=1918 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
 # tech_engineers4
@@ -12461,7 +12663,27 @@ arm_grant_land_motorised_y1936 = {
 #   year=1918 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
+# interwar_support_weapons
+#   year=1922 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# interwar_support_weapons2
+#   year=1926 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# interwar_support_weapons3
+#   year=1930 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# interwar_support_weapons4
+#   year=1932 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
 # tech_recon_focus_bonus
+#   year=1936 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# modern_support_weapons
 #   year=1936 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
@@ -12525,6 +12747,10 @@ arm_grant_land_motorised_y1936 = {
 #   year=1938 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
+# modern_support_weapons2
+#   year=1939 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
 # tech_engineers6
 #   year=1939 branch=land category=support
 #   min_tier=minor min_branch_score=15
@@ -12557,6 +12783,10 @@ arm_grant_land_motorised_y1936 = {
 #   year=1942 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
+# modern_support_weapons3
+#   year=1942 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
 # tech_engineers7
 #   year=1942 branch=land category=support
 #   min_tier=minor min_branch_score=15
@@ -12579,6 +12809,10 @@ arm_grant_land_motorised_y1936 = {
 
 # tech_signal_company3
 #   year=1942 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# modern_support_weapons4
+#   year=1944 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
 # tech_engineers8
@@ -12609,6 +12843,14 @@ arm_grant_land_motorised_y1936 = {
 #   year=1946 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
+# modern_support_weapons5
+#   year=1946 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# support_weapons_a
+#   year=1948 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
 # tech_engineers_a
 #   year=1948 branch=land category=support
 #   min_tier=minor min_branch_score=15
@@ -12637,6 +12879,10 @@ arm_grant_land_motorised_y1936 = {
 #   year=1950 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
+# support_weapons_b
+#   year=1950 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
 # tech_engineers_b
 #   year=1951 branch=land category=support
 #   min_tier=minor min_branch_score=15
@@ -12659,6 +12905,14 @@ arm_grant_land_motorised_y1936 = {
 
 # tech_signal_company_b
 #   year=1951 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# support_weapons_c
+#   year=1952 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
+# support_weapons_d
+#   year=1954 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
 # tech_engineers_c
@@ -12685,6 +12939,10 @@ arm_grant_land_motorised_y1936 = {
 #   year=1954 branch=land category=support
 #   min_tier=minor min_branch_score=15
 
+# support_weapons_e
+#   year=1956 branch=land category=support
+#   min_tier=minor min_branch_score=15
+
 arm_grant_land_support = {
     if = {
         limit = {
@@ -12701,6 +12959,13 @@ arm_grant_land_support = {
                 check_variable = { var = arm_target_year_land value = 1900 compare = greater_than_or_equals }
             }
             arm_grant_land_support_y1900 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1905 compare = greater_than_or_equals }
+            }
+            arm_grant_land_support_y1905 = yes
         }
         if = {
             limit = {
@@ -12740,6 +13005,34 @@ arm_grant_land_support = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            }
+            arm_grant_land_support_y1922 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1926 compare = greater_than_or_equals }
+            }
+            arm_grant_land_support_y1926 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1930 compare = greater_than_or_equals }
+            }
+            arm_grant_land_support_y1930 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1932 compare = greater_than_or_equals }
+            }
+            arm_grant_land_support_y1932 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
             }
             arm_grant_land_support_y1936 = yes
@@ -12764,6 +13057,13 @@ arm_grant_land_support = {
                 check_variable = { var = arm_target_year_land value = 1942 compare = greater_than_or_equals }
             }
             arm_grant_land_support_y1942 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1944 compare = greater_than_or_equals }
+            }
+            arm_grant_land_support_y1944 = yes
         }
         if = {
             limit = {
@@ -12803,9 +13103,23 @@ arm_grant_land_support = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1952 compare = greater_than_or_equals }
+            }
+            arm_grant_land_support_y1952 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1954 compare = greater_than_or_equals }
             }
             arm_grant_land_support_y1954 = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1956 compare = greater_than_or_equals }
+            }
+            arm_grant_land_support_y1956 = yes
         }
     }
 }
@@ -12848,6 +13162,31 @@ arm_grant_land_support_y1900 = {
     }
 }
 
+arm_grant_land_support_y1905 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1905 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_support
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # early_support_weapons - 1905
+        if = {
+            limit = {
+                NOT = { has_tech = early_support_weapons }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1905 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { early_support_weapons = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+
 arm_grant_land_support_y1910 = {
     if = {
         limit = {
@@ -12856,6 +13195,19 @@ arm_grant_land_support_y1910 = {
             has_country_flag = arm_cat_support
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # early_support_weapons2 - 1910
+        if = {
+            limit = {
+                NOT = { has_tech = early_support_weapons2 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1910 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { early_support_weapons2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
         }
         # tech_recon - 1910
         if = {
@@ -12946,6 +13298,19 @@ arm_grant_land_support_y1914 = {
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
         }
+        # early_support_weapons3 - 1914
+        if = {
+            limit = {
+                NOT = { has_tech = early_support_weapons3 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1914 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { early_support_weapons3 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
         # tech_engineers2 - 1914
         if = {
             limit = {
@@ -13023,6 +13388,19 @@ arm_grant_land_support_y1916 = {
             set_technology = { fuel = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
+        # early_support_weapons4 - 1916
+        if = {
+            limit = {
+                NOT = { has_tech = early_support_weapons4 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1916 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { early_support_weapons4 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
         # tech_engineers3 - 1916
         if = {
             limit = {
@@ -13074,6 +13452,19 @@ arm_grant_land_support_y1918 = {
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
         }
+        # early_support_weapons5 - 1918
+        if = {
+            limit = {
+                NOT = { has_tech = early_support_weapons5 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { early_support_weapons5 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
         # tech_engineers4 - 1918
         if = {
             limit = {
@@ -13116,6 +13507,106 @@ arm_grant_land_support_y1918 = {
     }
 }
 
+arm_grant_land_support_y1922 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_support
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # interwar_support_weapons - 1922
+        if = {
+            limit = {
+                NOT = { has_tech = interwar_support_weapons }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { interwar_support_weapons = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+
+arm_grant_land_support_y1926 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1926 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_support
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # interwar_support_weapons2 - 1926
+        if = {
+            limit = {
+                NOT = { has_tech = interwar_support_weapons2 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1926 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { interwar_support_weapons2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+
+arm_grant_land_support_y1930 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1930 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_support
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # interwar_support_weapons3 - 1930
+        if = {
+            limit = {
+                NOT = { has_tech = interwar_support_weapons3 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1930 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { interwar_support_weapons3 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+
+arm_grant_land_support_y1932 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1932 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_support
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # interwar_support_weapons4 - 1932
+        if = {
+            limit = {
+                NOT = { has_tech = interwar_support_weapons4 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1932 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { interwar_support_weapons4 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+
 arm_grant_land_support_y1936 = {
     if = {
         limit = {
@@ -13136,6 +13627,19 @@ arm_grant_land_support_y1936 = {
                 has_country_flag = arm_cat_support
             }
             set_technology = { tech_recon_focus_bonus = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+        # modern_support_weapons - 1936
+        if = {
+            limit = {
+                NOT = { has_tech = modern_support_weapons }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { modern_support_weapons = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
         # tech_engineers5 - 1936
@@ -13360,6 +13864,19 @@ arm_grant_land_support_y1939 = {
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
         }
+        # modern_support_weapons2 - 1939
+        if = {
+            limit = {
+                NOT = { has_tech = modern_support_weapons2 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1939 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { modern_support_weapons2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
         # tech_engineers6 - 1939
         if = {
             limit = {
@@ -13476,6 +13993,19 @@ arm_grant_land_support_y1942 = {
             set_technology = { night_vision = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
+        # modern_support_weapons3 - 1942
+        if = {
+            limit = {
+                NOT = { has_tech = modern_support_weapons3 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1942 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { modern_support_weapons3 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
         # tech_engineers7 - 1942
         if = {
             limit = {
@@ -13552,6 +14082,31 @@ arm_grant_land_support_y1942 = {
                 has_country_flag = arm_cat_support
             }
             set_technology = { tech_signal_company3 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+
+arm_grant_land_support_y1944 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1944 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_support
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # modern_support_weapons4 - 1944
+        if = {
+            limit = {
+                NOT = { has_tech = modern_support_weapons4 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1944 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { modern_support_weapons4 = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
     }
@@ -13669,6 +14224,19 @@ arm_grant_land_support_y1946 = {
             set_technology = { night_vision2 = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
+        # modern_support_weapons5 - 1946
+        if = {
+            limit = {
+                NOT = { has_tech = modern_support_weapons5 }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1946 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { modern_support_weapons5 = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
     }
 }
 
@@ -13680,6 +14248,19 @@ arm_grant_land_support_y1948 = {
             has_country_flag = arm_cat_support
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # support_weapons_a - 1948
+        if = {
+            limit = {
+                NOT = { has_tech = support_weapons_a }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1948 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { support_weapons_a = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
         }
         # tech_engineers_a - 1948
         if = {
@@ -13784,6 +14365,19 @@ arm_grant_land_support_y1950 = {
             set_technology = { night_vision3 = 1 popup = no }
             add_to_variable = { arm_grant_counter = 1 }
         }
+        # support_weapons_b - 1950
+        if = {
+            limit = {
+                NOT = { has_tech = support_weapons_b }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1950 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { support_weapons_b = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
     }
 }
 
@@ -13877,6 +14471,31 @@ arm_grant_land_support_y1951 = {
     }
 }
 
+arm_grant_land_support_y1952 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1952 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_support
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # support_weapons_c - 1952
+        if = {
+            limit = {
+                NOT = { has_tech = support_weapons_c }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1952 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { support_weapons_c = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+
 arm_grant_land_support_y1954 = {
     if = {
         limit = {
@@ -13885,6 +14504,19 @@ arm_grant_land_support_y1954 = {
             has_country_flag = arm_cat_support
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # support_weapons_d - 1954
+        if = {
+            limit = {
+                NOT = { has_tech = support_weapons_d }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1954 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { support_weapons_d = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
         }
         # tech_engineers_c - 1954
         if = {
@@ -13966,7 +14598,32 @@ arm_grant_land_support_y1954 = {
         }
     }
 }
-# ── LAND / TANKS_GENERIC (100 techs) ──
+
+arm_grant_land_support_y1956 = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1956 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_support
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        # support_weapons_e - 1956
+        if = {
+            limit = {
+                NOT = { has_tech = support_weapons_e }
+                check_variable = { var = arm_grant_counter value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1956 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_support
+            }
+            set_technology = { support_weapons_e = 1 popup = no }
+            add_to_variable = { arm_grant_counter = 1 }
+        }
+    }
+}
+# -- LAND / TANKS_GENERIC (100 techs) --
 
 # tech_maintenance_company
 #   year=1910 branch=land category=tanks_generic
@@ -16094,7 +16751,7 @@ arm_grant_land_tanks_generic_y1955 = {
         }
     }
 }
-# ── NAVAL / BATTLESHIPS (21 techs) ──
+# -- NAVAL / BATTLESHIPS (21 techs) --
 
 # ww1_early_ship_hull_heavy
 #   year=1905 branch=naval category=battleships
@@ -16574,7 +17231,7 @@ arm_grant_naval_battleships_y1944 = {
         }
     }
 }
-# ── NAVAL / CARRIERS (10 techs) ──
+# -- NAVAL / CARRIERS (10 techs) --
 
 # early_ship_hull_carrier
 #   year=1922 branch=naval category=carriers
@@ -16860,7 +17517,7 @@ arm_grant_naval_carriers_y1944 = {
         }
     }
 }
-# ── NAVAL / DESTROYERS (28 techs) ──
+# -- NAVAL / DESTROYERS (28 techs) --
 
 # ww1_early_ship_hull_light
 #   year=1905 branch=naval category=destroyers
@@ -17455,7 +18112,7 @@ arm_grant_naval_destroyers_y1944 = {
         }
     }
 }
-# ── NAVAL / HEAVY_CRUISERS (4 techs) ──
+# -- NAVAL / HEAVY_CRUISERS (4 techs) --
 
 # early_heavy_cruiser
 #   year=1922 branch=naval category=heavy_cruisers
@@ -17613,7 +18270,7 @@ arm_grant_naval_heavy_cruisers_y1944 = {
         }
     }
 }
-# ── NAVAL / LIGHT_CRUISERS (17 techs) ──
+# -- NAVAL / LIGHT_CRUISERS (17 techs) --
 
 # ww1_early_ship_hull_cruiser
 #   year=1905 branch=naval category=light_cruisers
@@ -18025,7 +18682,7 @@ arm_grant_naval_light_cruisers_y1944 = {
         # SKIPPED (XP-gated): ww1_advanced_cruiser_armor_scheme
     }
 }
-# ── NAVAL / NAVAL_SUPPORT (90 techs) ──
+# -- NAVAL / NAVAL_SUPPORT (90 techs) --
 
 # ww1_basic_torpedo
 #   year=1905 branch=naval category=naval_support
@@ -19624,7 +20281,7 @@ arm_grant_naval_naval_support_y1945 = {
         }
     }
 }
-# ── NAVAL / SUBMARINES (18 techs) ──
+# -- NAVAL / SUBMARINES (18 techs) --
 
 # ww1_early_ship_hull_submarine
 #   year=1905 branch=naval category=submarines
@@ -20119,7 +20776,7 @@ arm_grant_naval_submarines_y1944 = {
         }
     }
 }
-# ── LAND / ANTI_AIR (0 techs) ──
+# -- LAND / ANTI_AIR (0 techs) --
 arm_grant_land_anti_air = {
     # No techs matched this category.
 }

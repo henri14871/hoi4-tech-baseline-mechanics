@@ -16039,6 +16039,314 @@ arm_grant_industry_electronics_rockets_y1946_blackice = {
 
 
 
+arm_grant_land_anti_air_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1920 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1920 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1920_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1930 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1930_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1935 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1935_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1937 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1937_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1940 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1940_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1941 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1941_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1942 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1942_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1943 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1943_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_air_y1945_blackice = yes
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1920_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1920 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_early_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1920 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+            }
+            set_technology = { nrm_early_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1930_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1930 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_early_heavy_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1930 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+            }
+            set_technology = { nrm_early_heavy_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1935_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1935 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_basic_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1935 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+            }
+            set_technology = { nrm_basic_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1937_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1937 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_basic_heavy_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1937 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+            }
+            set_technology = { nrm_basic_heavy_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1940_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1940 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_improved_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1940 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+            }
+            set_technology = { nrm_improved_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1941_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1941 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_improved_heavy_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1941 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+                has_tech = antiair2
+            }
+            set_technology = { nrm_improved_heavy_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1942_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1942 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_advanced_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1942 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+            }
+            set_technology = { nrm_advanced_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1943_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1943 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_advanced_heavy_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1943 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+                has_tech = antiair2
+            }
+            set_technology = { nrm_advanced_heavy_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_air_y1945_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_air
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = nrm_modern_heavy_antiair }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_air
+                has_tech = antiair5
+            }
+            set_technology = { nrm_modern_heavy_antiair = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -16047,7 +16355,7 @@ arm_grant_land_anti_tank_blackice = {
     if = {
         limit = {
             check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-            check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
             has_country_flag = arm_cat_anti_tank
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
@@ -16055,9 +16363,23 @@ arm_grant_land_anti_tank_blackice = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1922_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1936_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1938 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1938_blackice = yes
         }
         if = {
             limit = {
@@ -16100,6 +16422,39 @@ arm_grant_land_anti_tank_blackice = {
                 check_variable = { var = arm_target_year_land value = 1944 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1944_blackice = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1945_blackice = yes
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1922_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = photo_reconnaisance }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { photo_reconnaisance = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
         }
     }
 }
@@ -16147,6 +16502,43 @@ arm_grant_land_anti_tank_y1936_blackice = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { interwar_antitank = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1938_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1938 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = tech_sm75_transport_plane_equipment_1 }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1938 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+            }
+            set_technology = { tech_sm75_transport_plane_equipment_1 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = tech_g50_multirole_equipment_1 }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1938 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_tech = tech_g50_fighter_equipment_1
+            }
+            set_technology = { tech_g50_multirole_equipment_1 = 1 popup = no }
             add_to_variable = { arm_grant_counter_blackice = 1 }
         }
     }
@@ -16231,6 +16623,18 @@ arm_grant_land_anti_tank_y1941_blackice = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank3 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = tech_g12_transport_plane_equipment_1 }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1941 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+            }
+            set_technology = { tech_g12_transport_plane_equipment_1 = 1 popup = no }
             add_to_variable = { arm_grant_counter_blackice = 1 }
         }
     }
@@ -16339,6 +16743,32 @@ arm_grant_land_anti_tank_y1944_blackice = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { HVantitank4 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_blackice = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1945_blackice = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = sp_centrifugal_jet_tech }
+                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { sp_centrifugal_jet_tech = 1 popup = no }
             add_to_variable = { arm_grant_counter_blackice = 1 }
         }
     }
@@ -33771,15 +34201,6 @@ arm_grant_naval_light_cruisers_y1944_blackice = {
 
 
 
-
-
-
-
-
-
-
-
-
 arm_grant_naval_naval_support_blackice = {
     if = {
         limit = {
@@ -34127,18 +34548,6 @@ arm_grant_naval_naval_support_y1920_blackice = {
         }
         if = {
             limit = {
-                NOT = { has_tech = nrm_early_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1920 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-            }
-            set_technology = { nrm_early_antiair = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
-        }
-        if = {
-            limit = {
                 NOT = { has_tech = basic_naval_mines }
                 check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_naval value = 1920 compare = greater_than_or_equals }
@@ -34392,18 +34801,6 @@ arm_grant_naval_naval_support_y1930_blackice = {
         }
         if = {
             limit = {
-                NOT = { has_tech = nrm_early_heavy_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1930 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-            }
-            set_technology = { nrm_early_heavy_antiair = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
-        }
-        if = {
-            limit = {
                 NOT = { has_tech = improved_naval_mines }
                 check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_naval value = 1930 compare = greater_than_or_equals }
@@ -34500,18 +34897,6 @@ arm_grant_naval_naval_support_y1935_blackice = {
         }
         if = {
             limit = {
-                NOT = { has_tech = nrm_basic_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1935 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-            }
-            set_technology = { nrm_basic_antiair = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
-        }
-        if = {
-            limit = {
                 NOT = { has_tech = degaussing }
                 check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_naval value = 1935 compare = greater_than_or_equals }
@@ -34582,18 +34967,6 @@ arm_grant_naval_naval_support_y1937_blackice = {
             has_country_flag = arm_cat_naval_support
             check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
             check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-        }
-        if = {
-            limit = {
-                NOT = { has_tech = nrm_basic_heavy_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1937 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-            }
-            set_technology = { nrm_basic_heavy_antiair = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
         }
         if = {
             limit = {
@@ -34827,18 +35200,6 @@ arm_grant_naval_naval_support_y1940_blackice = {
         }
         if = {
             limit = {
-                NOT = { has_tech = nrm_improved_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1940 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-            }
-            set_technology = { nrm_improved_antiair = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
-        }
-        if = {
-            limit = {
                 NOT = { has_tech = improved_submarine_mine_laying }
                 check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_naval value = 1940 compare = greater_than_or_equals }
@@ -34920,19 +35281,6 @@ arm_grant_naval_naval_support_y1941_blackice = {
                 has_country_flag = arm_cat_naval_support
             }
             set_technology = { nrm_battery_advanced_18 = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
-        }
-        if = {
-            limit = {
-                NOT = { has_tech = nrm_improved_heavy_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1941 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_tech = antiair2
-            }
-            set_technology = { nrm_improved_heavy_antiair = 1 popup = no }
             add_to_variable = { arm_grant_counter_blackice = 1 }
         }
     }
@@ -35037,18 +35385,6 @@ arm_grant_naval_naval_support_y1942_blackice = {
         }
         if = {
             limit = {
-                NOT = { has_tech = nrm_advanced_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1942 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-            }
-            set_technology = { nrm_advanced_antiair = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
-        }
-        if = {
-            limit = {
                 NOT = { has_tech = airdrop_mines }
                 check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_naval value = 1942 compare = greater_than_or_equals }
@@ -35121,19 +35457,6 @@ arm_grant_naval_naval_support_y1943_blackice = {
             set_technology = { nrm_battery_advanced_dp_6 = 1 popup = no }
             add_to_variable = { arm_grant_counter_blackice = 1 }
         }
-        if = {
-            limit = {
-                NOT = { has_tech = nrm_advanced_heavy_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1943 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_tech = antiair2
-            }
-            set_technology = { nrm_advanced_heavy_antiair = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
-        }
     }
 }
 
@@ -35204,19 +35527,6 @@ arm_grant_naval_naval_support_y1945_blackice = {
                 has_country_flag = arm_cat_naval_support
             }
             set_technology = { modern_naval_mines = 1 popup = no }
-            add_to_variable = { arm_grant_counter_blackice = 1 }
-        }
-        if = {
-            limit = {
-                NOT = { has_tech = nrm_modern_heavy_antiair }
-                check_variable = { var = arm_grant_counter_blackice value = arm_quarterly_cap compare = less_than }
-                check_variable = { var = arm_target_year_naval value = 1945 compare = greater_than_or_equals }
-                check_variable = { var = arm_tier_index value = 2 compare = greater_than_or_equals }
-                check_variable = { var = arm_naval_competence value = 20 compare = greater_than_or_equals }
-                has_country_flag = arm_cat_naval_support
-                has_tech = antiair5
-            }
-            set_technology = { nrm_modern_heavy_antiair = 1 popup = no }
             add_to_variable = { arm_grant_counter_blackice = 1 }
         }
     }
@@ -35635,6 +35945,4 @@ arm_grant_naval_submarines_y1945_blackice = {
             has_dlc = "Man the Guns"
         }
     }
-}
-arm_grant_land_anti_air_blackice = {
 }

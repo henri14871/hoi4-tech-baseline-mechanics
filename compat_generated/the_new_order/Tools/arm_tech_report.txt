@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    1318
-Successfully mapped:   1093
-Unmapped (unknown):    187
+Successfully mapped:   1102
+Unmapped (unknown):    178
 
 BRANCH SUMMARY
 ----------------------------------------
   air                             107 techs
   industry_electronics            183 techs
-  land                            674 techs
+  land                            683 techs
   naval                           129 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 12 techs
+  [air / cas] -- 12 techs
     1922  early_bombs
     1936  CAS1
     1936  cv_CAS1
@@ -29,7 +29,7 @@ CATEGORY DETAIL
     1944  cv_CAS3
     1944  air_torpedoe_3
 
-  [air / fighters] — 45 techs
+  [air / fighters] -- 45 techs
     1922  aa_lmg
     1922  engines_1
     1926  iw_small_airframe
@@ -91,7 +91,7 @@ CATEGORY DETAIL
     1990  interceptor_1990
           [from: the_new_order]
 
-  [air / heavy_fighters] — 8 techs
+  [air / heavy_fighters] -- 8 techs
     1926  iw_medium_airframe
     1936  heavy_fighter1
     1936  basic_medium_airframe
@@ -101,7 +101,7 @@ CATEGORY DETAIL
     1944  advanced_medium_airframe
     1945  modern_medium_airframe
 
-  [air / naval_bombers] — 6 techs
+  [air / naval_bombers] -- 6 techs
     1936  naval_bomber1
     1936  cv_naval_bomber1
     1940  naval_bomber2
@@ -109,7 +109,7 @@ CATEGORY DETAIL
     1944  naval_bomber3
     1944  cv_naval_bomber3
 
-  [air / strategic_bombers] — 17 techs
+  [air / strategic_bombers] -- 17 techs
     1926  iw_large_airframe
     1936  basic_large_airframe
     1936  strategic_bomber1
@@ -134,7 +134,7 @@ CATEGORY DETAIL
     1990  heavy_air_1990
           [from: the_new_order]
 
-  [air / tactical_bombers] — 13 techs
+  [air / tactical_bombers] -- 13 techs
     1933  early_bomber
     1936  tactical_bomber1
     1936  tac_bomber1
@@ -156,7 +156,7 @@ CATEGORY DETAIL
     1990  tac_air_1990
           [from: the_new_order]
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -164,7 +164,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
     1948  strategic_airlifter
 
-  [industry_electronics / electronics] — 31 techs
+  [industry_electronics / electronics] -- 31 techs
     1936  basic_fire_control_system
           [from: the_new_order]
     1936  improved_fire_control_system
@@ -226,7 +226,7 @@ CATEGORY DETAIL
     1990  decryption_1990
           [from: the_new_order]
 
-  [industry_electronics / industry] — 108 techs
+  [industry_electronics / industry] -- 108 techs
     1936  basic_fortification_tech
     1936  coastal_fort_tech_1
     1936  basic_machine_tools
@@ -409,7 +409,7 @@ CATEGORY DETAIL
     1990  consumer_goods_reduction_9
           [from: the_new_order]
 
-  [industry_electronics / nuclear] — 6 techs
+  [industry_electronics / nuclear] -- 6 techs
     1940  atomic_research
     1943  nuclear_reactor
     1943  nuclear_reactor_heavy_water
@@ -417,7 +417,7 @@ CATEGORY DETAIL
     1945  nukes
     1950  thermonuclear_bombs
 
-  [industry_electronics / radar] — 22 techs
+  [industry_electronics / radar] -- 22 techs
     1936  radio
           [from: the_new_order]
     1936  radio_detection
@@ -460,7 +460,7 @@ CATEGORY DETAIL
     1990  naval_radar_1990
           [from: the_new_order]
 
-  [industry_electronics / rockets] — 16 techs
+  [industry_electronics / rockets] -- 16 techs
     1940  rocket_artillery
     1941  rocket_artillery2
     1942  rocket_artillery3
@@ -481,15 +481,18 @@ CATEGORY DETAIL
     1962  SRBM
           [from: the_new_order]
 
-  [land / anti_air] — 6 techs
+  [land / anti_air] -- 7 techs
     1936  interwar_antiair
     1939  antiair1
     1940  antiair2
     1941  antiair3
     1942  antiair4
     1943  antiair5
+    1990  laser_AA_tech
+          [from: the_new_order]
 
-  [land / anti_tank] — 8 techs
+  [land / anti_tank] -- 10 techs
+    1922  photo_reconnaisance
     1936  mountain_tanks
     1936  interwar_antitank
     1936  SWE_bofors_antitank_gun
@@ -498,8 +501,9 @@ CATEGORY DETAIL
     1941  antitank3
     1942  antitank4
     1943  antitank5
+    1945  sp_centrifugal_jet_tech
 
-  [land / artillery] — 185 techs
+  [land / artillery] -- 185 techs
     1936  gw_artillery
     1936  interwar_artillery
     1939  artillery1
@@ -857,7 +861,7 @@ CATEGORY DETAIL
     1990  NSB_antiair_1990
           [from: the_new_order]
 
-  [land / heavy_tanks] — 13 techs
+  [land / heavy_tanks] -- 13 techs
     1934  basic_heavy_tank
     1934  basic_heavy_tank_chassis
     1940  improved_heavy_tank_chassis
@@ -872,7 +876,7 @@ CATEGORY DETAIL
     1943  sp_armored_lc_high_impact_obliterator_cannon_tech
     1945  sp_armored_lc_weapon_fire_control_tech
 
-  [land / infantry] — 127 techs
+  [land / infantry] -- 127 techs
     1918  infantry_weapons
     1936  infantry_weapons1
     1936  rangers_tech
@@ -1110,7 +1114,7 @@ CATEGORY DETAIL
     1988  infantry_at5
           [from: the_new_order]
 
-  [land / light_tanks] — 8 techs
+  [land / light_tanks] -- 8 techs
     1918  gwtank
     1918  gwtank_chassis
     1934  basic_light_tank
@@ -1120,14 +1124,14 @@ CATEGORY DETAIL
     1941  advanced_light_tank
     1941  advanced_light_tank_chassis
 
-  [land / mechanised] — 5 techs
+  [land / mechanised] -- 5 techs
     1940  mechanised_infantry
     1941  amphibious_mechanized_infantry
     1942  mechanised_infantry2
     1943  amphibious_mechanized_infantry_2
     1944  mechanised_infantry3
 
-  [land / medium_tanks] — 6 techs
+  [land / medium_tanks] -- 6 techs
     1938  basic_medium_tank_chassis
     1939  basic_medium_tank
     1940  improved_medium_tank_chassis
@@ -1135,11 +1139,11 @@ CATEGORY DETAIL
     1943  advanced_medium_tank
     1943  advanced_medium_tank_chassis
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
     1945  main_battle_tank_chassis
 
-  [land / motorised] — 8 techs
+  [land / motorised] -- 8 techs
     1936  tech_trucks
     1936  motorised_infantry
     1936  motorized_infantry
@@ -1155,10 +1159,12 @@ CATEGORY DETAIL
     1982  motorized_infantry_4
           [from: the_new_order]
 
-  [land / support] — 77 techs
+  [land / support] -- 83 techs
     1918  tech_support
           [from: the_new_order]
     1936  tech_recon_focus_bonus
+    1936  assault_weapons_1
+          [from: the_new_order]
     1936  basic_infantry_equipment
           [from: the_new_order]
     1936  basic_train
@@ -1171,6 +1177,8 @@ CATEGORY DETAIL
     1938  sp_helicopter_med_evac_tech
     1938  sp_armored_motorized_military_police_tech
     1943  night_vision
+    1945  assault_weapons_2
+          [from: the_new_order]
     1945  military_infrastructure1
           [from: the_new_order]
     1945  command_and_control1
@@ -1204,6 +1212,8 @@ CATEGORY DETAIL
           [from: the_new_order]
     1950  tech_field_hospital2
           [from: the_new_order]
+    1955  assault_weapons_3
+          [from: the_new_order]
     1955  trains_1955
           [from: the_new_order]
     1955  military_infrastructure2
@@ -1234,6 +1244,8 @@ CATEGORY DETAIL
           [from: the_new_order]
     1962  wartime_train
           [from: the_new_order]
+    1965  assault_weapons_4
+          [from: the_new_order]
     1965  trains_1965
           [from: the_new_order]
     1965  military_infrastructure3
@@ -1256,6 +1268,8 @@ CATEGORY DETAIL
           [from: the_new_order]
     1970  tech_field_hospital4
           [from: the_new_order]
+    1975  assault_weapons_5
+          [from: the_new_order]
     1975  trains_1975
           [from: the_new_order]
     1975  military_infrastructure4
@@ -1277,6 +1291,8 @@ CATEGORY DETAIL
     1980  tech_maintenance_company5
           [from: the_new_order]
     1980  tech_field_hospital5
+          [from: the_new_order]
+    1985  assault_weapons_6
           [from: the_new_order]
     1985  trains_1985
           [from: the_new_order]
@@ -1301,7 +1317,7 @@ CATEGORY DETAIL
     1990  tech_field_hospital6
           [from: the_new_order]
 
-  [land / tanks_generic] — 229 techs
+  [land / tanks_generic] -- 229 techs
     1914  armored_car1
     1934  basic_light_td
     1934  basic_light_art
@@ -1707,7 +1723,7 @@ CATEGORY DETAIL
     1990  NSB_MBT_1990
           [from: the_new_order]
 
-  [naval / battleships] — 24 techs
+  [naval / battleships] -- 24 techs
     1922  early_battlecruiser
     1922  early_battleship
     1936  ship_hull_super_heavy
@@ -1746,7 +1762,7 @@ CATEGORY DETAIL
     1990  nuclear_battleship_1990
           [from: the_new_order]
 
-  [naval / carriers] — 16 techs
+  [naval / carriers] -- 16 techs
     1922  early_carrier
     1936  basic_carrier
     1940  improved_carrier
@@ -1774,7 +1790,7 @@ CATEGORY DETAIL
     1990  nuclear_carrier_1990
           [from: the_new_order]
 
-  [naval / destroyers] — 23 techs
+  [naval / destroyers] -- 23 techs
     1922  early_destroyer
     1936  basic_destroyer
     1940  improved_destroyer
@@ -1818,14 +1834,14 @@ CATEGORY DETAIL
     1990  modern_sonar
           [from: the_new_order]
 
-  [naval / heavy_cruisers] — 5 techs
+  [naval / heavy_cruisers] -- 5 techs
     1922  basic_cruiser_armor_scheme (XP)
     1922  early_heavy_cruiser
     1936  basic_heavy_cruiser
     1940  improved_heavy_cruiser
     1944  advanced_heavy_cruiser
 
-  [naval / light_cruisers] — 18 techs
+  [naval / light_cruisers] -- 18 techs
     1922  early_light_cruiser
     1936  basic_light_cruiser
     1940  improved_light_cruiser
@@ -1859,7 +1875,7 @@ CATEGORY DETAIL
     1990  nuclear_cruiser_1990
           [from: the_new_order]
 
-  [naval / naval_support] — 24 techs
+  [naval / naval_support] -- 24 techs
     1922  transport
     1938  sp_multi_product_supply_ships (XP)
     1940  landing_craft
@@ -1900,7 +1916,7 @@ CATEGORY DETAIL
     1990  landing_ship_dock
           [from: the_new_order]
 
-  [naval / submarines] — 19 techs
+  [naval / submarines] -- 19 techs
     1922  early_submarine
     1936  basic_submarine
     1939  basic_submarine_snorkel
@@ -2006,24 +2022,6 @@ Add entries to custom_mappings.txt to include them.
   advanced_ship_torpedo_launcher
     categories: ['naval_equipment']
     source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\naval_support.txt
-  assault_weapons_1
-    categories: ['special_forces_tech', 'engineers_tech']
-    source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\infantry.txt
-  assault_weapons_2
-    categories: ['special_forces_tech', 'engineers_tech']
-    source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\infantry.txt
-  assault_weapons_3
-    categories: ['special_forces_tech', 'engineers_tech']
-    source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\infantry.txt
-  assault_weapons_4
-    categories: ['special_forces_tech', 'engineers_tech']
-    source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\infantry.txt
-  assault_weapons_5
-    categories: ['special_forces_tech', 'engineers_tech']
-    source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\infantry.txt
-  assault_weapons_6
-    categories: ['special_forces_tech', 'engineers_tech']
-    source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\infantry.txt
   asw_helicopter_1960
     categories: ['asw_tech']
     source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\helicopter_techs.txt
@@ -2288,9 +2286,6 @@ Add entries to custom_mappings.txt to include them.
   lar_decryption_bonus_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\electronic_mechanical_engineering.txt
-  laser_AA_tech
-    categories: ['anti_air_tech', 'MBT']
-    source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\armor.txt
   long_range_patrol_support_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
@@ -2363,9 +2358,6 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   pre_dreadnoughts
     categories: []
     source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\naval.txt
@@ -2405,9 +2397,6 @@ Add entries to custom_mappings.txt to include them.
   semi_modern_ship_hull_very_light
     categories: ['naval_equipment', 'fs_tech']
     source: the_new_order / E:\SteamLibrary\steamapps\workshop\content\394360\2438003901\common\technologies\naval.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_naval_proximity_fuze_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt

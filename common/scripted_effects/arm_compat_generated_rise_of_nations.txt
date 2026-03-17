@@ -15129,11 +15129,59 @@ arm_grant_industry_electronics_rockets_y2025_rise_of_nations = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 arm_grant_land_anti_tank_rise_of_nations = {
     if = {
         limit = {
             check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
-            check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
+            check_variable = { var = arm_target_year_land value = 1915 compare = greater_than_or_equals }
             has_country_flag = arm_cat_anti_tank
             check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
             check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
@@ -15141,9 +15189,51 @@ arm_grant_land_anti_tank_rise_of_nations = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1915 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1915_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1916 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1916_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1918_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1922_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1926 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1926_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1928 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1928_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1933 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1933_rise_of_nations = yes
         }
         if = {
             limit = {
@@ -15190,9 +15280,23 @@ arm_grant_land_anti_tank_rise_of_nations = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1945_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1950 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1950_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1955 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1955_rise_of_nations = yes
         }
         if = {
             limit = {
@@ -15204,9 +15308,51 @@ arm_grant_land_anti_tank_rise_of_nations = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1965 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1965_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1970 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1970_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1975 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1975_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 1980 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y1980_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1985 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1985_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1990 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1990_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1995 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y1995_rise_of_nations = yes
         }
         if = {
             limit = {
@@ -15225,6 +15371,13 @@ arm_grant_land_anti_tank_rise_of_nations = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2005 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2005_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 2006 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y2006_rise_of_nations = yes
@@ -15239,9 +15392,157 @@ arm_grant_land_anti_tank_rise_of_nations = {
         if = {
             limit = {
                 check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2010 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2010_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
                 check_variable = { var = arm_target_year_land value = 2015 compare = greater_than_or_equals }
             }
             arm_grant_land_anti_tank_y2015_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2020 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2020_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2025 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2025_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2030 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2030_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2035 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2035_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2040 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2040_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2045 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2045_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2050 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2050_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2055 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2055_rise_of_nations = yes
+        }
+        if = {
+            limit = {
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2060 compare = greater_than_or_equals }
+            }
+            arm_grant_land_anti_tank_y2060_rise_of_nations = yes
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1915_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1915 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_mg_deflectors }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1915 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_mg_deflectors = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_nav_aerial_torpedo }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1915 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_nav_aerial_torpedo = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1916_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1916 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_mg_sync_gears }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1916 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_mg_sync_gears = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_autocannons_1916 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1916 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_autocannons_1916 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
     }
 }
@@ -15265,6 +15566,149 @@ arm_grant_land_anti_tank_y1918_rise_of_nations = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { early_antitank = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_engine_1918 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_engine_1918 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_mg_twin_guns }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1918 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_mg_twin_guns = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1922_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = photo_reconnaisance }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1922 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { photo_reconnaisance = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1926_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1926 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_engine_1926 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1926 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_engine_1926 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_mg_wing_mountings }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1926 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_mg_wing_mountings = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1928_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1928 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_engine_1928 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1928 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_engine_1928 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1933_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1933 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_engine_1933 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1933 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_engine_1933 = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
     }
@@ -15315,6 +15759,32 @@ arm_grant_land_anti_tank_y1936_rise_of_nations = {
             set_technology = { interwar_antitank = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_engine_1936 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_engine_1936 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_mg_heavy_mg }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1936 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_mg_heavy_mg = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
     }
 }
 
@@ -15361,6 +15831,32 @@ arm_grant_land_anti_tank_y1940_rise_of_nations = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank2 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_engine_1940 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1940 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_engine_1940 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_autocannons_1940 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1940 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_autocannons_1940 = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
     }
@@ -15435,6 +15931,71 @@ arm_grant_land_anti_tank_y1943_rise_of_nations = {
             set_technology = { antitank5 = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_engine_1943 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1943 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_engine_1943 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_autocannons_1943 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1943 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_autocannons_1943 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1945_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = sp_centrifugal_jet_tech }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { sp_centrifugal_jet_tech = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_autocannons_1945 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1945 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_autocannons_1945 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
     }
 }
 
@@ -15457,6 +16018,59 @@ arm_grant_land_anti_tank_y1950_rise_of_nations = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank_a = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1950 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1950 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_tech = jet_engines
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1950 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1955_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1955 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1955 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1955 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1955 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_autocannons_1955 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1955 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_autocannons_1955 = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
     }
@@ -15483,6 +16097,110 @@ arm_grant_land_anti_tank_y1960_rise_of_nations = {
             set_technology = { antitank_b = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1960 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1960 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1960 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1965_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1965 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1965 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1965 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1965 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_autocannons_1965 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1965 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_autocannons_1965 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1970_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1970 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1970 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1970 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1970 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1975_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1975 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1975 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1975 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1975 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
     }
 }
 
@@ -15505,6 +16223,110 @@ arm_grant_land_anti_tank_y1980_rise_of_nations = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank1_md = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1980 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1980 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1980 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_autocannons_1980 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1980 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_autocannons_1980 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1985_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1985 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1985 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1985 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1985 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1990_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1990 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1990 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1990 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1990 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y1995_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 1995 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_1995 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 1995 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_1995 = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
     }
@@ -15531,6 +16353,19 @@ arm_grant_land_anti_tank_y2000_rise_of_nations = {
             set_technology = { antitank2_md = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2000 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2000 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2000 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
     }
 }
 
@@ -15553,6 +16388,32 @@ arm_grant_land_anti_tank_y2003_rise_of_nations = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank3_md = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2005_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2005 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2005 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2005 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2005 = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
     }
@@ -15606,6 +16467,32 @@ arm_grant_land_anti_tank_y2009_rise_of_nations = {
     }
 }
 
+arm_grant_land_anti_tank_y2010_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2010 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2010 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2010 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2010 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
 arm_grant_land_anti_tank_y2015_rise_of_nations = {
     if = {
         limit = {
@@ -15625,6 +16512,292 @@ arm_grant_land_anti_tank_y2015_rise_of_nations = {
                 has_country_flag = arm_cat_anti_tank
             }
             set_technology = { antitank6_md = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2015 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2015 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2015 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2020_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2020 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2020 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2020 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2020 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2025_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2025 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2025 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2025 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2025 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2030_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2030 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2030 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2030 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2030 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_scramjet_engine_2030 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2030 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_scramjet_engine_2030 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2035_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2035 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2035 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2035 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2035 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_scramjet_engine_2035 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2035 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_scramjet_engine_2035 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2040_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2040 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_jet_engine_2040 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2040 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_jet_engine_2040 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_scramjet_engine_2040 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2040 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_scramjet_engine_2040 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2045_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2045 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_scramjet_engine_2045 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2045 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_scramjet_engine_2045 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2050_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2050 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_scramjet_engine_2050 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2050 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_scramjet_engine_2050 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2055_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2055 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_scramjet_engine_2055 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2055 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_scramjet_engine_2055 = 1 popup = no }
+            add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
+        }
+    }
+}
+
+arm_grant_land_anti_tank_y2060_rise_of_nations = {
+    if = {
+        limit = {
+            check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+            check_variable = { var = arm_target_year_land value = 2060 compare = greater_than_or_equals }
+            has_country_flag = arm_cat_anti_tank
+            check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+            check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+            has_dlc = "By Blood Alone"
+        }
+        if = {
+            limit = {
+                NOT = { has_tech = bba_scramjet_engine_2060 }
+                check_variable = { var = arm_grant_counter_rise_of_nations value = arm_quarterly_cap compare = less_than }
+                check_variable = { var = arm_target_year_land value = 2060 compare = greater_than_or_equals }
+                check_variable = { var = arm_tier_index value = 1 compare = greater_than_or_equals }
+                check_variable = { var = arm_land_competence value = 15 compare = greater_than_or_equals }
+                has_country_flag = arm_cat_anti_tank
+                has_dlc = "By Blood Alone"
+            }
+            set_technology = { bba_scramjet_engine_2060 = 1 popup = no }
             add_to_variable = { arm_grant_counter_rise_of_nations = 1 }
         }
     }

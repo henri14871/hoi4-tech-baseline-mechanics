@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    1918
-Successfully mapped:   1273
-Unmapped (unknown):    356
+Successfully mapped:   1289
+Unmapped (unknown):    340
 
 BRANCH SUMMARY
 ----------------------------------------
-  air                             149 techs
+  air                             145 techs
   industry_electronics            406 techs
-  land                            470 techs
+  land                            490 techs
   naval                           248 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 6 techs
+  [air / cas] -- 6 techs
     1922  early_bombs
     1936  armor_piercing_bombs
     1936  air_torpedoe_1
@@ -23,7 +23,7 @@ CATEGORY DETAIL
     1940  air_torpedoe_2
     1944  air_torpedoe_3
 
-  [air / fighters] — 84 techs
+  [air / fighters] -- 80 techs
     1922  aa_lmg
     1922  engines_1
     1926  iw_small_airframe
@@ -53,8 +53,6 @@ CATEGORY DETAIL
           [from: cold_war_iron_curtain]
     1940  cv_fighter2
           [from: cold_war_iron_curtain]
-    1940  recon0
-          [from: cold_war_iron_curtain]
     1943  aa_cannon_2
     1944  advanced_small_airframe
     1944  engines_4
@@ -76,8 +74,6 @@ CATEGORY DETAIL
     1946  jet_light1
           [from: cold_war_iron_curtain]
     1948  jet_multirole2
-          [from: cold_war_iron_curtain]
-    1948  jet_recon0
           [from: cold_war_iron_curtain]
     1948  jet_interceptor2
           [from: cold_war_iron_curtain]
@@ -122,8 +118,6 @@ CATEGORY DETAIL
           [from: cold_war_iron_curtain]
     1965  high_mach_jet_interceptor4
           [from: cold_war_iron_curtain]
-    1970  jet_recon1
-          [from: cold_war_iron_curtain]
     1970  jet_interceptor7
           [from: cold_war_iron_curtain]
     1970  jet_multirole7
@@ -158,8 +152,6 @@ CATEGORY DETAIL
           [from: cold_war_iron_curtain]
     1985  jump_jet4
           [from: cold_war_iron_curtain]
-    1995  jet_recon2
-          [from: cold_war_iron_curtain]
     1995  stealth_fighter
           [from: cold_war_iron_curtain]
     2005  mr_stealth
@@ -169,19 +161,19 @@ CATEGORY DETAIL
     2005  jump_stealth
           [from: cold_war_iron_curtain]
 
-  [air / heavy_fighters] — 5 techs
+  [air / heavy_fighters] -- 5 techs
     1926  iw_medium_airframe
     1936  basic_medium_airframe
     1940  improved_medium_airframe
     1944  advanced_medium_airframe
     1945  modern_medium_airframe
 
-  [air / naval_bombers] — 3 techs
+  [air / naval_bombers] -- 3 techs
     1936  cv_naval_bomber1
     1940  cv_naval_bomber2
     1944  cv_naval_bomber3
 
-  [air / strategic_bombers] — 8 techs
+  [air / strategic_bombers] -- 8 techs
     1926  iw_large_airframe
     1936  basic_large_airframe
     1940  improved_large_airframe
@@ -191,7 +183,7 @@ CATEGORY DETAIL
     1945  modern_large_airframe
     1946  aerial_hangars
 
-  [air / tactical_bombers] — 37 techs
+  [air / tactical_bombers] -- 37 techs
     1933  early_bomber
           [from: cold_war_iron_curtain]
     1936  naval_bomber1
@@ -267,7 +259,7 @@ CATEGORY DETAIL
     2005  mach6stratbomber
           [from: cold_war_iron_curtain]
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -275,7 +267,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
     1948  strategic_airlifter
 
-  [industry_electronics / electronics] — 116 techs
+  [industry_electronics / electronics] -- 116 techs
     1936  electronic_mechanical_engineering
     1936  mechanical_computing
     1936  basic_fire_control_system
@@ -493,7 +485,7 @@ CATEGORY DETAIL
     2020  consumer_electronics_VIII
           [from: cold_war_iron_curtain]
 
-  [industry_electronics / industry] — 150 techs
+  [industry_electronics / industry] -- 150 techs
     1936  basic_fortification_tech
     1936  coastal_fort_tech_1
     1936  basic_machine_tools
@@ -747,7 +739,7 @@ CATEGORY DETAIL
     2020  factory_automation_IV
           [from: cold_war_iron_curtain]
 
-  [industry_electronics / nuclear] — 60 techs
+  [industry_electronics / nuclear] -- 60 techs
     1940  atomic_research
           [from: cold_war_iron_curtain]
     1943  nuclear_reactor
@@ -864,7 +856,7 @@ CATEGORY DETAIL
     2005  atomic_reactor_fusion_III
           [from: cold_war_iron_curtain]
 
-  [industry_electronics / radar] — 13 techs
+  [industry_electronics / radar] -- 13 techs
     1936  radio_detection
     1938  cavity_magnatron
     1940  centimetric_radar
@@ -887,7 +879,7 @@ CATEGORY DETAIL
     2020  radar_VII
           [from: cold_war_iron_curtain]
 
-  [industry_electronics / rockets] — 67 techs
+  [industry_electronics / rockets] -- 67 techs
     1939  motorized_rocket_unit
     1940  rocket_artillery
     1940  sp_rocket1
@@ -1011,7 +1003,7 @@ CATEGORY DETAIL
     2005  cruisemissile_5
           [from: cold_war_iron_curtain]
 
-  [land / anti_air] — 6 techs
+  [land / anti_air] -- 6 techs
     1936  interwar_antiair
     1939  antiair1
     1940  antiair2
@@ -1019,39 +1011,19 @@ CATEGORY DETAIL
     1942  antiair4
     1943  antiair5
 
-  [land / anti_tank] — 8 techs
-    1936  mountain_tanks
-    1936  interwar_antitank
-    1936  SWE_bofors_antitank_gun
-    1939  antitank1
-    1940  antitank2
-    1941  antitank3
-    1942  antitank4
-    1943  antitank5
-
-  [land / artillery] — 106 techs
-    1922  basic_battery
+  [land / anti_tank] -- 90 techs
+    1922  photo_reconnaisance
     1935  autocannon_1
           [from: cold_war_iron_curtain]
     1935  artillery_1
           [from: cold_war_iron_curtain]
     1935  direct_fire_gun_1
           [from: cold_war_iron_curtain]
-    1936  gw_artillery
-    1936  interwar_artillery
-    1936  basic_light_battery
-    1936  basic_light_shell
-    1936  basic_heavy_battery
-    1936  basic_heavy_shell
-    1936  railway_gun
-    1939  artillery1
-    1939  improved_light_battery
-    1939  improved_heavy_battery
-    1939  basic_dp_light_battery
-    1940  artillery2
-    1940  sp_artillery_rocket_assisted_projectiles_tech
-    1940  sp_artillery_purpose_built_gun_motor_carriages_tech
-    1940  improved_dp_light_battery
+    1936  mountain_tanks
+    1936  interwar_antitank
+    1936  SWE_bofors_antitank_gun
+    1939  antitank1
+    1940  antitank2
     1940  spaag_1
           [from: cold_war_iron_curtain]
     1940  light_artillery_1
@@ -1060,16 +1032,10 @@ CATEGORY DETAIL
           [from: cold_war_iron_curtain]
     1940  tank_destroyer_1
           [from: cold_war_iron_curtain]
-    1941  artillery3
-    1941  sp_shock_hardening_techniques
-    1942  artillery4
-    1942  sp_variable_time_fuze_shells
-    1942  improved_light_shell
-    1942  improved_heavy_shell
-    1943  artillery5
-    1944  advanced_light_battery
-    1944  advanced_heavy_battery
-    1944  advanced_dp_light_battery
+    1941  antitank3
+    1942  antitank4
+    1943  antitank5
+    1945  sp_centrifugal_jet_tech
     1945  cannon_ammo_1
           [from: cold_war_iron_curtain]
     1945  aa_upgrade_1
@@ -1217,7 +1183,35 @@ CATEGORY DETAIL
     2005  heavy_sp_artillery_5
           [from: cold_war_iron_curtain]
 
-  [land / heavy_tanks] — 20 techs
+  [land / artillery] -- 26 techs
+    1922  basic_battery
+    1936  gw_artillery
+    1936  interwar_artillery
+    1936  basic_light_battery
+    1936  basic_light_shell
+    1936  basic_heavy_battery
+    1936  basic_heavy_shell
+    1936  railway_gun
+    1939  artillery1
+    1939  improved_light_battery
+    1939  improved_heavy_battery
+    1939  basic_dp_light_battery
+    1940  artillery2
+    1940  sp_artillery_rocket_assisted_projectiles_tech
+    1940  sp_artillery_purpose_built_gun_motor_carriages_tech
+    1940  improved_dp_light_battery
+    1941  artillery3
+    1941  sp_shock_hardening_techniques
+    1942  artillery4
+    1942  sp_variable_time_fuze_shells
+    1942  improved_light_shell
+    1942  improved_heavy_shell
+    1943  artillery5
+    1944  advanced_light_battery
+    1944  advanced_heavy_battery
+    1944  advanced_dp_light_battery
+
+  [land / heavy_tanks] -- 20 techs
     1934  basic_heavy_tank
     1934  basic_heavy_tank_chassis
     1940  improved_heavy_tank_chassis
@@ -1246,7 +1240,7 @@ CATEGORY DETAIL
     1960  heavy_tanks_5
           [from: cold_war_iron_curtain]
 
-  [land / infantry] — 147 techs
+  [land / infantry] -- 147 techs
     1918  infantry_weapons
     1918  support_weapons
     1935  infantry_equip_1
@@ -1511,7 +1505,7 @@ CATEGORY DETAIL
     2005  protection_equip_5
           [from: cold_war_iron_curtain]
 
-  [land / light_tanks] — 14 techs
+  [land / light_tanks] -- 14 techs
     1918  gwtank
     1918  gwtank_chassis
     1934  basic_light_tank
@@ -1533,14 +1527,14 @@ CATEGORY DETAIL
     1995  light_tanks_6
           [from: cold_war_iron_curtain]
 
-  [land / mechanised] — 5 techs
+  [land / mechanised] -- 5 techs
     1940  mechanised_infantry
     1941  amphibious_mechanized_infantry
     1942  mechanised_infantry2
     1943  amphibious_mechanized_infantry_2
     1944  mechanised_infantry3
 
-  [land / medium_tanks] — 16 techs
+  [land / medium_tanks] -- 16 techs
     1938  basic_medium_tank_chassis
     1939  basic_medium_tank
     1940  improved_medium_tank_chassis
@@ -1568,19 +1562,21 @@ CATEGORY DETAIL
     2005  main_battle_tanks_9
           [from: cold_war_iron_curtain]
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
     1945  main_battle_tank_chassis
 
-  [land / motorised] — 1 techs
+  [land / motorised] -- 1 techs
     1936  tech_trucks
 
-  [land / support] — 82 techs
+  [land / support] -- 100 techs
     1910  basic_train
           [from: cold_war_iron_curtain]
     1935  tech_support
           [from: cold_war_iron_curtain]
     1936  tech_recon_focus_bonus
+    1936  transport1
+          [from: cold_war_iron_curtain]
     1938  sp_armored_engineer_tech
     1938  sp_armored_maintenance_tech
     1938  sp_armored_signal_tech
@@ -1588,11 +1584,15 @@ CATEGORY DETAIL
     1938  sp_helicopter_artillery_observers_tech
     1938  sp_helicopter_med_evac_tech
     1938  sp_armored_motorized_military_police_tech
+    1940  recon0
+          [from: cold_war_iron_curtain]
     1940  combat_support
           [from: cold_war_iron_curtain]
     1940  combat_service_support
           [from: cold_war_iron_curtain]
     1943  night_vision
+    1944  transport2
+          [from: cold_war_iron_curtain]
     1945  tech_engineers
           [from: cold_war_iron_curtain]
     1945  tech_recon
@@ -1610,6 +1610,10 @@ CATEGORY DETAIL
     1945  tech_field_hospital
           [from: cold_war_iron_curtain]
     1946  night_vision2
+    1948  transport3
+          [from: cold_war_iron_curtain]
+    1948  jet_recon0
+          [from: cold_war_iron_curtain]
     1950  tech_engineers2
           [from: cold_war_iron_curtain]
     1950  tech_recon2
@@ -1625,6 +1629,8 @@ CATEGORY DETAIL
     1950  tech_armor_engineers2
           [from: cold_war_iron_curtain]
     1950  tech_mech_recon2
+          [from: cold_war_iron_curtain]
+    1955  transport4
           [from: cold_war_iron_curtain]
     1960  tech_engineers3
           [from: cold_war_iron_curtain]
@@ -1648,6 +1654,12 @@ CATEGORY DETAIL
           [from: cold_war_iron_curtain]
     1960  tech_logistics_company_helicopter3
           [from: cold_war_iron_curtain]
+    1965  transport5
+          [from: cold_war_iron_curtain]
+    1965  scout_helicopter_1
+          [from: cold_war_iron_curtain]
+    1970  jet_recon1
+          [from: cold_war_iron_curtain]
     1970  tech_engineers4
           [from: cold_war_iron_curtain]
     1970  tech_recon4
@@ -1667,6 +1679,10 @@ CATEGORY DETAIL
     1970  tech_mech_recon4
           [from: cold_war_iron_curtain]
     1970  tech_logistics_company_helicopter4
+          [from: cold_war_iron_curtain]
+    1975  scout_helicopter_2
+          [from: cold_war_iron_curtain]
+    1975  transport6
           [from: cold_war_iron_curtain]
     1980  tech_engineers5
           [from: cold_war_iron_curtain]
@@ -1688,6 +1704,10 @@ CATEGORY DETAIL
           [from: cold_war_iron_curtain]
     1980  tech_logistics_company_helicopter5
           [from: cold_war_iron_curtain]
+    1985  transport7
+          [from: cold_war_iron_curtain]
+    1985  scout_helicopter_3
+          [from: cold_war_iron_curtain]
     1990  tech_engineers6
           [from: cold_war_iron_curtain]
     1990  tech_recon6
@@ -1707,6 +1727,12 @@ CATEGORY DETAIL
     1990  tech_mech_recon6
           [from: cold_war_iron_curtain]
     1990  tech_logistics_company_helicopter6
+          [from: cold_war_iron_curtain]
+    1995  jet_recon2
+          [from: cold_war_iron_curtain]
+    1995  transport8
+          [from: cold_war_iron_curtain]
+    1995  scout_helicopter_4
           [from: cold_war_iron_curtain]
     2000  tech_engineers7
           [from: cold_war_iron_curtain]
@@ -1730,8 +1756,12 @@ CATEGORY DETAIL
           [from: cold_war_iron_curtain]
     2000  tech_logistics_company_helicopter7
           [from: cold_war_iron_curtain]
+    2005  transport9
+          [from: cold_war_iron_curtain]
+    2005  scout_helicopter_5
+          [from: cold_war_iron_curtain]
 
-  [land / tanks_generic] — 63 techs
+  [land / tanks_generic] -- 63 techs
     1914  armored_car1
     1918  iw_armored_vehicles
           [from: cold_war_iron_curtain]
@@ -1805,7 +1835,7 @@ CATEGORY DETAIL
     2000  tech_maintenance_company7
           [from: cold_war_iron_curtain]
 
-  [naval / battleships] — 15 techs
+  [naval / battleships] -- 15 techs
     1922  early_ship_hull_heavy
     1922  early_battlecruiser
     1922  early_battleship
@@ -1822,7 +1852,7 @@ CATEGORY DETAIL
     1944  advanced_battleship
     1944  heavy_battleship2
 
-  [naval / carriers] — 34 techs
+  [naval / carriers] -- 34 techs
     1922  early_ship_hull_carrier
     1922  early_carrier
     1935  ww_carriers
@@ -1882,7 +1912,7 @@ CATEGORY DETAIL
     2005  carrier_hull_super_4
           [from: cold_war_iron_curtain]
 
-  [naval / destroyers] — 17 techs
+  [naval / destroyers] -- 17 techs
     1922  early_ship_hull_light
     1922  smoke_generator
     1922  basic_depth_charges (XP)
@@ -1901,14 +1931,14 @@ CATEGORY DETAIL
     1943  modern_sonar
     1944  advanced_destroyer
 
-  [naval / heavy_cruisers] — 5 techs
+  [naval / heavy_cruisers] -- 5 techs
     1922  basic_cruiser_armor_scheme (XP)
     1922  early_heavy_cruiser
     1936  basic_heavy_cruiser
     1940  improved_heavy_cruiser
     1944  advanced_heavy_cruiser
 
-  [naval / light_cruisers] — 8 techs
+  [naval / light_cruisers] -- 8 techs
     1922  early_ship_hull_cruiser
     1922  early_light_cruiser
     1936  basic_ship_hull_cruiser
@@ -1918,7 +1948,7 @@ CATEGORY DETAIL
     1943  advanced_ship_hull_cruiser
     1944  advanced_light_cruiser
 
-  [naval / naval_support] — 104 techs
+  [naval / naval_support] -- 104 techs
     1922  basic_torpedo
     1922  basic_naval_mines
     1922  submarine_mine_laying
@@ -2096,7 +2126,7 @@ CATEGORY DETAIL
     2005  countermeasures_6
           [from: cold_war_iron_curtain]
 
-  [naval / submarines] — 65 techs
+  [naval / submarines] -- 65 techs
     1922  early_ship_hull_submarine
     1922  early_submarine
     1935  ww_submarines
@@ -2986,9 +3016,6 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   pre_dreadnoughts
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
@@ -3046,21 +3073,6 @@ Add entries to custom_mappings.txt to include them.
   sami_pathfinders_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  scout_helicopter_1
-    categories: ['helicopter', 'helicopter_recon']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\helicopter.txt
-  scout_helicopter_2
-    categories: ['helicopter', 'helicopter_recon']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\helicopter.txt
-  scout_helicopter_3
-    categories: ['helicopter', 'helicopter_recon']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\helicopter.txt
-  scout_helicopter_4
-    categories: ['helicopter', 'helicopter_recon']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\helicopter.txt
-  scout_helicopter_5
-    categories: ['helicopter', 'helicopter_recon']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\helicopter.txt
   screen_aviation_1
     categories: ['naval_equipment', 'screen_tech', 'screen_tech_weapon', 'screen_aviation']
     source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\MTG_navallarge.txt
@@ -3121,9 +3133,6 @@ Add entries to custom_mappings.txt to include them.
   solid_propellant
     categories: ['space_research']
     source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\space.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_naval_proximity_fuze_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
@@ -3187,33 +3196,6 @@ Add entries to custom_mappings.txt to include them.
   tracking_solar_panels
     categories: ['space_research']
     source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\space.txt
-  transport1
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
-  transport2
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
-  transport3
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
-  transport4
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
-  transport5
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
-  transport6
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
-  transport7
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
-  transport8
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
-  transport9
-    categories: ['air_equipment', 'air_quad_engine', 'air_logistics']
-    source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\air_techs.txt
   tripropellant_rocket
     categories: ['space_research']
     source: cold_war_iron_curtain / E:\SteamLibrary\steamapps\workshop\content\394360\1458561226\common\technologies\space.txt

@@ -4,7 +4,7 @@ Workshop ID: 2076426030
 Bundle slug: kaiserredux
 Generation mode: overhaul
 Parsed techs: 572
-Unknown techs: 93
+Unknown techs: 91
 Doctrines detected: 38
 Preset thresholds: kaiserredux
 

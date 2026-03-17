@@ -4,7 +4,7 @@ Workshop ID: 3365515312
 Bundle slug: great_war_redux
 Generation mode: overhaul
 Parsed techs: 384
-Unknown techs: 21
+Unknown techs: 20
 Doctrines detected: 0
 Preset thresholds: great_war_redux
 

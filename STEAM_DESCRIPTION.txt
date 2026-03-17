@@ -68,7 +68,7 @@ Works out of the box with 14 popular overhaul mods. No patches needed, no sub-mo
 
 Each profile uses mod-specific tech lists and tier thresholds. Just enable both mods and play.
 
-[b]Version:[/b] 1.6.0 | [b]HOI4:[/b] 1.17.4.1+ | [b]DLC Required:[/b] None
+[b]Version:[/b] 2.0.0 | [b]HOI4:[/b] 1.17.4.1+ | [b]DLC Required:[/b] None
 
 [h2]Links[/h2]
 [url=https://github.com/henri14871/hoi4-arms-race-mechanics]Source & Devbuild[/url]

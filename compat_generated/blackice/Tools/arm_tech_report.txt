@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    2946
-Successfully mapped:   2222
-Unmapped (unknown):    374
+Successfully mapped:   2227
+Unmapped (unknown):    369
 
 BRANCH SUMMARY
 ----------------------------------------
   air                             706 techs
   industry_electronics            276 techs
-  land                           1046 techs
-  naval                           194 techs
+  land                           1060 techs
+  naval                           185 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 106 techs
+  [air / cas] -- 106 techs
     1922  early_bombs
     1933  early_CAS
           [from: blackice]
@@ -223,7 +223,7 @@ CATEGORY DETAIL
     1946  tech_bristol_brigand_equipment_1
           [from: blackice]
 
-  [air / fighters] — 248 techs
+  [air / fighters] -- 248 techs
     1922  aa_lmg
     1922  engines_1
     1926  iw_small_airframe
@@ -698,7 +698,7 @@ CATEGORY DETAIL
     1950  supersonic_fighter1
     1950  supersonic_small_airframe
 
-  [air / heavy_fighters] — 70 techs
+  [air / heavy_fighters] -- 70 techs
     1926  iw_medium_airframe
     1935  tech_i_14_fighter_equipment_1
           [from: blackice]
@@ -834,7 +834,7 @@ CATEGORY DETAIL
     1946  tech_northamerican_p82_equipment_1
           [from: blackice]
 
-  [air / naval_bombers] — 97 techs
+  [air / naval_bombers] -- 97 techs
     1933  tech_do_wal_equipment_1
           [from: blackice]
     1933  tech_hiro_h4h_equipment_1
@@ -1030,7 +1030,7 @@ CATEGORY DETAIL
     1946  tech_fairey_spearfish_equipment_1
           [from: blackice]
 
-  [air / strategic_bombers] — 52 techs
+  [air / strategic_bombers] -- 52 techs
     1926  iw_large_airframe
     1935  tech_mitsubishi_ki_20_equipment_1
           [from: blackice]
@@ -1126,7 +1126,7 @@ CATEGORY DETAIL
           [from: blackice]
     1950  jet_strategic_bomber1
 
-  [air / tactical_bombers] — 127 techs
+  [air / tactical_bombers] -- 127 techs
     1933  generic_bomber
           [from: blackice]
     1933  generic_strategic_bomber
@@ -1380,7 +1380,7 @@ CATEGORY DETAIL
           [from: blackice]
     1950  jet_tactical_bomber2
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -1388,7 +1388,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
     1948  strategic_airlifter
 
-  [industry_electronics / electronics] — 63 techs
+  [industry_electronics / electronics] -- 63 techs
     1910  early_fire_control_system
           [from: blackice]
     1925  basic_fire_control_system
@@ -1513,7 +1513,7 @@ CATEGORY DETAIL
     1946  modern_fire_control_system
           [from: blackice]
 
-  [industry_electronics / industry] — 171 techs
+  [industry_electronics / industry] -- 171 techs
     1921  polymerization_theories
           [from: blackice]
     1930  basic_machine_tools
@@ -1848,7 +1848,7 @@ CATEGORY DETAIL
     1946  plastics_v
           [from: blackice]
 
-  [industry_electronics / nuclear] — 13 techs
+  [industry_electronics / nuclear] -- 13 techs
     1936  atomic_research
           [from: blackice]
     1938  basic_particle_accelerators
@@ -1873,7 +1873,7 @@ CATEGORY DETAIL
           [from: blackice]
     1950  thermonuclear_bombs
 
-  [industry_electronics / radar] — 12 techs
+  [industry_electronics / radar] -- 12 techs
     1938  cavity_magnatron
     1939  early_naval_radar
           [from: blackice]
@@ -1896,7 +1896,7 @@ CATEGORY DETAIL
     1945  semimodern_naval_radar
           [from: blackice]
 
-  [industry_electronics / rockets] — 17 techs
+  [industry_electronics / rockets] -- 17 techs
     1938  basic_land_launched_rockets
           [from: blackice]
     1939  liquid_fueled_rockets
@@ -1926,10 +1926,35 @@ CATEGORY DETAIL
     1946  advanced_rocket_engines
     1946  sp_rockets_dual_chamber_rocket_engine_2
 
-  [land / anti_tank] — 13 techs
+  [land / anti_air] -- 9 techs
+    1920  nrm_early_antiair
+          [from: blackice]
+    1930  nrm_early_heavy_antiair
+          [from: blackice]
+    1935  nrm_basic_antiair
+          [from: blackice]
+    1937  nrm_basic_heavy_antiair
+          [from: blackice]
+    1940  nrm_improved_antiair
+          [from: blackice]
+    1941  nrm_improved_heavy_antiair
+          [from: blackice]
+    1942  nrm_advanced_antiair
+          [from: blackice]
+    1943  nrm_advanced_heavy_antiair
+          [from: blackice]
+    1945  nrm_modern_heavy_antiair
+          [from: blackice]
+
+  [land / anti_tank] -- 18 techs
+    1922  photo_reconnaisance
     1936  mountain_tanks
     1936  SWE_bofors_antitank_gun
     1936  interwar_antitank
+          [from: blackice]
+    1938  tech_sm75_transport_plane_equipment_1
+          [from: blackice]
+    1938  tech_g50_multirole_equipment_1
           [from: blackice]
     1939  antitank1
           [from: blackice]
@@ -1938,6 +1963,8 @@ CATEGORY DETAIL
     1941  improved_antitank
           [from: blackice]
     1941  antitank3
+          [from: blackice]
+    1941  tech_g12_transport_plane_equipment_1
           [from: blackice]
     1942  antitank4
           [from: blackice]
@@ -1951,8 +1978,9 @@ CATEGORY DETAIL
           [from: blackice]
     1944  HVantitank4
           [from: blackice]
+    1945  sp_centrifugal_jet_tech
 
-  [land / artillery] — 58 techs
+  [land / artillery] -- 58 techs
     1922  basic_battery
     1930  interwar_artillery
           [from: blackice]
@@ -2055,7 +2083,7 @@ CATEGORY DETAIL
     1944  Hvartillery6
           [from: blackice]
 
-  [land / heavy_tanks] — 47 techs
+  [land / heavy_tanks] -- 47 techs
     1925  tech_trm_heavy_tank_chassis_eng_independent_1
           [from: blackice]
     1930  tech_trm_heavy_tank_chassis_fra_2c_1
@@ -2138,7 +2166,7 @@ CATEGORY DETAIL
     1946  tech_trm_heavy_tank_chassis_usa_t32_1
           [from: blackice]
 
-  [land / infantry] — 56 techs
+  [land / infantry] -- 56 techs
     1918  support_weapons
     1918  infantry_weapons
           [from: blackice]
@@ -2244,7 +2272,7 @@ CATEGORY DETAIL
     1944  advanced_infantry_weapons2
           [from: blackice]
 
-  [land / light_tanks] — 106 techs
+  [land / light_tanks] -- 106 techs
     1918  gwtank
     1918  gwtank_chassis
     1930  tech_trm_light_tank_chassis_eng_vickers_e_1
@@ -2450,7 +2478,7 @@ CATEGORY DETAIL
     1945  tech_trm_light_tank_chassis_jap_type5_1
           [from: blackice]
 
-  [land / mechanised] — 9 techs
+  [land / mechanised] -- 9 techs
     1940  mechanised_infantry
           [from: blackice]
     1940  subtech_recon_mech_1
@@ -2470,7 +2498,7 @@ CATEGORY DETAIL
     1944  amphibious_mechanized_infantry_2
           [from: blackice]
 
-  [land / medium_tanks] — 76 techs
+  [land / medium_tanks] -- 76 techs
     1925  tech_trm_infantry_tank_chassis_eng_vickers_medium_1
           [from: blackice]
     1933  tech_trm_medium_tank_chassis_fra_d1_1
@@ -2618,11 +2646,11 @@ CATEGORY DETAIL
     1946  tech_trm_medium_advanced_tank_chassis_sov_t54_1
           [from: blackice]
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
     1945  main_battle_tank_chassis
 
-  [land / motorised] — 7 techs
+  [land / motorised] -- 7 techs
     1936  tech_trucks
     1936  early_tractors
           [from: blackice]
@@ -2637,7 +2665,7 @@ CATEGORY DETAIL
     1941  motorized_rocket_unit
           [from: blackice]
 
-  [land / support] — 75 techs
+  [land / support] -- 75 techs
     1910  basic_train
     1910  tech_basic_train
           [from: blackice]
@@ -2778,7 +2806,7 @@ CATEGORY DETAIL
     1945  tech_signal_company4
           [from: blackice]
 
-  [land / tanks_generic] — 597 techs
+  [land / tanks_generic] -- 597 techs
     1914  armored_car1
     1918  tech_trm_tank_design (XP)
           [from: blackice]
@@ -3920,7 +3948,7 @@ CATEGORY DETAIL
     1947  tech_trm_weapon_c_eng_84_20pdr
           [from: blackice]
 
-  [naval / battleships] — 17 techs
+  [naval / battleships] -- 17 techs
     1910  early_ship_hull_heavy
           [from: blackice]
     1920  basic_ship_hull_heavy
@@ -3947,7 +3975,7 @@ CATEGORY DETAIL
     1944  advanced_battleship
     1944  heavy_battleship2
 
-  [naval / carriers] — 21 techs
+  [naval / carriers] -- 21 techs
     1920  early_ship_hull_carrier
           [from: blackice]
     1922  early_carrier
@@ -3985,7 +4013,7 @@ CATEGORY DETAIL
     1944  advanced_carrier_airgroup_search
           [from: blackice]
 
-  [naval / destroyers] — 21 techs
+  [naval / destroyers] -- 21 techs
     1910  early_ship_hull_light
           [from: blackice]
     1915  basic_depth_charges (XP)
@@ -4022,13 +4050,13 @@ CATEGORY DETAIL
     1944  modern_depth_charges (XP)
           [from: blackice]
 
-  [naval / heavy_cruisers] — 4 techs
+  [naval / heavy_cruisers] -- 4 techs
     1922  early_heavy_cruiser
     1936  basic_heavy_cruiser
     1940  improved_heavy_cruiser
     1944  advanced_heavy_cruiser
 
-  [naval / light_cruisers] — 14 techs
+  [naval / light_cruisers] -- 14 techs
     1910  early_ship_hull_cruiser
           [from: blackice]
     1920  basic_ship_hull_cruiser
@@ -4054,7 +4082,7 @@ CATEGORY DETAIL
           [from: blackice]
     1944  advanced_light_cruiser
 
-  [naval / naval_support] — 104 techs
+  [naval / naval_support] -- 95 techs
     1910  early_engine
           [from: blackice]
     1910  nrm_battery_basic
@@ -4084,8 +4112,6 @@ CATEGORY DETAIL
     1920  early_diesel
           [from: blackice]
     1920  nrm_battery_early_dd_5h
-          [from: blackice]
-    1920  nrm_early_antiair
           [from: blackice]
     1920  basic_heavy_shell (XP)
           [from: blackice]
@@ -4128,8 +4154,6 @@ CATEGORY DETAIL
           [from: blackice]
     1930  nrm_battery_improved_16
           [from: blackice]
-    1930  nrm_early_heavy_antiair
-          [from: blackice]
     1930  improved_naval_mines
           [from: blackice]
     1935  advanced_sub_torpedo_launcher
@@ -4144,8 +4168,6 @@ CATEGORY DETAIL
           [from: blackice]
     1935  nrm_battery_improved_18
           [from: blackice]
-    1935  nrm_basic_antiair
-          [from: blackice]
     1935  improved_heavy_shell (XP)
           [from: blackice]
     1935  degaussing
@@ -4159,8 +4181,6 @@ CATEGORY DETAIL
     1936  improved_light_shell (XP)
           [from: blackice]
     1936  improved_medium_shell (XP)
-          [from: blackice]
-    1937  nrm_basic_heavy_antiair
           [from: blackice]
     1937  magnetic_detonator
           [from: blackice]
@@ -4195,8 +4215,6 @@ CATEGORY DETAIL
           [from: blackice]
     1940  nrm_battery_advanced_16
           [from: blackice]
-    1940  nrm_improved_antiair
-          [from: blackice]
     1940  advanced_heavy_shell (XP)
           [from: blackice]
     1940  improved_submarine_mine_laying
@@ -4213,8 +4231,6 @@ CATEGORY DETAIL
           [from: blackice]
     1941  homing_torpedo (XP)
           [from: blackice]
-    1941  nrm_improved_heavy_antiair
-          [from: blackice]
     1942  airdrop_mines_bba
     1942  airsweep_mines_bba
     1942  sp_improved_support_ship
@@ -4226,8 +4242,6 @@ CATEGORY DETAIL
     1942  nrm_battery_advanced_dp_4
           [from: blackice]
     1942  nrm_battery_advanced_20
-          [from: blackice]
-    1942  nrm_advanced_antiair
           [from: blackice]
     1942  airdrop_mines
           [from: blackice]
@@ -4243,8 +4257,6 @@ CATEGORY DETAIL
           [from: blackice]
     1943  sp_standard_tenshioned_replenishment_alongside_method (XP)
           [from: blackice]
-    1943  nrm_advanced_heavy_antiair
-          [from: blackice]
     1944  tank_landing_craft
     1944  nrm_battery_modern_6
           [from: blackice]
@@ -4252,14 +4264,12 @@ CATEGORY DETAIL
           [from: blackice]
     1945  modern_naval_mines
           [from: blackice]
-    1945  nrm_modern_heavy_antiair
-          [from: blackice]
     1946  nrm_battery_modern_dp_6
           [from: blackice]
     1946  airsweep_mines
           [from: blackice]
 
-  [naval / submarines] — 13 techs
+  [naval / submarines] -- 13 techs
     1915  early_ship_hull_submarine
           [from: blackice]
     1922  early_submarine
@@ -4721,9 +4731,6 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   plastics_iii
     categories: []
     source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\civillian.txt
@@ -4748,9 +4755,6 @@ Add entries to custom_mappings.txt to include them.
   sp_air_computing_bombsight_tech
     categories: []
     source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\special_projects_tech.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_electronics_aa_proximity_fuze_tech
     categories: []
     source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\special_projects_tech.txt
@@ -5036,12 +5040,6 @@ Add entries to custom_mappings.txt to include them.
   tech_fw_200_transport_equipment_1
     categories: ['focke_wulf_air', 'air_equipment']
     source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\GER_air.txt
-  tech_g12_transport_plane_equipment_1
-    categories: ['air_equipment', 'fiat_air']
-    source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\ITA_air.txt
-  tech_g50_multirole_equipment_1
-    categories: ['light_air', 'air_equipment', 'fiat_air']
-    source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\ITA_air.txt
   tech_german_aircraft0
     categories: []
     source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\GER_air.txt
@@ -5216,9 +5214,6 @@ Add entries to custom_mappings.txt to include them.
   tech_recovery_tanks
     categories: []
     source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\armor_techs.txt
-  tech_sm75_transport_plane_equipment_1
-    categories: ['air_equipment', 'fiat_air']
-    source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\ITA_air.txt
   tech_sm79_guided_equipment_1
     categories: ['medium_air', 'air_equipment', 'savoia_marchetti_air']
     source: blackice / E:\SteamLibrary\steamapps\workshop\content\394360\1137372539\common\technologies\ITA_air.txt

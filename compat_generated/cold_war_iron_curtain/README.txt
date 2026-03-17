@@ -4,7 +4,7 @@ Workshop ID: 1458561226
 Bundle slug: cold_war_iron_curtain
 Generation mode: overhaul
 Parsed techs: 1417
-Unknown techs: 300
+Unknown techs: 286
 Doctrines detected: 251
 Preset thresholds: cold_war_iron_curtain
 

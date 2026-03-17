@@ -4,7 +4,7 @@ Workshop ID: 1778255798
 Bundle slug: extended_tech_tree_1960
 Generation mode: expansion
 Parsed techs: 766
-Unknown techs: 85
+Unknown techs: 79
 Doctrines detected: 59
 Preset thresholds: extended_tech_tree_1960
 

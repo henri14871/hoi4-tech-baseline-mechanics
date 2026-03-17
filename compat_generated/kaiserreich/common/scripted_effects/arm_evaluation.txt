@@ -22,11 +22,35 @@
 arm_assign_power_tier = {
 
     # --- Initialize tier if it has never been set ---
+    # On first evaluation (new country, civil war winner, released nation),
+    # assign the correct tier directly from current power — no hysteresis.
+    # This prevents newly spawned countries from being stuck at Micro for
+    # months while the +1-per-pass hysteresis slowly catches up.
     if = {
         limit = {
             NOT = { has_country_flag = arm_tier_initialized }
         }
         set_variable = { arm_tier_index = 0 }
+        if = {
+            limit = { check_variable = { var = arm_global_power value = 300 compare = greater_than } }
+            set_variable = { arm_tier_index = 5 }
+        }
+        else_if = {
+            limit = { check_variable = { var = arm_global_power value = 150 compare = greater_than } }
+            set_variable = { arm_tier_index = 4 }
+        }
+        else_if = {
+            limit = { check_variable = { var = arm_global_power value = 90 compare = greater_than } }
+            set_variable = { arm_tier_index = 3 }
+        }
+        else_if = {
+            limit = { check_variable = { var = arm_global_power value = 45 compare = greater_than } }
+            set_variable = { arm_tier_index = 2 }
+        }
+        else_if = {
+            limit = { check_variable = { var = arm_global_power value = 20 compare = greater_than } }
+            set_variable = { arm_tier_index = 1 }
+        }
         set_country_flag = arm_tier_initialized
     }
 

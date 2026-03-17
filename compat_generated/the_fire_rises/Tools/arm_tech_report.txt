@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    909
-Successfully mapped:   630
-Unmapped (unknown):    123
+Successfully mapped:   684
+Unmapped (unknown):    110
 
 BRANCH SUMMARY
 ----------------------------------------
   air                              68 techs
   industry_electronics            143 techs
-  land                            297 techs
+  land                            351 techs
   naval                           122 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 11 techs
+  [air / cas] -- 11 techs
     1936  armor_piercing_bombs
     1936  air_torpedoe_1
     1940  heavy_bombs
@@ -34,7 +34,7 @@ CATEGORY DETAIL
     2024  improved_guided_bombs
           [from: the_fire_rises]
 
-  [air / fighters] — 20 techs
+  [air / fighters] -- 20 techs
     1933  early_fighter
     1933  cv_early_fighter
     1945  jet_fighter1
@@ -69,7 +69,7 @@ CATEGORY DETAIL
     2036  fighter6
           [from: the_fire_rises]
 
-  [air / heavy_fighters] — 8 techs
+  [air / heavy_fighters] -- 8 techs
     1936  heavy_fighter1
     1940  heavy_fighter2
     1944  heavy_fighter3
@@ -84,7 +84,7 @@ CATEGORY DETAIL
     2032  modern_medium_airframe
           [from: the_fire_rises]
 
-  [air / naval_bombers] — 3 techs
+  [air / naval_bombers] -- 3 techs
     2000  naval_bomber1
           [from: the_fire_rises]
     2024  naval_bomber2
@@ -92,7 +92,7 @@ CATEGORY DETAIL
     2032  naval_bomber3
           [from: the_fire_rises]
 
-  [air / strategic_bombers] — 13 techs
+  [air / strategic_bombers] -- 13 techs
     1942  reinforced_wings_mothership
     1944  miniature_fighters
     1946  aerial_hangars
@@ -116,7 +116,7 @@ CATEGORY DETAIL
     2032  modern_large_airframe
           [from: the_fire_rises]
 
-  [air / tactical_bombers] — 7 techs
+  [air / tactical_bombers] -- 7 techs
     1933  early_bomber
     1945  jet_tactical_bomber1
     1950  jet_tactical_bomber2
@@ -129,7 +129,7 @@ CATEGORY DETAIL
     2024  tactical_bomber4
           [from: the_fire_rises]
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -137,7 +137,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
     1948  strategic_airlifter
 
-  [industry_electronics / electronics] — 32 techs
+  [industry_electronics / electronics] -- 32 techs
     1936  mechanical_computing
     1936  basic_fire_control_system
     1936  improved_fire_control_system
@@ -188,7 +188,7 @@ CATEGORY DETAIL
     2035  advanced_nanomachines
           [from: the_fire_rises]
 
-  [industry_electronics / industry] — 65 techs
+  [industry_electronics / industry] -- 65 techs
     1936  basic_fortification_tech
     1936  coastal_fort_tech_1
     1938  land_fort_tech_1
@@ -315,7 +315,7 @@ CATEGORY DETAIL
     2035  construction9
           [from: the_fire_rises]
 
-  [industry_electronics / nuclear] — 15 techs
+  [industry_electronics / nuclear] -- 15 techs
     1940  atomic_research
     1943  nuclear_reactor
     1943  nuclear_reactor_heavy_water
@@ -344,7 +344,7 @@ CATEGORY DETAIL
     2035  energy_farms4
           [from: the_fire_rises]
 
-  [industry_electronics / radar] — 12 techs
+  [industry_electronics / radar] -- 12 techs
     1938  cavity_magnatron
     1941  phased_array
     1942  monopulse_radar
@@ -367,7 +367,7 @@ CATEGORY DETAIL
     2035  advanced_quantum_radar
           [from: the_fire_rises]
 
-  [industry_electronics / rockets] — 19 techs
+  [industry_electronics / rockets] -- 19 techs
     1939  motorized_rocket_unit
     1942  experimental_rockets
     1943  sp_rockets_improved_guidance
@@ -396,20 +396,127 @@ CATEGORY DETAIL
     2032  suicide_drone_tech4
           [from: the_fire_rises]
 
-  [land / anti_tank] — 11 techs
+  [land / anti_tank] -- 65 techs
     1936  mountain_tanks
     1936  SWE_bofors_antitank_gun
+    1936  air_superiority (XP)
+          [from: the_fire_rises]
+    1936  infrastructure_destruction (XP)
+          [from: the_fire_rises]
+    1936  home_defence (XP)
+          [from: the_fire_rises]
+    1936  naval_strike_tactics (XP)
+          [from: the_fire_rises]
+    1936  fighter_sweeps (XP)
+          [from: the_fire_rises]
+    1936  dogfighting_experience (XP)
+          [from: the_fire_rises]
+    1936  multialtitude_flying (XP)
+          [from: the_fire_rises]
+    1936  logistical_bombing (XP)
+          [from: the_fire_rises]
+    1936  day_bombing (XP)
+          [from: the_fire_rises]
+    1936  massed_bomber_formations (XP)
+          [from: the_fire_rises]
+    1936  air_offense (XP)
+          [from: the_fire_rises]
+    1936  offensive_formations (XP)
+          [from: the_fire_rises]
+    1936  mass_destruction (XP)
+          [from: the_fire_rises]
+    1936  formation_flying (XP)
+          [from: the_fire_rises]
+    1936  dive_bombing (XP)
+          [from: the_fire_rises]
+    1936  direct_ground_support (XP)
+          [from: the_fire_rises]
+    1936  formation_fighting (XP)
+          [from: the_fire_rises]
+    1936  fighter_ace_initiative (XP)
+          [from: the_fire_rises]
+    1936  hunt_and_destroy (XP)
+          [from: the_fire_rises]
+    1936  combat_unit_destruction (XP)
+          [from: the_fire_rises]
+    1936  battlefield_support (XP)
+          [from: the_fire_rises]
+    1936  keypoint_bombing (XP)
+          [from: the_fire_rises]
+    1936  ground_support_integration (XP)
+          [from: the_fire_rises]
+    1936  naval_strike_torpedo_tactics (XP)
+          [from: the_fire_rises]
+    1936  strategic_destruction (XP)
+          [from: the_fire_rises]
+    1936  forward_interception (XP)
+          [from: the_fire_rises]
+    1936  asymetrical_warfare (XP)
+          [from: the_fire_rises]
+    1936  human_wave (XP)
+          [from: the_fire_rises]
+    1936  indiscriminate_conscription (XP)
+          [from: the_fire_rises]
+    1936  hit_and_run (XP)
+          [from: the_fire_rises]
+    1936  raiding_parties (XP)
+          [from: the_fire_rises]
+    1936  rat_tunnels (XP)
+          [from: the_fire_rises]
+    1936  media_propaganda (XP)
+          [from: the_fire_rises]
+    1936  decapitation_strike (XP)
+          [from: the_fire_rises]
+    1936  command_and_control (XP)
+          [from: the_fire_rises]
+    1936  technical_conversion (XP)
+          [from: the_fire_rises]
+    1936  scavage_enemy_vehicles (XP)
+          [from: the_fire_rises]
+    1936  pocket_defence_asym (XP)
+          [from: the_fire_rises]
+    1936  scorched_earth_asym (XP)
+          [from: the_fire_rises]
+    1936  peoples_war (XP)
+          [from: the_fire_rises]
+    1936  mechanized_ (XP)
+          [from: the_fire_rises]
+    1945  sp_centrifugal_jet_tech
+    2000  aa_lmg
+          [from: the_fire_rises]
+    2000  engines_1
+          [from: the_fire_rises]
+    2000  photo_reconnaisance
+          [from: the_fire_rises]
     2006  interwar_antitank
           [from: the_fire_rises]
     2012  antitank1
           [from: the_fire_rises]
     2018  antitank2
           [from: the_fire_rises]
+    2020  aa_hmg
+          [from: the_fire_rises]
+    2020  aa_cannon_1
+          [from: the_fire_rises]
+    2020  engines_2
+          [from: the_fire_rises]
     2021  antitank3
+          [from: the_fire_rises]
+    2022  anti_ship_missiles
+          [from: the_fire_rises]
+    2022  short_range_missiles
           [from: the_fire_rises]
     2024  antitank4
           [from: the_fire_rises]
+    2024  aa_hmg2
+          [from: the_fire_rises]
+    2024  engines_3
+          [from: the_fire_rises]
     2027  antitank5
+          [from: the_fire_rises]
+    2028  aa_cannon_2
+          [from: the_fire_rises]
+    2028  engines_4
           [from: the_fire_rises]
     2030  antitank6
           [from: the_fire_rises]
@@ -418,7 +525,7 @@ CATEGORY DETAIL
     2036  antitank8
           [from: the_fire_rises]
 
-  [land / artillery] — 29 techs
+  [land / artillery] -- 29 techs
     1936  railway_gun
     1940  sp_artillery_rocket_assisted_projectiles_tech
     1940  sp_artillery_purpose_built_gun_motor_carriages_tech
@@ -473,7 +580,7 @@ CATEGORY DETAIL
     2036  antiair8
           [from: the_fire_rises]
 
-  [land / heavy_tanks] — 13 techs
+  [land / heavy_tanks] -- 13 techs
     1934  basic_heavy_tank
     1934  basic_heavy_tank_chassis
     1940  improved_heavy_tank_chassis
@@ -488,7 +595,7 @@ CATEGORY DETAIL
     1943  sp_armored_lc_high_impact_obliterator_cannon_tech
     1945  sp_armored_lc_weapon_fire_control_tech
 
-  [land / infantry] — 66 techs
+  [land / infantry] -- 66 techs
     1918  infantry_weapons
     1936  rangers_tech
     1939  improved_infantry_weapons
@@ -612,7 +719,7 @@ CATEGORY DETAIL
     2036  camouflage6
           [from: the_fire_rises]
 
-  [land / light_tanks] — 12 techs
+  [land / light_tanks] -- 12 techs
     1918  gwtank
     1934  basic_light_tank
     1936  improved_light_tank
@@ -634,7 +741,7 @@ CATEGORY DETAIL
     2032  light_tank4
           [from: the_fire_rises]
 
-  [land / mechanised] — 17 techs
+  [land / mechanised] -- 17 techs
     1940  mechanised_infantry
     2000  amphibious_mechanized_infantry
           [from: the_fire_rises]
@@ -669,7 +776,7 @@ CATEGORY DETAIL
     2036  light_mechanized_infantry5
           [from: the_fire_rises]
 
-  [land / medium_tanks] — 6 techs
+  [land / medium_tanks] -- 6 techs
     1939  basic_medium_tank
     1941  improved_medium_tank
     1943  advanced_medium_tank
@@ -680,12 +787,12 @@ CATEGORY DETAIL
     2024  advanced_medium_tank_chassis
           [from: the_fire_rises]
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
     2032  main_battle_tank_chassis
           [from: the_fire_rises]
 
-  [land / motorised] — 4 techs
+  [land / motorised] -- 4 techs
     1936  tech_trucks
     2000  motorised_infantry
           [from: the_fire_rises]
@@ -694,7 +801,7 @@ CATEGORY DETAIL
     2036  motorised_infantry3
           [from: the_fire_rises]
 
-  [land / support] — 58 techs
+  [land / support] -- 58 techs
     1936  tech_recon_focus_bonus
     1938  sp_armored_engineer_tech
     1938  sp_armored_maintenance_tech
@@ -804,7 +911,7 @@ CATEGORY DETAIL
     2033  night_vision6
           [from: the_fire_rises]
 
-  [land / tanks_generic] — 79 techs
+  [land / tanks_generic] -- 79 techs
     1914  armored_car1
     1934  basic_light_td
     1934  basic_light_art
@@ -920,7 +1027,7 @@ CATEGORY DETAIL
     2038  main_battle_tank6
           [from: the_fire_rises]
 
-  [naval / battleships] — 16 techs
+  [naval / battleships] -- 16 techs
     1922  early_battlecruiser
     1940  basic_battlecruiser
     2000  early_ship_hull_heavy
@@ -952,7 +1059,7 @@ CATEGORY DETAIL
     2028  heavy_battleship2
           [from: the_fire_rises]
 
-  [naval / carriers] — 10 techs
+  [naval / carriers] -- 10 techs
     1942  sp_refined_pykrete
     1944  sp_ice_composite_runawayas
     2000  early_ship_hull_carrier
@@ -972,7 +1079,7 @@ CATEGORY DETAIL
     2028  advanced_carrier
           [from: the_fire_rises]
 
-  [naval / destroyers] — 17 techs
+  [naval / destroyers] -- 17 techs
     1939  advanced_sonar
     1943  modern_sonar
     2000  early_ship_hull_light
@@ -1006,7 +1113,7 @@ CATEGORY DETAIL
     2028  advanced_destroyer
           [from: the_fire_rises]
 
-  [naval / heavy_cruisers] — 4 techs
+  [naval / heavy_cruisers] -- 4 techs
     2000  early_heavy_cruiser
           [from: the_fire_rises]
     2020  basic_heavy_cruiser
@@ -1016,7 +1123,7 @@ CATEGORY DETAIL
     2028  advanced_heavy_cruiser
           [from: the_fire_rises]
 
-  [naval / light_cruisers] — 10 techs
+  [naval / light_cruisers] -- 10 techs
     2000  early_ship_hull_cruiser
           [from: the_fire_rises]
     2000  basic_cruiser_armor_scheme (XP)
@@ -1038,7 +1145,7 @@ CATEGORY DETAIL
     2028  advanced_light_cruiser
           [from: the_fire_rises]
 
-  [naval / naval_support] — 51 techs
+  [naval / naval_support] -- 51 techs
     1922  basic_naval_mines
           [from: the_fire_rises]
     1936  damage_control_1 (XP)
@@ -1138,7 +1245,7 @@ CATEGORY DETAIL
     2034  modern_naval_mines
           [from: the_fire_rises]
 
-  [naval / submarines] — 14 techs
+  [naval / submarines] -- 14 techs
     1939  sp_aip_engine_improved_tech
     1943  sp_aip_engine_advanced_tech
     2000  early_ship_hull_submarine
@@ -1204,29 +1311,11 @@ Add entries to custom_mappings.txt to include them.
   ToA_river_boats_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  aa_cannon_1
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  aa_cannon_2
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  aa_hmg
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  aa_hmg2
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  aa_lmg
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
   advanced_modern_tank_turret_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
   aircraft_construction
     categories: ['air_equipment', 'plane_modules_tech']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  anti_ship_missiles
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
     source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
   artificial_intel_studies
     categories: ['artificial_intelligence']
@@ -1327,18 +1416,6 @@ Add entries to custom_mappings.txt to include them.
   elephantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  engines_1
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  engines_2
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  engines_3
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  engines_4
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
   fallschirmjager_tech
     categories: []
     source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\land_doctrine.txt
@@ -1414,9 +1491,6 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
   power_plants
     categories: ['energy']
     source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\electronic_mechanical_engineering.txt
@@ -1444,12 +1518,6 @@ Add entries to custom_mappings.txt to include them.
   sami_pathfinders_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  short_range_missiles
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: the_fire_rises / E:\SteamLibrary\steamapps\workshop\content\394360\3350890356\common\technologies\bba_air_techs.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_naval_proximity_fuze_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt

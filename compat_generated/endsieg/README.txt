@@ -4,7 +4,7 @@ Workshop ID: 1532883122
 Bundle slug: endsieg
 Generation mode: overhaul
 Parsed techs: 1021
-Unknown techs: 105
+Unknown techs: 78
 Doctrines detected: 192
 Preset thresholds: endsieg
 

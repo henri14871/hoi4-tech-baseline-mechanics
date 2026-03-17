@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    876
-Successfully mapped:   734
-Unmapped (unknown):    133
+Successfully mapped:   745
+Unmapped (unknown):    122
 
 BRANCH SUMMARY
 ----------------------------------------
   air                              91 techs
   industry_electronics            142 techs
-  land                            337 techs
+  land                            348 techs
   naval                           164 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 16 techs
+  [air / cas] -- 16 techs
     1922  early_bombs
     1936  armor_piercing_bombs
     1936  air_torpedoe_1
@@ -41,7 +41,7 @@ CATEGORY DETAIL
     2000  basic_heli_airframe
           [from: novum_vexillum]
 
-  [air / fighters] — 23 techs
+  [air / fighters] -- 23 techs
     1933  early_fighter
     1933  cv_early_fighter
     1936  scout_plane1
@@ -75,7 +75,7 @@ CATEGORY DETAIL
     2030  fighter8
           [from: novum_vexillum]
 
-  [air / heavy_fighters] — 11 techs
+  [air / heavy_fighters] -- 11 techs
     1936  heavy_fighter1
     1940  heavy_fighter2
     1944  heavy_fighter3
@@ -96,7 +96,7 @@ CATEGORY DETAIL
     2030  future_medium_airframe
           [from: novum_vexillum]
 
-  [air / naval_bombers] — 11 techs
+  [air / naval_bombers] -- 11 techs
     1960  naval_bomber1
           [from: novum_vexillum]
     1960  iw_naval_airframe
@@ -120,7 +120,7 @@ CATEGORY DETAIL
     2024  naval_bomber6
           [from: novum_vexillum]
 
-  [air / strategic_bombers] — 14 techs
+  [air / strategic_bombers] -- 14 techs
     1942  reinforced_wings_mothership
     1944  miniature_fighters
     1946  aerial_hangars
@@ -146,7 +146,7 @@ CATEGORY DETAIL
     2024  modern_large_airframe
           [from: novum_vexillum]
 
-  [air / tactical_bombers] — 10 techs
+  [air / tactical_bombers] -- 10 techs
     1933  early_bomber
     1945  jet_tactical_bomber1
     1950  jet_tactical_bomber2
@@ -165,7 +165,7 @@ CATEGORY DETAIL
     2030  tactical_bomber5
           [from: novum_vexillum]
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -173,7 +173,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
     1948  strategic_airlifter
 
-  [industry_electronics / electronics] — 21 techs
+  [industry_electronics / electronics] -- 21 techs
     1936  basic_fire_control_system
           [from: novum_vexillum]
     1936  improved_fire_control_system
@@ -209,7 +209,7 @@ CATEGORY DETAIL
     2032  future_computing_machine
           [from: novum_vexillum]
 
-  [industry_electronics / industry] — 86 techs
+  [industry_electronics / industry] -- 86 techs
     1936  basic_fortification_tech
     1936  coastal_fort_tech_1
     1936  excavation1
@@ -378,7 +378,7 @@ CATEGORY DETAIL
     2032  excavation5
           [from: novum_vexillum]
 
-  [industry_electronics / nuclear] — 7 techs
+  [industry_electronics / nuclear] -- 7 techs
     1943  isotope_separation_centrifugal
           [from: novum_vexillum]
     1943  nuclear_reactor_heavy_water
@@ -393,7 +393,7 @@ CATEGORY DETAIL
     2012  nukes
           [from: novum_vexillum]
 
-  [industry_electronics / radar] — 12 techs
+  [industry_electronics / radar] -- 12 techs
     1938  cavity_magnatron
     1941  phased_array
     1942  monopulse_radar
@@ -416,7 +416,7 @@ CATEGORY DETAIL
     2032  advanced_quantum_radar
           [from: novum_vexillum]
 
-  [industry_electronics / rockets] — 16 techs
+  [industry_electronics / rockets] -- 16 techs
     1939  motorized_rocket_unit
     1943  rocket_artillery4
     1943  sp_rockets_improved_guidance
@@ -439,7 +439,7 @@ CATEGORY DETAIL
     2016  rocket_artillery3
           [from: novum_vexillum]
 
-  [land / anti_air] — 14 techs
+  [land / anti_air] -- 14 techs
     1980  coldwar_antiair
           [from: novum_vexillum]
     1980  sp_antiair0
@@ -469,12 +469,24 @@ CATEGORY DETAIL
     2032  antiair8
           [from: novum_vexillum]
 
-  [land / anti_tank] — 12 techs
+  [land / anti_tank] -- 23 techs
+    1922  photo_reconnaisance
     1936  mountain_tanks
     1936  SWE_bofors_antitank_gun
+    1945  sp_centrifugal_jet_tech
+    1960  aa_lmg
+          [from: novum_vexillum]
+    1960  engines_1
+          [from: novum_vexillum]
     1980  coldwar_antitank
           [from: novum_vexillum]
+    1980  engines_2
+          [from: novum_vexillum]
     2000  interwar_antitank
+          [from: novum_vexillum]
+    2000  aa_cannon_1
+          [from: novum_vexillum]
+    2000  engines_3
           [from: novum_vexillum]
     2004  antitank1
           [from: novum_vexillum]
@@ -482,18 +494,26 @@ CATEGORY DETAIL
           [from: novum_vexillum]
     2012  antitank3
           [from: novum_vexillum]
+    2012  aa_cannon_2
+          [from: novum_vexillum]
+    2012  engines_4
+          [from: novum_vexillum]
     2016  antitank4
           [from: novum_vexillum]
     2020  antitank5
           [from: novum_vexillum]
     2024  antitank6
           [from: novum_vexillum]
+    2024  aa_cannon_3
+          [from: novum_vexillum]
+    2024  engines_5
+          [from: novum_vexillum]
     2028  antitank7
           [from: novum_vexillum]
     2032  antitank8
           [from: novum_vexillum]
 
-  [land / artillery] — 20 techs
+  [land / artillery] -- 20 techs
     1936  railway_gun
     1936  coldwar_artillery
           [from: novum_vexillum]
@@ -524,7 +544,7 @@ CATEGORY DETAIL
     2024  sp_artillery3
           [from: novum_vexillum]
 
-  [land / heavy_tanks] — 13 techs
+  [land / heavy_tanks] -- 13 techs
     1934  basic_heavy_tank
     1934  basic_heavy_tank_chassis
     1940  improved_heavy_tank_chassis
@@ -539,7 +559,7 @@ CATEGORY DETAIL
     1943  sp_armored_lc_high_impact_obliterator_cannon_tech
     1945  sp_armored_lc_weapon_fire_control_tech
 
-  [land / infantry] — 106 techs
+  [land / infantry] -- 106 techs
     1918  infantry_weapons
     1936  rangers_tech
     1936  special_forces_mountaineers (XP)
@@ -743,7 +763,7 @@ CATEGORY DETAIL
     2030  camouflage6
           [from: novum_vexillum]
 
-  [land / light_tanks] — 23 techs
+  [land / light_tanks] -- 23 techs
     1918  gwtank
     1918  gwtank_chassis
     1934  basic_light_tank
@@ -783,7 +803,7 @@ CATEGORY DETAIL
     2024  mechanised_infantry5
           [from: novum_vexillum]
 
-  [land / mechanised] — 12 techs
+  [land / mechanised] -- 12 techs
     1940  mechanised_infantry
     1941  amphibious_mechanized_infantry
     1943  amphibious_mechanized_infantry_2
@@ -806,7 +826,7 @@ CATEGORY DETAIL
     2030  light_mechanized_infantry6
           [from: novum_vexillum]
 
-  [land / medium_tanks] — 20 techs
+  [land / medium_tanks] -- 20 techs
     1938  basic_medium_tank_chassis
     1939  basic_medium_tank
     1940  improved_medium_tank_chassis
@@ -842,12 +862,12 @@ CATEGORY DETAIL
     2030  IFV_chassis_30s
           [from: novum_vexillum]
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
     1960  main_battle_tank_chassis
           [from: novum_vexillum]
 
-  [land / motorised] — 11 techs
+  [land / motorised] -- 11 techs
     1936  tech_trucks
     1960  motorised_infantry
           [from: novum_vexillum]
@@ -870,7 +890,7 @@ CATEGORY DETAIL
     2030  motorised_infantry5
           [from: novum_vexillum]
 
-  [land / support] — 46 techs
+  [land / support] -- 46 techs
     1936  armored_train
     1936  tech_recon_focus_bonus
     1938  sp_armored_engineer_tech
@@ -954,7 +974,7 @@ CATEGORY DETAIL
     2030  night_vision6
           [from: novum_vexillum]
 
-  [land / tanks_generic] — 58 techs
+  [land / tanks_generic] -- 58 techs
     1914  armored_car1
     1934  basic_light_td
     1934  basic_light_art
@@ -1026,7 +1046,7 @@ CATEGORY DETAIL
     2030  engine_tech_6
           [from: novum_vexillum]
 
-  [naval / battleships] — 20 techs
+  [naval / battleships] -- 20 techs
     1922  early_battlecruiser
     1936  ship_hull_super_heavy
     1936  basic_heavy_armor_scheme (XP)
@@ -1063,7 +1083,7 @@ CATEGORY DETAIL
     2032  heavy_battleship3
           [from: novum_vexillum]
 
-  [naval / carriers] — 20 techs
+  [naval / carriers] -- 20 techs
     1942  sp_refined_pykrete
     1944  sp_ice_composite_runawayas
     1980  early_ship_hull_carrier
@@ -1103,7 +1123,7 @@ CATEGORY DETAIL
     2032  future_carrier
           [from: novum_vexillum]
 
-  [naval / destroyers] — 30 techs
+  [naval / destroyers] -- 30 techs
     1936  improved_depth_charges (XP)
     1939  advanced_depth_charges (XP)
     1943  modern_depth_charges (XP)
@@ -1161,7 +1181,7 @@ CATEGORY DETAIL
     2032  future_patrol_boat
           [from: novum_vexillum]
 
-  [naval / heavy_cruisers] — 6 techs
+  [naval / heavy_cruisers] -- 6 techs
     1980  early_heavy_cruiser
           [from: novum_vexillum]
     2000  basic_heavy_cruiser
@@ -1175,7 +1195,7 @@ CATEGORY DETAIL
     2032  future_heavy_cruiser
           [from: novum_vexillum]
 
-  [naval / light_cruisers] — 20 techs
+  [naval / light_cruisers] -- 20 techs
     1980  early_ship_hull_cruiser
           [from: novum_vexillum]
     1980  early_light_cruiser
@@ -1217,7 +1237,7 @@ CATEGORY DETAIL
     2032  future_light_cruiser
           [from: novum_vexillum]
 
-  [naval / naval_support] — 46 techs
+  [naval / naval_support] -- 46 techs
     1922  submarine_mine_laying
     1936  improved_naval_mines
     1938  degaussing
@@ -1299,7 +1319,7 @@ CATEGORY DETAIL
     2032  future_heavy_battery
           [from: novum_vexillum]
 
-  [naval / submarines] — 22 techs
+  [naval / submarines] -- 22 techs
     1939  basic_submarine_snorkel
     1939  sp_aip_engine_improved_tech
     1943  improved_submarine_snorkel (XP)
@@ -1388,18 +1408,6 @@ Add entries to custom_mappings.txt to include them.
   ToA_river_boats_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  aa_cannon_1
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
-  aa_cannon_2
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
-  aa_cannon_3
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
-  aa_lmg
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_guns']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
   advanced_asm
     categories: ['naval_equipment', 'asw_tech']
     source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\MTG_naval_Support.txt
@@ -1544,21 +1552,6 @@ Add entries to custom_mappings.txt to include them.
   elephantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  engines_1
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
-  engines_2
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
-  engines_3
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
-  engines_4
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
-  engines_5
-    categories: ['air_equipment', 'plane_modules_tech', 'cat_air_engine']
-    source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
   fire_control_methods_1
     categories: ['naval_equipment']
     source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\MTG_naval_Support.txt
@@ -1655,9 +1648,6 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   pilot_assist
     categories: ['air_equipment', 'plane_modules_tech']
     source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\bba_air_techs.txt
@@ -1682,9 +1672,6 @@ Add entries to custom_mappings.txt to include them.
   soviet_artillery_tech
     categories: []
     source: novum_vexillum / E:\SteamLibrary\steamapps\workshop\content\394360\1827273767\common\technologies\secret_techs.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_naval_proximity_fuze_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt

@@ -4,7 +4,7 @@ Workshop ID: 1827273767
 Bundle slug: novum_vexillum
 Generation mode: overhaul
 Parsed techs: 618
-Unknown techs: 88
+Unknown techs: 79
 Doctrines detected: 0
 Preset thresholds: novum_vexillum
 

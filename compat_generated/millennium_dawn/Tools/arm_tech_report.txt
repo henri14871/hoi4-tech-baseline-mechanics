@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    1507
-Successfully mapped:   1094
-Unmapped (unknown):    370
+Successfully mapped:   1394
+Unmapped (unknown):    76
 
 BRANCH SUMMARY
 ----------------------------------------
-  air                             135 techs
-  industry_electronics            333 techs
-  land                            364 techs
-  naval                           262 techs
+  air                              73 techs
+  industry_electronics             75 techs
+  land                           1147 techs
+  naval                            99 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 12 techs
+  [air / cas] -- 12 techs
     1922  early_bombs
     1936  CAS1
     1936  cv_CAS1
@@ -29,7 +29,7 @@ CATEGORY DETAIL
     1944  cv_CAS3
     1944  air_torpedoe_3
 
-  [air / fighters] — 82 techs
+  [air / fighters] -- 27 techs
     1922  aa_lmg
     1922  engines_1
     1926  iw_small_airframe
@@ -40,30 +40,6 @@ CATEGORY DETAIL
     1936  basic_small_airframe
     1936  range_improvements
     1936  aircraft_construction
-    1936  CV_MR_Fighter1
-          [from: millennium_dawn]
-    1936  CV_MR_Fighter2
-          [from: millennium_dawn]
-    1936  CV_MR_Fighter3
-          [from: millennium_dawn]
-    1936  CV_MR_Fighter4
-          [from: millennium_dawn]
-    1936  CV_MR_Fighter5
-          [from: millennium_dawn]
-    1936  CV_MR_Fighter6
-          [from: millennium_dawn]
-    1936  CV_MR_Fighter7
-          [from: millennium_dawn]
-    1936  CV_L_Strike_fighter1
-          [from: millennium_dawn]
-    1936  CV_L_Strike_fighter2
-          [from: millennium_dawn]
-    1936  CV_L_Strike_fighter3
-          [from: millennium_dawn]
-    1936  CV_L_Strike_fighter4
-          [from: millennium_dawn]
-    1936  CV_L_Strike_fighter5
-          [from: millennium_dawn]
     1939  survivability_studies
     1939  aa_hmg
     1939  aa_cannon_1
@@ -81,94 +57,8 @@ CATEGORY DETAIL
     1950  jet_fighter2
     1950  supersonic_fighter1
     1950  supersonic_small_airframe
-    1960  gen_3_light
-          [from: millennium_dawn]
-    1960  gen_3_medium
-          [from: millennium_dawn]
-    1965  AS_Fighter1
-          [from: millennium_dawn]
-    1965  MR_Fighter1
-          [from: millennium_dawn]
-    1965  Strike_fighter1
-          [from: millennium_dawn]
-    1965  L_Strike_fighter1
-          [from: millennium_dawn]
-    1980  gen_4_light
-          [from: millennium_dawn]
-    1980  gen_4_medium
-          [from: millennium_dawn]
-    1985  AS_Fighter2
-          [from: millennium_dawn]
-    1985  MR_Fighter2
-          [from: millennium_dawn]
-    1985  Strike_fighter2
-          [from: millennium_dawn]
-    1995  AS_upgrade_1 (XP)
-          [from: millennium_dawn]
-    1995  AS_Fighter3
-          [from: millennium_dawn]
-    1995  MR_upgrade_1 (XP)
-          [from: millennium_dawn]
-    1995  MR_Fighter3
-          [from: millennium_dawn]
-    1995  Strike_upgrade_1 (XP)
-          [from: millennium_dawn]
-    1995  Strike_fighter3
-          [from: millennium_dawn]
-    1995  L_Strike_fighter2
-          [from: millennium_dawn]
-    2015  gen_5_light
-          [from: millennium_dawn]
-    2015  gen_5_medium
-          [from: millennium_dawn]
-    2015  AS_Fighter4
-          [from: millennium_dawn]
-    2015  MR_Fighter4
-          [from: millennium_dawn]
-    2015  Strike_fighter4
-          [from: millennium_dawn]
-    2015  L_Strike_fighter3
-          [from: millennium_dawn]
-    2020  AS_upgrade_2 (XP)
-          [from: millennium_dawn]
-    2020  MR_upgrade_2 (XP)
-          [from: millennium_dawn]
-    2020  Strike_upgrade_2 (XP)
-          [from: millennium_dawn]
-    2025  AS_Fighter5
-          [from: millennium_dawn]
-    2025  MR_Fighter5
-          [from: millennium_dawn]
-    2025  Strike_fighter5
-          [from: millennium_dawn]
-    2025  L_Strike_fighter4
-          [from: millennium_dawn]
-    2035  gen_6_light
-          [from: millennium_dawn]
-    2035  gen_6_medium
-          [from: millennium_dawn]
-    2035  AS_Fighter6
-          [from: millennium_dawn]
-    2035  MR_Fighter6
-          [from: millennium_dawn]
-    2035  Strike_fighter6
-          [from: millennium_dawn]
-    2035  L_Strike_fighter5
-          [from: millennium_dawn]
-    2040  AS_upgrade_3 (XP)
-          [from: millennium_dawn]
-    2040  MR_upgrade_3 (XP)
-          [from: millennium_dawn]
-    2040  Strike_upgrade_3 (XP)
-          [from: millennium_dawn]
-    2045  AS_Fighter7
-          [from: millennium_dawn]
-    2045  MR_Fighter7
-          [from: millennium_dawn]
-    2045  Strike_fighter7
-          [from: millennium_dawn]
 
-  [air / heavy_fighters] — 8 techs
+  [air / heavy_fighters] -- 8 techs
     1926  iw_medium_airframe
     1936  heavy_fighter1
     1936  basic_medium_airframe
@@ -178,7 +68,7 @@ CATEGORY DETAIL
     1944  advanced_medium_airframe
     1945  modern_medium_airframe
 
-  [air / naval_bombers] — 6 techs
+  [air / naval_bombers] -- 6 techs
     1936  naval_bomber1
     1936  cv_naval_bomber1
     1940  naval_bomber2
@@ -186,7 +76,7 @@ CATEGORY DETAIL
     1944  naval_bomber3
     1944  cv_naval_bomber3
 
-  [air / strategic_bombers] — 9 techs
+  [air / strategic_bombers] -- 9 techs
     1926  iw_large_airframe
     1936  basic_large_airframe
     1940  improved_large_airframe
@@ -197,28 +87,14 @@ CATEGORY DETAIL
     1946  aerial_hangars
     1950  jet_strategic_bomber1
 
-  [air / tactical_bombers] — 12 techs
+  [air / tactical_bombers] -- 5 techs
     1936  tactical_bomber1
     1940  tactical_bomber2
     1944  tactical_bomber3
     1945  jet_tactical_bomber1
-    1945  early_bomber
-          [from: millennium_dawn]
     1950  jet_tactical_bomber2
-    1965  strategic_bomber1
-          [from: millennium_dawn]
-    1975  strategic_bomber2
-          [from: millennium_dawn]
-    1985  strategic_bomber3
-          [from: millennium_dawn]
-    2015  strategic_bomber4
-          [from: millennium_dawn]
-    2025  strategic_bomber5
-          [from: millennium_dawn]
-    2035  strategic_bomber6
-          [from: millennium_dawn]
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -226,7 +102,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
     1948  strategic_airlifter
 
-  [industry_electronics / electronics] — 38 techs
+  [industry_electronics / electronics] -- 17 techs
     1936  electronic_mechanical_engineering
     1936  radio
     1936  mechanical_computing
@@ -244,50 +120,8 @@ CATEGORY DETAIL
     1942  advanced_computing_machine
     1942  advanced_encryption
     1942  advanced_decryption
-    1945  basic_computing
-          [from: millennium_dawn]
-    1958  integrated_circuit
-          [from: millennium_dawn]
-    1965  computing1
-          [from: millennium_dawn]
-    1965  decryption1
-          [from: millennium_dawn]
-    1965  encryption1
-          [from: millennium_dawn]
-    1975  microprocessors
-          [from: millennium_dawn]
-    1985  computing2
-          [from: millennium_dawn]
-    1985  decryption2
-          [from: millennium_dawn]
-    1985  encryption2
-          [from: millennium_dawn]
-    1995  computing3
-          [from: millennium_dawn]
-    1995  decryption3
-          [from: millennium_dawn]
-    1995  encryption3
-          [from: millennium_dawn]
-    2005  computing4
-          [from: millennium_dawn]
-    2005  decryption4
-          [from: millennium_dawn]
-    2005  encryption4
-          [from: millennium_dawn]
-    2015  computing5
-          [from: millennium_dawn]
-    2015  decryption5
-          [from: millennium_dawn]
-    2015  encryption5
-          [from: millennium_dawn]
-    2030  computing6
-          [from: millennium_dawn]
-    2030  decryption6
-          [from: millennium_dawn]
-    2030  encryption6
-          [from: millennium_dawn]
 
-  [industry_electronics / industry] — 167 techs
+  [industry_electronics / industry] -- 32 techs
     1936  basic_fortification_tech
     1936  coastal_fort_tech_1
     1936  basic_machine_tools
@@ -320,7 +154,577 @@ CATEGORY DETAIL
     1943  dispersed_industry5
     1943  modern_oil_processing
     1943  modern_rubber_processing
+
+  [industry_electronics / nuclear] -- 6 techs
+    1940  atomic_research
+    1943  nuclear_reactor
+    1943  nuclear_reactor_heavy_water
+    1943  isotope_separation_centrifugal
+    1945  nukes
+    1950  thermonuclear_bombs
+
+  [industry_electronics / radar] -- 5 techs
+    1936  radio_detection
+    1938  cavity_magnatron
+    1940  centimetric_radar
+    1941  phased_array
+    1942  monopulse_radar
+
+  [industry_electronics / rockets] -- 15 techs
+    1939  motorized_rocket_unit
+    1940  rocket_artillery
+    1941  rocket_artillery2
+    1942  rocket_artillery3
+    1942  experimental_rockets
+    1943  rocket_artillery4
+    1943  sp_rockets_improved_guidance
+    1944  rocket_engines
+    1944  sp_rockets_rocket_bomber
+    1944  jet_engines
+    1944  sp_rockets_dual_chamber_rocket_engine_1
+    1945  sp_rockets_improved_rocket_bomber
+    1945  improved_rocket_engines
+    1946  advanced_rocket_engines
+    1946  sp_rockets_dual_chamber_rocket_engine_2
+
+  [land / anti_air] -- 6 techs
+    1936  interwar_antiair
+    1939  antiair1
+    1940  antiair2
+    1941  antiair3
+    1942  antiair4
+    1943  antiair5
+
+  [land / anti_tank] -- 962 techs
+    1922  photo_reconnaisance
+    1936  mountain_tanks
+    1936  interwar_antitank
+    1936  SWE_bofors_antitank_gun
+    1936  SP_Anti_Air_0
+          [from: millennium_dawn]
+    1936  SP_Anti_Air_1
+          [from: millennium_dawn]
+    1936  SP_Anti_Air_2
+          [from: millennium_dawn]
+    1936  SP_Anti_Air_3
+          [from: millennium_dawn]
+    1936  SP_Anti_Air_4
+          [from: millennium_dawn]
+    1936  fake_CAT_armor
+          [from: millennium_dawn]
+    1936  SP_arty_0
+          [from: millennium_dawn]
+    1936  SP_R_arty_0
+          [from: millennium_dawn]
+    1936  SP_R_arty_1
+          [from: millennium_dawn]
+    1936  SP_R_arty_2
+          [from: millennium_dawn]
+    1936  SP_R_arty_3
+          [from: millennium_dawn]
+    1936  SP_R_arty_4
+          [from: millennium_dawn]
+    1936  CV_MR_Fighter1
+          [from: millennium_dawn]
+    1936  CV_MR_Fighter2
+          [from: millennium_dawn]
+    1936  CV_MR_Fighter3
+          [from: millennium_dawn]
+    1936  CV_MR_Fighter4
+          [from: millennium_dawn]
+    1936  CV_MR_Fighter5
+          [from: millennium_dawn]
+    1936  CV_MR_Fighter6
+          [from: millennium_dawn]
+    1936  CV_MR_Fighter7
+          [from: millennium_dawn]
+    1936  CV_L_Strike_fighter1
+          [from: millennium_dawn]
+    1936  CV_L_Strike_fighter2
+          [from: millennium_dawn]
+    1936  CV_L_Strike_fighter3
+          [from: millennium_dawn]
+    1936  CV_L_Strike_fighter4
+          [from: millennium_dawn]
+    1936  CV_L_Strike_fighter5
+          [from: millennium_dawn]
+    1936  Air_Kamikaze1
+          [from: millennium_dawn]
+    1936  Air_Kamikaze2
+          [from: millennium_dawn]
+    1936  Air_Kamikaze3
+          [from: millennium_dawn]
+    1936  Air_Kamikaze4
+          [from: millennium_dawn]
+    1936  legacy_doctrines (XP)
+          [from: millennium_dawn]
+    1936  combined_arms (XP)
+          [from: millennium_dawn]
+    1936  armoured_mass_assault (XP)
+          [from: millennium_dawn]
+    1936  superior_firepower (XP)
+          [from: millennium_dawn]
+    1936  infantry_mass_assault (XP)
+          [from: millennium_dawn]
+    1936  early_guerilla_warfare (XP)
+          [from: millennium_dawn]
+    1939  antitank1
+    1940  antitank2
+    1941  antitank3
+    1942  antitank4
+    1943  antitank5
+    1945  sp_centrifugal_jet_tech
+    1945  Early_APC
+          [from: millennium_dawn]
+    1945  ballistic_missile
+          [from: millennium_dawn]
+    1945  early_bomber
+          [from: millennium_dawn]
+    1945  cruise_missile
+          [from: millennium_dawn]
+    1945  basic_computing
+          [from: millennium_dawn]
+    1945  radar
+          [from: millennium_dawn]
+    1945  early_fighter
+          [from: millennium_dawn]
+    1945  air_defense
+          [from: millennium_dawn]
+    1945  tech_naval_systems_engineering (XP)
+          [from: millennium_dawn]
+    1945  tech_early_naval_weapon_systems (XP)
+          [from: millennium_dawn]
+    1945  air_defense_non_got
+          [from: millennium_dawn]
+    1945  cruise_missile_non_got
+          [from: millennium_dawn]
+    1945  mbt_tech_ops
+          [from: millennium_dawn]
+    1945  small_medium_gun_tech
+          [from: millennium_dawn]
+    1945  small_autocannon_tech
+          [from: millennium_dawn]
+    1945  aircraft_carrier_engineering (XP)
+          [from: millennium_dawn]
+    1945  tech_submarine_engineering (XP)
+          [from: millennium_dawn]
+    1955  ICBM
+          [from: millennium_dawn]
+    1955  IRBM
+          [from: millennium_dawn]
+    1955  early_airframe_designs
+          [from: millennium_dawn]
+    1955  early_weapons
+          [from: millennium_dawn]
+    1955  GLCM
+          [from: millennium_dawn]
+    1955  TEL_launched_missiles
+          [from: millennium_dawn]
+    1955  SAM
+          [from: millennium_dawn]
+    1955  SAM_non_got
+          [from: millennium_dawn]
+    1955  GLCM_non_got
+          [from: millennium_dawn]
+    1955  TEL_launched_missiles_non_got
+          [from: millennium_dawn]
+    1958  integrated_circuit
+          [from: millennium_dawn]
+    1960  gen_3_light
+          [from: millennium_dawn]
+    1960  gen_3_medium
+          [from: millennium_dawn]
+    1960  gen_3_large
+          [from: millennium_dawn]
+    1965  nsb_attack_helicopter_tech_1
+          [from: millennium_dawn]
+    1965  attack_helicopter1
+          [from: millennium_dawn]
+    1965  helo_ops_tech
+          [from: millennium_dawn]
+    1965  nsb_transport_helicopter1
+          [from: millennium_dawn]
+    1965  transport_helicopter1
+          [from: millennium_dawn]
+    1965  nsb_engine_tech_1
+          [from: millennium_dawn]
+    1965  nsb_multiple_atgm_tech_1
+          [from: millennium_dawn]
+    1965  nsb_heavy_atgm_tech_1
+          [from: millennium_dawn]
+    1965  nsb_rocket_pods_tech_1
+          [from: millennium_dawn]
+    1965  nsb_gun_pods_tech_1
+          [from: millennium_dawn]
+    1965  nsb_light_nose_gun_tech_1
+          [from: millennium_dawn]
+    1965  Anti_Air_0
+          [from: millennium_dawn]
+    1965  Anti_tank_0
+          [from: millennium_dawn]
+    1965  Heavy_Anti_tank_0
+          [from: millennium_dawn]
+    1965  MBT_1
+          [from: millennium_dawn]
+    1965  APC_1
+          [from: millennium_dawn]
+    1965  IFV_1
+          [from: millennium_dawn]
+    1965  Rec_tank_0
+          [from: millennium_dawn]
+    1965  artillery_0
+          [from: millennium_dawn]
+    1965  ICBM1
+          [from: millennium_dawn]
+    1965  IRBM1
+          [from: millennium_dawn]
+    1965  air_weapons_1
+          [from: millennium_dawn]
+    1965  countermeasures_1
+          [from: millennium_dawn]
+    1965  naval_weapons_1
+          [from: millennium_dawn]
+    1965  ag_weapons_1
+          [from: millennium_dawn]
+    1965  strategic_bomber1
+          [from: millennium_dawn]
+    1965  transport_plane1
+          [from: millennium_dawn]
+    1965  naval_plane1
+          [from: millennium_dawn]
+    1965  TEL_3
+          [from: millennium_dawn]
+    1965  GLCM1
+          [from: millennium_dawn]
+    1965  computing1
+          [from: millennium_dawn]
+    1965  decryption1
+          [from: millennium_dawn]
+    1965  encryption1
+          [from: millennium_dawn]
+    1965  AS_Fighter1
+          [from: millennium_dawn]
+    1965  MR_Fighter1
+          [from: millennium_dawn]
+    1965  Strike_fighter1
+          [from: millennium_dawn]
+    1965  L_Strike_fighter1
+          [from: millennium_dawn]
+    1965  infantry_weapons
+          [from: millennium_dawn]
+    1965  util_vehicle_0
+          [from: millennium_dawn]
+    1965  combat_eng_equipment (XP)
+          [from: millennium_dawn]
+    1965  night_vision_1 (XP)
+          [from: millennium_dawn]
+    1965  camouflage (XP)
+          [from: millennium_dawn]
+    1965  support_weapons (XP)
+          [from: millennium_dawn]
+    1965  special_forces (XP)
+          [from: millennium_dawn]
+    1965  SAM0
+          [from: millennium_dawn]
+    1965  battleship_hull_1
+          [from: millennium_dawn]
+    1965  aircraft_heli_engineering_1 (XP)
+          [from: millennium_dawn]
+    1965  carrier_hull_1
+          [from: millennium_dawn]
+    1965  tech_submarine_engineering_1 (XP)
+          [from: millennium_dawn]
+    1965  attack_submarine_hull_1
+          [from: millennium_dawn]
+    1965  missile_submarine_hull_1
+          [from: millennium_dawn]
+    1965  tech_power_systems (XP)
+          [from: millennium_dawn]
+    1965  tech_nuclear_power_systems (XP)
+          [from: millennium_dawn]
+    1965  tech_combat_support_systems (XP)
+          [from: millennium_dawn]
+    1965  tech_fire_control (XP)
+          [from: millennium_dawn]
+    1965  tech_naval_weapon_systems (XP)
+          [from: millennium_dawn]
+    1965  tech_landing_craft (XP)
+          [from: millennium_dawn]
+    1965  SAM0_non_got
+          [from: millennium_dawn]
+    1965  TEL_3_non_got
+          [from: millennium_dawn]
+    1965  GLCM1_non_got
+          [from: millennium_dawn]
+    1965  nsb_SHORAD_missile_0
+          [from: millennium_dawn]
+    1965  nsb_dual_role_missile_0
+          [from: millennium_dawn]
+    1965  nsb_AA_autocannon_0
+          [from: millennium_dawn]
+    1965  nsb_Anti_Air_0
+          [from: millennium_dawn]
+    1965  mbt_tech
+          [from: millennium_dawn]
+    1965  tank_components_tech
+          [from: millennium_dawn]
+    1965  armor_tech
+          [from: millennium_dawn]
+    1965  diesel_engine_tech
+          [from: millennium_dawn]
+    1965  medium_gun_tech
+          [from: millennium_dawn]
+    1965  big_autocannon_tech
+          [from: millennium_dawn]
+    1965  assault_gun_tech
+          [from: millennium_dawn]
+    1965  nsb_artillery_ammo_1
+          [from: millennium_dawn]
+    1965  nsb_special_ammo_0
+          [from: millennium_dawn]
+    1965  nsb_gun_technology_1
+          [from: millennium_dawn]
+    1965  nsb_barrel_conversions
+          [from: millennium_dawn]
+    1965  nsb_artillery_0
+          [from: millennium_dawn]
+    1965  GNSS1
+          [from: millennium_dawn]
+    1965  COMSAT1
+          [from: millennium_dawn]
+    1965  SPYSAT1
+          [from: millennium_dawn]
+    1965  OLV1
+          [from: millennium_dawn]
+    1965  nsb_atgm_tech_1
+          [from: millennium_dawn]
+    1965  corvette_hull_1
+          [from: millennium_dawn]
+    1965  frigate_hull_1
+          [from: millennium_dawn]
+    1965  destroyer_hull_1
+          [from: millennium_dawn]
+    1965  cruiser_hull_1
+          [from: millennium_dawn]
+    1970  flying_wing_design
+          [from: millennium_dawn]
+    1970  special_mad_1
+          [from: millennium_dawn]
+    1970  gunship_1
+          [from: millennium_dawn]
+    1970  tgp_recon_1
+          [from: millennium_dawn]
+    1970  helicopter_operator_hull_1
+          [from: millennium_dawn]
+    1970  tech_point_defense_system (XP)
+          [from: millennium_dawn]
+    1970  defensive_systems
+          [from: millennium_dawn]
+    1970  early_cold_war_ammo
+          [from: millennium_dawn]
+    1975  MBT_2
+          [from: millennium_dawn]
+    1975  APC_2
+          [from: millennium_dawn]
+    1975  IFV_2
+          [from: millennium_dawn]
+    1975  ICBM2
+          [from: millennium_dawn]
+    1975  IRBM2
+          [from: millennium_dawn]
+    1975  NIRBM1
+          [from: millennium_dawn]
+    1975  engines_2
+          [from: millennium_dawn]
+    1975  strategic_bomber2
+          [from: millennium_dawn]
+    1975  naval_plane2
+          [from: millennium_dawn]
+    1975  cas1
+          [from: millennium_dawn]
+    1975  TEL_4
+          [from: millennium_dawn]
+    1975  GLCM2
+          [from: millennium_dawn]
+    1975  microprocessors
+          [from: millennium_dawn]
+    1975  internet1
+          [from: millennium_dawn]
+    1975  infantry_weapons1
+          [from: millennium_dawn]
+    1975  util_vehicle_1
+          [from: millennium_dawn]
+    1975  night_vision_2 (XP)
+          [from: millennium_dawn]
+    1975  command_control_equipment
+          [from: millennium_dawn]
+    1975  squad_automatic_weapon (XP)
+          [from: millennium_dawn]
+    1975  tandem_charge_warheads (XP)
+          [from: millennium_dawn]
+    1975  special_forces2 (XP)
+          [from: millennium_dawn]
+    1975  SAM1
+          [from: millennium_dawn]
+    1975  tech_light_guns (XP)
+          [from: millennium_dawn]
+    1975  tech_point_defense_system_1 (XP)
+          [from: millennium_dawn]
+    1975  tech_turret_missiles_surface (XP)
+          [from: millennium_dawn]
+    1975  tech_turret_missiles_aa (XP)
+          [from: millennium_dawn]
+    1975  tech_vls_surface (XP)
+          [from: millennium_dawn]
+    1975  tech_vls_aa (XP)
+          [from: millennium_dawn]
+    1975  tech_torpedoes (XP)
+          [from: millennium_dawn]
+    1975  SAM1_non_got
+          [from: millennium_dawn]
+    1975  TEL_4_non_got
+          [from: millennium_dawn]
+    1975  GLCM2_non_got
+          [from: millennium_dawn]
+    1975  mbt_tech_1
+          [from: millennium_dawn]
+    1975  tank_components_tech_2
+          [from: millennium_dawn]
+    1975  era_tech
+          [from: millennium_dawn]
+    1975  diesel_engine_tech_2
+          [from: millennium_dawn]
+    1975  turbine_engine_tech
+          [from: millennium_dawn]
+    1975  electric_engine_tech_1
+          [from: millennium_dawn]
+    1975  small_autocannon_tech_2
+          [from: millennium_dawn]
+    1975  GNSS2
+          [from: millennium_dawn]
+    1975  COMSAT2
+          [from: millennium_dawn]
+    1975  SPYSAT2
+          [from: millennium_dawn]
+    1975  OLV2
+          [from: millennium_dawn]
+    1980  AA_upgrade_1 (XP)
+          [from: millennium_dawn]
+    1980  AT_upgrade_1 (XP)
+          [from: millennium_dawn]
+    1980  Arty_upgrade_1 (XP)
+          [from: millennium_dawn]
+    1980  gen_4_light
+          [from: millennium_dawn]
+    1980  gen_4_medium
+          [from: millennium_dawn]
+    1980  gen_4_large
+          [from: millennium_dawn]
+    1980  avionics_1
+          [from: millennium_dawn]
+    1980  refueling_1
+          [from: millennium_dawn]
+    1980  body_armor_1980 (XP)
+          [from: millennium_dawn]
+    1980  camouflage2 (XP)
+          [from: millennium_dawn]
+    1980  corvette_hull_2
+          [from: millennium_dawn]
+    1980  frigate_hull_2
+          [from: millennium_dawn]
+    1980  attack_submarine_hull_2
+          [from: millennium_dawn]
+    1980  missile_submarine_hull_2
+          [from: millennium_dawn]
+    1980  tech_combat_radar (XP)
+          [from: millennium_dawn]
+    1980  tech_combat_sonar (XP)
+          [from: millennium_dawn]
+    1980  nsb_AA_upgrade_1 (XP)
+          [from: millennium_dawn]
+    1980  defensive_systems_2
+          [from: millennium_dawn]
+    1980  nsb_Arty_upgrade_1 (XP)
+          [from: millennium_dawn]
+    1985  nsb_attack_helicopter_tech_2
+          [from: millennium_dawn]
+    1985  attack_helicopter2
+          [from: millennium_dawn]
+    1985  nsb_transport_helicopter2
+          [from: millennium_dawn]
+    1985  transport_helicopter2
+          [from: millennium_dawn]
+    1985  nsb_engine_tech_2
+          [from: millennium_dawn]
+    1985  nsb_multiple_atgm_tech_2
+          [from: millennium_dawn]
+    1985  nsb_heavy_atgm_tech_2
+          [from: millennium_dawn]
+    1985  nsb_rocket_pods_tech_2
+          [from: millennium_dawn]
+    1985  nsb_gun_pods_tech_2
+          [from: millennium_dawn]
+    1985  nsb_light_nose_gun_tech_2
+          [from: millennium_dawn]
+    1985  nsb_defense_tech_1
+          [from: millennium_dawn]
+    1985  Anti_Air_1
+          [from: millennium_dawn]
+    1985  Anti_tank_1
+          [from: millennium_dawn]
+    1985  Heavy_Anti_tank_1
+          [from: millennium_dawn]
+    1985  MBT_3
+          [from: millennium_dawn]
+    1985  APC_3
+          [from: millennium_dawn]
+    1985  IFV_3
+          [from: millennium_dawn]
+    1985  Rec_tank_1
+          [from: millennium_dawn]
+    1985  artillery_1
+          [from: millennium_dawn]
+    1985  SP_arty_1
+          [from: millennium_dawn]
+    1985  ICBM3
+          [from: millennium_dawn]
+    1985  IRBM3
+          [from: millennium_dawn]
+    1985  NIRBM2
+          [from: millennium_dawn]
+    1985  awacs_1
+          [from: millennium_dawn]
+    1985  drone_1
+          [from: millennium_dawn]
+    1985  redundant_1
+          [from: millennium_dawn]
+    1985  strategic_bomber3
+          [from: millennium_dawn]
+    1985  transport_plane2
+          [from: millennium_dawn]
+    1985  naval_plane3
+          [from: millennium_dawn]
+    1985  awacs_plane1
+          [from: millennium_dawn]
+    1985  cv_awacs_plane1
+          [from: millennium_dawn]
+    1985  TEL_5
+          [from: millennium_dawn]
+    1985  GLCM3
+          [from: millennium_dawn]
     1985  neural_networks_revival
+          [from: millennium_dawn]
+    1985  computing2
+          [from: millennium_dawn]
+    1985  decryption2
+          [from: millennium_dawn]
+    1985  encryption2
+          [from: millennium_dawn]
+    1985  AS_Fighter2
+          [from: millennium_dawn]
+    1985  MR_Fighter2
+          [from: millennium_dawn]
+    1985  Strike_fighter2
           [from: millennium_dawn]
     1985  industrial_electrospun_polymeric_nanofibers
           [from: millennium_dawn]
@@ -330,15 +734,125 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     1985  fuel_silos
           [from: millennium_dawn]
+    1985  nuclear_technology
+          [from: millennium_dawn]
     1985  construction1
           [from: millennium_dawn]
     1985  excavation1
           [from: millennium_dawn]
     1985  integrated_transportation_system
           [from: millennium_dawn]
+    1985  infantry_weapons2
+          [from: millennium_dawn]
+    1985  util_vehicle_2
+          [from: millennium_dawn]
+    1985  night_vision_3 (XP)
+          [from: millennium_dawn]
+    1985  command_control_equipment1
+          [from: millennium_dawn]
+    1985  land_Drone_equipment (XP)
+          [from: millennium_dawn]
+    1985  support_weapons2 (XP)
+          [from: millennium_dawn]
+    1985  special_forces3 (XP)
+          [from: millennium_dawn]
+    1985  SAM2
+          [from: millennium_dawn]
+    1985  cruiser_hull_2
+          [from: millennium_dawn]
+    1985  aircraft_heli_engineering_2 (XP)
+          [from: millennium_dawn]
+    1985  carrier_hull_2
+          [from: millennium_dawn]
+    1985  tech_turret_missiles_surface_1 (XP)
+          [from: millennium_dawn]
+    1985  tech_turret_missiles_aa_1 (XP)
+          [from: millennium_dawn]
+    1985  tech_vls_surface_1 (XP)
+          [from: millennium_dawn]
+    1985  tech_vls_aa_1 (XP)
+          [from: millennium_dawn]
+    1985  tech_amphibious_assault_ship (XP)
+          [from: millennium_dawn]
+    1985  SAM2_non_got
+          [from: millennium_dawn]
+    1985  TEL_5_non_got
+          [from: millennium_dawn]
+    1985  GLCM3_non_got
+          [from: millennium_dawn]
+    1985  nsb_SHORAD_missile_1
+          [from: millennium_dawn]
+    1985  nsb_dual_role_missile_1
+          [from: millennium_dawn]
+    1985  nsb_AA_autocannon_1
+          [from: millennium_dawn]
+    1985  nsb_Anti_Air_1
+          [from: millennium_dawn]
+    1985  era_tech_2
+          [from: millennium_dawn]
+    1985  armor_tech_2
+          [from: millennium_dawn]
+    1985  nera_armor_tech_1
+          [from: millennium_dawn]
+    1985  cold_war_ammo
+          [from: millennium_dawn]
+    1985  diesel_engine_tech_3
+          [from: millennium_dawn]
+    1985  turbine_engine_tech_2
+          [from: millennium_dawn]
+    1985  small_medium_gun_tech_2
+          [from: millennium_dawn]
+    1985  medium_gun_tech_2
+          [from: millennium_dawn]
+    1985  big_autocannon_tech_2
+          [from: millennium_dawn]
+    1985  assault_gun_tech_2
+          [from: millennium_dawn]
+    1985  CZE_engine_tech
+          [from: millennium_dawn]
+    1985  nsb_artillery_ammo_2
+          [from: millennium_dawn]
+    1985  nsb_special_ammo_1
+          [from: millennium_dawn]
+    1985  nsb_gun_technology_2
+          [from: millennium_dawn]
+    1985  nsb_fire_modes_1
+          [from: millennium_dawn]
+    1985  nsb_artillery_1
+          [from: millennium_dawn]
+    1985  GNSS3
+          [from: millennium_dawn]
+    1985  COMSAT3
+          [from: millennium_dawn]
+    1985  SPYSAT3
+          [from: millennium_dawn]
+    1985  KILLSAT1
+          [from: millennium_dawn]
+    1985  OLV3
+          [from: millennium_dawn]
+    1985  nsb_atgm_tech_2
+          [from: millennium_dawn]
+    1985  nuclear_engines
+          [from: millennium_dawn]
+    1990  suicide_drone_1
+          [from: millennium_dawn]
+    1990  variable_wing_design
+          [from: millennium_dawn]
+    1990  delta_wing_design
+          [from: millennium_dawn]
+    1990  air_weapons_2
+          [from: millennium_dawn]
+    1990  countermeasures_2
+          [from: millennium_dawn]
+    1990  naval_weapons_2
+          [from: millennium_dawn]
+    1990  ag_weapons_2
+          [from: millennium_dawn]
     1990  data_mining
           [from: millennium_dawn]
     1990  machine_learning
+          [from: millennium_dawn]
+    1990  internet2
           [from: millennium_dawn]
     1990  multiwalled_carbon_nanotubes
           [from: millennium_dawn]
@@ -354,6 +868,8 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     1990  early_renewables
           [from: millennium_dawn]
+    1990  reactor1
+          [from: millennium_dawn]
     1990  land_fort_building_1
           [from: millennium_dawn]
     1990  stronghold_building_1
@@ -361,6 +877,70 @@ CATEGORY DETAIL
     1990  post_conventional_rail
           [from: millennium_dawn]
     1990  gps_agricultural_applications
+          [from: millennium_dawn]
+    1990  destroyer_hull_2
+          [from: millennium_dawn]
+    1990  tech_submarine_engineering_2 (XP)
+          [from: millennium_dawn]
+    1990  tech_nuclear_power_systems_1 (XP)
+          [from: millennium_dawn]
+    1990  tech_point_defense_system_2 (XP)
+          [from: millennium_dawn]
+    1990  tech_torpedoes_1 (XP)
+          [from: millennium_dawn]
+    1990  tech_air_cushioned_landing_craft (XP)
+          [from: millennium_dawn]
+    1990  tech_fire_control_1 (XP)
+          [from: millennium_dawn]
+    1995  MBT_4
+          [from: millennium_dawn]
+    1995  APC_4
+          [from: millennium_dawn]
+    1995  IFV_4
+          [from: millennium_dawn]
+    1995  ICBM4
+          [from: millennium_dawn]
+    1995  IRBM4
+          [from: millennium_dawn]
+    1995  NIRBM3
+          [from: millennium_dawn]
+    1995  special_mad_2
+          [from: millennium_dawn]
+    1995  gunship_2
+          [from: millennium_dawn]
+    1995  tgp_recon_2
+          [from: millennium_dawn]
+    1995  transport_plane3
+          [from: millennium_dawn]
+    1995  cas2
+          [from: millennium_dawn]
+    1995  TEL_6
+          [from: millennium_dawn]
+    1995  GLCM4
+          [from: millennium_dawn]
+    1995  computing3
+          [from: millennium_dawn]
+    1995  decryption3
+          [from: millennium_dawn]
+    1995  encryption3
+          [from: millennium_dawn]
+    1995  gprs
+          [from: millennium_dawn]
+    1995  AS_upgrade_1 (XP)
+          [from: millennium_dawn]
+    1995  AS_Fighter3
+          [from: millennium_dawn]
+    1995  MR_upgrade_1 (XP)
+          [from: millennium_dawn]
+    1995  MR_Fighter3
+          [from: millennium_dawn]
+    1995  Strike_upgrade_1 (XP)
+          [from: millennium_dawn]
+    1995  Strike_fighter3
+          [from: millennium_dawn]
+    1995  L_Strike_fighter2
+          [from: millennium_dawn]
+    1995  Air_UAV1
           [from: millennium_dawn]
     1995  modern_electrospinning
           [from: millennium_dawn]
@@ -376,6 +956,8 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     1995  renewables
           [from: millennium_dawn]
+    1995  reactor2
+          [from: millennium_dawn]
     1995  construction2
           [from: millennium_dawn]
     1995  excavation2
@@ -384,7 +966,87 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     1995  automated_irrigation_systems
           [from: millennium_dawn]
+    1995  infantry_weapons3
+          [from: millennium_dawn]
+    1995  util_vehicle_3
+          [from: millennium_dawn]
+    1995  command_control_equipment2
+          [from: millennium_dawn]
+    1995  land_Drone_equipment1 (XP)
+          [from: millennium_dawn]
+    1995  support_weapons3 (XP)
+          [from: millennium_dawn]
+    1995  special_forces4 (XP)
+          [from: millennium_dawn]
+    1995  SAM3
+          [from: millennium_dawn]
+    1995  corvette_hull_3
+          [from: millennium_dawn]
+    1995  frigate_hull_3
+          [from: millennium_dawn]
+    1995  helicopter_operator_hull_2
+          [from: millennium_dawn]
+    1995  attack_submarine_hull_3
+          [from: millennium_dawn]
+    1995  missile_submarine_hull_3
+          [from: millennium_dawn]
+    1995  tech_power_systems_1 (XP)
+          [from: millennium_dawn]
+    1995  tech_combat_radar_1 (XP)
+          [from: millennium_dawn]
+    1995  tech_combat_sonar_1 (XP)
+          [from: millennium_dawn]
+    1995  TEL_6_non_got
+          [from: millennium_dawn]
+    1995  GLCM4_non_got
+          [from: millennium_dawn]
+    1995  mbt_tech_2
+          [from: millennium_dawn]
+    1995  tank_components_tech_3
+          [from: millennium_dawn]
+    1995  defensive_systems_3
+          [from: millennium_dawn]
+    1995  diesel_engine_tech_4
+          [from: millennium_dawn]
+    1995  turbine_engine_tech_3
+          [from: millennium_dawn]
+    1995  electric_engine_tech_2
+          [from: millennium_dawn]
+    1995  CZE_engine_tech_2
+          [from: millennium_dawn]
+    1995  CZE_engine_tech_7
+          [from: millennium_dawn]
+    1995  GNSS4
+          [from: millennium_dawn]
+    1995  COMSAT4
+          [from: millennium_dawn]
+    1995  SPYSAT4
+          [from: millennium_dawn]
+    1995  KILLSAT2
+          [from: millennium_dawn]
+    1995  OLV4
+          [from: millennium_dawn]
+    1995  large_gun_tech
+          [from: millennium_dawn]
+    2000  AA_upgrade_2 (XP)
+          [from: millennium_dawn]
+    2000  AA_upgrade_3 (XP)
+          [from: millennium_dawn]
+    2000  AT_upgrade_2 (XP)
+          [from: millennium_dawn]
+    2000  Arty_upgrade_2 (XP)
+          [from: millennium_dawn]
+    2000  Arty_upgrade_3 (XP)
+          [from: millennium_dawn]
+    2000  avionics_2
+          [from: millennium_dawn]
+    2000  redundant_2
+          [from: millennium_dawn]
     2000  sociable_machines
+          [from: millennium_dawn]
+    2000  internet3
+          [from: millennium_dawn]
+    2000  wifi
           [from: millennium_dawn]
     2000  inorganic_fibers_fabrication
           [from: millennium_dawn]
@@ -416,9 +1078,101 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2000  farming_data_analytic_softwares
           [from: millennium_dawn]
+    2000  body_armor_2000 (XP)
+          [from: millennium_dawn]
+    2000  camouflage3 (XP)
+          [from: millennium_dawn]
+    2000  tech_light_guns_1 (XP)
+          [from: millennium_dawn]
+    2000  tech_turret_missiles_surface_2 (XP)
+          [from: millennium_dawn]
+    2000  tech_turret_missiles_aa_2 (XP)
+          [from: millennium_dawn]
+    2000  tech_vls_surface_2 (XP)
+          [from: millennium_dawn]
+    2000  tech_vls_aa_2 (XP)
+          [from: millennium_dawn]
+    2000  tech_modern_landing_craft (XP)
+          [from: millennium_dawn]
+    2000  nsb_AA_upgrade_2 (XP)
+          [from: millennium_dawn]
+    2000  nsb_Arty_upgrade_2 (XP)
+          [from: millennium_dawn]
+    2000  nsb_Arty_upgrade_3 (XP)
+          [from: millennium_dawn]
+    2000  nsb_defense_tech_2
+          [from: millennium_dawn]
+    2000  internal_weapons_1
+          [from: millennium_dawn]
+    2005  nsb_attack_helicopter_tech_3
+          [from: millennium_dawn]
+    2005  attack_helicopter3
+          [from: millennium_dawn]
+    2005  nsb_transport_helicopter3
+          [from: millennium_dawn]
+    2005  transport_helicopter3
+          [from: millennium_dawn]
+    2005  nsb_engine_tech_3
+          [from: millennium_dawn]
+    2005  nsb_multiple_atgm_tech_3
+          [from: millennium_dawn]
+    2005  nsb_heavy_atgm_tech_3
+          [from: millennium_dawn]
+    2005  nsb_rocket_pods_tech_3
+          [from: millennium_dawn]
+    2005  nsb_gun_pods_tech_3
+          [from: millennium_dawn]
+    2005  nsb_light_nose_gun_tech_3
+          [from: millennium_dawn]
+    2005  nsb_drone_tech_1
+          [from: millennium_dawn]
+    2005  Anti_Air_2
+          [from: millennium_dawn]
+    2005  Anti_tank_2
+          [from: millennium_dawn]
+    2005  Heavy_Anti_tank_2
+          [from: millennium_dawn]
+    2005  APC_5
+          [from: millennium_dawn]
+    2005  IFV_5
+          [from: millennium_dawn]
+    2005  Rec_tank_2
+          [from: millennium_dawn]
+    2005  artillery_2
+          [from: millennium_dawn]
+    2005  SP_arty_2
+          [from: millennium_dawn]
+    2005  ICBM5
+          [from: millennium_dawn]
+    2005  IRBM5
+          [from: millennium_dawn]
+    2005  NIRBM4
+          [from: millennium_dawn]
+    2005  awacs_2
+          [from: millennium_dawn]
+    2005  drone_2
+          [from: millennium_dawn]
+    2005  stealth_tech_1
+          [from: millennium_dawn]
+    2005  refueling_2
+          [from: millennium_dawn]
+    2005  TEL_7
+          [from: millennium_dawn]
+    2005  GLCM5
+          [from: millennium_dawn]
     2005  early_ai_robotics
           [from: millennium_dawn]
     2005  humanoid_robot
+          [from: millennium_dawn]
+    2005  computing4
+          [from: millennium_dawn]
+    2005  decryption4
+          [from: millennium_dawn]
+    2005  encryption4
+          [from: millennium_dawn]
+    2005  edge
+          [from: millennium_dawn]
+    2005  umts
           [from: millennium_dawn]
     2005  industrial_production_of_nanofibers
           [from: millennium_dawn]
@@ -432,6 +1186,8 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2005  advanced_renewables
           [from: millennium_dawn]
+    2005  reactor3
+          [from: millennium_dawn]
     2005  construction4
           [from: millennium_dawn]
     2005  excavation4
@@ -440,9 +1196,103 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2005  limited_automated_harvesting_software
           [from: millennium_dawn]
+    2005  infantry_weapons4
+          [from: millennium_dawn]
+    2005  util_vehicle_4
+          [from: millennium_dawn]
+    2005  command_control_equipment3
+          [from: millennium_dawn]
+    2005  land_Drone_equipment2 (XP)
+          [from: millennium_dawn]
+    2005  support_weapons4 (XP)
+          [from: millennium_dawn]
+    2005  special_forces5 (XP)
+          [from: millennium_dawn]
+    2005  SAM4
+          [from: millennium_dawn]
+    2005  destroyer_hull_3
+          [from: millennium_dawn]
+    2005  cruiser_hull_3
+          [from: millennium_dawn]
+    2005  battleship_hull_2
+          [from: millennium_dawn]
+    2005  aircraft_heli_engineering_3 (XP)
+          [from: millennium_dawn]
+    2005  carrier_hull_3
+          [from: millennium_dawn]
+    2005  tech_combat_radar_2 (XP)
+          [from: millennium_dawn]
+    2005  tech_combat_sonar_2 (XP)
+          [from: millennium_dawn]
+    2005  tech_point_defense_system_3 (XP)
+          [from: millennium_dawn]
+    2005  TEL_7_non_got
+          [from: millennium_dawn]
+    2005  GLCM5_non_got
+          [from: millennium_dawn]
+    2005  nsb_SHORAD_missile_2
+          [from: millennium_dawn]
+    2005  nsb_dual_role_missile_2
+          [from: millennium_dawn]
+    2005  nsb_AA_autocannon_2
+          [from: millennium_dawn]
+    2005  nsb_Anti_Air_2
+          [from: millennium_dawn]
+    2005  era_tech_3
+          [from: millennium_dawn]
+    2005  armor_tech_3
+          [from: millennium_dawn]
+    2005  nera_armor_tech_2
+          [from: millennium_dawn]
+    2005  modern_ammo
+          [from: millennium_dawn]
+    2005  diesel_engine_tech_5
+          [from: millennium_dawn]
+    2005  turbine_engine_tech_4
+          [from: millennium_dawn]
+    2005  small_medium_gun_tech_3
+          [from: millennium_dawn]
+    2005  CZE_engine_tech_3
+          [from: millennium_dawn]
+    2005  CZE_engine_tech_4
+          [from: millennium_dawn]
+    2005  nsb_artillery_ammo_3
+          [from: millennium_dawn]
+    2005  nsb_special_ammo_2
+          [from: millennium_dawn]
+    2005  nsb_gun_technology_3
+          [from: millennium_dawn]
+    2005  nsb_fire_modes_2
+          [from: millennium_dawn]
+    2005  nsb_artillery_2
+          [from: millennium_dawn]
+    2005  GNSS5
+          [from: millennium_dawn]
+    2005  COMSAT5
+          [from: millennium_dawn]
+    2005  SPYSAT5
+          [from: millennium_dawn]
+    2005  KILLSAT3
+          [from: millennium_dawn]
+    2005  OLV5
+          [from: millennium_dawn]
+    2005  nsb_atgm_tech_3
+          [from: millennium_dawn]
+    2010  suicide_drone_2
+          [from: millennium_dawn]
+    2010  fwdswept_wing_design
+          [from: millennium_dawn]
+    2010  diamond_wing_design
+          [from: millennium_dawn]
+    2010  engines_3
+          [from: millennium_dawn]
     2010  advanced_industrial_robotics
           [from: millennium_dawn]
     2010  advanced_ai
+          [from: millennium_dawn]
+    2010  internet4
+          [from: millennium_dawn]
+    2010  hsupa
           [from: millennium_dawn]
     2010  nanofibers_in_medicine
           [from: millennium_dawn]
@@ -474,9 +1324,109 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2010  satellite_based_agricultural_planning
           [from: millennium_dawn]
+    2010  body_armor_2010 (XP)
+          [from: millennium_dawn]
+    2010  corvette_hull_4
+          [from: millennium_dawn]
+    2010  stealth_corvette_hull_1
+          [from: millennium_dawn]
+    2010  frigate_hull_4
+          [from: millennium_dawn]
+    2010  stealth_frigate_hull_1
+          [from: millennium_dawn]
+    2010  attack_submarine_hull_4
+          [from: millennium_dawn]
+    2010  missile_submarine_hull_4
+          [from: millennium_dawn]
+    2010  tech_torpedoes_2 (XP)
+          [from: millennium_dawn]
+    2010  CZE_engine_tech_8
+          [from: millennium_dawn]
+    2010  CZE_el_engine_tech
+          [from: millennium_dawn]
+    2015  nsb_attack_helicopter_tech_4
+          [from: millennium_dawn]
+    2015  attack_helicopter4
+          [from: millennium_dawn]
+    2015  nsb_transport_helicopter4
+          [from: millennium_dawn]
+    2015  transport_helicopter4
+          [from: millennium_dawn]
+    2015  nsb_engine_tech_4
+          [from: millennium_dawn]
+    2015  nsb_atgm_tech_4
+          [from: millennium_dawn]
+    2015  nsb_multiple_atgm_tech_4
+          [from: millennium_dawn]
+    2015  nsb_heavy_atgm_tech_4
+          [from: millennium_dawn]
+    2015  nsb_rocket_pods_tech_4
+          [from: millennium_dawn]
+    2015  nsb_gun_pods_tech_4
+          [from: millennium_dawn]
+    2015  nsb_defense_tech_3
+          [from: millennium_dawn]
+    2015  nsb_drone_tech_2
+          [from: millennium_dawn]
+    2015  MBT_5
+          [from: millennium_dawn]
+    2015  APC_6
+          [from: millennium_dawn]
+    2015  IFV_6
+          [from: millennium_dawn]
+    2015  Rec_tank_3
+          [from: millennium_dawn]
+    2015  ICBM6
+          [from: millennium_dawn]
+    2015  IRBM6
+          [from: millennium_dawn]
+    2015  NIRBM5
+          [from: millennium_dawn]
+    2015  gen_5_light
+          [from: millennium_dawn]
+    2015  gen_5_medium
+          [from: millennium_dawn]
+    2015  gen_5_large
+          [from: millennium_dawn]
+    2015  strategic_bomber4
+          [from: millennium_dawn]
+    2015  transport_plane4
+          [from: millennium_dawn]
+    2015  naval_plane4
+          [from: millennium_dawn]
+    2015  cas3
+          [from: millennium_dawn]
+    2015  awacs_plane2
+          [from: millennium_dawn]
+    2015  cv_awacs_plane2
+          [from: millennium_dawn]
+    2015  HSCM
+          [from: millennium_dawn]
+    2015  GLCM6
+          [from: millennium_dawn]
     2015  smart_drones
           [from: millennium_dawn]
     2015  modern_deep_learning
+          [from: millennium_dawn]
+    2015  computing5
+          [from: millennium_dawn]
+    2015  decryption5
+          [from: millennium_dawn]
+    2015  encryption5
+          [from: millennium_dawn]
+    2015  lte
+          [from: millennium_dawn]
+    2015  wimax
+          [from: millennium_dawn]
+    2015  AS_Fighter4
+          [from: millennium_dawn]
+    2015  MR_Fighter4
+          [from: millennium_dawn]
+    2015  Strike_fighter4
+          [from: millennium_dawn]
+    2015  L_Strike_fighter3
+          [from: millennium_dawn]
+    2015  Air_UAV2
           [from: millennium_dawn]
     2015  modern_3D_printing
           [from: millennium_dawn]
@@ -490,6 +1440,8 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2015  improved_modern_renewables
           [from: millennium_dawn]
+    2015  reactor4
+          [from: millennium_dawn]
     2015  construction6
           [from: millennium_dawn]
     2015  excavation6
@@ -498,9 +1450,109 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2015  programmable_harvesters
           [from: millennium_dawn]
+    2015  infantry_weapons5
+          [from: millennium_dawn]
+    2015  util_vehicle_5
+          [from: millennium_dawn]
+    2015  night_vision_4 (XP)
+          [from: millennium_dawn]
+    2015  command_control_equipment4
+          [from: millennium_dawn]
+    2015  land_Drone_equipment3 (XP)
+          [from: millennium_dawn]
+    2015  exoskeleton_1 (XP)
+          [from: millennium_dawn]
+    2015  support_weapons5 (XP)
+          [from: millennium_dawn]
+    2015  SAM5
+          [from: millennium_dawn]
+    2015  stealth_destroyer_hull_1
+          [from: millennium_dawn]
+    2015  tech_submarine_engineering_3 (XP)
+          [from: millennium_dawn]
+    2015  tech_power_systems_2 (XP)
+          [from: millennium_dawn]
+    2015  tech_nuclear_power_systems_2 (XP)
+          [from: millennium_dawn]
+    2015  tech_rail_guns (XP)
+          [from: millennium_dawn]
+    2015  tech_turret_missiles_surface_3 (XP)
+          [from: millennium_dawn]
+    2015  tech_turret_missiles_aa_3 (XP)
+          [from: millennium_dawn]
+    2015  tech_vls_surface_3 (XP)
+          [from: millennium_dawn]
+    2015  tech_vls_aa_3 (XP)
+          [from: millennium_dawn]
+    2015  tech_specialized_protective_equipment (XP)
+          [from: millennium_dawn]
+    2015  HSCM_non_got
+          [from: millennium_dawn]
+    2015  GLCM6_non_got
+          [from: millennium_dawn]
+    2015  tank_components_tech_4
+          [from: millennium_dawn]
+    2015  defensive_systems_4
+          [from: millennium_dawn]
+    2015  diesel_engine_tech_6
+          [from: millennium_dawn]
+    2015  turbine_engine_tech_5
+          [from: millennium_dawn]
+    2015  medium_gun_tech_3
+          [from: millennium_dawn]
+    2015  large_gun_tech_2
+          [from: millennium_dawn]
+    2015  small_autocannon_tech_3
+          [from: millennium_dawn]
+    2015  big_autocannon_tech_3
+          [from: millennium_dawn]
+    2015  assault_gun_tech_3
+          [from: millennium_dawn]
+    2015  CZE_engine_tech_5
+          [from: millennium_dawn]
+    2015  CZE_engine_tech_6
+          [from: millennium_dawn]
+    2015  GNSS6
+          [from: millennium_dawn]
+    2015  COMSAT6
+          [from: millennium_dawn]
+    2015  SPYSAT6
+          [from: millennium_dawn]
+    2015  KILLSAT4
+          [from: millennium_dawn]
+    2015  OLV6
+          [from: millennium_dawn]
+    2015  tech_fire_control_2 (XP)
+          [from: millennium_dawn]
+    2020  AT_upgrade_3 (XP)
+          [from: millennium_dawn]
+    2020  Arty_upgrade_4 (XP)
+          [from: millennium_dawn]
+    2020  avionics_3
+          [from: millennium_dawn]
+    2020  solar_engines_1
+          [from: millennium_dawn]
+    2020  air_weapons_3
+          [from: millennium_dawn]
+    2020  countermeasures_3
+          [from: millennium_dawn]
+    2020  naval_weapons_3
+          [from: millennium_dawn]
+    2020  ag_weapons_3
+          [from: millennium_dawn]
     2020  fully_automated_drones
           [from: millennium_dawn]
     2020  human_imitation_ai
+          [from: millennium_dawn]
+    2020  internet5
+          [from: millennium_dawn]
+    2020  lifi
+          [from: millennium_dawn]
+    2020  AS_upgrade_2 (XP)
+          [from: millennium_dawn]
+    2020  MR_upgrade_2 (XP)
+          [from: millennium_dawn]
+    2020  Strike_upgrade_2 (XP)
           [from: millennium_dawn]
     2020  safe_cloning
           [from: millennium_dawn]
@@ -516,11 +1568,95 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2020  advanced_modern_renewables
           [from: millennium_dawn]
+    2020  reactor5
+          [from: millennium_dawn]
     2020  land_fort_building_4
           [from: millennium_dawn]
     2020  improved_harvesting_automation
           [from: millennium_dawn]
+    2020  camouflage4 (XP)
+          [from: millennium_dawn]
+    2020  battleship_hull_3
+          [from: millennium_dawn]
+    2020  helicopter_operator_hull_3
+          [from: millennium_dawn]
+    2020  tech_combat_radar_3 (XP)
+          [from: millennium_dawn]
+    2020  tech_combat_sonar_3 (XP)
+          [from: millennium_dawn]
+    2020  tech_point_defense_system_4 (XP)
+          [from: millennium_dawn]
+    2020  tech_torpedoes_3 (XP)
+          [from: millennium_dawn]
+    2020  mbt_tech_3
+          [from: millennium_dawn]
+    2020  CZE_engine_tech_9
+          [from: millennium_dawn]
+    2020  CZE_engine_tech_10
+          [from: millennium_dawn]
+    2020  CZE_el_engine_tech_2
+          [from: millennium_dawn]
+    2020  nsb_Arty_upgrade_4 (XP)
+          [from: millennium_dawn]
+    2020  part_reusable_OLV6
+          [from: millennium_dawn]
+    2025  Anti_Air_3
+          [from: millennium_dawn]
+    2025  Anti_tank_3
+          [from: millennium_dawn]
+    2025  Heavy_Anti_tank_3
+          [from: millennium_dawn]
+    2025  MBT_7
+          [from: millennium_dawn]
+    2025  APC_7
+          [from: millennium_dawn]
+    2025  IFV_7
+          [from: millennium_dawn]
+    2025  Rec_tank_4
+          [from: millennium_dawn]
+    2025  artillery_3
+          [from: millennium_dawn]
+    2025  SP_arty_3
+          [from: millennium_dawn]
+    2025  ICBM7
+          [from: millennium_dawn]
+    2025  IRBM7
+          [from: millennium_dawn]
+    2025  NIRBM6
+          [from: millennium_dawn]
+    2025  awacs_3
+          [from: millennium_dawn]
+    2025  drone_3
+          [from: millennium_dawn]
+    2025  stealth_tech_2
+          [from: millennium_dawn]
+    2025  special_mad_3
+          [from: millennium_dawn]
+    2025  tgp_recon_3
+          [from: millennium_dawn]
+    2025  strategic_bomber5
+          [from: millennium_dawn]
+    2025  transport_plane5
+          [from: millennium_dawn]
+    2025  naval_plane5
+          [from: millennium_dawn]
+    2025  cas4
+          [from: millennium_dawn]
+    2025  HSCM1
+          [from: millennium_dawn]
+    2025  GLCM7
+          [from: millennium_dawn]
     2025  nanorobotics
+          [from: millennium_dawn]
+    2025  AS_Fighter5
+          [from: millennium_dawn]
+    2025  MR_Fighter5
+          [from: millennium_dawn]
+    2025  Strike_fighter5
+          [from: millennium_dawn]
+    2025  L_Strike_fighter4
+          [from: millennium_dawn]
+    2025  Air_UAV3
           [from: millennium_dawn]
     2025  t3D_printed_nanofibers
           [from: millennium_dawn]
@@ -530,6 +1666,8 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2025  energy_efficiency7
           [from: millennium_dawn]
+    2025  reactor6
+          [from: millennium_dawn]
     2025  construction7
           [from: millennium_dawn]
     2025  excavation7
@@ -538,7 +1676,121 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2025  robotic_harvesters
           [from: millennium_dawn]
+    2025  infantry_weapons6
+          [from: millennium_dawn]
+    2025  util_vehicle_6
+          [from: millennium_dawn]
+    2025  augmented_vision_1 (XP)
+          [from: millennium_dawn]
+    2025  command_control_equipment5
+          [from: millennium_dawn]
+    2025  land_Drone_equipment4 (XP)
+          [from: millennium_dawn]
+    2025  exoskeleton_2 (XP)
+          [from: millennium_dawn]
+    2025  rc_fire_support_drone (XP)
+          [from: millennium_dawn]
+    2025  SAM6
+          [from: millennium_dawn]
+    2025  corvette_hull_5
+          [from: millennium_dawn]
+    2025  stealth_corvette_hull_2
+          [from: millennium_dawn]
+    2025  frigate_hull_5
+          [from: millennium_dawn]
+    2025  stealth_frigate_hull_2
+          [from: millennium_dawn]
+    2025  destroyer_hull_4
+          [from: millennium_dawn]
+    2025  cruiser_hull_4
+          [from: millennium_dawn]
+    2025  carrier_hull_4
+          [from: millennium_dawn]
+    2025  attack_submarine_hull_5
+          [from: millennium_dawn]
+    2025  missile_submarine_hull_5
+          [from: millennium_dawn]
+    2025  tech_light_guns_2 (XP)
+          [from: millennium_dawn]
+    2025  tech_rail_guns_1 (XP)
+          [from: millennium_dawn]
+    2025  tech_advanced_landing_craft (XP)
+          [from: millennium_dawn]
+    2025  HSCM1_non_got
+          [from: millennium_dawn]
+    2025  GLCM7_non_got
+          [from: millennium_dawn]
+    2025  nsb_SHORAD_missile_3
+          [from: millennium_dawn]
+    2025  nsb_dual_role_missile_3
+          [from: millennium_dawn]
+    2025  nsb_AA_autocannon_3
+          [from: millennium_dawn]
+    2025  nsb_Anti_Air_3
+          [from: millennium_dawn]
+    2025  nsb_AA_upgrade_3 (XP)
+          [from: millennium_dawn]
+    2025  era_tech_4
+          [from: millennium_dawn]
+    2025  near_future_ammo
+          [from: millennium_dawn]
+    2025  turbine_engine_tech_6
+          [from: millennium_dawn]
+    2025  electric_engine_tech_3
+          [from: millennium_dawn]
+    2025  small_medium_gun_tech_4
+          [from: millennium_dawn]
+    2025  small_autocannon_tech_4
+          [from: millennium_dawn]
+    2025  big_autocannon_tech_4
+          [from: millennium_dawn]
+    2025  assault_gun_tech_4
+          [from: millennium_dawn]
+    2025  nsb_artillery_ammo_4
+          [from: millennium_dawn]
+    2025  nsb_special_ammo_3
+          [from: millennium_dawn]
+    2025  nsb_gun_technology_4
+          [from: millennium_dawn]
+    2025  nsb_fire_modes_3
+          [from: millennium_dawn]
+    2025  nsb_artillery_3
+          [from: millennium_dawn]
+    2025  GNSS7
+          [from: millennium_dawn]
+    2025  COMSAT7
+          [from: millennium_dawn]
+    2025  SPYSAT7
+          [from: millennium_dawn]
+    2025  KILLSAT5
+          [from: millennium_dawn]
+    2025  OLV7
+          [from: millennium_dawn]
+    2025  internal_weapons_2
+          [from: millennium_dawn]
+    2025  rapid_dragon
+          [from: millennium_dawn]
+    2030  AA_upgrade_4 (XP)
+          [from: millennium_dawn]
+    2030  AT_upgrade_4 (XP)
+          [from: millennium_dawn]
+    2030  Arty_upgrade_5 (XP)
+          [from: millennium_dawn]
+    2030  suicide_drone_3
+          [from: millennium_dawn]
+    2030  engines_4
+          [from: millennium_dawn]
     2030  medical_nanorobots
+          [from: millennium_dawn]
+    2030  computing6
+          [from: millennium_dawn]
+    2030  decryption6
+          [from: millennium_dawn]
+    2030  encryption6
+          [from: millennium_dawn]
+    2030  internet6
+          [from: millennium_dawn]
+    2030  modern_satelite_internet
           [from: millennium_dawn]
     2030  crispr_gene_edited_crops
           [from: millennium_dawn]
@@ -552,6 +1804,100 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2030  early_futuristic_renewables
           [from: millennium_dawn]
+    2030  reactor7
+          [from: millennium_dawn]
+    2030  body_armor_2030 (XP)
+          [from: millennium_dawn]
+    2030  special_forces6 (XP)
+          [from: millennium_dawn]
+    2030  stealth_destroyer_hull_2
+          [from: millennium_dawn]
+    2030  tech_turret_missiles_surface_4 (XP)
+          [from: millennium_dawn]
+    2030  tech_turret_missiles_aa_4 (XP)
+          [from: millennium_dawn]
+    2030  tech_vls_surface_4 (XP)
+          [from: millennium_dawn]
+    2030  tech_vls_aa_4 (XP)
+          [from: millennium_dawn]
+    2030  nsb_Arty_upgrade_5 (XP)
+          [from: millennium_dawn]
+    2030  full_reusable_OLV7
+          [from: millennium_dawn]
+    2030  future_wingform_designs
+          [from: millennium_dawn]
+    2035  nsb_attack_helicopter_tech_5
+          [from: millennium_dawn]
+    2035  attack_helicopter5
+          [from: millennium_dawn]
+    2035  nsb_transport_helicopter5
+          [from: millennium_dawn]
+    2035  transport_helicopter5
+          [from: millennium_dawn]
+    2035  nsb_engine_tech_5
+          [from: millennium_dawn]
+    2035  nsb_multiple_atgm_tech_5
+          [from: millennium_dawn]
+    2035  nsb_heavy_atgm_tech_5
+          [from: millennium_dawn]
+    2035  nsb_rocket_pods_tech_5
+          [from: millennium_dawn]
+    2035  nsb_gun_pods_tech_5
+          [from: millennium_dawn]
+    2035  nsb_defense_tech_4
+          [from: millennium_dawn]
+    2035  nsb_drone_tech_3
+          [from: millennium_dawn]
+    2035  Anti_Air_4
+          [from: millennium_dawn]
+    2035  Anti_tank_4
+          [from: millennium_dawn]
+    2035  Heavy_Anti_tank_4
+          [from: millennium_dawn]
+    2035  MBT_8
+          [from: millennium_dawn]
+    2035  APC_8
+          [from: millennium_dawn]
+    2035  IFV_8
+          [from: millennium_dawn]
+    2035  Rec_tank_5
+          [from: millennium_dawn]
+    2035  artillery_4
+          [from: millennium_dawn]
+    2035  SP_arty_4
+          [from: millennium_dawn]
+    2035  ICBM8
+          [from: millennium_dawn]
+    2035  IRBM8
+          [from: millennium_dawn]
+    2035  NIRBM7
+          [from: millennium_dawn]
+    2035  gen_6_light
+          [from: millennium_dawn]
+    2035  gen_6_medium
+          [from: millennium_dawn]
+    2035  gen_6_large
+          [from: millennium_dawn]
+    2035  strategic_bomber6
+          [from: millennium_dawn]
+    2035  transport_plane6
+          [from: millennium_dawn]
+    2035  naval_plane6
+          [from: millennium_dawn]
+    2035  cas5
+          [from: millennium_dawn]
+    2035  GLCM8
+          [from: millennium_dawn]
+    2035  AS_Fighter6
+          [from: millennium_dawn]
+    2035  MR_Fighter6
+          [from: millennium_dawn]
+    2035  Strike_fighter6
+          [from: millennium_dawn]
+    2035  L_Strike_fighter5
+          [from: millennium_dawn]
+    2035  Air_UAV4
+          [from: millennium_dawn]
     2035  large_scale_nanocellulose_manufacturing
           [from: millennium_dawn]
     2035  human_crispr_experiments
@@ -560,6 +1906,8 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2035  energy_efficiency8
           [from: millennium_dawn]
+    2035  reactor8
+          [from: millennium_dawn]
     2035  construction8
           [from: millennium_dawn]
     2035  excavation8
@@ -567,6 +1915,104 @@ CATEGORY DETAIL
     2035  standardised_maglev_rail
           [from: millennium_dawn]
     2035  agi_maintained_agricultural_developments
+          [from: millennium_dawn]
+    2035  infantry_weapons7
+          [from: millennium_dawn]
+    2035  util_vehicle_7
+          [from: millennium_dawn]
+    2035  augmented_vision_2 (XP)
+          [from: millennium_dawn]
+    2035  command_control_equipment6
+          [from: millennium_dawn]
+    2035  land_Drone_equipment5
+          [from: millennium_dawn]
+    2035  camouflage5 (XP)
+          [from: millennium_dawn]
+    2035  autonomous_fire_support_drone (XP)
+          [from: millennium_dawn]
+    2035  SAM7
+          [from: millennium_dawn]
+    2035  tech_combat_radar_4 (XP)
+          [from: millennium_dawn]
+    2035  tech_combat_sonar_4 (XP)
+          [from: millennium_dawn]
+    2035  tech_rail_guns_2 (XP)
+          [from: millennium_dawn]
+    2035  tech_point_defense_system_5 (XP)
+          [from: millennium_dawn]
+    2035  tech_torpedoes_4 (XP)
+          [from: millennium_dawn]
+    2035  GLCM8_non_got
+          [from: millennium_dawn]
+    2035  nsb_SHORAD_missile_4
+          [from: millennium_dawn]
+    2035  nsb_dual_role_missile_4
+          [from: millennium_dawn]
+    2035  nsb_AA_autocannon_4
+          [from: millennium_dawn]
+    2035  nsb_Anti_Air_4
+          [from: millennium_dawn]
+    2035  nsb_AA_upgrade_4 (XP)
+          [from: millennium_dawn]
+    2035  mbt_tech_4
+          [from: millennium_dawn]
+    2035  tank_components_tech_5
+          [from: millennium_dawn]
+    2035  defensive_systems_5
+          [from: millennium_dawn]
+    2035  armor_tech_4
+          [from: millennium_dawn]
+    2035  nera_armor_tech_3
+          [from: millennium_dawn]
+    2035  future_ammo
+          [from: millennium_dawn]
+    2035  diesel_engine_tech_7
+          [from: millennium_dawn]
+    2035  electric_engine_tech_4
+          [from: millennium_dawn]
+    2035  medium_gun_tech_4
+          [from: millennium_dawn]
+    2035  large_gun_tech_3
+          [from: millennium_dawn]
+    2035  nsb_artillery_ammo_5
+          [from: millennium_dawn]
+    2035  nsb_gun_technology_5
+          [from: millennium_dawn]
+    2035  nsb_artillery_4
+          [from: millennium_dawn]
+    2035  GNSS8
+          [from: millennium_dawn]
+    2035  COMSAT8
+          [from: millennium_dawn]
+    2035  SPYSAT8
+          [from: millennium_dawn]
+    2035  KILLSAT6
+          [from: millennium_dawn]
+    2035  OLV8
+          [from: millennium_dawn]
+    2035  nsb_atgm_tech_5
+          [from: millennium_dawn]
+    2035  tech_landing_craft_ai_systems (XP)
+          [from: millennium_dawn]
+    2040  drone_4
+          [from: millennium_dawn]
+    2040  solar_engines_2
+          [from: millennium_dawn]
+    2040  air_weapons_4
+          [from: millennium_dawn]
+    2040  countermeasures_4
+          [from: millennium_dawn]
+    2040  naval_weapons_4
+          [from: millennium_dawn]
+    2040  ag_weapons_4
+          [from: millennium_dawn]
+    2040  HSCM2
+          [from: millennium_dawn]
+    2040  AS_upgrade_3 (XP)
+          [from: millennium_dawn]
+    2040  MR_upgrade_3 (XP)
+          [from: millennium_dawn]
+    2040  Strike_upgrade_3 (XP)
           [from: millennium_dawn]
     2040  electrification_10
           [from: millennium_dawn]
@@ -578,11 +2024,45 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2040  futuristic_renewables
           [from: millennium_dawn]
+    2040  reactor9
+          [from: millennium_dawn]
+    2040  corvette_hull_6
+          [from: millennium_dawn]
+    2040  stealth_corvette_hull_3
+          [from: millennium_dawn]
+    2040  frigate_hull_6
+          [from: millennium_dawn]
+    2040  stealth_frigate_hull_3
+          [from: millennium_dawn]
+    2040  tech_submarine_engineering_4 (XP)
+          [from: millennium_dawn]
+    2040  attack_submarine_hull_6
+          [from: millennium_dawn]
+    2040  missile_submarine_hull_6
+          [from: millennium_dawn]
+    2040  tech_power_systems_3 (XP)
+          [from: millennium_dawn]
+    2040  tech_nuclear_power_systems_3 (XP)
+          [from: millennium_dawn]
+    2040  HSCM2_non_got
+          [from: millennium_dawn]
+    2040  full_reusable_OLV8
+          [from: millennium_dawn]
+    2040  tech_fire_control_3 (XP)
+          [from: millennium_dawn]
+    2045  AS_Fighter7
+          [from: millennium_dawn]
+    2045  MR_Fighter7
+          [from: millennium_dawn]
+    2045  Strike_fighter7
+          [from: millennium_dawn]
     2045  nanocellulose_in_medicine
           [from: millennium_dawn]
     2045  genetically_modified_humans
           [from: millennium_dawn]
     2045  energy_efficiency9
+          [from: millennium_dawn]
+    2045  reactor10
           [from: millennium_dawn]
     2045  construction9
           [from: millennium_dawn]
@@ -590,262 +2070,48 @@ CATEGORY DETAIL
           [from: millennium_dawn]
     2045  modern_freight_locomotive
           [from: millennium_dawn]
-
-  [industry_electronics / nuclear] — 18 techs
-    1940  atomic_research
-    1943  nuclear_reactor
-    1943  nuclear_reactor_heavy_water
-    1943  isotope_separation_centrifugal
-    1945  nukes
-    1950  thermonuclear_bombs
-    1985  nuclear_technology
+    2045  destroyer_hull_5
           [from: millennium_dawn]
-    1985  nuclear_engines
+    2045  stealth_destroyer_hull_3
           [from: millennium_dawn]
-    1990  reactor1
+    2045  cruiser_hull_5
           [from: millennium_dawn]
-    1995  reactor2
+    2045  battleship_hull_4
           [from: millennium_dawn]
-    2005  reactor3
+    2045  helicopter_operator_hull_4
           [from: millennium_dawn]
-    2015  reactor4
+    2045  carrier_hull_5
           [from: millennium_dawn]
-    2020  reactor5
+    2045  tech_combat_radar_5 (XP)
           [from: millennium_dawn]
-    2025  reactor6
+    2045  tech_combat_sonar_5 (XP)
           [from: millennium_dawn]
-    2030  reactor7
+    2045  tech_light_guns_3 (XP)
           [from: millennium_dawn]
-    2035  reactor8
+    2045  tech_rail_guns_3 (XP)
           [from: millennium_dawn]
-    2040  reactor9
+    2045  tech_point_defense_system_6 (XP)
           [from: millennium_dawn]
-    2045  reactor10
+    2045  tech_turret_missiles_surface_5 (XP)
           [from: millennium_dawn]
-
-  [industry_electronics / radar] — 5 techs
-    1936  radio_detection
-    1938  cavity_magnatron
-    1940  centimetric_radar
-    1941  phased_array
-    1942  monopulse_radar
-
-  [industry_electronics / rockets] — 105 techs
-    1939  motorized_rocket_unit
-    1940  rocket_artillery
-    1941  rocket_artillery2
-    1942  rocket_artillery3
-    1942  experimental_rockets
-    1943  rocket_artillery4
-    1943  sp_rockets_improved_guidance
-    1944  rocket_engines
-    1944  sp_rockets_rocket_bomber
-    1944  jet_engines
-    1944  sp_rockets_dual_chamber_rocket_engine_1
-    1945  sp_rockets_improved_rocket_bomber
-    1945  improved_rocket_engines
-    1945  ballistic_missile
+    2045  tech_turret_missiles_aa_5 (XP)
           [from: millennium_dawn]
-    1945  cruise_missile
+    2045  tech_vls_surface_5 (XP)
           [from: millennium_dawn]
-    1945  air_defense
+    2045  tech_vls_aa_5 (XP)
           [from: millennium_dawn]
-    1945  air_defense_non_got
+    2045  tech_torpedoes_5 (XP)
           [from: millennium_dawn]
-    1945  cruise_missile_non_got
+    2045  tech_smart_landing_craft (XP)
           [from: millennium_dawn]
-    1946  advanced_rocket_engines
-    1946  sp_rockets_dual_chamber_rocket_engine_2
-    1955  ICBM
+    2045  internal_weapons_3
           [from: millennium_dawn]
-    1955  IRBM
+    2050  suicide_drone_4
           [from: millennium_dawn]
-    1955  GLCM
-          [from: millennium_dawn]
-    1955  TEL_launched_missiles
-          [from: millennium_dawn]
-    1955  SAM
-          [from: millennium_dawn]
-    1955  SAM_non_got
-          [from: millennium_dawn]
-    1955  GLCM_non_got
-          [from: millennium_dawn]
-    1955  TEL_launched_missiles_non_got
-          [from: millennium_dawn]
-    1965  ICBM1
-          [from: millennium_dawn]
-    1965  IRBM1
-          [from: millennium_dawn]
-    1965  TEL_3
-          [from: millennium_dawn]
-    1965  GLCM1
-          [from: millennium_dawn]
-    1965  SAM0
-          [from: millennium_dawn]
-    1965  SAM0_non_got
-          [from: millennium_dawn]
-    1965  TEL_3_non_got
-          [from: millennium_dawn]
-    1965  GLCM1_non_got
-          [from: millennium_dawn]
-    1965  OLV1
-          [from: millennium_dawn]
-    1975  ICBM2
-          [from: millennium_dawn]
-    1975  IRBM2
-          [from: millennium_dawn]
-    1975  NIRBM1
-          [from: millennium_dawn]
-    1975  TEL_4
-          [from: millennium_dawn]
-    1975  GLCM2
-          [from: millennium_dawn]
-    1975  SAM1
-          [from: millennium_dawn]
-    1975  SAM1_non_got
-          [from: millennium_dawn]
-    1975  TEL_4_non_got
-          [from: millennium_dawn]
-    1975  GLCM2_non_got
-          [from: millennium_dawn]
-    1975  OLV2
-          [from: millennium_dawn]
-    1985  ICBM3
-          [from: millennium_dawn]
-    1985  IRBM3
-          [from: millennium_dawn]
-    1985  NIRBM2
-          [from: millennium_dawn]
-    1985  TEL_5
-          [from: millennium_dawn]
-    1985  GLCM3
-          [from: millennium_dawn]
-    1985  SAM2
-          [from: millennium_dawn]
-    1985  SAM2_non_got
-          [from: millennium_dawn]
-    1985  TEL_5_non_got
-          [from: millennium_dawn]
-    1985  GLCM3_non_got
-          [from: millennium_dawn]
-    1985  OLV3
-          [from: millennium_dawn]
-    1995  ICBM4
-          [from: millennium_dawn]
-    1995  IRBM4
-          [from: millennium_dawn]
-    1995  NIRBM3
-          [from: millennium_dawn]
-    1995  TEL_6
-          [from: millennium_dawn]
-    1995  GLCM4
-          [from: millennium_dawn]
-    1995  SAM3
-          [from: millennium_dawn]
-    1995  TEL_6_non_got
-          [from: millennium_dawn]
-    1995  GLCM4_non_got
-          [from: millennium_dawn]
-    1995  OLV4
-          [from: millennium_dawn]
-    2005  ICBM5
-          [from: millennium_dawn]
-    2005  IRBM5
-          [from: millennium_dawn]
-    2005  NIRBM4
-          [from: millennium_dawn]
-    2005  TEL_7
-          [from: millennium_dawn]
-    2005  GLCM5
-          [from: millennium_dawn]
-    2005  SAM4
-          [from: millennium_dawn]
-    2005  TEL_7_non_got
-          [from: millennium_dawn]
-    2005  GLCM5_non_got
-          [from: millennium_dawn]
-    2005  OLV5
-          [from: millennium_dawn]
-    2015  ICBM6
-          [from: millennium_dawn]
-    2015  IRBM6
-          [from: millennium_dawn]
-    2015  NIRBM5
-          [from: millennium_dawn]
-    2015  HSCM
-          [from: millennium_dawn]
-    2015  GLCM6
-          [from: millennium_dawn]
-    2015  SAM5
-          [from: millennium_dawn]
-    2015  HSCM_non_got
-          [from: millennium_dawn]
-    2015  GLCM6_non_got
-          [from: millennium_dawn]
-    2015  OLV6
-          [from: millennium_dawn]
-    2020  part_reusable_OLV6
-          [from: millennium_dawn]
-    2025  ICBM7
-          [from: millennium_dawn]
-    2025  IRBM7
-          [from: millennium_dawn]
-    2025  NIRBM6
-          [from: millennium_dawn]
-    2025  HSCM1
-          [from: millennium_dawn]
-    2025  GLCM7
-          [from: millennium_dawn]
-    2025  SAM6
-          [from: millennium_dawn]
-    2025  HSCM1_non_got
-          [from: millennium_dawn]
-    2025  GLCM7_non_got
-          [from: millennium_dawn]
-    2025  OLV7
-          [from: millennium_dawn]
-    2030  full_reusable_OLV7
-          [from: millennium_dawn]
-    2035  ICBM8
-          [from: millennium_dawn]
-    2035  IRBM8
-          [from: millennium_dawn]
-    2035  NIRBM7
-          [from: millennium_dawn]
-    2035  GLCM8
-          [from: millennium_dawn]
-    2035  SAM7
-          [from: millennium_dawn]
-    2035  GLCM8_non_got
-          [from: millennium_dawn]
-    2035  OLV8
-          [from: millennium_dawn]
-    2040  HSCM2
-          [from: millennium_dawn]
-    2040  HSCM2_non_got
-          [from: millennium_dawn]
-    2040  full_reusable_OLV8
+    2055  engines_5
           [from: millennium_dawn]
 
-  [land / anti_air] — 6 techs
-    1936  interwar_antiair
-    1939  antiair1
-    1940  antiair2
-    1941  antiair3
-    1942  antiair4
-    1943  antiair5
-
-  [land / anti_tank] — 8 techs
-    1936  mountain_tanks
-    1936  interwar_antitank
-    1936  SWE_bofors_antitank_gun
-    1939  antitank1
-    1940  antitank2
-    1941  antitank3
-    1942  antitank4
-    1943  antitank5
-
-  [land / artillery] — 74 techs
+  [land / artillery] -- 26 techs
     1922  basic_battery
     1936  gw_artillery
     1936  interwar_artillery
@@ -854,18 +2120,6 @@ CATEGORY DETAIL
     1936  basic_heavy_battery
     1936  basic_heavy_shell
     1936  railway_gun
-    1936  SP_arty_0
-          [from: millennium_dawn]
-    1936  SP_R_arty_0
-          [from: millennium_dawn]
-    1936  SP_R_arty_1
-          [from: millennium_dawn]
-    1936  SP_R_arty_2
-          [from: millennium_dawn]
-    1936  SP_R_arty_3
-          [from: millennium_dawn]
-    1936  SP_R_arty_4
-          [from: millennium_dawn]
     1939  artillery1
     1939  improved_light_battery
     1939  improved_heavy_battery
@@ -884,92 +2138,8 @@ CATEGORY DETAIL
     1944  advanced_light_battery
     1944  advanced_heavy_battery
     1944  advanced_dp_light_battery
-    1965  artillery_0
-          [from: millennium_dawn]
-    1965  nsb_artillery_ammo_1
-          [from: millennium_dawn]
-    1965  nsb_special_ammo_0
-          [from: millennium_dawn]
-    1965  nsb_gun_technology_1
-          [from: millennium_dawn]
-    1965  nsb_barrel_conversions
-          [from: millennium_dawn]
-    1965  nsb_artillery_0
-          [from: millennium_dawn]
-    1980  Arty_upgrade_1 (XP)
-          [from: millennium_dawn]
-    1980  nsb_Arty_upgrade_1 (XP)
-          [from: millennium_dawn]
-    1985  artillery_1
-          [from: millennium_dawn]
-    1985  SP_arty_1
-          [from: millennium_dawn]
-    1985  nsb_artillery_ammo_2
-          [from: millennium_dawn]
-    1985  nsb_special_ammo_1
-          [from: millennium_dawn]
-    1985  nsb_gun_technology_2
-          [from: millennium_dawn]
-    1985  nsb_fire_modes_1
-          [from: millennium_dawn]
-    1985  nsb_artillery_1
-          [from: millennium_dawn]
-    2000  Arty_upgrade_2 (XP)
-          [from: millennium_dawn]
-    2000  Arty_upgrade_3 (XP)
-          [from: millennium_dawn]
-    2000  nsb_Arty_upgrade_2 (XP)
-          [from: millennium_dawn]
-    2000  nsb_Arty_upgrade_3 (XP)
-          [from: millennium_dawn]
-    2005  artillery_2
-          [from: millennium_dawn]
-    2005  SP_arty_2
-          [from: millennium_dawn]
-    2005  nsb_artillery_ammo_3
-          [from: millennium_dawn]
-    2005  nsb_special_ammo_2
-          [from: millennium_dawn]
-    2005  nsb_gun_technology_3
-          [from: millennium_dawn]
-    2005  nsb_fire_modes_2
-          [from: millennium_dawn]
-    2005  nsb_artillery_2
-          [from: millennium_dawn]
-    2020  Arty_upgrade_4 (XP)
-          [from: millennium_dawn]
-    2020  nsb_Arty_upgrade_4 (XP)
-          [from: millennium_dawn]
-    2025  artillery_3
-          [from: millennium_dawn]
-    2025  SP_arty_3
-          [from: millennium_dawn]
-    2025  nsb_artillery_ammo_4
-          [from: millennium_dawn]
-    2025  nsb_special_ammo_3
-          [from: millennium_dawn]
-    2025  nsb_gun_technology_4
-          [from: millennium_dawn]
-    2025  nsb_fire_modes_3
-          [from: millennium_dawn]
-    2025  nsb_artillery_3
-          [from: millennium_dawn]
-    2030  Arty_upgrade_5 (XP)
-          [from: millennium_dawn]
-    2030  nsb_Arty_upgrade_5 (XP)
-          [from: millennium_dawn]
-    2035  artillery_4
-          [from: millennium_dawn]
-    2035  SP_arty_4
-          [from: millennium_dawn]
-    2035  nsb_artillery_ammo_5
-          [from: millennium_dawn]
-    2035  nsb_gun_technology_5
-          [from: millennium_dawn]
-    2035  nsb_artillery_4
-          [from: millennium_dawn]
 
-  [land / heavy_tanks] — 13 techs
+  [land / heavy_tanks] -- 13 techs
     1934  basic_heavy_tank
     1934  basic_heavy_tank_chassis
     1940  improved_heavy_tank_chassis
@@ -984,7 +2154,7 @@ CATEGORY DETAIL
     1943  sp_armored_lc_high_impact_obliterator_cannon_tech
     1945  sp_armored_lc_weapon_fire_control_tech
 
-  [land / infantry] — 24 techs
+  [land / infantry] -- 24 techs
     1936  paratroopers
     1936  marines
     1936  tech_mountaineers
@@ -1010,7 +2180,7 @@ CATEGORY DETAIL
     1944  advanced_infantry_weapons2
     1944  elite_forces
 
-  [land / light_tanks] — 8 techs
+  [land / light_tanks] -- 8 techs
     1918  gwtank
     1918  gwtank_chassis
     1934  basic_light_tank
@@ -1020,14 +2190,14 @@ CATEGORY DETAIL
     1941  advanced_light_tank
     1941  advanced_light_tank_chassis
 
-  [land / mechanised] — 5 techs
+  [land / mechanised] -- 5 techs
     1940  mechanised_infantry
     1941  amphibious_mechanized_infantry
     1942  mechanised_infantry2
     1943  amphibious_mechanized_infantry_2
     1944  mechanised_infantry3
 
-  [land / medium_tanks] — 6 techs
+  [land / medium_tanks] -- 6 techs
     1938  basic_medium_tank_chassis
     1939  basic_medium_tank
     1940  improved_medium_tank_chassis
@@ -1035,15 +2205,15 @@ CATEGORY DETAIL
     1943  advanced_medium_tank
     1943  advanced_medium_tank_chassis
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
     1945  main_battle_tank_chassis
 
-  [land / motorised] — 2 techs
+  [land / motorised] -- 2 techs
     1936  tech_trucks
     1936  motorised_infantry
 
-  [land / support] — 42 techs
+  [land / support] -- 42 techs
     1910  basic_train
     1918  tech_support
     1936  tech_engineers
@@ -1087,7 +2257,7 @@ CATEGORY DETAIL
     1945  tech_signal_company4
     1946  night_vision2
 
-  [land / tanks_generic] — 174 techs
+  [land / tanks_generic] -- 51 techs
     1914  armored_car1
     1934  basic_light_td
     1934  basic_light_art
@@ -1103,8 +2273,6 @@ CATEGORY DETAIL
     1936  GER_heavy_armored_car
     1936  armor_tech_1
     1936  NOR_rikstanken_tech
-    1936  fake_CAT_armor
-          [from: millennium_dawn]
     1938  amphibious_tank_chassis
     1938  engine_tech_2
     1939  basic_medium_td
@@ -1141,252 +2309,8 @@ CATEGORY DETAIL
     1945  modern_td
     1945  modern_art
     1945  modern_spaa
-    1945  Early_APC
-          [from: millennium_dawn]
-    1945  mbt_tech_ops
-          [from: millennium_dawn]
-    1945  small_medium_gun_tech
-          [from: millennium_dawn]
-    1945  small_autocannon_tech
-          [from: millennium_dawn]
-    1965  MBT_1
-          [from: millennium_dawn]
-    1965  APC_1
-          [from: millennium_dawn]
-    1965  IFV_1
-          [from: millennium_dawn]
-    1965  Rec_tank_0
-          [from: millennium_dawn]
-    1965  util_vehicle_0
-          [from: millennium_dawn]
-    1965  mbt_tech
-          [from: millennium_dawn]
-    1965  tank_components_tech
-          [from: millennium_dawn]
-    1965  armor_tech
-          [from: millennium_dawn]
-    1965  diesel_engine_tech
-          [from: millennium_dawn]
-    1965  medium_gun_tech
-          [from: millennium_dawn]
-    1965  big_autocannon_tech
-          [from: millennium_dawn]
-    1965  assault_gun_tech
-          [from: millennium_dawn]
-    1970  defensive_systems
-          [from: millennium_dawn]
-    1970  early_cold_war_ammo
-          [from: millennium_dawn]
-    1975  MBT_2
-          [from: millennium_dawn]
-    1975  APC_2
-          [from: millennium_dawn]
-    1975  IFV_2
-          [from: millennium_dawn]
-    1975  util_vehicle_1
-          [from: millennium_dawn]
-    1975  mbt_tech_1
-          [from: millennium_dawn]
-    1975  tank_components_tech_2
-          [from: millennium_dawn]
-    1975  era_tech
-          [from: millennium_dawn]
-    1975  diesel_engine_tech_2
-          [from: millennium_dawn]
-    1975  turbine_engine_tech
-          [from: millennium_dawn]
-    1975  electric_engine_tech_1
-          [from: millennium_dawn]
-    1975  small_autocannon_tech_2
-          [from: millennium_dawn]
-    1980  defensive_systems_2
-          [from: millennium_dawn]
-    1985  MBT_3
-          [from: millennium_dawn]
-    1985  APC_3
-          [from: millennium_dawn]
-    1985  IFV_3
-          [from: millennium_dawn]
-    1985  Rec_tank_1
-          [from: millennium_dawn]
-    1985  util_vehicle_2
-          [from: millennium_dawn]
-    1985  era_tech_2
-          [from: millennium_dawn]
-    1985  armor_tech_2
-          [from: millennium_dawn]
-    1985  nera_armor_tech_1
-          [from: millennium_dawn]
-    1985  cold_war_ammo
-          [from: millennium_dawn]
-    1985  diesel_engine_tech_3
-          [from: millennium_dawn]
-    1985  turbine_engine_tech_2
-          [from: millennium_dawn]
-    1985  small_medium_gun_tech_2
-          [from: millennium_dawn]
-    1985  medium_gun_tech_2
-          [from: millennium_dawn]
-    1985  big_autocannon_tech_2
-          [from: millennium_dawn]
-    1985  assault_gun_tech_2
-          [from: millennium_dawn]
-    1985  CZE_engine_tech
-          [from: millennium_dawn]
-    1995  MBT_4
-          [from: millennium_dawn]
-    1995  APC_4
-          [from: millennium_dawn]
-    1995  IFV_4
-          [from: millennium_dawn]
-    1995  util_vehicle_3
-          [from: millennium_dawn]
-    1995  mbt_tech_2
-          [from: millennium_dawn]
-    1995  tank_components_tech_3
-          [from: millennium_dawn]
-    1995  defensive_systems_3
-          [from: millennium_dawn]
-    1995  diesel_engine_tech_4
-          [from: millennium_dawn]
-    1995  turbine_engine_tech_3
-          [from: millennium_dawn]
-    1995  electric_engine_tech_2
-          [from: millennium_dawn]
-    1995  CZE_engine_tech_2
-          [from: millennium_dawn]
-    1995  CZE_engine_tech_7
-          [from: millennium_dawn]
-    1995  large_gun_tech
-          [from: millennium_dawn]
-    2005  APC_5
-          [from: millennium_dawn]
-    2005  IFV_5
-          [from: millennium_dawn]
-    2005  Rec_tank_2
-          [from: millennium_dawn]
-    2005  util_vehicle_4
-          [from: millennium_dawn]
-    2005  era_tech_3
-          [from: millennium_dawn]
-    2005  armor_tech_3
-          [from: millennium_dawn]
-    2005  nera_armor_tech_2
-          [from: millennium_dawn]
-    2005  modern_ammo
-          [from: millennium_dawn]
-    2005  diesel_engine_tech_5
-          [from: millennium_dawn]
-    2005  turbine_engine_tech_4
-          [from: millennium_dawn]
-    2005  small_medium_gun_tech_3
-          [from: millennium_dawn]
-    2005  CZE_engine_tech_3
-          [from: millennium_dawn]
-    2005  CZE_engine_tech_4
-          [from: millennium_dawn]
-    2010  CZE_engine_tech_8
-          [from: millennium_dawn]
-    2010  CZE_el_engine_tech
-          [from: millennium_dawn]
-    2015  MBT_5
-          [from: millennium_dawn]
-    2015  APC_6
-          [from: millennium_dawn]
-    2015  IFV_6
-          [from: millennium_dawn]
-    2015  Rec_tank_3
-          [from: millennium_dawn]
-    2015  util_vehicle_5
-          [from: millennium_dawn]
-    2015  tank_components_tech_4
-          [from: millennium_dawn]
-    2015  defensive_systems_4
-          [from: millennium_dawn]
-    2015  diesel_engine_tech_6
-          [from: millennium_dawn]
-    2015  turbine_engine_tech_5
-          [from: millennium_dawn]
-    2015  medium_gun_tech_3
-          [from: millennium_dawn]
-    2015  large_gun_tech_2
-          [from: millennium_dawn]
-    2015  small_autocannon_tech_3
-          [from: millennium_dawn]
-    2015  big_autocannon_tech_3
-          [from: millennium_dawn]
-    2015  assault_gun_tech_3
-          [from: millennium_dawn]
-    2015  CZE_engine_tech_5
-          [from: millennium_dawn]
-    2015  CZE_engine_tech_6
-          [from: millennium_dawn]
-    2020  mbt_tech_3
-          [from: millennium_dawn]
-    2020  CZE_engine_tech_9
-          [from: millennium_dawn]
-    2020  CZE_engine_tech_10
-          [from: millennium_dawn]
-    2020  CZE_el_engine_tech_2
-          [from: millennium_dawn]
-    2025  MBT_7
-          [from: millennium_dawn]
-    2025  APC_7
-          [from: millennium_dawn]
-    2025  IFV_7
-          [from: millennium_dawn]
-    2025  Rec_tank_4
-          [from: millennium_dawn]
-    2025  util_vehicle_6
-          [from: millennium_dawn]
-    2025  era_tech_4
-          [from: millennium_dawn]
-    2025  near_future_ammo
-          [from: millennium_dawn]
-    2025  turbine_engine_tech_6
-          [from: millennium_dawn]
-    2025  electric_engine_tech_3
-          [from: millennium_dawn]
-    2025  small_medium_gun_tech_4
-          [from: millennium_dawn]
-    2025  small_autocannon_tech_4
-          [from: millennium_dawn]
-    2025  big_autocannon_tech_4
-          [from: millennium_dawn]
-    2025  assault_gun_tech_4
-          [from: millennium_dawn]
-    2035  MBT_8
-          [from: millennium_dawn]
-    2035  APC_8
-          [from: millennium_dawn]
-    2035  IFV_8
-          [from: millennium_dawn]
-    2035  Rec_tank_5
-          [from: millennium_dawn]
-    2035  util_vehicle_7
-          [from: millennium_dawn]
-    2035  mbt_tech_4
-          [from: millennium_dawn]
-    2035  tank_components_tech_5
-          [from: millennium_dawn]
-    2035  defensive_systems_5
-          [from: millennium_dawn]
-    2035  armor_tech_4
-          [from: millennium_dawn]
-    2035  nera_armor_tech_3
-          [from: millennium_dawn]
-    2035  future_ammo
-          [from: millennium_dawn]
-    2035  diesel_engine_tech_7
-          [from: millennium_dawn]
-    2035  electric_engine_tech_4
-          [from: millennium_dawn]
-    2035  medium_gun_tech_4
-          [from: millennium_dawn]
-    2035  large_gun_tech_3
-          [from: millennium_dawn]
 
-  [naval / battleships] — 15 techs
+  [naval / battleships] -- 15 techs
     1922  early_ship_hull_heavy
     1922  early_battlecruiser
     1922  early_battleship
@@ -1403,7 +2327,7 @@ CATEGORY DETAIL
     1944  advanced_battleship
     1944  heavy_battleship2
 
-  [naval / carriers] — 10 techs
+  [naval / carriers] -- 10 techs
     1922  early_ship_hull_carrier
     1922  early_carrier
     1936  basic_ship_hull_carrier
@@ -1415,7 +2339,7 @@ CATEGORY DETAIL
     1944  sp_ice_composite_runawayas
     1944  advanced_carrier
 
-  [naval / destroyers] — 17 techs
+  [naval / destroyers] -- 17 techs
     1922  early_ship_hull_light
     1922  smoke_generator
     1922  basic_depth_charges (XP)
@@ -1434,14 +2358,14 @@ CATEGORY DETAIL
     1943  modern_sonar
     1944  advanced_destroyer
 
-  [naval / heavy_cruisers] — 5 techs
+  [naval / heavy_cruisers] -- 5 techs
     1922  basic_cruiser_armor_scheme (XP)
     1922  early_heavy_cruiser
     1936  basic_heavy_cruiser
     1940  improved_heavy_cruiser
     1944  advanced_heavy_cruiser
 
-  [naval / light_cruisers] — 8 techs
+  [naval / light_cruisers] -- 8 techs
     1922  early_ship_hull_cruiser
     1922  early_light_cruiser
     1936  basic_ship_hull_cruiser
@@ -1451,7 +2375,7 @@ CATEGORY DETAIL
     1943  advanced_ship_hull_cruiser
     1944  advanced_light_cruiser
 
-  [naval / naval_support] — 195 techs
+  [naval / naval_support] -- 32 techs
     1922  basic_torpedo
     1922  basic_naval_mines
     1922  submarine_mine_laying
@@ -1484,334 +2408,8 @@ CATEGORY DETAIL
     1944  modern_ship_torpedo_launcher
     1944  mtg_tank_landing_craft
     1944  tank_landing_craft
-    1945  tech_naval_systems_engineering (XP)
-          [from: millennium_dawn]
-    1945  tech_early_naval_weapon_systems (XP)
-          [from: millennium_dawn]
-    1945  aircraft_carrier_engineering (XP)
-          [from: millennium_dawn]
-    1945  tech_submarine_engineering (XP)
-          [from: millennium_dawn]
-    1960  gen_3_large
-          [from: millennium_dawn]
-    1965  naval_weapons_1
-          [from: millennium_dawn]
-    1965  naval_plane1
-          [from: millennium_dawn]
-    1965  battleship_hull_1
-          [from: millennium_dawn]
-    1965  aircraft_heli_engineering_1 (XP)
-          [from: millennium_dawn]
-    1965  carrier_hull_1
-          [from: millennium_dawn]
-    1965  tech_submarine_engineering_1 (XP)
-          [from: millennium_dawn]
-    1965  attack_submarine_hull_1
-          [from: millennium_dawn]
-    1965  missile_submarine_hull_1
-          [from: millennium_dawn]
-    1965  tech_power_systems (XP)
-          [from: millennium_dawn]
-    1965  tech_nuclear_power_systems (XP)
-          [from: millennium_dawn]
-    1965  tech_combat_support_systems (XP)
-          [from: millennium_dawn]
-    1965  tech_fire_control (XP)
-          [from: millennium_dawn]
-    1965  tech_naval_weapon_systems (XP)
-          [from: millennium_dawn]
-    1965  tech_landing_craft (XP)
-          [from: millennium_dawn]
-    1965  corvette_hull_1
-          [from: millennium_dawn]
-    1965  frigate_hull_1
-          [from: millennium_dawn]
-    1965  destroyer_hull_1
-          [from: millennium_dawn]
-    1965  cruiser_hull_1
-          [from: millennium_dawn]
-    1970  special_mad_1
-          [from: millennium_dawn]
-    1970  helicopter_operator_hull_1
-          [from: millennium_dawn]
-    1970  tech_point_defense_system (XP)
-          [from: millennium_dawn]
-    1975  naval_plane2
-          [from: millennium_dawn]
-    1975  tech_light_guns (XP)
-          [from: millennium_dawn]
-    1975  tech_point_defense_system_1 (XP)
-          [from: millennium_dawn]
-    1975  tech_turret_missiles_surface (XP)
-          [from: millennium_dawn]
-    1975  tech_turret_missiles_aa (XP)
-          [from: millennium_dawn]
-    1975  tech_vls_surface (XP)
-          [from: millennium_dawn]
-    1975  tech_vls_aa (XP)
-          [from: millennium_dawn]
-    1975  tech_torpedoes (XP)
-          [from: millennium_dawn]
-    1980  gen_4_large
-          [from: millennium_dawn]
-    1980  corvette_hull_2
-          [from: millennium_dawn]
-    1980  frigate_hull_2
-          [from: millennium_dawn]
-    1980  attack_submarine_hull_2
-          [from: millennium_dawn]
-    1980  missile_submarine_hull_2
-          [from: millennium_dawn]
-    1980  tech_combat_radar (XP)
-          [from: millennium_dawn]
-    1980  tech_combat_sonar (XP)
-          [from: millennium_dawn]
-    1985  naval_plane3
-          [from: millennium_dawn]
-    1985  cruiser_hull_2
-          [from: millennium_dawn]
-    1985  aircraft_heli_engineering_2 (XP)
-          [from: millennium_dawn]
-    1985  carrier_hull_2
-          [from: millennium_dawn]
-    1985  tech_turret_missiles_surface_1 (XP)
-          [from: millennium_dawn]
-    1985  tech_turret_missiles_aa_1 (XP)
-          [from: millennium_dawn]
-    1985  tech_vls_surface_1 (XP)
-          [from: millennium_dawn]
-    1985  tech_vls_aa_1 (XP)
-          [from: millennium_dawn]
-    1985  tech_amphibious_assault_ship (XP)
-          [from: millennium_dawn]
-    1990  naval_weapons_2
-          [from: millennium_dawn]
-    1990  destroyer_hull_2
-          [from: millennium_dawn]
-    1990  tech_submarine_engineering_2 (XP)
-          [from: millennium_dawn]
-    1990  tech_nuclear_power_systems_1 (XP)
-          [from: millennium_dawn]
-    1990  tech_point_defense_system_2 (XP)
-          [from: millennium_dawn]
-    1990  tech_torpedoes_1 (XP)
-          [from: millennium_dawn]
-    1990  tech_air_cushioned_landing_craft (XP)
-          [from: millennium_dawn]
-    1990  tech_fire_control_1 (XP)
-          [from: millennium_dawn]
-    1995  special_mad_2
-          [from: millennium_dawn]
-    1995  corvette_hull_3
-          [from: millennium_dawn]
-    1995  frigate_hull_3
-          [from: millennium_dawn]
-    1995  helicopter_operator_hull_2
-          [from: millennium_dawn]
-    1995  attack_submarine_hull_3
-          [from: millennium_dawn]
-    1995  missile_submarine_hull_3
-          [from: millennium_dawn]
-    1995  tech_power_systems_1 (XP)
-          [from: millennium_dawn]
-    1995  tech_combat_radar_1 (XP)
-          [from: millennium_dawn]
-    1995  tech_combat_sonar_1 (XP)
-          [from: millennium_dawn]
-    2000  tech_light_guns_1 (XP)
-          [from: millennium_dawn]
-    2000  tech_turret_missiles_surface_2 (XP)
-          [from: millennium_dawn]
-    2000  tech_turret_missiles_aa_2 (XP)
-          [from: millennium_dawn]
-    2000  tech_vls_surface_2 (XP)
-          [from: millennium_dawn]
-    2000  tech_vls_aa_2 (XP)
-          [from: millennium_dawn]
-    2000  tech_modern_landing_craft (XP)
-          [from: millennium_dawn]
-    2005  destroyer_hull_3
-          [from: millennium_dawn]
-    2005  cruiser_hull_3
-          [from: millennium_dawn]
-    2005  battleship_hull_2
-          [from: millennium_dawn]
-    2005  aircraft_heli_engineering_3 (XP)
-          [from: millennium_dawn]
-    2005  carrier_hull_3
-          [from: millennium_dawn]
-    2005  tech_combat_radar_2 (XP)
-          [from: millennium_dawn]
-    2005  tech_combat_sonar_2 (XP)
-          [from: millennium_dawn]
-    2005  tech_point_defense_system_3 (XP)
-          [from: millennium_dawn]
-    2010  corvette_hull_4
-          [from: millennium_dawn]
-    2010  stealth_corvette_hull_1
-          [from: millennium_dawn]
-    2010  frigate_hull_4
-          [from: millennium_dawn]
-    2010  stealth_frigate_hull_1
-          [from: millennium_dawn]
-    2010  attack_submarine_hull_4
-          [from: millennium_dawn]
-    2010  missile_submarine_hull_4
-          [from: millennium_dawn]
-    2010  tech_torpedoes_2 (XP)
-          [from: millennium_dawn]
-    2015  gen_5_large
-          [from: millennium_dawn]
-    2015  naval_plane4
-          [from: millennium_dawn]
-    2015  stealth_destroyer_hull_1
-          [from: millennium_dawn]
-    2015  tech_submarine_engineering_3 (XP)
-          [from: millennium_dawn]
-    2015  tech_power_systems_2 (XP)
-          [from: millennium_dawn]
-    2015  tech_nuclear_power_systems_2 (XP)
-          [from: millennium_dawn]
-    2015  tech_rail_guns (XP)
-          [from: millennium_dawn]
-    2015  tech_turret_missiles_surface_3 (XP)
-          [from: millennium_dawn]
-    2015  tech_turret_missiles_aa_3 (XP)
-          [from: millennium_dawn]
-    2015  tech_vls_surface_3 (XP)
-          [from: millennium_dawn]
-    2015  tech_vls_aa_3 (XP)
-          [from: millennium_dawn]
-    2015  tech_specialized_protective_equipment (XP)
-          [from: millennium_dawn]
-    2015  tech_fire_control_2 (XP)
-          [from: millennium_dawn]
-    2020  naval_weapons_3
-          [from: millennium_dawn]
-    2020  battleship_hull_3
-          [from: millennium_dawn]
-    2020  helicopter_operator_hull_3
-          [from: millennium_dawn]
-    2020  tech_combat_radar_3 (XP)
-          [from: millennium_dawn]
-    2020  tech_combat_sonar_3 (XP)
-          [from: millennium_dawn]
-    2020  tech_point_defense_system_4 (XP)
-          [from: millennium_dawn]
-    2020  tech_torpedoes_3 (XP)
-          [from: millennium_dawn]
-    2025  special_mad_3
-          [from: millennium_dawn]
-    2025  naval_plane5
-          [from: millennium_dawn]
-    2025  corvette_hull_5
-          [from: millennium_dawn]
-    2025  stealth_corvette_hull_2
-          [from: millennium_dawn]
-    2025  frigate_hull_5
-          [from: millennium_dawn]
-    2025  stealth_frigate_hull_2
-          [from: millennium_dawn]
-    2025  destroyer_hull_4
-          [from: millennium_dawn]
-    2025  cruiser_hull_4
-          [from: millennium_dawn]
-    2025  carrier_hull_4
-          [from: millennium_dawn]
-    2025  attack_submarine_hull_5
-          [from: millennium_dawn]
-    2025  missile_submarine_hull_5
-          [from: millennium_dawn]
-    2025  tech_light_guns_2 (XP)
-          [from: millennium_dawn]
-    2025  tech_rail_guns_1 (XP)
-          [from: millennium_dawn]
-    2025  tech_advanced_landing_craft (XP)
-          [from: millennium_dawn]
-    2030  stealth_destroyer_hull_2
-          [from: millennium_dawn]
-    2030  tech_turret_missiles_surface_4 (XP)
-          [from: millennium_dawn]
-    2030  tech_turret_missiles_aa_4 (XP)
-          [from: millennium_dawn]
-    2030  tech_vls_surface_4 (XP)
-          [from: millennium_dawn]
-    2030  tech_vls_aa_4 (XP)
-          [from: millennium_dawn]
-    2035  gen_6_large
-          [from: millennium_dawn]
-    2035  naval_plane6
-          [from: millennium_dawn]
-    2035  tech_combat_radar_4 (XP)
-          [from: millennium_dawn]
-    2035  tech_combat_sonar_4 (XP)
-          [from: millennium_dawn]
-    2035  tech_rail_guns_2 (XP)
-          [from: millennium_dawn]
-    2035  tech_point_defense_system_5 (XP)
-          [from: millennium_dawn]
-    2035  tech_torpedoes_4 (XP)
-          [from: millennium_dawn]
-    2035  tech_landing_craft_ai_systems (XP)
-          [from: millennium_dawn]
-    2040  naval_weapons_4
-          [from: millennium_dawn]
-    2040  corvette_hull_6
-          [from: millennium_dawn]
-    2040  stealth_corvette_hull_3
-          [from: millennium_dawn]
-    2040  frigate_hull_6
-          [from: millennium_dawn]
-    2040  stealth_frigate_hull_3
-          [from: millennium_dawn]
-    2040  tech_submarine_engineering_4 (XP)
-          [from: millennium_dawn]
-    2040  attack_submarine_hull_6
-          [from: millennium_dawn]
-    2040  missile_submarine_hull_6
-          [from: millennium_dawn]
-    2040  tech_power_systems_3 (XP)
-          [from: millennium_dawn]
-    2040  tech_nuclear_power_systems_3 (XP)
-          [from: millennium_dawn]
-    2040  tech_fire_control_3 (XP)
-          [from: millennium_dawn]
-    2045  destroyer_hull_5
-          [from: millennium_dawn]
-    2045  stealth_destroyer_hull_3
-          [from: millennium_dawn]
-    2045  cruiser_hull_5
-          [from: millennium_dawn]
-    2045  battleship_hull_4
-          [from: millennium_dawn]
-    2045  helicopter_operator_hull_4
-          [from: millennium_dawn]
-    2045  carrier_hull_5
-          [from: millennium_dawn]
-    2045  tech_combat_radar_5 (XP)
-          [from: millennium_dawn]
-    2045  tech_combat_sonar_5 (XP)
-          [from: millennium_dawn]
-    2045  tech_light_guns_3 (XP)
-          [from: millennium_dawn]
-    2045  tech_rail_guns_3 (XP)
-          [from: millennium_dawn]
-    2045  tech_point_defense_system_6 (XP)
-          [from: millennium_dawn]
-    2045  tech_turret_missiles_surface_5 (XP)
-          [from: millennium_dawn]
-    2045  tech_turret_missiles_aa_5 (XP)
-          [from: millennium_dawn]
-    2045  tech_vls_surface_5 (XP)
-          [from: millennium_dawn]
-    2045  tech_vls_aa_5 (XP)
-          [from: millennium_dawn]
-    2045  tech_torpedoes_5 (XP)
-          [from: millennium_dawn]
-    2045  tech_smart_landing_craft (XP)
-          [from: millennium_dawn]
 
-  [naval / submarines] — 12 techs
+  [naval / submarines] -- 12 techs
     1922  early_ship_hull_submarine
     1922  early_submarine
     1936  basic_ship_hull_submarine
@@ -1830,18 +2428,6 @@ UNMAPPED TECHS
 These techs could not be assigned to a branch.
 Add entries to custom_mappings.txt to include them.
 
-  AA_upgrade_1
-    categories: ['CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  AA_upgrade_2
-    categories: ['CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  AA_upgrade_3
-    categories: ['CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  AA_upgrade_4
-    categories: ['CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
   AFG_Karim_Khalilis_new_offensive
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
@@ -1860,132 +2446,18 @@ Add entries to custom_mappings.txt to include them.
   AFG_donkey_logistics_Tech3
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
-  AT_upgrade_1
-    categories: ['CAT_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  AT_upgrade_2
-    categories: ['CAT_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  AT_upgrade_3
-    categories: ['CAT_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  AT_upgrade_4
-    categories: ['CAT_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Air_Kamikaze1
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_a_uav', 'CAT_small_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  Air_Kamikaze2
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_a_uav', 'CAT_small_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  Air_Kamikaze3
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_a_uav', 'CAT_small_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  Air_Kamikaze4
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_a_uav', 'CAT_small_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  Air_UAV1
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_a_uav', 'CAT_small_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  Air_UAV2
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_a_uav', 'CAT_small_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  Air_UAV3
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_a_uav', 'CAT_small_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  Air_UAV4
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_a_uav', 'CAT_small_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  Anti_Air_0
-    categories: ['CAT_inf', 'CAT_aa', 'CAT_l_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  Anti_Air_1
-    categories: ['CAT_inf', 'CAT_l_aa', 'CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  Anti_Air_2
-    categories: ['CAT_aa', 'CAT_l_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  Anti_Air_3
-    categories: ['CAT_inf', 'CAT_aa', 'CAT_l_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  Anti_Air_4
-    categories: ['CAT_inf', 'CAT_aa', 'CAT_l_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  Anti_tank_0
-    categories: ['CAT_inf', 'CAT_at', 'CAT_l_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Anti_tank_1
-    categories: ['CAT_inf', 'CAT_at', 'CAT_l_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Anti_tank_2
-    categories: ['CAT_inf', 'CAT_at', 'CAT_l_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Anti_tank_3
-    categories: ['CAT_inf', 'CAT_at', 'CAT_l_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Anti_tank_4
-    categories: ['CAT_inf', 'CAT_at', 'CAT_l_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
   BEL_chasseurs_ardennais
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
   BEL_chasseurs_ardennais_ncns
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  COMSAT1
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  COMSAT2
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  COMSAT3
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  COMSAT4
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  COMSAT5
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  COMSAT6
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  COMSAT7
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  COMSAT8
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
   ETH_improved_irregular_infantry_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
   FAD_access_tech
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
-  GNSS1
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite', 'CAT_gnss']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  GNSS2
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite', 'CAT_gnss']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  GNSS3
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite', 'CAT_gnss']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  GNSS4
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite', 'CAT_gnss']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  GNSS5
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite', 'CAT_gnss']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  GNSS6
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite', 'CAT_gnss']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  GNSS7
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite', 'CAT_gnss']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  GNSS8
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite', 'CAT_gnss']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
   HEZBOLLAH_BOOST
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
@@ -1995,84 +2467,12 @@ Add entries to custom_mappings.txt to include them.
   HUN_light_infantry_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  Heavy_Anti_tank_0
-    categories: ['CAT_at', 'CAT_h_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Heavy_Anti_tank_1
-    categories: ['CAT_at', 'CAT_h_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Heavy_Anti_tank_2
-    categories: ['CAT_at', 'CAT_h_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Heavy_Anti_tank_3
-    categories: ['CAT_at', 'CAT_h_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
-  Heavy_Anti_tank_4
-    categories: ['CAT_at', 'CAT_h_at', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_tank.txt
   JAP_silver_wheels
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  KILLSAT1
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  KILLSAT2
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  KILLSAT3
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  KILLSAT4
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  KILLSAT5
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  KILLSAT6
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
   PHI_battalion_combat_teams
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  SPYSAT1
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  SPYSAT2
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  SPYSAT3
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  SPYSAT4
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  SPYSAT5
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  SPYSAT6
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  SPYSAT7
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  SPYSAT8
-    categories: ['CAT_Military', 'CAT_space', 'CAT_satellite']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\space.txt
-  SP_Anti_Air_0
-    categories: ['CAT_sp_aa', 'CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  SP_Anti_Air_1
-    categories: ['CAT_sp_aa', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  SP_Anti_Air_2
-    categories: ['CAT_sp_aa', 'CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  SP_Anti_Air_3
-    categories: ['CAT_sp_aa', 'CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
-  SP_Anti_Air_4
-    categories: ['CAT_sp_aa', 'CAT_aa', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\anti_air.txt
   SWE_sami_support_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
@@ -2088,363 +2488,60 @@ Add entries to custom_mappings.txt to include them.
   advanced_modern_tank_turret_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
-  ag_weapons_1
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_ground_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  ag_weapons_2
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_ground_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  ag_weapons_3
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_ground_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  ag_weapons_4
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_ground_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
   air_assault_artillery
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
-  air_weapons_1
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_to_air_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  air_weapons_2
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_to_air_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  air_weapons_3
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_to_air_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  air_weapons_4
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_to_air_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  attack_helicopter1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  attack_helicopter2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  attack_helicopter3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  attack_helicopter4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  attack_helicopter5
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  augmented_vision_1
-    categories: ['CAT_inf', 'CAT_nvg', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  augmented_vision_2
-    categories: ['CAT_inf', 'CAT_nvg', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  autonomous_fire_support_drone
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  avionics_1
-    categories: ['CAT_air_eqp', 'CAT_avionics', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  avionics_2
-    categories: ['CAT_air_eqp', 'CAT_avionics', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  avionics_3
-    categories: ['CAT_air_eqp', 'CAT_avionics', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  awacs_1
-    categories: ['CAT_air_eqp', 'CAT_awacs', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  awacs_2
-    categories: ['CAT_air_eqp', 'CAT_awacs', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  awacs_3
-    categories: ['CAT_air_eqp', 'CAT_awacs', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  awacs_plane1
-    categories: ['CAT_h_air', 'CAT_awacs', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  awacs_plane2
-    categories: ['CAT_h_air', 'CAT_awacs', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
   bicycle_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
   blackshirt_assault_battalion_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  body_armor_1980
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  body_armor_2000
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  body_armor_2010
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  body_armor_2030
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
   camelry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
   camicie_nere_security_militias
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\support.txt
-  camouflage
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  camouflage2
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  camouflage3
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  camouflage4
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  camouflage5
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  cas1
-    categories: ['CAT_h_air', 'CAT_cas', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_medium_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  cas2
-    categories: ['CAT_h_air', 'CAT_cas', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_medium_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  cas3
-    categories: ['CAT_h_air', 'CAT_cas', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_medium_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  cas4
-    categories: ['CAT_h_air', 'CAT_cas', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_medium_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  cas5
-    categories: ['CAT_h_air', 'CAT_cas', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_medium_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
   coastal_defense_ships
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
-  combat_eng_equipment
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  command_control_equipment
-    categories: ['CAT_inf', 'CAT_cnc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  command_control_equipment1
-    categories: ['CAT_inf', 'CAT_cnc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  command_control_equipment2
-    categories: ['CAT_inf', 'CAT_cnc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  command_control_equipment3
-    categories: ['CAT_inf', 'CAT_cnc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  command_control_equipment4
-    categories: ['CAT_inf', 'CAT_cnc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  command_control_equipment5
-    categories: ['CAT_inf', 'CAT_cnc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  command_control_equipment6
-    categories: ['CAT_inf', 'CAT_cnc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
   commercial_nuclear_reactor_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
-  countermeasures_1
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_air_countermeasures', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  countermeasures_2
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_air_countermeasures', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  countermeasures_3
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_air_countermeasures', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  countermeasures_4
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_air_countermeasures', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
   cruiser_submarines
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
-  cv_awacs_plane1
-    categories: ['CAT_h_air', 'CAT_awacs', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  cv_awacs_plane2
-    categories: ['CAT_h_air', 'CAT_awacs', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  delta_wing_design
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_wings', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
   desert_training_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  diamond_wing_design
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_wings', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  drone_1
-    categories: ['CAT_air_eqp', 'CAT_drones', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  drone_2
-    categories: ['CAT_air_eqp', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  drone_3
-    categories: ['CAT_air_eqp', 'CAT_drones', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  drone_4
-    categories: ['CAT_air_eqp', 'CAT_drones', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  early_airframe_designs
-    categories: ['CAT_air_eqp', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  early_fighter
-    categories: ['CAT_fixed_wing', 'CAT_air_eqp', 'CAT_small_plane', 'CAT_medium_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\fixed_wing.txt
-  early_weapons
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  edge
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
   elephantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  engines_2
-    categories: ['CAT_air_eqp', 'CAT_air_engine', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  engines_3
-    categories: ['CAT_air_eqp', 'CAT_air_engine', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  engines_4
-    categories: ['CAT_air_eqp', 'CAT_air_engine', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  engines_5
-    categories: ['CAT_air_eqp', 'CAT_air_engine', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  exoskeleton_1
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  exoskeleton_2
-    categories: ['CAT_inf', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  flying_wing_design
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_wings', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  future_wingform_designs
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_wings', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  fwdswept_wing_design
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_wings', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  gprs
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
-  gunship_1
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_ground_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  gunship_2
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_ground_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
   heavy_frigate
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
-  helo_ops_tech
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
   hills_training_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  hsupa
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
-  infantry_weapons
-    categories: ['CAT_inf', 'CAT_inf_wep', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  infantry_weapons1
-    categories: ['CAT_inf', 'CAT_inf_wep', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  infantry_weapons2
-    categories: ['CAT_inf', 'CAT_inf_wep', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  infantry_weapons3
-    categories: ['CAT_inf', 'CAT_inf_wep', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  infantry_weapons4
-    categories: ['CAT_inf', 'CAT_inf_wep', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  infantry_weapons5
-    categories: ['CAT_inf', 'CAT_inf_wep', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  infantry_weapons6
-    categories: ['CAT_inf', 'CAT_inf_wep', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  infantry_weapons7
-    categories: ['CAT_inf', 'CAT_inf_wep', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  internal_weapons_1
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  internal_weapons_2
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  internal_weapons_3
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  internet1
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
-  internet2
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
-  internet3
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
-  internet4
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
-  internet5
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
-  internet6
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
   jungle_training_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
   jungle_warfare
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  land_Drone_equipment
-    categories: ['CAT_inf', 'CAT_l_drone', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  land_Drone_equipment1
-    categories: ['CAT_inf', 'CAT_l_drone', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  land_Drone_equipment2
-    categories: ['CAT_inf', 'CAT_l_drone', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  land_Drone_equipment3
-    categories: ['CAT_inf', 'CAT_l_drone', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  land_Drone_equipment4
-    categories: ['CAT_inf', 'CAT_l_drone', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  land_Drone_equipment5
-    categories: ['CAT_inf', 'CAT_l_drone', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
   land_multi_charge_large_caliber_gun_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
   lar_decryption_bonus_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\electronic_mechanical_engineering.txt
-  lifi
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
   long_range_patrol_support_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
   lotta_svard_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  lte
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
   marine_commandos
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
@@ -2454,9 +2551,6 @@ Add entries to custom_mappings.txt to include them.
   militia_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  modern_satelite_internet
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
   molotov_cocktails_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
@@ -2472,240 +2566,6 @@ Add entries to custom_mappings.txt to include them.
   mountain_warfare_militias_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  night_vision_1
-    categories: ['CAT_inf', 'CAT_nvg', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  night_vision_2
-    categories: ['CAT_inf', 'CAT_nvg', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  night_vision_3
-    categories: ['CAT_inf', 'CAT_nvg', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  night_vision_4
-    categories: ['CAT_inf', 'CAT_nvg', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  nsb_AA_autocannon_0
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_AA_autocannon_1
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_l_aa', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_AA_autocannon_2
-    categories: ['CAT_Military', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_AA_autocannon_3
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_AA_autocannon_4
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_AA_upgrade_1
-    categories: ['CAT_Military', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_AA_upgrade_2
-    categories: ['CAT_Military', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_AA_upgrade_3
-    categories: ['CAT_Military', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_AA_upgrade_4
-    categories: ['CAT_Military', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_Anti_Air_0
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_Anti_Air_1
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_l_aa', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_Anti_Air_2
-    categories: ['CAT_Military', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_Anti_Air_3
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_Anti_Air_4
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_SHORAD_missile_0
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_SHORAD_missile_1
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_l_aa', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_SHORAD_missile_2
-    categories: ['CAT_Military', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_SHORAD_missile_3
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_SHORAD_missile_4
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_atgm_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_atgm_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_atgm_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_atgm_tech_4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_atgm_tech_5
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_attack_helicopter_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_attack_helicopter_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_attack_helicopter_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_attack_helicopter_tech_4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_attack_helicopter_tech_5
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_defense_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_defense_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_defense_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_defense_tech_4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_drone_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_drone_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_drone_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_dual_role_missile_0
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_dual_role_missile_1
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_l_aa', 'CAT_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_dual_role_missile_2
-    categories: ['CAT_Military', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_dual_role_missile_3
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_dual_role_missile_4
-    categories: ['CAT_Military', 'CAT_inf', 'CAT_aa', 'CAT_l_aa']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\NSB_anti_air.txt
-  nsb_engine_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_engine_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_engine_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_engine_tech_4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_engine_tech_5
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_gun_pods_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_gun_pods_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_gun_pods_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_gun_pods_tech_4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_gun_pods_tech_5
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_heavy_atgm_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_heavy_atgm_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_heavy_atgm_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_heavy_atgm_tech_4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_heavy_atgm_tech_5
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_light_nose_gun_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_light_nose_gun_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_light_nose_gun_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_multiple_atgm_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_multiple_atgm_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_multiple_atgm_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_multiple_atgm_tech_4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_multiple_atgm_tech_5
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_rocket_pods_tech_1
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_rocket_pods_tech_2
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_rocket_pods_tech_3
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_rocket_pods_tech_4
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_rocket_pods_tech_5
-    categories: ['CAT_heli', 'CAT_atk_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_transport_helicopter1
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_transport_helicopter2
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_transport_helicopter3
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_transport_helicopter4
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  nsb_transport_helicopter5
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
   panzerschiffe
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
@@ -2715,48 +2575,15 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   pre_dreadnoughts
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
-  radar
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
   rangers
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
-  rapid_dragon
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  rc_fire_support_drone
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  redundant_1
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  redundant_2
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  refueling_1
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  refueling_2
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
   sami_pathfinders_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  solar_engines_1
-    categories: ['CAT_air_eqp', 'CAT_air_engine', 'CAT_fuel_oil', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  solar_engines_2
-    categories: ['CAT_air_eqp', 'CAT_air_engine', 'CAT_fuel_oil', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_double_shot_rifle_tech
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
@@ -2787,36 +2614,9 @@ Add entries to custom_mappings.txt to include them.
   sp_naval_underway_replenishment_pick_b
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
-  special_forces
-    categories: ['CAT_inf', 'CAT_special_forces', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  special_forces2
-    categories: ['CAT_inf', 'CAT_special_forces', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  special_forces3
-    categories: ['CAT_inf', 'CAT_special_forces', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  special_forces4
-    categories: ['CAT_inf', 'CAT_special_forces', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  special_forces5
-    categories: ['CAT_inf', 'CAT_special_forces', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  special_forces6
-    categories: ['CAT_inf', 'CAT_special_forces', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
   special_project_tech_multipurpose_warhead
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\special_project_hidden_techs.txt
-  squad_automatic_weapon
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  stealth_tech_1
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_air_stealth', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  stealth_tech_2
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_air_stealth', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
   stronghold_network_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
@@ -2829,36 +2629,6 @@ Add entries to custom_mappings.txt to include them.
   suicide_craft
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\air_techs.txt
-  suicide_drone_1
-    categories: ['CAT_air_eqp', 'CAT_drones', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  suicide_drone_2
-    categories: ['CAT_air_eqp', 'CAT_drones', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  suicide_drone_3
-    categories: ['CAT_air_eqp', 'CAT_drones', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  suicide_drone_4
-    categories: ['CAT_air_eqp', 'CAT_drones', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  support_weapons
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  support_weapons2
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  support_weapons3
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  support_weapons4
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  support_weapons5
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
-  tandem_charge_warheads
-    categories: ['CAT_inf', 'CAT_support_weapons', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\infantry.txt
   tech_AFG_Legacy_of_the_Mujahideen
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
@@ -2868,72 +2638,18 @@ Add entries to custom_mappings.txt to include them.
   tech_AFG_The_Farmer_and_their_Rifle
     categories: []
     source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\custom_tech.txt
-  tgp_recon_1
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_camera', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  tgp_recon_2
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_camera', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  tgp_recon_3
-    categories: ['CAT_air_eqp', 'CAT_air_wpn', 'CAT_air_camera', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
   torpedo_cruiser
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\naval.txt
   torpedo_cruiser_mtg
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\MTG_naval.txt
-  transport_helicopter1
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  transport_helicopter2
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  transport_helicopter3
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  transport_helicopter4
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  transport_helicopter5
-    categories: ['CAT_heli', 'CAT_trans_heli', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\air_techs.txt
-  transport_plane1
-    categories: ['CAT_h_air', 'CAT_trans_plane', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  transport_plane2
-    categories: ['CAT_h_air', 'CAT_trans_plane', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  transport_plane3
-    categories: ['CAT_h_air', 'CAT_trans_plane', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  transport_plane4
-    categories: ['CAT_h_air', 'CAT_trans_plane', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  transport_plane5
-    categories: ['CAT_h_air', 'CAT_trans_plane', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  transport_plane6
-    categories: ['CAT_h_air', 'CAT_trans_plane', 'CAT_fixed_wing', 'CAT_air_eqp', 'CAT_large_plane', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\bombers.txt
-  umts
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
   uranium_tipped_bullets
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
   urban_training_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  variable_wing_design
-    categories: ['CAT_air_eqp', 'CAT_air_spc', 'CAT_wings', 'CAT_Military']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\BBA_aircraft.txt
-  wifi
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
-  wimax
-    categories: ['CAT_internet_tech', 'CAT_Civilian']
-    source: millennium_dawn / E:\SteamLibrary\steamapps\workshop\content\394360\2777392649\common\technologies\engineering.txt
   winter_logistics_support_tech
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt

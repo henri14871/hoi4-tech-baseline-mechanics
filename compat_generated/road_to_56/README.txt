@@ -4,7 +4,7 @@ Workshop ID: 820260968
 Bundle slug: road_to_56
 Generation mode: expansion
 Parsed techs: 948
-Unknown techs: 137
+Unknown techs: 136
 Doctrines detected: 67
 Preset thresholds: road_to_56
 

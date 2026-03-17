@@ -1,21 +1,21 @@
-ARMS RACE MECHANICS — TECH LIST GENERATION REPORT
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
 ============================================================
 
 Total techs parsed:    2480
-Successfully mapped:   1781
-Unmapped (unknown):    382
+Successfully mapped:   1829
+Unmapped (unknown):    334
 
 BRANCH SUMMARY
 ----------------------------------------
   air                             261 techs
   industry_electronics            383 techs
-  land                            876 techs
+  land                            924 techs
   naval                           261 techs
 
 CATEGORY DETAIL
 ------------------------------------------------------------
 
-  [air / cas] — 60 techs
+  [air / cas] -- 60 techs
     1915  bba_tac_bombing_1915
           [from: rise_of_nations]
     1915  bba_strat_bombing_1915
@@ -131,7 +131,7 @@ CATEGORY DETAIL
     2060  bba_strat_bombing_2060
           [from: rise_of_nations]
 
-  [air / fighters] — 68 techs
+  [air / fighters] -- 68 techs
     1912  scout_plane
           [from: rise_of_nations]
     1914  early_fighter_1914
@@ -248,7 +248,7 @@ CATEGORY DETAIL
     2060  bba_small_aircraft_frame_2060
           [from: rise_of_nations]
 
-  [air / heavy_fighters] — 48 techs
+  [air / heavy_fighters] -- 48 techs
     1926  iw_medium_airframe
     1928  bba_medium_aircraft_frame_1928
           [from: rise_of_nations]
@@ -341,7 +341,7 @@ CATEGORY DETAIL
     2060  bba_medium_aircraft_frame_2060
           [from: rise_of_nations]
 
-  [air / naval_bombers] — 5 techs
+  [air / naval_bombers] -- 5 techs
     1917  early_naval_bomber
           [from: rise_of_nations]
     1924  interwars_naval_bomber
@@ -353,7 +353,7 @@ CATEGORY DETAIL
     1944  naval_bomber3
           [from: rise_of_nations]
 
-  [air / strategic_bombers] — 55 techs
+  [air / strategic_bombers] -- 55 techs
     1901  RON_Zepellin_1901
           [from: rise_of_nations]
     1902  bba_RON_zeppelin_1901
@@ -460,7 +460,7 @@ CATEGORY DETAIL
     2060  bba_large_aircraft_frame_2060
           [from: rise_of_nations]
 
-  [air / tactical_bombers] — 19 techs
+  [air / tactical_bombers] -- 19 techs
     1914  early_bomber_1914
           [from: rise_of_nations]
     1916  basic_bomber
@@ -500,7 +500,7 @@ CATEGORY DETAIL
     2025  gen4_ucav
           [from: rise_of_nations]
 
-  [air / transport] — 6 techs
+  [air / transport] -- 6 techs
     1933  early_transport_plane
     1933  bba_early_transport_plane
     1940  improved_transport_plane
@@ -508,7 +508,7 @@ CATEGORY DETAIL
     1945  bba_strategic_airlifter
     1948  strategic_airlifter
 
-  [industry_electronics / electronics] — 74 techs
+  [industry_electronics / electronics] -- 74 techs
     1890  chemical_research
           [from: rise_of_nations]
     1890  RON_Electrical_Engineering
@@ -656,7 +656,7 @@ CATEGORY DETAIL
     2008  modern_hardware_2
           [from: rise_of_nations]
 
-  [industry_electronics / industry] — 152 techs
+  [industry_electronics / industry] -- 152 techs
     1890  RON_19th_Century_Industrial_Techniques
           [from: rise_of_nations]
     1900  RON_Early_Machine_Tools
@@ -957,7 +957,7 @@ CATEGORY DETAIL
     2030  dispersed_industry_f
           [from: rise_of_nations]
 
-  [industry_electronics / nuclear] — 45 techs
+  [industry_electronics / nuclear] -- 45 techs
     1910  RON_Radioactive_Materials
           [from: rise_of_nations]
     1915  RON_Radiography
@@ -1049,7 +1049,7 @@ CATEGORY DETAIL
     2060  bba_fusion_engine_2060
           [from: rise_of_nations]
 
-  [industry_electronics / radar] — 29 techs
+  [industry_electronics / radar] -- 29 techs
     1936  radio_detection
           [from: rise_of_nations]
     1938  cavity_magnatron
@@ -1109,7 +1109,7 @@ CATEGORY DETAIL
     2055  bba_armor_ecm_2055
           [from: rise_of_nations]
 
-  [industry_electronics / rockets] — 83 techs
+  [industry_electronics / rockets] -- 83 techs
     1926  RON_Early_Rocketry
           [from: rise_of_nations]
     1930  RON_Pulsoreactors
@@ -1274,16 +1274,45 @@ CATEGORY DETAIL
     2025  RON_ATM6
           [from: rise_of_nations]
 
-  [land / anti_tank] — 17 techs
+  [land / anti_tank] -- 65 techs
+    1915  bba_mg_deflectors
+          [from: rise_of_nations]
+    1915  bba_nav_aerial_torpedo
+          [from: rise_of_nations]
+    1916  bba_mg_sync_gears
+          [from: rise_of_nations]
+    1916  bba_autocannons_1916
+          [from: rise_of_nations]
     1918  early_antitank
+          [from: rise_of_nations]
+    1918  bba_engine_1918
+          [from: rise_of_nations]
+    1918  bba_mg_twin_guns
+          [from: rise_of_nations]
+    1922  photo_reconnaisance
+    1926  bba_engine_1926
+          [from: rise_of_nations]
+    1926  bba_mg_wing_mountings
+          [from: rise_of_nations]
+    1928  bba_engine_1928
+          [from: rise_of_nations]
+    1933  bba_engine_1933
           [from: rise_of_nations]
     1936  mountain_tanks
     1936  SWE_bofors_antitank_gun
     1936  interwar_antitank
           [from: rise_of_nations]
+    1936  bba_engine_1936
+          [from: rise_of_nations]
+    1936  bba_mg_heavy_mg
+          [from: rise_of_nations]
     1939  antitank1
           [from: rise_of_nations]
     1940  antitank2
+          [from: rise_of_nations]
+    1940  bba_engine_1940
+          [from: rise_of_nations]
+    1940  bba_autocannons_1940
           [from: rise_of_nations]
     1941  antitank3
           [from: rise_of_nations]
@@ -1291,24 +1320,89 @@ CATEGORY DETAIL
           [from: rise_of_nations]
     1943  antitank5
           [from: rise_of_nations]
+    1943  bba_engine_1943
+          [from: rise_of_nations]
+    1943  bba_autocannons_1943
+          [from: rise_of_nations]
+    1945  sp_centrifugal_jet_tech
+    1945  bba_autocannons_1945
+          [from: rise_of_nations]
     1950  antitank_a
+          [from: rise_of_nations]
+    1950  bba_jet_engine_1950
+          [from: rise_of_nations]
+    1955  bba_jet_engine_1955
+          [from: rise_of_nations]
+    1955  bba_autocannons_1955
           [from: rise_of_nations]
     1960  antitank_b
           [from: rise_of_nations]
+    1960  bba_jet_engine_1960
+          [from: rise_of_nations]
+    1965  bba_jet_engine_1965
+          [from: rise_of_nations]
+    1965  bba_autocannons_1965
+          [from: rise_of_nations]
+    1970  bba_jet_engine_1970
+          [from: rise_of_nations]
+    1975  bba_jet_engine_1975
+          [from: rise_of_nations]
     1980  antitank1_md
+          [from: rise_of_nations]
+    1980  bba_jet_engine_1980
+          [from: rise_of_nations]
+    1980  bba_autocannons_1980
+          [from: rise_of_nations]
+    1985  bba_jet_engine_1985
+          [from: rise_of_nations]
+    1990  bba_jet_engine_1990
+          [from: rise_of_nations]
+    1995  bba_jet_engine_1995
           [from: rise_of_nations]
     2000  antitank2_md
           [from: rise_of_nations]
+    2000  bba_jet_engine_2000
+          [from: rise_of_nations]
     2003  antitank3_md
+          [from: rise_of_nations]
+    2005  bba_jet_engine_2005
           [from: rise_of_nations]
     2006  antitank4_md
           [from: rise_of_nations]
     2009  antitank5_md
           [from: rise_of_nations]
+    2010  bba_jet_engine_2010
+          [from: rise_of_nations]
     2015  antitank6_md
           [from: rise_of_nations]
+    2015  bba_jet_engine_2015
+          [from: rise_of_nations]
+    2020  bba_jet_engine_2020
+          [from: rise_of_nations]
+    2025  bba_jet_engine_2025
+          [from: rise_of_nations]
+    2030  bba_jet_engine_2030
+          [from: rise_of_nations]
+    2030  bba_scramjet_engine_2030
+          [from: rise_of_nations]
+    2035  bba_jet_engine_2035
+          [from: rise_of_nations]
+    2035  bba_scramjet_engine_2035
+          [from: rise_of_nations]
+    2040  bba_jet_engine_2040
+          [from: rise_of_nations]
+    2040  bba_scramjet_engine_2040
+          [from: rise_of_nations]
+    2045  bba_scramjet_engine_2045
+          [from: rise_of_nations]
+    2050  bba_scramjet_engine_2050
+          [from: rise_of_nations]
+    2055  bba_scramjet_engine_2055
+          [from: rise_of_nations]
+    2060  bba_scramjet_engine_2060
+          [from: rise_of_nations]
 
-  [land / artillery] — 118 techs
+  [land / artillery] -- 118 techs
     1890  RON_Basic_Light_Field_Gun
           [from: rise_of_nations]
     1890  RON_Observation_Balloon_1890
@@ -1541,7 +1635,7 @@ CATEGORY DETAIL
     2020  sam_carrier7
           [from: rise_of_nations]
 
-  [land / heavy_tanks] — 34 techs
+  [land / heavy_tanks] -- 34 techs
     1916  gwtank_chassis_heavy
           [from: rise_of_nations]
     1934  basic_heavy_tank
@@ -1606,7 +1700,7 @@ CATEGORY DETAIL
     1945  monster_tank_chassis2
           [from: rise_of_nations]
 
-  [land / infantry] — 191 techs
+  [land / infantry] -- 191 techs
     1890  early_infantry_weapons_1890
           [from: rise_of_nations]
     1900  early_infantry_weapons_1900
@@ -1989,7 +2083,7 @@ CATEGORY DETAIL
     2030  MD_special_forces6
           [from: rise_of_nations]
 
-  [land / light_tanks] — 40 techs
+  [land / light_tanks] -- 40 techs
     1910  NSB_early_tank_engine
           [from: rise_of_nations]
     1910  NSB_early_tank_engine
@@ -2070,7 +2164,7 @@ CATEGORY DETAIL
     2025  advanced_light_tank_chassis_g
           [from: rise_of_nations]
 
-  [land / mechanised] — 29 techs
+  [land / mechanised] -- 29 techs
     1940  mechanised_infantry
           [from: rise_of_nations]
     1941  amphibious_mechanized_infantry
@@ -2130,7 +2224,7 @@ CATEGORY DETAIL
     2030  mechanized_heavy_infantry12
           [from: rise_of_nations]
 
-  [land / medium_tanks] — 37 techs
+  [land / medium_tanks] -- 37 techs
     1939  basic_medium_tank
           [from: rise_of_nations]
     1939  basic_medium_assault_gun
@@ -2206,13 +2300,13 @@ CATEGORY DETAIL
     2030  main_battle_tank_chassis_m
           [from: rise_of_nations]
 
-  [land / modern_tanks] — 2 techs
+  [land / modern_tanks] -- 2 techs
     1945  main_battle_tank
           [from: rise_of_nations]
     1945  main_battle_tank_chassis
           [from: rise_of_nations]
 
-  [land / motorised] — 18 techs
+  [land / motorised] -- 18 techs
     1900  horses
           [from: rise_of_nations]
     1900  ww1_motorised_infantry
@@ -2249,7 +2343,7 @@ CATEGORY DETAIL
     2010  motorised_infantry8
           [from: rise_of_nations]
 
-  [land / support] — 213 techs
+  [land / support] -- 213 techs
     1890  tech_support
           [from: rise_of_nations]
     1890  armored_train_0
@@ -2667,7 +2761,7 @@ CATEGORY DETAIL
     2040  rail_yard_7
           [from: rise_of_nations]
 
-  [land / tanks_generic] — 177 techs
+  [land / tanks_generic] -- 177 techs
     1899  dnc_armoured_car
           [from: rise_of_nations]
     1899  NSB_dnc_armoured_car
@@ -3008,7 +3102,7 @@ CATEGORY DETAIL
     2030  NSB_advanced_armoured_car10
           [from: rise_of_nations]
 
-  [naval / battleships] — 34 techs
+  [naval / battleships] -- 34 techs
     1890  early_ship_hull_dreadnought
           [from: rise_of_nations]
     1890  ww1_battleship0
@@ -3078,7 +3172,7 @@ CATEGORY DETAIL
     1956  cw_battleship2
           [from: rise_of_nations]
 
-  [naval / carriers] — 26 techs
+  [naval / carriers] -- 26 techs
     1914  seaplane_carrier
           [from: rise_of_nations]
     1918  early_ship_hull_carrier
@@ -3130,7 +3224,7 @@ CATEGORY DETAIL
     2030  md_carrier6
           [from: rise_of_nations]
 
-  [naval / destroyers] — 36 techs
+  [naval / destroyers] -- 36 techs
     1890  ww1_destroyer0
           [from: rise_of_nations]
     1900  mtg_ww1_destroyer1
@@ -3202,7 +3296,7 @@ CATEGORY DETAIL
     2030  md_destroyer6
           [from: rise_of_nations]
 
-  [naval / heavy_cruisers] — 15 techs
+  [naval / heavy_cruisers] -- 15 techs
     1890  ww1_heavy_cruiser0
           [from: rise_of_nations]
     1900  ww1_heavy_cruiser1
@@ -3234,7 +3328,7 @@ CATEGORY DETAIL
     2030  missile_cruiser6
           [from: rise_of_nations]
 
-  [naval / light_cruisers] — 29 techs
+  [naval / light_cruisers] -- 29 techs
     1890  ww1_light_cruiser0
           [from: rise_of_nations]
     1900  ww1_light_cruiser1
@@ -3294,7 +3388,7 @@ CATEGORY DETAIL
     1956  cw_light_cruiser2
           [from: rise_of_nations]
 
-  [naval / naval_support] — 92 techs
+  [naval / naval_support] -- 92 techs
     1890  early_torpedo
           [from: rise_of_nations]
     1890  ww1_moduleMTG_mines
@@ -3476,7 +3570,7 @@ CATEGORY DETAIL
     1945  modern_naval_mines
           [from: rise_of_nations]
 
-  [naval / submarines] — 29 techs
+  [naval / submarines] -- 29 techs
     1900  ww1_submarine0
           [from: rise_of_nations]
     1900  early_ship_hull_submarine_ww1
@@ -3806,27 +3900,6 @@ Add entries to custom_mappings.txt to include them.
   bba_attack_helicopter_8
     categories: ['helicopter']
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_autocannons_1916
-    categories: ['cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_autocannons_1940
-    categories: ['cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_autocannons_1943
-    categories: ['cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_autocannons_1945
-    categories: ['cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_autocannons_1955
-    categories: ['cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_autocannons_1965
-    categories: ['cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_autocannons_1980
-    categories: ['cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
   bba_cargo_helicopter_1
     categories: ['helicopter']
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
@@ -3860,27 +3933,6 @@ Add entries to custom_mappings.txt to include them.
   bba_engine
     categories: ['air_equipment']
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_engine_1918
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_engine_1926
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_engine_1928
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_engine_1933
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_engine_1936
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_engine_1940
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_engine_1943
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
   bba_experimental_aircraft
     categories: ['air_equipment']
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
@@ -3890,86 +3942,11 @@ Add entries to custom_mappings.txt to include them.
   bba_improved_aircraft_engine
     categories: ['light_air', 'air_equipment']
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1950
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1955
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1960
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1965
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1970
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1975
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1980
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1985
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1990
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_1995
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2000
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2005
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2010
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2015
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2020
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2025
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2030
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2035
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_jet_engine_2040
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
   bba_metal_construction
     categories: ['plane_modules_tech', 'air_equipment']
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_mg_deflectors
-    categories: ['light_air', 'cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_mg_heavy_mg
-    categories: ['light_air', 'cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_mg_sync_gears
-    categories: ['light_air', 'cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_mg_twin_guns
-    categories: ['light_air', 'cat_air_guns', 'plane_modules_tech', 'air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_mg_wing_mountings
-    categories: ['light_air', 'cat_air_guns', 'air_equipment', 'plane_modules_tech']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
   bba_military_balloons
     categories: ['air_equipment']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_nav_aerial_torpedo
-    categories: ['cat_torpedoes', 'torpedotech', 'naval_air', 'air_equipment', 'plane_modules_tech']
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
   bba_nav_aerial_torpedo_1945
     categories: ['naval_air', 'air_equipment', 'plane_modules_tech', 'torpedotech']
@@ -4018,27 +3995,6 @@ Add entries to custom_mappings.txt to include them.
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
   bba_scout_helicopter_9
     categories: ['helicopter']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_scramjet_engine_2030
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_scramjet_engine_2035
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_scramjet_engine_2040
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_scramjet_engine_2045
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_scramjet_engine_2050
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_scramjet_engine_2055
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
-    source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
-  bba_scramjet_engine_2060
-    categories: ['plane_modules_tech', 'cat_air_engine', 'air_equipment', 'jet_technology']
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\bba_air_techs.txt
   bba_small_aircraft_frame_1912
     categories: ['light_air', 'air_equipment']
@@ -4409,9 +4365,6 @@ Add entries to custom_mappings.txt to include them.
   penal_infantry
     categories: []
     source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
-  photo_reconnaisance
-    categories: ['air_equipment', 'plane_modules_tech', 'mio_cat_all_medium_aircraft_and_modules']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   pre_dreadnoughts
     categories: []
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\MTG_naval.txt
@@ -4451,9 +4404,6 @@ Add entries to custom_mappings.txt to include them.
   sov_tech_guard_units
     categories: []
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\RON_Soviet_Techs.txt
-  sp_centrifugal_jet_tech
-    categories: ['jet_technology', 'cat_air_engine', 'helicopter_tech']
-    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\bba_air_techs.txt
   sp_naval_proximity_fuze_tech
     categories: []
     source: rise_of_nations / E:\SteamLibrary\steamapps\workshop\content\394360\2026448968\common\technologies\naval.txt

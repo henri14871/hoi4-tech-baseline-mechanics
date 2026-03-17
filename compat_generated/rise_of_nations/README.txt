@@ -4,7 +4,7 @@ Workshop ID: 2026448968
 Bundle slug: rise_of_nations
 Generation mode: overhaul
 Parsed techs: 2339
-Unknown techs: 344
+Unknown techs: 298
 Doctrines detected: 317
 Preset thresholds: rise_of_nations
 

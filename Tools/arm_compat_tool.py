@@ -2511,7 +2511,7 @@ def cmd_generate(args) -> int:
     index = load_index(output_root / "index.json")
 
     # Custom mod path or workshop ID
-    if args.mod_path or (hasattr(args, 'workshop_id') and args.workshop_id):
+    if getattr(args, 'mod_path', None) or getattr(args, 'workshop_id', None):
         if not args.slug:
             raise SystemExit("--slug is required when using --mod-path or --workshop-id")
         if args.mod_path:
@@ -2542,7 +2542,7 @@ def cmd_generate(args) -> int:
         raise SystemExit(f"Workshop root not found: {workshop_root}")
 
     profiles = list(MAJOR_MOD_PROFILES)
-    if args.profile:
+    if getattr(args, 'profile', None):
         wanted = set(args.profile)
         profiles = [p for p in profiles if p["slug"] in wanted]
         missing = sorted(wanted - {p["slug"] for p in profiles})
@@ -2553,7 +2553,7 @@ def cmd_generate(args) -> int:
     for profile in profiles:
         mod_dir = workshop_root / profile["workshop_id"]
         if not mod_dir.exists():
-            if args.fail_missing:
+            if getattr(args, 'fail_missing', False):
                 raise SystemExit(f"Workshop mod not found for {profile['slug']}: {mod_dir}")
             continue
 
