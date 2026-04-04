@@ -1,0 +1,468 @@
+defined_text = {
+    name = tbm_ui_tier_status
+
+    text = {
+        localization_key = tbm_ui_tier_superpower
+        trigger = { check_variable = { var = tbm_tier_index value = 5 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_tier_great_power
+        trigger = { check_variable = { var = tbm_tier_index value = 4 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_tier_regional_power
+        trigger = { check_variable = { var = tbm_tier_index value = 3 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_tier_minor_industrial
+        trigger = { check_variable = { var = tbm_tier_index value = 2 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_tier_minor
+        trigger = { check_variable = { var = tbm_tier_index value = 1 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_tier_micro
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_land_status
+
+    text = {
+        localization_key = tbm_ui_branch_cutting_edge
+        trigger = { check_variable = { var = tbm_land_competence value = 84 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_advanced
+        trigger = { check_variable = { var = tbm_land_competence value = 59 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_standard
+        trigger = { check_variable = { var = tbm_land_competence value = 34 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_basic
+        trigger = { check_variable = { var = tbm_land_competence value = 14 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_minimal
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_air_status
+
+    text = {
+        localization_key = tbm_ui_branch_cutting_edge
+        trigger = { check_variable = { var = tbm_air_competence value = 84 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_advanced
+        trigger = { check_variable = { var = tbm_air_competence value = 59 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_standard
+        trigger = { check_variable = { var = tbm_air_competence value = 34 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_basic
+        trigger = { check_variable = { var = tbm_air_competence value = 14 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_minimal
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_naval_status
+
+    text = {
+        localization_key = tbm_ui_branch_cutting_edge
+        trigger = { check_variable = { var = tbm_naval_competence value = 84 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_advanced
+        trigger = { check_variable = { var = tbm_naval_competence value = 59 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_standard
+        trigger = { check_variable = { var = tbm_naval_competence value = 34 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_basic
+        trigger = { check_variable = { var = tbm_naval_competence value = 14 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_minimal
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_industry_status
+
+    text = {
+        localization_key = tbm_ui_branch_cutting_edge
+        trigger = { check_variable = { var = tbm_industry_competence value = 84 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_advanced
+        trigger = { check_variable = { var = tbm_industry_competence value = 59 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_standard
+        trigger = { check_variable = { var = tbm_industry_competence value = 34 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_basic
+        trigger = { check_variable = { var = tbm_industry_competence value = 14 compare = greater_than } }
+    }
+    text = {
+        localization_key = tbm_ui_branch_minimal
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_land_lag
+
+    text = {
+        localization_key = tbm_ui_land_lag_le_1
+        trigger = { check_variable = { var = tbm_effective_land_lag value = 1.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_land_lag_le_2
+        trigger = { check_variable = { var = tbm_effective_land_lag value = 2.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_land_lag_le_4
+        trigger = { check_variable = { var = tbm_effective_land_lag value = 4.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_land_lag_le_6
+        trigger = { check_variable = { var = tbm_effective_land_lag value = 6.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_land_lag_gt_6
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_air_lag
+
+    text = {
+        localization_key = tbm_ui_air_lag_le_1
+        trigger = { check_variable = { var = tbm_effective_air_lag value = 1.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_air_lag_le_2
+        trigger = { check_variable = { var = tbm_effective_air_lag value = 2.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_air_lag_le_4
+        trigger = { check_variable = { var = tbm_effective_air_lag value = 4.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_air_lag_le_6
+        trigger = { check_variable = { var = tbm_effective_air_lag value = 6.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_air_lag_gt_6
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_naval_lag
+
+    text = {
+        localization_key = tbm_ui_naval_lag_le_1
+        trigger = { check_variable = { var = tbm_effective_naval_lag value = 1.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_naval_lag_le_2
+        trigger = { check_variable = { var = tbm_effective_naval_lag value = 2.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_naval_lag_le_4
+        trigger = { check_variable = { var = tbm_effective_naval_lag value = 4.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_naval_lag_le_6
+        trigger = { check_variable = { var = tbm_effective_naval_lag value = 6.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_naval_lag_gt_6
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_industry_lag
+
+    text = {
+        localization_key = tbm_ui_industry_lag_le_1
+        trigger = { check_variable = { var = tbm_effective_industry_lag value = 1.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_industry_lag_le_2
+        trigger = { check_variable = { var = tbm_effective_industry_lag value = 2.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_industry_lag_le_4
+        trigger = { check_variable = { var = tbm_effective_industry_lag value = 4.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_industry_lag_le_6
+        trigger = { check_variable = { var = tbm_effective_industry_lag value = 6.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_industry_lag_gt_6
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_next_grant_window
+
+    text = {
+        localization_key = tbm_ui_next_grant_1_month
+        trigger = { check_variable = { var = tbm_months_to_next_grant value = 1 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_next_grant_2_months
+        trigger = { check_variable = { var = tbm_months_to_next_grant value = 2 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_next_grant_3_months
+        trigger = { check_variable = { var = tbm_months_to_next_grant value = 3 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_next_grant_4_months
+        trigger = { check_variable = { var = tbm_months_to_next_grant value = 4 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_next_grant_5_months
+        trigger = { check_variable = { var = tbm_months_to_next_grant value = 5 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_next_grant_6_months
+        trigger = { check_variable = { var = tbm_months_to_next_grant value = 6 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_next_grant_unknown
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_land_target_year
+
+    text = {
+        localization_key = tbm_ui_land_target_year_le_1
+        trigger = { check_variable = { var = tbm_effective_land_lag value = 1.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_land_target_year_le_2
+        trigger = { check_variable = { var = tbm_effective_land_lag value = 2.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_land_target_year_le_4
+        trigger = { check_variable = { var = tbm_effective_land_lag value = 4.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_land_target_year_le_6
+        trigger = { check_variable = { var = tbm_effective_land_lag value = 6.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_land_target_year_gt_6
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_air_target_year
+
+    text = {
+        localization_key = tbm_ui_air_target_year_le_1
+        trigger = { check_variable = { var = tbm_effective_air_lag value = 1.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_air_target_year_le_2
+        trigger = { check_variable = { var = tbm_effective_air_lag value = 2.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_air_target_year_le_4
+        trigger = { check_variable = { var = tbm_effective_air_lag value = 4.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_air_target_year_le_6
+        trigger = { check_variable = { var = tbm_effective_air_lag value = 6.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_air_target_year_gt_6
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_naval_target_year
+
+    text = {
+        localization_key = tbm_ui_naval_target_year_le_1
+        trigger = { check_variable = { var = tbm_effective_naval_lag value = 1.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_naval_target_year_le_2
+        trigger = { check_variable = { var = tbm_effective_naval_lag value = 2.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_naval_target_year_le_4
+        trigger = { check_variable = { var = tbm_effective_naval_lag value = 4.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_naval_target_year_le_6
+        trigger = { check_variable = { var = tbm_effective_naval_lag value = 6.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_naval_target_year_gt_6
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_industry_target_year
+
+    text = {
+        localization_key = tbm_ui_industry_target_year_le_1
+        trigger = { check_variable = { var = tbm_effective_industry_lag value = 1.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_industry_target_year_le_2
+        trigger = { check_variable = { var = tbm_effective_industry_lag value = 2.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_industry_target_year_le_4
+        trigger = { check_variable = { var = tbm_effective_industry_lag value = 4.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_industry_target_year_le_6
+        trigger = { check_variable = { var = tbm_effective_industry_lag value = 6.0 compare = less_than_or_equals } }
+    }
+    text = {
+        localization_key = tbm_ui_industry_target_year_gt_6
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_land_blocker
+
+    text = {
+        localization_key = tbm_ui_blocker_low_mil
+        trigger = { check_variable = { var = tbm_struct_land_blocker value = 1 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_small_army
+        trigger = { check_variable = { var = tbm_struct_land_blocker value = 2 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_none
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_air_blocker
+
+    text = {
+        localization_key = tbm_ui_blocker_low_mil
+        trigger = { check_variable = { var = tbm_struct_air_blocker value = 1 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_low_slots
+        trigger = { check_variable = { var = tbm_struct_air_blocker value = 3 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_weak_resources
+        trigger = { check_variable = { var = tbm_struct_air_blocker value = 4 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_none
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_naval_blocker
+
+    text = {
+        localization_key = tbm_ui_blocker_no_dockyards
+        trigger = { check_variable = { var = tbm_struct_naval_blocker value = 5 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_low_dockyards
+        trigger = { check_variable = { var = tbm_struct_naval_blocker value = 6 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_low_slots
+        trigger = { check_variable = { var = tbm_struct_naval_blocker value = 3 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_weak_resources
+        trigger = { check_variable = { var = tbm_struct_naval_blocker value = 4 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_none
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_industry_blocker
+
+    text = {
+        localization_key = tbm_ui_blocker_low_civ
+        trigger = { check_variable = { var = tbm_struct_industry_blocker value = 7 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_small_base
+        trigger = { check_variable = { var = tbm_struct_industry_blocker value = 8 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_low_slots
+        trigger = { check_variable = { var = tbm_struct_industry_blocker value = 3 compare = equals } }
+    }
+    text = {
+        localization_key = tbm_ui_blocker_none
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = tbm_ui_player_scope_status
+
+    text = {
+        localization_key = tbm_ui_player_scope_disabled
+        trigger = {
+            is_ai = no
+            has_game_rule = { rule = tbm_auto_research_scope option = TBM_DISABLED }
+        }
+    }
+    text = {
+        localization_key = tbm_ui_player_scope_ai_only
+        trigger = {
+            is_ai = no
+            NOT = { has_game_rule = { rule = tbm_auto_research_scope option = TBM_EVERYONE } }
+        }
+    }
+    text = {
+        localization_key = tbm_ui_player_scope_none
+        trigger = { always = yes }
+    }
+}

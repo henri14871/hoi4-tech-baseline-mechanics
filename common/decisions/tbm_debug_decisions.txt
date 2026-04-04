@@ -1,0 +1,38 @@
+###############################################
+# Tech Baseline Mechanics - Debug Action
+# Category defined in categories/tbm_decision_categories.txt
+###############################################
+
+tbm_debug_category = {
+
+	###############################################
+	# Force Evaluation (Debug)
+	# Manually triggers the full evaluation pipeline
+	###############################################
+	tbm_force_evaluation = {
+		icon = generic_research
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			OR = {
+				has_country_flag = tbm_debug_mode
+				has_game_rule = { rule = tbm_power_visibility option = TBM_VIS_ALL }
+			}
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 0
+		days_remove = 0
+		fire_only_once = no
+
+		complete_effect = {
+			tbm_evaluate_and_grant = yes
+		}
+	}
+}

@@ -1,0 +1,17 @@
+tbm_debug_category = {
+	icon = generic_research
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		OR = {
+			has_game_rule = { rule = tbm_power_visibility option = TBM_VIS_OWN }
+			has_game_rule = { rule = tbm_power_visibility option = TBM_VIS_ALL }
+		}
+	}
+
+	visible_when_empty = yes
+	priority = 50
+}

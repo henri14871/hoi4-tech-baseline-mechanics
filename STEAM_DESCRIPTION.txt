@@ -1,74 +1,31 @@
-[h1]Arms Race Mechanics[/h1]
+[h1]Tech Baseline Mechanics[/h1]
 
-[b]Why is Germany still on Interwar fighters in 1943?[/b]
+[b]Keep AI countries technologically credible without taking over player research.[/b]
 
-You know the problem. It's 1944, you're gearing up for D-Day, and the Axis AI is fielding Interwar-era tanks and '36 fighters. The Soviet Union somehow skipped half its infantry tech. Japan has no carriers. The war feels like a joke because nobody kept up.
+TBM gives each country a believable tech baseline based on overall power and branch competence. Majors stop missing obvious tank, air, radar, or naval tech. Regional powers stay dangerous in the branches they can actually support. Minors stay relevant without turning into ahistorical superpowers.
 
-This mod fixes that.
-
-[h2]The Short Version[/h2]
-ARM gives every nation a [b]tech baseline[/b] — a floor that ensures no country is embarrassingly behind in the branches it should be good at. Think of it as the tech a country [i]would obviously have[/i] given its size, industry, and military.
-
-Normal research still happens on top of that baseline. The AI spends its research slots on what actually matters instead of plugging gaps it shouldn't have. If you enable it for players, same deal — you get a baseline so you can focus on the research that counts.
-
-[b]AI-only by default.[/b] Your research still matters. ARM just makes sure nobody shows up to WW2 with WW1 tech.
-
-[h2]What Changes In Your Game[/h2]
+[h2]What It Changes[/h2]
 [list]
-[*] [b]Germany actually has medium tanks.[/b] Major powers won't randomly skip entire branches anymore.
-[*] [b]Wars stay hard.[/b] Nations that get invaded don't just roll over with 1936 equipment — they catch up.
-[*] [b]Minors aren't pushovers.[/b] Romania will have decent infantry tech. Siam will have fighters. They won't rival the USA, but they'll punch back.
-[*] [b]Late-game stays competitive.[/b] 1944-45 wars are decided by production and planning, not who got lucky with early tech.
-[*] [b]Research still matters.[/b] ARM sets the floor, not the ceiling. Your choices on top of the baseline are what win games.
+[*] AI nations stay closer to a believable tech floor
+[*] Countries under pressure get catch-up help instead of collapsing forever
+[*] Late-game wars are decided more by production, planning, and execution
+[*] Research still matters because TBM sets the floor, not the ceiling
+[*] AI-only by default, with optional player support through game rules
 [/list]
 
-[h2]How Does It Work?[/h2]
-Every country gets rated on how powerful, industrial, and militarized it is — like a tier list. Superpowers sit at the top, tiny nations at the bottom. Each tier determines how far behind the tech frontier a country falls and how many techs it receives per cycle.
+[h2]How It Works[/h2]
+Every country is scored for overall power, placed into a tier, and then granted tech only in branches it can realistically support. Naval powers get naval tech. Land-focused industrial states get tanks, artillery, and support tech. The system runs on a 6-month rotation to keep performance stable.
 
-Then the mod looks at [i]what kind[/i] of country it is. A naval power like Britain or Japan gets naval tech. A land army nation like the USSR gets tanks and artillery. Nobody gets random tech they have no business having.
-
-Countries at war, in factions with strong allies, or losing badly get catch-up bonuses. Puppet nations benefit from their overlord's strength. The system prevents one bad campaign from snowballing into permanent tech irrelevance.
-
-[h2]Features[/h2]
+[h2]Highlights[/h2]
 [list]
-[*] 6 power tiers — from tiny nations to superpowers, each with appropriate tech lag
-[*] 4 military branches — Land, Air, Naval, and Industry tracked separately
-[*] Branch competence — countries get tech matching their actual military profile
-[*] War catch-up — nations at war won't fall hopelessly behind
-[*] Faction sharing — allies help each other keep up
-[*] Puppet support — subjects benefit from their overlord's tech level
-[*] Anti-death spiral — prevents late-game collapses from tech snowballing
-[*] Research speed spirits — tier and branch bonuses to national research speed
-[*] Historical bias mode — boosts historically strong nations in their specialties
-[*] Works with all DLC — automatically adjusts for MtG, NSB, BBA, etc.
-[*] 13 game rules — full control from the lobby menu
-[*] AI-only by default — enable for yourself if you want the baseline too
-[*] Save-safe — works with existing saves and mid-campaign installation
+[*] 6 power tiers with baseline lag and grant caps
+[*] Separate Land, Air, Naval, and Industry competence
+[*] War, faction, puppet, and desperation catch-up bonuses
+[*] Research-speed spirits tied to national competence
+[*] 13 game rules for scope, intensity, doctrines, notifications, and debug visibility
+[*] Save-safe and no DLC required
 [/list]
 
-[h2]Compatibility[/h2]
-Works out of the box with 14 popular overhaul mods. No patches needed, no sub-mods, no load order fiddling. ARM auto-detects your mod setup.
+[b]Version:[/b] 2.0.0 | [b]HOI4:[/b] 1.17.5.2 | [b]DLC Required:[/b] None
 
-[list]
-[*] Road to 56
-[*] Kaiserreich
-[*] Kaiserredux
-[*] BlackICE
-[*] Cold War Iron Curtain
-[*] The New Order
-[*] Millennium Dawn
-[*] Endsieg
-[*] Extended Tech Tree 1960
-[*] The Great War
-[*] Great War Redux
-[*] Novum Vexillum
-[*] Rise of Nations
-[*] The Fire Rises
-[/list]
-
-Each profile uses mod-specific tech lists and tier thresholds. Just enable both mods and play.
-
-[b]Version:[/b] 2.0.0 | [b]HOI4:[/b] 1.17.5.*+ | [b]DLC Required:[/b] None
-
-[h2]Links[/h2]
 [url=https://github.com/henri14871/hoi4-arms-race-mechanics]Source & Devbuild[/url]

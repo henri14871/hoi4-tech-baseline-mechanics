@@ -1,0 +1,638 @@
+###############################################################################
+# tbm_compat_runtime.txt
+# Core compatibility runtime wrappers.
+#
+# Optional compatibility bundles are generated under compat_generated/ and are
+# intended to load after TBM and the target overhaul mod. Those bundles replace
+# the generic tbm_assign_power_tier / tbm_grant_* effects directly, so the core
+# mod only needs stable wrapper hooks plus auto-detection flags.
+###############################################################################
+
+tbm_clear_auto_compat_profile_flags = {
+    clr_global_flag = tbm_compat_auto_profile_detected
+    clr_global_flag = tbm_compat_auto_doctrine_safe
+    clr_global_flag = tbm_compat_auto_blackice
+    clr_global_flag = tbm_compat_auto_cold_war_iron_curtain
+    clr_global_flag = tbm_compat_auto_kaiserreich
+    clr_global_flag = tbm_compat_auto_endsieg
+    clr_global_flag = tbm_compat_auto_extended_tech_tree_1960
+    clr_global_flag = tbm_compat_auto_novum_vexillum
+    clr_global_flag = tbm_compat_auto_rise_of_nations
+    clr_global_flag = tbm_compat_auto_kaiserredux
+    clr_global_flag = tbm_compat_auto_the_new_order
+    clr_global_flag = tbm_compat_auto_millennium_dawn
+    clr_global_flag = tbm_compat_auto_the_fire_rises
+    clr_global_flag = tbm_compat_auto_great_war_redux
+    clr_global_flag = tbm_compat_auto_great_war
+    clr_global_flag = tbm_compat_auto_road_to_56
+}
+
+tbm_auto_detect_compat_profile = {
+    tbm_clear_auto_compat_profile_flags = yes
+    if = {
+        limit = {
+        OR = {
+            country_exists = BMP
+            country_exists = EHA
+            country_exists = HAT
+            country_exists = PGR
+            country_exists = SCC
+            country_exists = SDC
+            country_exists = SKC
+            country_exists = XIA
+            country_exists = YUT
+            country_exists = ZXL
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_blackice
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = BAD
+            country_exists = BAV
+            country_exists = BCP
+            country_exists = BCR
+            country_exists = BTG
+            country_exists = CVD
+            country_exists = DOC
+            country_exists = DRY
+            country_exists = FNL
+            country_exists = FUL
+            country_exists = HOK
+            country_exists = INO
+            country_exists = KAS
+            country_exists = KAY
+            country_exists = KMP
+            country_exists = KPA
+            country_exists = LOS
+            country_exists = MLA
+            country_exists = MNL
+            country_exists = NLF
+            country_exists = PDG
+            country_exists = SGP
+            country_exists = SMI
+            country_exists = SMK
+            country_exists = SVI
+            country_exists = SWK
+            country_exists = TNG
+            country_exists = TOA
+            country_exists = TRS
+            country_exists = UNS
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_cold_war_iron_curtain
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = HND
+            country_exists = HNN
+            country_exists = IMP
+            country_exists = KUM
+            country_exists = SHD
+            country_exists = SPA
+            country_exists = WIF
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_kaiserreich
+        set_global_flag = tbm_compat_auto_doctrine_safe
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = ANA
+            country_exists = CBU
+            country_exists = CNT
+            country_exists = EFR
+            country_exists = EN3
+            country_exists = FNN
+            country_exists = FNR
+            country_exists = HEJ
+            country_exists = HEL
+            country_exists = INU
+            country_exists = KIT
+            country_exists = LOK
+            country_exists = NEJ
+            country_exists = NOK
+            country_exists = RCH
+            country_exists = RKK
+            country_exists = RKO
+            country_exists = RKU
+            country_exists = SOK
+            country_exists = TSS
+            country_exists = UBD
+            country_exists = VIL
+            country_exists = WUR
+            country_exists = ZAP
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_endsieg
+        set_global_flag = tbm_compat_auto_doctrine_safe
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = AND
+            country_exists = BAS
+            country_exists = ETI
+            country_exists = FAI
+            country_exists = FSM
+            country_exists = GRN
+            country_exists = HKN
+            country_exists = JVA
+            country_exists = KRN
+            country_exists = MCU
+            country_exists = NAX
+            country_exists = RCK
+            country_exists = RRA
+            country_exists = SKN
+            country_exists = SPF
+            country_exists = SWZ
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_novum_vexillum
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = ACR
+            country_exists = ALK
+            country_exists = ANH
+            country_exists = ART
+            country_exists = ARZ
+            country_exists = BOX
+            country_exists = CBV
+            country_exists = CIN
+            country_exists = CZR
+            country_exists = DEL
+            country_exists = DON
+            country_exists = DPK
+            country_exists = ETR
+            country_exists = EUR
+            country_exists = FEN
+            country_exists = GRC
+            country_exists = GUK
+            country_exists = HAW
+            country_exists = KNS
+            country_exists = LNA
+            country_exists = LON
+            country_exists = MCR
+            country_exists = MKH
+            country_exists = MTA
+            country_exists = NMX
+            country_exists = OFR
+            country_exists = OKL
+            country_exists = OTT
+            country_exists = PUE
+            country_exists = ROK
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_rise_of_nations
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = ALO
+            country_exists = BHC
+            country_exists = CAF
+            country_exists = CIV
+            country_exists = DEH
+            country_exists = DKB
+            country_exists = KIK
+            country_exists = MTR
+            country_exists = NSW
+            country_exists = SKM
+            country_exists = SQI
+            country_exists = TRM
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_kaiserredux
+        set_global_flag = tbm_compat_auto_doctrine_safe
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = AAA
+            country_exists = AAB
+            country_exists = AAC
+            country_exists = AAF
+            country_exists = AAG
+            country_exists = AAJ
+            country_exists = AAN
+            country_exists = AAO
+            country_exists = ADN
+            country_exists = AYR
+            country_exists = AZH
+            country_exists = AZW
+            country_exists = BKF
+            country_exists = BKR
+            country_exists = BKU
+            country_exists = BRG
+            country_exists = BRY
+            country_exists = CAO
+            country_exists = CAU
+            country_exists = CHT
+            country_exists = CLC
+            country_exists = CLL
+            country_exists = CME
+            country_exists = CYL
+            country_exists = DRL
+            country_exists = EWE
+            country_exists = FAR
+            country_exists = FAV
+            country_exists = FFR
+            country_exists = FRS
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_the_new_order
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = ACE
+            country_exists = ADO
+            country_exists = AGL
+            country_exists = BEN
+            country_exists = BFA
+            country_exists = CBD
+            country_exists = CDI
+            country_exists = CNG
+            country_exists = DMI
+            country_exists = DRC
+            country_exists = EGU
+            country_exists = FYR
+            country_exists = GAH
+            country_exists = GRA
+            country_exists = GUB
+            country_exists = HAM
+            country_exists = HKG
+            country_exists = IEK
+            country_exists = LUR
+            country_exists = MAY
+            country_exists = MIC
+            country_exists = MLV
+            country_exists = MOZ
+            country_exists = NAM
+            country_exists = NIG
+            country_exists = NKO
+            country_exists = NKR
+            country_exists = NPM
+            country_exists = PAU
+            country_exists = PUK
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_millennium_dawn
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = AAS
+            country_exists = BRS
+            country_exists = CNF
+            country_exists = CPC
+            country_exists = DPR
+            country_exists = HOU
+            country_exists = HRL
+            country_exists = HTS
+            country_exists = KKP
+            country_exists = KLA
+            country_exists = KNU
+            country_exists = MND
+            country_exists = MOA
+            country_exists = PLD
+            country_exists = SHB
+            country_exists = SSA
+            country_exists = WAT
+            country_exists = YAM
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_the_fire_rises
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = ALM
+            country_exists = ARB
+            country_exists = BID
+            country_exists = CAP
+            country_exists = CER
+            country_exists = DAR
+            country_exists = EPR
+            country_exists = FUJ
+            country_exists = GLD
+            country_exists = HBY
+            country_exists = JOH
+            country_exists = KED
+            country_exists = KEL
+            country_exists = KUT
+            country_exists = MJT
+            country_exists = MSC
+            country_exists = NAJ
+            country_exists = NAT
+            country_exists = ORA
+            country_exists = PLS
+            country_exists = RIA
+            country_exists = RWL
+            country_exists = SMS
+            country_exists = TRG
+            country_exists = WTH
+            country_exists = ZAN
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_great_war_redux
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = ASR
+            country_exists = BAY
+            country_exists = CKK
+            country_exists = CPM
+            country_exists = FEC
+            country_exists = TUK
+            country_exists = ZHC
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_great_war
+    }
+    else_if = {
+        limit = {
+        OR = {
+            country_exists = GDC
+            country_exists = HBC
+            country_exists = KHM
+            country_exists = MPL
+            country_exists = SND
+            country_exists = XIC
+        }
+        }
+        set_global_flag = tbm_compat_auto_profile_detected
+        set_global_flag = tbm_compat_auto_road_to_56
+        set_global_flag = tbm_compat_auto_doctrine_safe
+    }
+}
+
+tbm_assign_power_tier_for_profile = {
+    tbm_assign_power_tier = yes
+}
+
+tbm_grant_techs_for_profile = {
+    set_variable = { tbm_grant_counter = 0 }
+    set_variable = { tbm_quarterly_cap = tbm_cap_land }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_infantry = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_support = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_artillery = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_anti_air = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_anti_tank = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_motorised = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_mechanised = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_light_tanks = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_medium_tanks = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_heavy_tanks = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_modern_tanks = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_land_tanks_generic = yes
+    }
+
+    set_variable = { tbm_grant_counter = 0 }
+    set_variable = { tbm_quarterly_cap = tbm_cap_air }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_air_fighters = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_air_cas = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_air_heavy_fighters = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_air_tactical_bombers = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_air_strategic_bombers = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_air_naval_bombers = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_air_transport = yes
+    }
+
+    set_variable = { tbm_grant_counter = 0 }
+    set_variable = { tbm_quarterly_cap = tbm_cap_naval }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_naval_submarines = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_naval_destroyers = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_naval_light_cruisers = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_naval_heavy_cruisers = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_naval_battleships = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_naval_carriers = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_naval_naval_support = yes
+    }
+
+    set_variable = { tbm_grant_counter = 0 }
+    set_variable = { tbm_quarterly_cap = tbm_cap_industry }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_industry_electronics_industry = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_industry_electronics_electronics = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_industry_electronics_radar = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_industry_electronics_nuclear = yes
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_grant_counter value = tbm_quarterly_cap compare = less_than }
+        }
+        tbm_grant_industry_electronics_rockets = yes
+    }
+}
+
+tbm_initialize_doctrine_paths_for_profile = {
+    if = {
+        limit = {
+            tbm_doctrine_allowed = yes
+            OR = {
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_VANILLA }
+                AND = {
+                    has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_AUTO }
+                    OR = {
+                        NOT = { has_global_flag = tbm_compat_auto_profile_detected }
+                        has_global_flag = tbm_compat_auto_doctrine_safe
+                    }
+                }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_KAISERREICH }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_ENDSIEG }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_ETT1960 }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_KAISERREDUX }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_ROAD_TO_56 }
+            }
+        }
+        tbm_initialize_doctrine_paths = yes
+    }
+}
+
+tbm_grant_doctrines_for_profile = {
+    if = {
+        limit = {
+            tbm_doctrine_allowed = yes
+            OR = {
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_VANILLA }
+                AND = {
+                    has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_AUTO }
+                    OR = {
+                        NOT = { has_global_flag = tbm_compat_auto_profile_detected }
+                        has_global_flag = tbm_compat_auto_doctrine_safe
+                    }
+                }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_KAISERREICH }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_ENDSIEG }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_ETT1960 }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_KAISERREDUX }
+                has_game_rule = { rule = tbm_compat_profile option = TBM_COMPAT_ROAD_TO_56 }
+            }
+        }
+        tbm_grant_doctrines = yes
+    }
+}

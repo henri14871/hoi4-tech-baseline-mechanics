@@ -1,0 +1,421 @@
+
+#####################################
+# Tech Baseline Mechanics - Game Rules
+#####################################
+
+tbm_auto_research_scope = {
+	name = "TBM_RULE_auto_research_scope"
+	group = "TBM_RULES_GROUP"
+
+	default = {
+		name = TBM_EVERYONE
+		text = "TBM_OPT_EVERYONE"
+		desc = "TBM_DESC_EVERYONE"
+	}
+	option = {
+		name = TBM_EVERYONE
+		text = "TBM_OPT_EVERYONE"
+		desc = "TBM_DESC_EVERYONE"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_DISABLED
+		text = "TBM_OPT_DISABLED"
+		desc = "TBM_DESC_DISABLED"
+		allow_achievements = no
+	}
+}
+
+tbm_auto_research_intensity = {
+	name = "TBM_RULE_auto_research_intensity"
+	group = "TBM_RULES_GROUP"
+
+	option = {
+		name = TBM_REALISTIC
+		text = "TBM_OPT_REALISTIC"
+		desc = "TBM_DESC_REALISTIC"
+		allow_achievements = no
+	}
+	default = {
+		name = TBM_BALANCED
+		text = "TBM_OPT_BALANCED"
+		desc = "TBM_DESC_BALANCED"
+	}
+	option = {
+		name = TBM_ARCADE
+		text = "TBM_OPT_ARCADE"
+		desc = "TBM_DESC_ARCADE"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_HISTORICAL
+		text = "TBM_OPT_HISTORICAL"
+		desc = "TBM_DESC_HISTORICAL"
+		allow_achievements = no
+	}
+}
+
+tbm_compat_profile = {
+	name = "TBM_RULE_compat_profile"
+	group = "TBM_RULES_GROUP"
+
+	default = {
+		name = TBM_COMPAT_AUTO
+		text = "TBM_OPT_COMPAT_AUTO"
+		desc = "TBM_DESC_COMPAT_AUTO"
+	}
+	option = {
+		name = TBM_COMPAT_VANILLA
+		text = "TBM_OPT_COMPAT_VANILLA"
+		desc = "TBM_DESC_COMPAT_VANILLA"
+	}
+	option = {
+		name = TBM_COMPAT_BLACKICE
+		text = "TBM_OPT_COMPAT_BLACKICE"
+		desc = "TBM_DESC_COMPAT_BLACKICE"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_CWIC
+		text = "TBM_OPT_COMPAT_CWIC"
+		desc = "TBM_DESC_COMPAT_CWIC"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_KAISERREICH
+		text = "TBM_OPT_COMPAT_KAISERREICH"
+		desc = "TBM_DESC_COMPAT_KAISERREICH"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_ENDSIEG
+		text = "TBM_OPT_COMPAT_ENDSIEG"
+		desc = "TBM_DESC_COMPAT_ENDSIEG"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_ETT1960
+		text = "TBM_OPT_COMPAT_ETT1960"
+		desc = "TBM_DESC_COMPAT_ETT1960"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_NOVUM_VEXILLUM
+		text = "TBM_OPT_COMPAT_NOVUM_VEXILLUM"
+		desc = "TBM_DESC_COMPAT_NOVUM_VEXILLUM"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_RISE_OF_NATIONS
+		text = "TBM_OPT_COMPAT_RISE_OF_NATIONS"
+		desc = "TBM_DESC_COMPAT_RISE_OF_NATIONS"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_KAISERREDUX
+		text = "TBM_OPT_COMPAT_KAISERREDUX"
+		desc = "TBM_DESC_COMPAT_KAISERREDUX"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_TNO
+		text = "TBM_OPT_COMPAT_TNO"
+		desc = "TBM_DESC_COMPAT_TNO"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_MILLENNIUM_DAWN
+		text = "TBM_OPT_COMPAT_MILLENNIUM_DAWN"
+		desc = "TBM_DESC_COMPAT_MILLENNIUM_DAWN"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_TFR
+		text = "TBM_OPT_COMPAT_TFR"
+		desc = "TBM_DESC_COMPAT_TFR"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_GREAT_WAR_REDUX
+		text = "TBM_OPT_COMPAT_GREAT_WAR_REDUX"
+		desc = "TBM_DESC_COMPAT_GREAT_WAR_REDUX"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_GREAT_WAR
+		text = "TBM_OPT_COMPAT_GREAT_WAR"
+		desc = "TBM_DESC_COMPAT_GREAT_WAR"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_COMPAT_ROAD_TO_56
+		text = "TBM_OPT_COMPAT_ROAD_TO_56"
+		desc = "TBM_DESC_COMPAT_ROAD_TO_56"
+		allow_achievements = no
+	}
+}
+
+tbm_tech_scope = {
+	name = "TBM_RULE_tech_scope"
+	group = "TBM_RULES_GROUP"
+
+	option = {
+		name = TBM_CORE_ONLY
+		text = "TBM_OPT_CORE_ONLY"
+		desc = "TBM_DESC_CORE_ONLY"
+		allow_achievements = no
+	}
+	default = {
+		name = TBM_ALL_EXCEPT_DOCTRINES
+		text = "TBM_OPT_ALL_EXCEPT_DOCTRINES"
+		desc = "TBM_DESC_ALL_EXCEPT_DOCTRINES"
+	}
+	option = {
+		name = TBM_CORE_AIR_NAVAL
+		text = "TBM_OPT_CORE_AIR_NAVAL"
+		desc = "TBM_DESC_CORE_AIR_NAVAL"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_EVERYTHING
+		text = "TBM_OPT_EVERYTHING"
+		desc = "TBM_DESC_EVERYTHING"
+		allow_achievements = no
+	}
+}
+
+tbm_doctrine_handling = {
+	name = "TBM_RULE_doctrine_handling"
+	group = "TBM_RULES_GROUP"
+
+	default = {
+		name = TBM_DOC_DISABLED
+		text = "TBM_OPT_DOC_DISABLED"
+		desc = "TBM_DESC_DOC_DISABLED"
+	}
+	option = {
+		name = TBM_DOC_AI_ONLY
+		text = "TBM_OPT_DOC_AI_ONLY"
+		desc = "TBM_DESC_DOC_AI_ONLY"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_DOC_EVERYONE
+		text = "TBM_OPT_DOC_EVERYONE"
+		desc = "TBM_DESC_DOC_EVERYONE"
+		allow_achievements = no
+	}
+}
+
+tbm_advanced_tech = {
+	name = "TBM_RULE_advanced_tech"
+	group = "TBM_RULES_GROUP"
+
+	default = {
+		name = TBM_ADV_EXCLUDED
+		text = "TBM_OPT_ADV_EXCLUDED"
+		desc = "TBM_DESC_ADV_EXCLUDED"
+	}
+	option = {
+		name = TBM_ADV_SUPERPOWERS
+		text = "TBM_OPT_ADV_SUPERPOWERS"
+		desc = "TBM_DESC_ADV_SUPERPOWERS"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_ADV_INCLUDED
+		text = "TBM_OPT_ADV_INCLUDED"
+		desc = "TBM_DESC_ADV_INCLUDED"
+		allow_achievements = no
+	}
+}
+
+tbm_war_faction_catchup = {
+	name = "TBM_RULE_war_faction_catchup"
+	group = "TBM_RULES_GROUP"
+
+	option = {
+		name = TBM_WF_DISABLED
+		text = "TBM_OPT_WF_DISABLED"
+		desc = "TBM_DESC_WF_DISABLED"
+		allow_achievements = no
+	}
+	default = {
+		name = TBM_WF_STANDARD
+		text = "TBM_OPT_WF_STANDARD"
+		desc = "TBM_DESC_WF_STANDARD"
+	}
+	option = {
+		name = TBM_WF_ENHANCED
+		text = "TBM_OPT_WF_ENHANCED"
+		desc = "TBM_DESC_WF_ENHANCED"
+		allow_achievements = no
+	}
+}
+
+tbm_grant_cap = {
+	name = "TBM_RULE_grant_cap"
+	group = "TBM_RULES_GROUP"
+
+	option = {
+		name = TBM_CAP_STRICT
+		text = "TBM_OPT_CAP_STRICT"
+		desc = "TBM_DESC_CAP_STRICT"
+		allow_achievements = no
+	}
+	default = {
+		name = TBM_CAP_STANDARD
+		text = "TBM_OPT_CAP_STANDARD"
+		desc = "TBM_DESC_CAP_STANDARD"
+	}
+	option = {
+		name = TBM_CAP_UNLIMITED
+		text = "TBM_OPT_CAP_UNLIMITED"
+		desc = "TBM_DESC_CAP_UNLIMITED"
+		allow_achievements = no
+	}
+}
+
+tbm_notifications = {
+	name = "TBM_RULE_notifications"
+	group = "TBM_RULES_GROUP"
+
+	option = {
+		name = TBM_NOTIFY_SILENT
+		text = "TBM_OPT_NOTIFY_SILENT"
+		desc = "TBM_DESC_NOTIFY_SILENT"
+		allow_achievements = no
+	}
+	default = {
+		name = TBM_NOTIFY_MAJOR
+		text = "TBM_OPT_NOTIFY_MAJOR"
+		desc = "TBM_DESC_NOTIFY_MAJOR"
+	}
+	option = {
+		name = TBM_NOTIFY_ALL
+		text = "TBM_OPT_NOTIFY_ALL"
+		desc = "TBM_DESC_NOTIFY_ALL"
+		allow_achievements = no
+	}
+}
+
+tbm_power_visibility = {
+	name = "TBM_RULE_power_visibility"
+	group = "TBM_RULES_GROUP"
+
+	option = {
+		name = TBM_VIS_HIDDEN
+		text = "TBM_OPT_VIS_HIDDEN"
+		desc = "TBM_DESC_VIS_HIDDEN"
+		allow_achievements = no
+	}
+	default = {
+		name = TBM_VIS_OWN
+		text = "TBM_OPT_VIS_OWN"
+		desc = "TBM_DESC_VIS_OWN"
+	}
+	option = {
+		name = TBM_VIS_ALL
+		text = "TBM_OPT_VIS_ALL"
+		desc = "TBM_DESC_VIS_ALL"
+		allow_achievements = no
+	}
+}
+
+tbm_puppet_sharing = {
+	name = "TBM_RULE_puppet_sharing"
+	group = "TBM_RULES_GROUP"
+
+	option = {
+		name = TBM_PUP_DISABLED
+		text = "TBM_OPT_PUP_DISABLED"
+		desc = "TBM_DESC_PUP_DISABLED"
+		allow_achievements = no
+	}
+	default = {
+		name = TBM_PUP_STANDARD
+		text = "TBM_OPT_PUP_STANDARD"
+		desc = "TBM_DESC_PUP_STANDARD"
+	}
+	option = {
+		name = TBM_PUP_ENHANCED
+		text = "TBM_OPT_PUP_ENHANCED"
+		desc = "TBM_DESC_PUP_ENHANCED"
+		allow_achievements = no
+	}
+}
+
+tbm_anti_death_spiral = {
+	name = "TBM_RULE_anti_death_spiral"
+	group = "TBM_RULES_GROUP"
+
+	option = {
+		name = TBM_ADS_DISABLED
+		text = "TBM_OPT_ADS_DISABLED"
+		desc = "TBM_DESC_ADS_DISABLED"
+		allow_achievements = no
+	}
+	default = {
+		name = TBM_ADS_STANDARD
+		text = "TBM_OPT_ADS_STANDARD"
+		desc = "TBM_DESC_ADS_STANDARD"
+	}
+	option = {
+		name = TBM_ADS_ENHANCED
+		text = "TBM_OPT_ADS_ENHANCED"
+		desc = "TBM_DESC_ADS_ENHANCED"
+		allow_achievements = no
+	}
+}
+
+tbm_bucket_spread = {
+	name = "TBM_RULE_bucket_spread"
+	group = "TBM_RULES_GROUP"
+
+	default = {
+		name = TBM_SPREAD_1
+		text = "TBM_OPT_SPREAD_1"
+		desc = "TBM_DESC_SPREAD_1"
+	}
+	option = {
+		name = TBM_SPREAD_2
+		text = "TBM_OPT_SPREAD_2"
+		desc = "TBM_DESC_SPREAD_2"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_SPREAD_3
+		text = "TBM_OPT_SPREAD_3"
+		desc = "TBM_DESC_SPREAD_3"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_SPREAD_6
+		text = "TBM_OPT_SPREAD_6"
+		desc = "TBM_DESC_SPREAD_6"
+		allow_achievements = no
+	}
+}
+
+tbm_research_speed_bonuses = {
+	name = "TBM_RULE_research_speed_bonuses"
+	group = "TBM_RULES_GROUP"
+
+	default = {
+		name = TBM_RSB_FULL
+		text = "TBM_OPT_RSB_FULL"
+		desc = "TBM_DESC_RSB_FULL"
+	}
+	option = {
+		name = TBM_RSB_TIER_ONLY
+		text = "TBM_OPT_RSB_TIER_ONLY"
+		desc = "TBM_DESC_RSB_TIER_ONLY"
+		allow_achievements = no
+	}
+	option = {
+		name = TBM_RSB_DISABLED
+		text = "TBM_OPT_RSB_DISABLED"
+		desc = "TBM_DESC_RSB_DISABLED"
+		allow_achievements = no
+	}
+}

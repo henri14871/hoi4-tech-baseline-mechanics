@@ -1,0 +1,451 @@
+﻿l_english:
+
+ ###########################################
+ # GAME RULES GROUP
+ ###########################################
+ TBM_RULES_GROUP:0 "Tech Baseline Mechanics"
+
+ ###########################################
+ # GAME RULE 1: tbm_auto_research_scope
+ ###########################################
+ TBM_RULE_auto_research_scope:0 "Auto-Research Scope"
+ TBM_RULE_auto_research_scope_desc:0 "Controls which countries receive automatic technology grants based on national power."
+ TBM_OPT_AI_ONLY:0 "AI Only"
+ TBM_DESC_AI_ONLY:0 "Only AI-controlled countries receive auto-research. Players research manually."
+ TBM_OPT_EVERYONE:0 "Everyone"
+ TBM_DESC_EVERYONE:0 "All countries including human players receive auto-research."
+ TBM_OPT_DISABLED:0 "Disabled"
+ TBM_DESC_DISABLED:0 "The auto-research system is completely inactive."
+
+ ###########################################
+ # GAME RULE 2: tbm_auto_research_intensity
+###########################################
+ TBM_RULE_auto_research_intensity:0 "TBM Mode"
+ TBM_RULE_auto_research_intensity_desc:0 "Controls whether TBM prioritizes realism, balance, arcade catch-up, or historically-biased major powers."
+ TBM_OPT_REALISTIC:0 "Realistic"
+TBM_DESC_REALISTIC:0 "Conservative progression. All lag values increase by 1.0 year, and auto-grants stay at least 2 years behind the current frontier."
+ TBM_OPT_BALANCED:0 "Balanced"
+TBM_DESC_BALANCED:0 "Best of both worlds. Standard lag values with a 1-year frontier buffer, keeping nations plausible without making weaker countries feel dead on arrival."
+ TBM_OPT_ARCADE:0 "Arcade"
+TBM_DESC_ARCADE:0 "Faster catch-up. All lag values are reduced by 0.5 years and there is no mandatory frontier buffer if a nation fully closes the gap."
+ TBM_OPT_HISTORICAL:0 "Historical"
+TBM_DESC_HISTORICAL:0 "Uses Realistic mode values plus historical competence bonuses for major nations."
+
+ ###########################################
+ # GAME RULE 3: tbm_compat_profile
+ ###########################################
+ TBM_RULE_compat_profile:0 "Compatibility Profile"
+ TBM_RULE_compat_profile_desc:0 "Auto-detects the active major overhaul or expansion mod by default, with manual profile overrides available when needed."
+ TBM_OPT_COMPAT_AUTO:0 "Auto Detect"
+ TBM_DESC_COMPAT_AUTO:0 "Automatically select the matching built-in TBM profile for the active supported overhaul. Falls back to vanilla when no supported mod is detected."
+ TBM_OPT_COMPAT_VANILLA:0 "Vanilla"
+ TBM_DESC_COMPAT_VANILLA:0 "Use the default TBM tech lists and vanilla-scale tier thresholds."
+ TBM_OPT_COMPAT_BLACKICE:0 "BlackICE"
+ TBM_DESC_COMPAT_BLACKICE:0 "Use the built-in BlackICE Historical Immersion Mod research profile."
+ TBM_OPT_COMPAT_CWIC:0 "Cold War Iron Curtain"
+ TBM_DESC_COMPAT_CWIC:0 "Use the built-in Cold War Iron Curtain: A World Divided research profile."
+ TBM_OPT_COMPAT_KAISERREICH:0 "Kaiserreich"
+ TBM_DESC_COMPAT_KAISERREICH:0 "Use the built-in Kaiserreich research profile."
+ TBM_OPT_COMPAT_ENDSIEG:0 "Endsieg"
+ TBM_DESC_COMPAT_ENDSIEG:0 "Use the built-in EndsiegDEV research profile."
+ TBM_OPT_COMPAT_ETT1960:0 "Extended Tech Tree 1960"
+ TBM_DESC_COMPAT_ETT1960:0 "Use the built-in Extended Tech Tree 1960 research profile."
+ TBM_OPT_COMPAT_NOVUM_VEXILLUM:0 "Novum Vexillum"
+ TBM_DESC_COMPAT_NOVUM_VEXILLUM:0 "Use the built-in Novum Vexillum research profile."
+ TBM_OPT_COMPAT_RISE_OF_NATIONS:0 "Rise of Nations"
+ TBM_DESC_COMPAT_RISE_OF_NATIONS:0 "Use the built-in Rise of Nations research profile."
+ TBM_OPT_COMPAT_KAISERREDUX:0 "Kaiserredux"
+ TBM_DESC_COMPAT_KAISERREDUX:0 "Use the built-in KaiserreduX research profile."
+ TBM_OPT_COMPAT_TNO:0 "The New Order"
+ TBM_DESC_COMPAT_TNO:0 "Use the built-in The New Order: Last Days of Europe research profile."
+ TBM_OPT_COMPAT_MILLENNIUM_DAWN:0 "Millennium Dawn"
+ TBM_DESC_COMPAT_MILLENNIUM_DAWN:0 "Use the built-in Millennium Dawn: A Modern Day Mod research profile."
+ TBM_OPT_COMPAT_TFR:0 "The Fire Rises"
+ TBM_DESC_COMPAT_TFR:0 "Use the built-in The Fire Rises research profile."
+ TBM_OPT_COMPAT_GREAT_WAR_REDUX:0 "Great War Redux"
+ TBM_DESC_COMPAT_GREAT_WAR_REDUX:0 "Use the built-in The Great War Redux - 1.17.* research profile."
+ TBM_OPT_COMPAT_GREAT_WAR:0 "The Great War"
+ TBM_DESC_COMPAT_GREAT_WAR:0 "Use the built-in Hearts of Iron IV: The Great War research profile."
+ TBM_OPT_COMPAT_ROAD_TO_56:0 "Road to 56"
+ TBM_DESC_COMPAT_ROAD_TO_56:0 "Use the built-in The Road to 56 research profile."
+
+ ###########################################
+ # GAME RULE 4: tbm_tech_scope
+ ###########################################
+ TBM_RULE_tech_scope:0 "Tech Scope"
+ TBM_RULE_tech_scope_desc:0 "Controls how broad TBM's tech grants are, from a narrow military-industrial baseline to nearly the full tree."
+ TBM_OPT_CORE_ONLY:0 "Core Only"
+ TBM_DESC_CORE_ONLY:0 "Only the basic backbone is granted: infantry, artillery, support, and industry. Air, naval, electronics, motorised, mechanised, and tanks stay fully manual."
+ TBM_OPT_CORE_AIR_NAVAL:0 "Core + Air/Naval"
+ TBM_DESC_CORE_AIR_NAVAL:0 "The default middle ground. Core categories plus air and naval tech are granted, while advanced land branches and electronics remain manual priorities."
+ TBM_OPT_ALL_EXCEPT_DOCTRINES:0 "All Except Doctrines"
+ TBM_DESC_ALL_EXCEPT_DOCTRINES:0 "Almost the entire tree is covered, including advanced land and electronics. Only doctrines are left out."
+ TBM_OPT_EVERYTHING:0 "Everything"
+ TBM_DESC_EVERYTHING:0 "The broadest scope. All supported categories are included, including doctrines, nuclear, and rockets where other TBM rules allow them."
+
+ ###########################################
+ # GAME RULE 4: tbm_doctrine_handling
+ ###########################################
+ TBM_RULE_doctrine_handling:0 "Doctrine Handling"
+ TBM_RULE_doctrine_handling_desc:0 "Controls whether doctrines are automatically granted."
+ TBM_OPT_DOC_DISABLED:0 "Disabled"
+ TBM_DESC_DOC_DISABLED:0 "Doctrines are never auto-granted. All countries must research doctrines manually."
+ TBM_OPT_DOC_AI_ONLY:0 "AI Only"
+ TBM_DESC_DOC_AI_ONLY:0 "Only AI-controlled countries receive auto-granted doctrines."
+ TBM_OPT_DOC_EVERYONE:0 "Everyone"
+ TBM_DESC_DOC_EVERYONE:0 "All countries including human players receive auto-granted doctrines."
+
+ ###########################################
+ # GAME RULE 5: tbm_advanced_tech
+ ###########################################
+ TBM_RULE_advanced_tech:0 "Advanced Tech (Nuclear/Rockets)"
+ TBM_RULE_advanced_tech_desc:0 "Controls whether nuclear and rocket technologies can be auto-granted."
+ TBM_OPT_ADV_EXCLUDED:0 "Excluded"
+ TBM_DESC_ADV_EXCLUDED:0 "Nuclear and rocket technologies are never auto-granted."
+ TBM_OPT_ADV_SUPERPOWERS:0 "Superpowers Only"
+ TBM_DESC_ADV_SUPERPOWERS:0 "Only Superpower-tier nations with industry competence above 85 can receive nuclear and rocket tech."
+ TBM_OPT_ADV_INCLUDED:0 "Included"
+ TBM_DESC_ADV_INCLUDED:0 "Nuclear and rocket tech can be auto-granted to any nation meeting the competence threshold."
+
+ ###########################################
+ # GAME RULE 6: tbm_war_faction_catchup
+ ###########################################
+ TBM_RULE_war_faction_catchup:0 "War & Faction Catch-Up"
+ TBM_RULE_war_faction_catchup_desc:0 "Controls war, desperation, and faction bonuses that reduce effective tech lag."
+ TBM_OPT_WF_DISABLED:0 "Disabled"
+ TBM_DESC_WF_DISABLED:0 "No war, desperation, or faction bonuses are applied."
+ TBM_OPT_WF_STANDARD:0 "Standard"
+ TBM_DESC_WF_STANDARD:0 "Standard war and faction bonuses. At war: -0.5 lag. Faction with major: -0.5 lag. Desperation at 20%+ surrender: -0.5, at 40%+: -0.75."
+ TBM_OPT_WF_ENHANCED:0 "Enhanced"
+ TBM_DESC_WF_ENHANCED:0 "Enhanced war and faction bonuses. At war: -1.0 lag. Faction with major: -1.0 lag. Desperation at 10%+ surrender: -0.5, at 20%+: -0.75."
+
+ ###########################################
+ # GAME RULE 7: tbm_grant_cap
+ ###########################################
+ TBM_RULE_grant_cap:0 "Grant Cap"
+ TBM_RULE_grant_cap_desc:0 "Controls the maximum number of technologies granted per branch per evaluation cycle. Each branch gets its own cap scaled by competence."
+ TBM_OPT_CAP_STRICT:0 "Strict"
+ TBM_DESC_CAP_STRICT:0 "Per-branch caps are halved. Slower tech spread across all tiers."
+ TBM_OPT_CAP_STANDARD:0 "Standard"
+ TBM_DESC_CAP_STANDARD:0 "Per-branch caps scale with tier and competence. Base per branch: Superpower/Great 3, Regional/Minor Industrial 2, Minor/Micro 1. Cutting Edge branches get 1.5x, Advanced 1.25x, Basic 0.5x."
+ TBM_OPT_CAP_UNLIMITED:0 "Unlimited"
+ TBM_DESC_CAP_UNLIMITED:0 "No cap on technologies granted per cycle. Nations receive all eligible techs at once."
+
+ ###########################################
+ # GAME RULE 8: tbm_notifications
+ ###########################################
+ TBM_RULE_notifications:0 "Notifications"
+ TBM_RULE_notifications_desc:0 "Controls which tech grant notifications are shown to the player."
+ TBM_OPT_NOTIFY_SILENT:0 "Silent"
+ TBM_DESC_NOTIFY_SILENT:0 "No notifications are shown for tech grants."
+ TBM_OPT_NOTIFY_MAJOR:0 "Major Only"
+ TBM_DESC_NOTIFY_MAJOR:0 "Only major milestone notifications are shown (jet age, nuclear, tier changes)."
+ TBM_OPT_NOTIFY_ALL:0 "All"
+ TBM_DESC_NOTIFY_ALL:0 "Notifications are shown for every tech grant."
+
+ ###########################################
+ # GAME RULE 9: tbm_power_visibility
+ ###########################################
+ TBM_RULE_power_visibility:0 "Power Visibility"
+ TBM_RULE_power_visibility_desc:0 "Controls whether power scores and debug information are visible via decisions."
+ TBM_OPT_VIS_HIDDEN:0 "Hidden"
+ TBM_DESC_VIS_HIDDEN:0 "Power scores and debug decisions are completely hidden."
+ TBM_OPT_VIS_OWN:0 "Own Country"
+ TBM_DESC_VIS_OWN:0 "You can view your own power score and branch competence via decisions."
+ TBM_OPT_VIS_ALL:0 "All (Debug)"
+ TBM_DESC_VIS_ALL:0 "Full debug visibility. All TBM decisions are available including force evaluation."
+
+ ###########################################
+ # GAME RULE 10: tbm_puppet_sharing
+ ###########################################
+ TBM_RULE_puppet_sharing:0 "Puppet Tech Sharing"
+ TBM_RULE_puppet_sharing_desc:0 "Controls whether puppet nations receive tech lag reduction from their overlord."
+ TBM_OPT_PUP_DISABLED:0 "Disabled"
+ TBM_DESC_PUP_DISABLED:0 "Puppet nations receive no tech lag reduction from their overlord."
+ TBM_OPT_PUP_STANDARD:0 "Standard"
+ TBM_DESC_PUP_STANDARD:0 "Puppets of Great Powers get -0.5 lag, puppets of Superpowers get -1.0 lag."
+ TBM_OPT_PUP_ENHANCED:0 "Enhanced"
+ TBM_DESC_PUP_ENHANCED:0 "Increased puppet tech sharing bonuses from overlords."
+
+ ###########################################
+ # GAME RULE 11: tbm_anti_death_spiral
+ ###########################################
+ TBM_RULE_anti_death_spiral:0 "Anti-Death Spiral"
+ TBM_RULE_anti_death_spiral_desc:0 "Controls the desperation bonus for nations losing territory in war."
+ TBM_OPT_ADS_DISABLED:0 "Disabled"
+ TBM_DESC_ADS_DISABLED:0 "No desperation bonus. Nations losing territory receive no additional tech catch-up."
+ TBM_OPT_ADS_STANDARD:0 "Standard"
+ TBM_DESC_ADS_STANDARD:0 "Standard desperation bonus. At 20%+ surrender progress: -0.5 lag, at 40%+: -0.75 lag."
+ TBM_OPT_ADS_ENHANCED:0 "Enhanced"
+ TBM_DESC_ADS_ENHANCED:0 "Enhanced desperation bonus with lower thresholds. At 10%+ surrender: -0.5 lag, at 20%+: -0.75 lag."
+
+ ###########################################
+ # GAME RULE 12: tbm_bucket_spread
+ ###########################################
+ TBM_RULE_bucket_spread:0 "Evaluation Spread"
+ TBM_RULE_bucket_spread_desc:0 "Controls how many months it takes to cycle through all countries. Lower values process more countries per month (heavier performance), higher values spread the load."
+ TBM_OPT_SPREAD_1:0 "1 Month"
+ TBM_DESC_SPREAD_1:0 "All countries are evaluated every month. Most responsive but heaviest on performance."
+ TBM_OPT_SPREAD_2:0 "2 Months"
+ TBM_DESC_SPREAD_2:0 "Countries are split into 2 groups and evaluated every other month."
+ TBM_OPT_SPREAD_3:0 "3 Months"
+ TBM_DESC_SPREAD_3:0 "Countries are split into 3 groups and evaluated every 3 months."
+ TBM_OPT_SPREAD_6:0 "6 Months"
+ TBM_DESC_SPREAD_6:0 "Countries are split into 6 groups and one group is evaluated per month. Lightest on performance."
+
+ ###########################################
+ # GAME RULE 13: tbm_research_speed_bonuses
+ ###########################################
+ TBM_RULE_research_speed_bonuses:0 "Research Speed Bonuses"
+ TBM_RULE_research_speed_bonuses_desc:0 "Controls whether tier and branch national spirits that modify research speed are applied."
+ TBM_OPT_RSB_FULL:0 "Full"
+ TBM_DESC_RSB_FULL:0 "Both tier spirits (global research speed) and branch spirits (category research bonuses) are applied."
+ TBM_OPT_RSB_TIER_ONLY:0 "Tier Only"
+ TBM_DESC_RSB_TIER_ONLY:0 "Only tier spirits are applied. Branch competence spirits are removed."
+ TBM_OPT_RSB_DISABLED:0 "Disabled"
+ TBM_DESC_RSB_DISABLED:0 "All TBM research speed spirits are removed. Tech is granted but no passive research bonuses are given."
+
+ ###########################################
+ # TIER SPIRIT NAMES AND DESCRIPTIONS
+ ###########################################
+ tbm_tier_superpower:0 "Superpower"
+tbm_tier_superpower_desc:0 "This nation stands at the pinnacle of global power. Research is blazing fast and the technological frontier is close, but still rewards deliberate investment."
+ tbm_tier_great_power:0 "Great Power"
+ tbm_tier_great_power_desc:0 "This nation is among the world's strongest. Research benefits from extensive institutional knowledge."
+ tbm_tier_regional_power:0 "Regional Power"
+ tbm_tier_regional_power_desc:0 "This nation is a significant regional force. Research progresses at a competitive pace."
+ tbm_tier_minor_industrial:0 "Minor Industrial Power"
+ tbm_tier_minor_industrial_desc:0 "This nation has a developing industrial base. Research proceeds at standard pace."
+ tbm_tier_minor:0 "Minor Nation"
+ tbm_tier_minor_desc:0 "This nation has limited industrial capacity. Research is slower than major powers."
+ tbm_tier_micro:0 "Micro State"
+ tbm_tier_micro_desc:0 "This nation has minimal industrial capacity. Research is painfully slow."
+
+ ###########################################
+ # LAND BRANCH SPIRIT NAMES AND DESCRIPTIONS
+ ###########################################
+ tbm_land_cutting_edge:0 "Cutting-Edge Land Doctrine"
+ tbm_land_cutting_edge_desc:0 "This nation's land warfare research infrastructure is world-class, providing significant research bonuses to all land technology categories."
+ tbm_land_advanced:0 "Advanced Land Capability"
+ tbm_land_advanced_desc:0 "Strong investment in land warfare yields meaningful research advantages."
+ tbm_land_standard:0 "Standard Land Capability"
+ tbm_land_standard_desc:0 "This nation's land warfare research operates at baseline efficiency."
+ tbm_land_basic:0 "Basic Land Capability"
+ tbm_land_basic_desc:0 "Limited land warfare infrastructure slows research in land technology categories."
+ tbm_land_none:0 "Minimal Land Capability"
+ tbm_land_none_desc:0 "Near-absent land warfare infrastructure severely hampers land technology research."
+
+ ###########################################
+ # AIR BRANCH SPIRIT NAMES AND DESCRIPTIONS
+ ###########################################
+ tbm_air_cutting_edge:0 "Cutting-Edge Air Program"
+ tbm_air_cutting_edge_desc:0 "This nation's aviation research infrastructure is world-class, providing significant research bonuses to all air technology categories."
+ tbm_air_advanced:0 "Advanced Air Capability"
+ tbm_air_advanced_desc:0 "Strong investment in aviation yields meaningful research advantages."
+ tbm_air_standard:0 "Standard Air Capability"
+ tbm_air_standard_desc:0 "This nation's aviation research operates at baseline efficiency."
+ tbm_air_basic:0 "Basic Air Capability"
+ tbm_air_basic_desc:0 "Limited aviation infrastructure slows research in air technology categories."
+ tbm_air_none:0 "Minimal Air Capability"
+ tbm_air_none_desc:0 "Near-absent aviation infrastructure severely hampers air technology research."
+
+ ###########################################
+ # NAVAL BRANCH SPIRIT NAMES AND DESCRIPTIONS
+ ###########################################
+ tbm_naval_cutting_edge:0 "Cutting-Edge Naval Program"
+ tbm_naval_cutting_edge_desc:0 "This nation's naval research infrastructure is world-class, providing significant research bonuses to all naval technology categories."
+ tbm_naval_advanced:0 "Advanced Naval Capability"
+ tbm_naval_advanced_desc:0 "Strong investment in naval warfare yields meaningful research advantages."
+ tbm_naval_standard:0 "Standard Naval Capability"
+ tbm_naval_standard_desc:0 "This nation's naval research operates at baseline efficiency."
+ tbm_naval_basic:0 "Basic Naval Capability"
+ tbm_naval_basic_desc:0 "Limited naval infrastructure slows research in naval technology categories."
+ tbm_naval_none:0 "Minimal Naval Capability"
+ tbm_naval_none_desc:0 "Near-absent naval infrastructure severely hampers naval technology research."
+
+ ###########################################
+ # INDUSTRY BRANCH SPIRIT NAMES AND DESCRIPTIONS
+ ###########################################
+ tbm_industry_cutting_edge:0 "Cutting-Edge Industrial Base"
+ tbm_industry_cutting_edge_desc:0 "This nation's industrial and electronics research infrastructure is world-class, providing significant research bonuses to all industry technology categories."
+ tbm_industry_advanced:0 "Advanced Industrial Base"
+ tbm_industry_advanced_desc:0 "Strong investment in industry and electronics yields meaningful research advantages."
+ tbm_industry_standard:0 "Standard Industrial Base"
+ tbm_industry_standard_desc:0 "This nation's industrial research operates at baseline efficiency."
+ tbm_industry_basic:0 "Basic Industrial Base"
+ tbm_industry_basic_desc:0 "Limited industrial infrastructure slows research in industry and electronics technology categories."
+ tbm_industry_none:0 "Minimal Industrial Base"
+ tbm_industry_none_desc:0 "Near-absent industrial infrastructure severely hampers industry and electronics technology research."
+
+ ###########################################
+ # EVENT TITLES, DESCRIPTIONS, AND OPTIONS
+ ###########################################
+
+ # tbm_event.1 - Per-grant Notification
+ tbm_event.1.t:0 "Technology Integrated"
+ tbm_event.1.desc:0 "TBM has automatically added a newly eligible technology to our national baseline. Our research teams can now build on that progress immediately."
+ tbm_event.1.a:0 "Noted."
+
+ # tbm_event.2 - Tier Change Notification
+ tbm_event.2.t:0 "Power Status Changed"
+ tbm_event.2.desc:0 "Our nation's global standing has shifted. Changes in our industrial output, military strength, and resource base have altered our position in the hierarchy of world powers. Current tier index: [?tbm_tier_index]."
+ tbm_event.2.a:0 "Acknowledged."
+
+ # tbm_event.100 - Debug: Power Score Report
+ tbm_event.100.t:0 "TBM Debug: Power Score Report"
+ tbm_event.100.desc:0 "Global Power Score: [?tbm_global_power]\nEconomy: [?tbm_economy_score]\nScience: [?tbm_science_score]\nMobilization: [?tbm_mobilization_score]\nResources: [?tbm_resource_score]\nWar Posture: [?tbm_war_posture_score]\nCurrent Tier Index: [?tbm_tier_index]"
+ tbm_event.100.a:0 "Close"
+
+ # tbm_event.101 - Debug: Branch Competence Report
+ tbm_event.101.t:0 "TBM Debug: Branch Competence Report"
+ tbm_event.101.desc:0 "Land: [?tbm_land_competence]\nAir: [?tbm_air_competence]\nNaval: [?tbm_naval_competence]\nIndustry: [?tbm_industry_competence]"
+ tbm_event.101.a:0 "Close"
+
+ # tbm_event.102 - Debug: Effective Lag Report
+ tbm_event.102.t:0 "TBM Debug: Effective Lag Report"
+tbm_event.102.desc:0 "Base Lag: [?tbm_base_lag]\n\nEffective Land Lag: [?tbm_effective_land_lag]\nEffective Air Lag: [?tbm_effective_air_lag]\nEffective Naval Lag: [?tbm_effective_naval_lag]\nEffective Industry Lag: [?tbm_effective_industry_lag]\n\nGrant Year (Land): [?tbm_target_year_land]\nGrant Year (Air): [?tbm_target_year_air]\nGrant Year (Naval): [?tbm_target_year_naval]\nGrant Year (Industry): [?tbm_target_year_industry]\n\nGrant Cap: [?tbm_quarterly_cap]\nGrants Used: [?tbm_grant_counter]"
+ tbm_event.102.a:0 "Close"
+
+ # tbm_event.200 - News: Nation Enters Jet Age
+ tbm_event.200.t:0 "[FROM.GetName] Enters the Jet Age"
+ tbm_event.200.desc:0 "[FROM.GetName] has achieved a monumental breakthrough in aviation technology. Their scientists and engineers have successfully developed jet propulsion systems, heralding a new era of aerial warfare and forever changing the balance of power in the skies."
+ tbm_event.200.a:0 "A new era of aviation begins."
+
+ # tbm_event.201 - News: Nuclear Technology Achieved
+ tbm_event.201.t:0 "[FROM.GetName] Develops Nuclear Technology"
+ tbm_event.201.desc:0 "[FROM.GetName] has unlocked the secrets of the atom. Their nuclear research program has reached a critical threshold, giving them access to the most devastating weapons ever conceived by mankind. The world will never be the same."
+ tbm_event.201.a:0 "The atomic age is upon us."
+
+ ###########################################
+ # DECISION CATEGORY
+ ###########################################
+ tbm_debug_category:0 "Tech Baseline Mechanics"
+ tbm_debug_category_desc:0 "§YTier§!: [tbm_ui_tier_status]   §YPower§!: [?tbm_global_power|1]   §YCap§!: [?tbm_quarterly_cap|0]   §YNext Grant§!: [tbm_ui_next_grant_window]\n§YLand§!: [tbm_ui_land_status] ([?tbm_land_competence|1])   §YCap§!: [?tbm_cap_land|0]   §YTarget§!: [tbm_ui_land_target_year]   §YLag§!: [tbm_ui_land_lag][tbm_ui_land_blocker]\n§YAir§!: [tbm_ui_air_status] ([?tbm_air_competence|1])   §YCap§!: [?tbm_cap_air|0]   §YTarget§!: [tbm_ui_air_target_year]   §YLag§!: [tbm_ui_air_lag][tbm_ui_air_blocker]\n§YNaval§!: [tbm_ui_naval_status] ([?tbm_naval_competence|1])   §YCap§!: [?tbm_cap_naval|0]   §YTarget§!: [tbm_ui_naval_target_year]   §YLag§!: [tbm_ui_naval_lag][tbm_ui_naval_blocker]\n§YIndustry§!: [tbm_ui_industry_status] ([?tbm_industry_competence|1])   §YCap§!: [?tbm_cap_industry|0]   §YTarget§!: [tbm_ui_industry_target_year]   §YLag§!: [tbm_ui_industry_lag][tbm_ui_industry_blocker][tbm_ui_player_scope_status]"
+
+ ###########################################
+ # DECISION NAMES AND DESCRIPTIONS
+ ###########################################
+ tbm_view_power_score:0 "View Power Score"
+ tbm_view_power_score_desc:0 "Opens a report showing your nation's global power score and all its component values."
+ tbm_view_branch_competence:0 "View Branch Competence"
+ tbm_view_branch_competence_desc:0 "Opens a report showing your nation's branch competence scores for land, air, naval, and industry."
+ tbm_view_effective_lag:0 "View Effective Lag"
+ tbm_view_effective_lag_desc:0 "Opens a report showing your nation's effective technology lag per branch, target years, and grant cap."
+ tbm_force_evaluation:0 "Force Evaluation (Debug)"
+ tbm_force_evaluation_desc:0 "Manually triggers the full TBM evaluation and tech grant pipeline for your nation. This recalculates scores, assigns tiers, and grants eligible technologies immediately."
+
+ ###########################################
+ # TBM DASHBOARD UI
+ ###########################################
+ tbm_ui_tier_superpower:0 "§H$tbm_tier_superpower$§!"
+ tbm_ui_tier_great_power:0 "§G$tbm_tier_great_power$§!"
+ tbm_ui_tier_regional_power:0 "§Y$tbm_tier_regional_power$§!"
+ tbm_ui_tier_minor_industrial:0 "§O$tbm_tier_minor_industrial$§!"
+ tbm_ui_tier_minor:0 "§R$tbm_tier_minor$§!"
+ tbm_ui_tier_micro:0 "§g$tbm_tier_micro$§!"
+ tbm_ui_branch_cutting_edge:0 "§HCutting Edge§!"
+ tbm_ui_branch_advanced:0 "§GAdvanced§!"
+ tbm_ui_branch_standard:0 "§YStandard§!"
+ tbm_ui_branch_basic:0 "§OBasic§!"
+ tbm_ui_branch_minimal:0 "§RMinimal§!"
+ tbm_ui_next_grant_1_month:0 "§G~1 month§!"
+ tbm_ui_next_grant_2_months:0 "§Y~2 months§!"
+ tbm_ui_next_grant_3_months:0 "§O~3 months§!"
+ tbm_ui_next_grant_4_months:0 "§O~4 months§!"
+ tbm_ui_next_grant_5_months:0 "§R~5 months§!"
+ tbm_ui_next_grant_6_months:0 "§R~6 months§!"
+ tbm_ui_next_grant_unknown:0 "§gN/A§!"
+ tbm_ui_land_lag_le_1:0 "§G[?tbm_effective_land_lag|1]y§!"
+ tbm_ui_land_lag_le_2:0 "§H[?tbm_effective_land_lag|1]y§!"
+ tbm_ui_land_lag_le_4:0 "§Y[?tbm_effective_land_lag|1]y§!"
+ tbm_ui_land_lag_le_6:0 "§O[?tbm_effective_land_lag|1]y§!"
+ tbm_ui_land_lag_gt_6:0 "§R[?tbm_effective_land_lag|1]y§!"
+ tbm_ui_land_target_year_le_1:0 "§G[?tbm_target_year_land|0]§!"
+ tbm_ui_land_target_year_le_2:0 "§H[?tbm_target_year_land|0]§!"
+ tbm_ui_land_target_year_le_4:0 "§Y[?tbm_target_year_land|0]§!"
+ tbm_ui_land_target_year_le_6:0 "§O[?tbm_target_year_land|0]§!"
+ tbm_ui_land_target_year_gt_6:0 "§R[?tbm_target_year_land|0]§!"
+ tbm_ui_air_lag_le_1:0 "§G[?tbm_effective_air_lag|1]y§!"
+ tbm_ui_air_lag_le_2:0 "§H[?tbm_effective_air_lag|1]y§!"
+ tbm_ui_air_lag_le_4:0 "§Y[?tbm_effective_air_lag|1]y§!"
+ tbm_ui_air_lag_le_6:0 "§O[?tbm_effective_air_lag|1]y§!"
+ tbm_ui_air_lag_gt_6:0 "§R[?tbm_effective_air_lag|1]y§!"
+ tbm_ui_air_target_year_le_1:0 "§G[?tbm_target_year_air|0]§!"
+ tbm_ui_air_target_year_le_2:0 "§H[?tbm_target_year_air|0]§!"
+ tbm_ui_air_target_year_le_4:0 "§Y[?tbm_target_year_air|0]§!"
+ tbm_ui_air_target_year_le_6:0 "§O[?tbm_target_year_air|0]§!"
+ tbm_ui_air_target_year_gt_6:0 "§R[?tbm_target_year_air|0]§!"
+ tbm_ui_naval_lag_le_1:0 "§G[?tbm_effective_naval_lag|1]y§!"
+ tbm_ui_naval_lag_le_2:0 "§H[?tbm_effective_naval_lag|1]y§!"
+ tbm_ui_naval_lag_le_4:0 "§Y[?tbm_effective_naval_lag|1]y§!"
+ tbm_ui_naval_lag_le_6:0 "§O[?tbm_effective_naval_lag|1]y§!"
+ tbm_ui_naval_lag_gt_6:0 "§R[?tbm_effective_naval_lag|1]y§!"
+ tbm_ui_naval_target_year_le_1:0 "§G[?tbm_target_year_naval|0]§!"
+ tbm_ui_naval_target_year_le_2:0 "§H[?tbm_target_year_naval|0]§!"
+ tbm_ui_naval_target_year_le_4:0 "§Y[?tbm_target_year_naval|0]§!"
+ tbm_ui_naval_target_year_le_6:0 "§O[?tbm_target_year_naval|0]§!"
+ tbm_ui_naval_target_year_gt_6:0 "§R[?tbm_target_year_naval|0]§!"
+ tbm_ui_industry_lag_le_1:0 "§G[?tbm_effective_industry_lag|1]y§!"
+ tbm_ui_industry_lag_le_2:0 "§H[?tbm_effective_industry_lag|1]y§!"
+ tbm_ui_industry_lag_le_4:0 "§Y[?tbm_effective_industry_lag|1]y§!"
+ tbm_ui_industry_lag_le_6:0 "§O[?tbm_effective_industry_lag|1]y§!"
+ tbm_ui_industry_lag_gt_6:0 "§R[?tbm_effective_industry_lag|1]y§!"
+ tbm_ui_industry_target_year_le_1:0 "§G[?tbm_target_year_industry|0]§!"
+ tbm_ui_industry_target_year_le_2:0 "§H[?tbm_target_year_industry|0]§!"
+ tbm_ui_industry_target_year_le_4:0 "§Y[?tbm_target_year_industry|0]§!"
+ tbm_ui_industry_target_year_le_6:0 "§O[?tbm_target_year_industry|0]§!"
+ tbm_ui_industry_target_year_gt_6:0 "§R[?tbm_target_year_industry|0]§!"
+ tbm_ui_blocker_none:0 ""
+ tbm_ui_blocker_low_mil:0 "  §gLow Mil§!"
+ tbm_ui_blocker_small_army:0 "  §gSmall Army§!"
+ tbm_ui_blocker_low_slots:0 "  §gLow Slots§!"
+ tbm_ui_blocker_weak_resources:0 "  §gWeak Res§!"
+ tbm_ui_blocker_no_dockyards:0 "  §gNo Docks§!"
+ tbm_ui_blocker_low_dockyards:0 "  §gLow Docks§!"
+ tbm_ui_blocker_low_civ:0 "  §gLow Civ§!"
+ tbm_ui_blocker_small_base:0 "  §gSmall Base§!"
+ tbm_ui_player_scope_disabled:0 "\n§RSystem disabled.§!"
+ tbm_ui_player_scope_ai_only:0 "\n§OPlayer grants disabled — AI only mode.§!"
+ tbm_ui_player_scope_none:0 ""
+
+ ###########################################
+ # GAME RULE OPTION NAME KEYS
+ ###########################################
+ TBM_AI_ONLY:0 "AI Only"
+ TBM_EVERYONE:0 "Everyone"
+ TBM_DISABLED:0 "Disabled"
+TBM_REALISTIC:0 "Realistic"
+TBM_BALANCED:0 "Balanced"
+TBM_ARCADE:0 "Arcade"
+TBM_HISTORICAL:0 "Historical"
+ TBM_CORE_ONLY:0 "Core Only"
+ TBM_CORE_AIR_NAVAL:0 "Core + Air/Naval"
+ TBM_ALL_EXCEPT_DOCTRINES:0 "All Except Doctrines"
+ TBM_EVERYTHING:0 "Everything"
+ TBM_DOC_DISABLED:0 "Disabled"
+ TBM_DOC_AI_ONLY:0 "AI Only"
+ TBM_DOC_EVERYONE:0 "Everyone"
+ TBM_ADV_EXCLUDED:0 "Excluded"
+ TBM_ADV_SUPERPOWERS:0 "Superpowers Only"
+ TBM_ADV_INCLUDED:0 "Included"
+ TBM_WF_DISABLED:0 "Disabled"
+ TBM_WF_STANDARD:0 "Standard"
+ TBM_WF_ENHANCED:0 "Enhanced"
+ TBM_CAP_STRICT:0 "Strict"
+ TBM_CAP_STANDARD:0 "Standard"
+ TBM_CAP_UNLIMITED:0 "Unlimited"
+ TBM_NOTIFY_SILENT:0 "Silent"
+ TBM_NOTIFY_MAJOR:0 "Major Only"
+ TBM_NOTIFY_ALL:0 "All"
+ TBM_VIS_HIDDEN:0 "Hidden"
+ TBM_VIS_OWN:0 "Own Country"
+ TBM_VIS_ALL:0 "All (Debug)"
+ TBM_PUP_DISABLED:0 "Disabled"
+ TBM_PUP_STANDARD:0 "Standard"
+ TBM_PUP_ENHANCED:0 "Enhanced"
+ TBM_ADS_DISABLED:0 "Disabled"
+ TBM_ADS_STANDARD:0 "Standard"
+ TBM_ADS_ENHANCED:0 "Enhanced"
+ TBM_RSB_FULL:0 "Full"
+ TBM_RSB_TIER_ONLY:0 "Tier Only"
+ TBM_RSB_DISABLED:0 "Disabled"

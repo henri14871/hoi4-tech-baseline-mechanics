@@ -1,0 +1,57 @@
+###############################################################################
+# tbm_historical_bias.txt — Historical Mode Bias Modifiers
+# Tech Baseline Mechanics mod
+#
+# Contains:
+#   tbm_apply_historical_bias — adds competence bonuses to major nations
+#
+# Called when TBM mode is set to TBM_HISTORICAL.
+# Runs in COUNTRY SCOPE after base competence scores are calculated.
+###############################################################################
+
+tbm_apply_historical_bias = {
+
+    # Germany: strong land + decent air
+    if = { limit = { original_tag = GER }
+        add_to_variable = { tbm_land_competence = 10 }
+        add_to_variable = { tbm_air_competence = 5 }
+    }
+
+    # United Kingdom: strong naval + decent air
+    else_if = { limit = { original_tag = ENG }
+        add_to_variable = { tbm_naval_competence = 10 }
+        add_to_variable = { tbm_air_competence = 5 }
+    }
+
+    # Japan: strong naval + decent air
+    else_if = { limit = { original_tag = JAP }
+        add_to_variable = { tbm_naval_competence = 10 }
+        add_to_variable = { tbm_air_competence = 5 }
+    }
+
+    # United States: strong across the board
+    else_if = { limit = { original_tag = USA }
+        add_to_variable = { tbm_land_competence = 5 }
+        add_to_variable = { tbm_air_competence = 5 }
+        add_to_variable = { tbm_naval_competence = 5 }
+        add_to_variable = { tbm_industry_competence = 5 }
+    }
+
+    # Soviet Union: strong land + decent industry
+    else_if = { limit = { original_tag = SOV }
+        add_to_variable = { tbm_land_competence = 10 }
+        add_to_variable = { tbm_industry_competence = 5 }
+    }
+
+    # Italy: decent naval + decent air
+    else_if = { limit = { original_tag = ITA }
+        add_to_variable = { tbm_naval_competence = 5 }
+        add_to_variable = { tbm_air_competence = 5 }
+    }
+
+    # France: decent land + decent industry
+    else_if = { limit = { original_tag = FRA }
+        add_to_variable = { tbm_land_competence = 5 }
+        add_to_variable = { tbm_industry_competence = 5 }
+    }
+}

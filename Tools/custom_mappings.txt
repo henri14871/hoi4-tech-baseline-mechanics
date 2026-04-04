@@ -1,5 +1,5 @@
 # ═══════════════════════════════════════════════════════════════════
-# Arms Race Mechanics — Custom Category Mappings
+# Tech Baseline Mechanics — Custom Category Mappings
 # ═══════════════════════════════════════════════════════════════════
 #
 # If a mod uses custom category tags that the generator doesn't

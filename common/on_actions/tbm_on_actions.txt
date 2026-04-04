@@ -1,0 +1,135 @@
+###############################################################################
+# tbm_on_actions.txt - Startup + Monthly Pulse
+# Tech Baseline Mechanics mod
+#
+# on_startup:  Initialize globals, buckets, and compat state
+# on_monthly:  Country-local monthly evaluation with optional spread
+###############################################################################
+
+# ===================================================================
+# ON STARTUP
+# ===================================================================
+on_startup = {
+    effect = {
+        random_country = {
+            tbm_bootstrap_runtime_state = yes
+        }
+    }
+}
+
+# ===================================================================
+# ON DAILY
+# Migrates legacy saves that add TBM after the campaign started.
+# ===================================================================
+on_daily = {
+    effect = {
+        if = {
+            limit = {
+                OR = {
+                    NOT = { has_global_flag = tbm_runtime_bootstrapped }
+                    NOT = { has_global_flag = tbm_runtime_schema_v2 }
+                }
+            }
+            tbm_bootstrap_runtime_state = yes
+        }
+    }
+}
+
+# ===================================================================
+# ON WEEKLY
+# Refresh visible TBM state for human countries without granting techs.
+# ===================================================================
+on_weekly = {
+    effect = {
+        if = {
+            limit = {
+                is_ai = no
+                NOT = { has_game_rule = { rule = tbm_power_visibility option = TBM_VIS_HIDDEN } }
+            }
+
+            if = {
+                limit = { NOT = { has_global_flag = tbm_ui_weekly_year_updated } }
+                tbm_update_current_year = yes
+                set_global_flag = {
+                    flag = tbm_ui_weekly_year_updated
+                    days = 1
+                    value = 1
+                }
+            }
+
+            tbm_refresh_country_state_ui_runtime = yes
+        }
+    }
+}
+
+# ===================================================================
+# ON MONTHLY
+# ===================================================================
+on_monthly = {
+    effect = {
+        if = {
+            limit = { NOT = { has_game_rule = { rule = tbm_auto_research_scope option = TBM_DISABLED } } }
+
+            # Keep runtime state current for upgraded saves.
+            if = {
+                limit = {
+                    OR = {
+                        NOT = { has_global_flag = tbm_runtime_bootstrapped }
+                        NOT = { has_global_flag = tbm_runtime_schema_v2 }
+                    }
+                }
+                tbm_bootstrap_runtime_state = yes
+            }
+
+            # Country-local on_monthly already fires once per country.
+            # Use a 1-day global flag only for the global monthly pre-pass.
+            if = {
+                limit = { NOT = { has_global_flag = tbm_please_dont_spam_me_on_monthly } }
+                set_global_flag = {
+                    flag = tbm_please_dont_spam_me_on_monthly
+                    days = 1
+                    value = 1
+                }
+                tbm_update_current_year = yes
+
+                # Snapshot the bucket processed this month, then advance the
+                # counter so UI refreshes can see the next scheduled bucket.
+                set_variable = { global.tbm_processing_bucket = global.tbm_month_counter }
+                add_to_variable = { global.tbm_elapsed_months = 1 }
+                add_to_variable = { global.tbm_month_counter = 1 }
+                set_temp_variable = { tbm_max_bucket = global.tbm_bucket_count }
+                subtract_from_temp_variable = { tbm_max_bucket = 1 }
+                if = {
+                    limit = { check_variable = { var = global.tbm_month_counter value = var:tbm_max_bucket compare = greater_than } }
+                    set_variable = { global.tbm_month_counter = 0 }
+                }
+            }
+
+            # Initialize newly relevant countries in-place.
+            if = {
+                limit = {
+                    NOT = { has_country_flag = tbm_bucket_initialized }
+                    OR = {
+                        num_of_civilian_factories > 0
+                        num_of_military_factories > 0
+                    }
+                }
+                set_variable = { tbm_bucket = global.tbm_bucket_counter }
+                tbm_advance_runtime_bucket_counter = yes
+                set_country_flag = tbm_bucket_initialized
+                tbm_refresh_country_state_runtime = yes
+            }
+
+            # Evaluate only countries whose bucket is due this month.
+            set_temp_variable = { tbm_processing_bucket = global.tbm_processing_bucket }
+            if = {
+                limit = {
+                    has_country_flag = tbm_bucket_initialized
+                    tbm_country_eligible = yes
+                    check_variable = { var = tbm_bucket value = var:tbm_processing_bucket compare = equals }
+                }
+                tbm_evaluate_and_grant_runtime = yes
+            }
+        }
+    }
+}

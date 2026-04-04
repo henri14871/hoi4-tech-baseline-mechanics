@@ -1,0 +1,1545 @@
+##############################################
+# Tech Baseline Mechanics — Global Power Score
+# and Branch Competence Effects
+# All effects run in COUNTRY scope
+##############################################
+
+###################################
+# Cached score inputs
+###################################
+tbm_prepare_score_inputs = {
+    # Research slots drive science and three branch scores.
+    set_variable = { tbm_cached_science_score = 8 }
+    set_variable = { tbm_cached_air_slots_bonus = 8 }
+    set_variable = { tbm_cached_naval_slots_bonus = 5 }
+    set_variable = { tbm_cached_industry_slots_bonus = 12 }
+    if = {
+        limit = { amount_research_slots > 5 }
+        set_variable = { tbm_cached_science_score = 70 }
+        set_variable = { tbm_cached_air_slots_bonus = 48 }
+        set_variable = { tbm_cached_naval_slots_bonus = 30 }
+        set_variable = { tbm_cached_industry_slots_bonus = 72 }
+    }
+    else_if = {
+        limit = { amount_research_slots > 4 }
+        set_variable = { tbm_cached_science_score = 55 }
+        set_variable = { tbm_cached_air_slots_bonus = 40 }
+        set_variable = { tbm_cached_naval_slots_bonus = 25 }
+        set_variable = { tbm_cached_industry_slots_bonus = 60 }
+    }
+    else_if = {
+        limit = { amount_research_slots > 3 }
+        set_variable = { tbm_cached_science_score = 40 }
+        set_variable = { tbm_cached_air_slots_bonus = 32 }
+        set_variable = { tbm_cached_naval_slots_bonus = 20 }
+        set_variable = { tbm_cached_industry_slots_bonus = 48 }
+    }
+    else_if = {
+        limit = { amount_research_slots > 2 }
+        set_variable = { tbm_cached_science_score = 28 }
+        set_variable = { tbm_cached_air_slots_bonus = 24 }
+        set_variable = { tbm_cached_naval_slots_bonus = 15 }
+        set_variable = { tbm_cached_industry_slots_bonus = 36 }
+    }
+    else_if = {
+        limit = { amount_research_slots > 1 }
+        set_variable = { tbm_cached_science_score = 16 }
+        set_variable = { tbm_cached_air_slots_bonus = 16 }
+        set_variable = { tbm_cached_naval_slots_bonus = 10 }
+        set_variable = { tbm_cached_industry_slots_bonus = 24 }
+    }
+
+    # Stability is helpful, but it should not substitute for real structure.
+    set_variable = { tbm_cached_war_posture_stability_bonus = 1 }
+    set_variable = { tbm_cached_industry_stability_bonus = 1 }
+    if = {
+        limit = { has_stability > 0.9 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 15 }
+        set_variable = { tbm_cached_industry_stability_bonus = 12 }
+    }
+    else_if = {
+        limit = { has_stability > 0.8 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 13 }
+        set_variable = { tbm_cached_industry_stability_bonus = 11 }
+    }
+    else_if = {
+        limit = { has_stability > 0.7 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 11 }
+        set_variable = { tbm_cached_industry_stability_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_stability > 0.6 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 9 }
+        set_variable = { tbm_cached_industry_stability_bonus = 8 }
+    }
+    else_if = {
+        limit = { has_stability > 0.5 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 7 }
+        set_variable = { tbm_cached_industry_stability_bonus = 6 }
+    }
+    else_if = {
+        limit = { has_stability > 0.4 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 5 }
+        set_variable = { tbm_cached_industry_stability_bonus = 5 }
+    }
+    else_if = {
+        limit = { has_stability > 0.3 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 4 }
+        set_variable = { tbm_cached_industry_stability_bonus = 4 }
+    }
+    else_if = {
+        limit = { has_stability > 0.2 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 3 }
+        set_variable = { tbm_cached_industry_stability_bonus = 3 }
+    }
+    else_if = {
+        limit = { has_stability > 0.1 }
+        set_variable = { tbm_cached_war_posture_stability_bonus = 2 }
+        set_variable = { tbm_cached_industry_stability_bonus = 2 }
+    }
+
+    set_variable = { tbm_cached_war_support_bonus = 2 }
+    if = {
+        limit = { has_war_support > 0.9 }
+        set_variable = { tbm_cached_war_support_bonus = 20 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.8 }
+        set_variable = { tbm_cached_war_support_bonus = 18 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.7 }
+        set_variable = { tbm_cached_war_support_bonus = 16 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.6 }
+        set_variable = { tbm_cached_war_support_bonus = 14 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.5 }
+        set_variable = { tbm_cached_war_support_bonus = 12 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.4 }
+        set_variable = { tbm_cached_war_support_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.3 }
+        set_variable = { tbm_cached_war_support_bonus = 8 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.2 }
+        set_variable = { tbm_cached_war_support_bonus = 6 }
+    }
+    else_if = {
+        limit = { has_war_support > 0.1 }
+        set_variable = { tbm_cached_war_support_bonus = 4 }
+    }
+
+    set_variable = { tbm_cached_pp_bonus = 0 }
+    if = {
+        limit = { has_political_power > 400 }
+        set_variable = { tbm_cached_pp_bonus = 5 }
+    }
+    else_if = {
+        limit = { has_political_power > 300 }
+        set_variable = { tbm_cached_pp_bonus = 4 }
+    }
+    else_if = {
+        limit = { has_political_power > 200 }
+        set_variable = { tbm_cached_pp_bonus = 3 }
+    }
+    else_if = {
+        limit = { has_political_power > 100 }
+        set_variable = { tbm_cached_pp_bonus = 2 }
+    }
+    else_if = {
+        limit = { has_political_power > 50 }
+        set_variable = { tbm_cached_pp_bonus = 1 }
+    }
+
+    set_variable = { tbm_cached_mobilization_manpower_bonus = 0 }
+    set_variable = { tbm_cached_land_manpower_bonus = 0 }
+    if = {
+        limit = { has_manpower > 1500000 }
+        set_variable = { tbm_cached_mobilization_manpower_bonus = 30 }
+    }
+    else_if = {
+        limit = { has_manpower > 1000000 }
+        set_variable = { tbm_cached_mobilization_manpower_bonus = 20 }
+    }
+    else_if = {
+        limit = { has_manpower > 500000 }
+        set_variable = { tbm_cached_mobilization_manpower_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_manpower > 250000 }
+        set_variable = { tbm_cached_mobilization_manpower_bonus = 5 }
+    }
+    else_if = {
+        limit = { has_manpower > 100000 }
+        set_variable = { tbm_cached_mobilization_manpower_bonus = 2 }
+    }
+
+    if = {
+        limit = { has_manpower > 1000000 }
+        set_variable = { tbm_cached_land_manpower_bonus = 25 }
+    }
+    else_if = {
+        limit = { has_manpower > 800000 }
+        set_variable = { tbm_cached_land_manpower_bonus = 20 }
+    }
+    else_if = {
+        limit = { has_manpower > 600000 }
+        set_variable = { tbm_cached_land_manpower_bonus = 15 }
+    }
+    else_if = {
+        limit = { has_manpower > 400000 }
+        set_variable = { tbm_cached_land_manpower_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_manpower > 200000 }
+        set_variable = { tbm_cached_land_manpower_bonus = 5 }
+    }
+    else_if = {
+        limit = { has_manpower > 40000 }
+        set_variable = { tbm_cached_land_manpower_bonus = 1 }
+    }
+
+    # Resource bands for the global resource score.
+    set_variable = { tbm_resource_band_steel = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = steel amount > 320 extracted = yes } }
+        set_variable = { tbm_resource_band_steel = 40 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 240 extracted = yes } }
+        set_variable = { tbm_resource_band_steel = 30 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 160 extracted = yes } }
+        set_variable = { tbm_resource_band_steel = 20 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 80 extracted = yes } }
+        set_variable = { tbm_resource_band_steel = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 40 extracted = yes } }
+        set_variable = { tbm_resource_band_steel = 5 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 16 extracted = yes } }
+        set_variable = { tbm_resource_band_steel = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 8 extracted = yes } }
+        set_variable = { tbm_resource_band_steel = 1 }
+    }
+
+    set_variable = { tbm_resource_band_aluminium = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 150 extracted = yes } }
+        set_variable = { tbm_resource_band_aluminium = 30 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 100 extracted = yes } }
+        set_variable = { tbm_resource_band_aluminium = 20 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 50 extracted = yes } }
+        set_variable = { tbm_resource_band_aluminium = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 25 extracted = yes } }
+        set_variable = { tbm_resource_band_aluminium = 5 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 10 extracted = yes } }
+        set_variable = { tbm_resource_band_aluminium = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 5 extracted = yes } }
+        set_variable = { tbm_resource_band_aluminium = 1 }
+    }
+
+    set_variable = { tbm_resource_band_tungsten = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 120 extracted = yes } }
+        set_variable = { tbm_resource_band_tungsten = 30 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 80 extracted = yes } }
+        set_variable = { tbm_resource_band_tungsten = 20 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 40 extracted = yes } }
+        set_variable = { tbm_resource_band_tungsten = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 20 extracted = yes } }
+        set_variable = { tbm_resource_band_tungsten = 5 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 8 extracted = yes } }
+        set_variable = { tbm_resource_band_tungsten = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 4 extracted = yes } }
+        set_variable = { tbm_resource_band_tungsten = 1 }
+    }
+
+    set_variable = { tbm_resource_band_chromium = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 120 extracted = yes } }
+        set_variable = { tbm_resource_band_chromium = 30 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 80 extracted = yes } }
+        set_variable = { tbm_resource_band_chromium = 20 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 40 extracted = yes } }
+        set_variable = { tbm_resource_band_chromium = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 20 extracted = yes } }
+        set_variable = { tbm_resource_band_chromium = 5 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 8 extracted = yes } }
+        set_variable = { tbm_resource_band_chromium = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 4 extracted = yes } }
+        set_variable = { tbm_resource_band_chromium = 1 }
+    }
+
+    set_variable = { tbm_resource_band_rubber = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 120 extracted = yes } }
+        set_variable = { tbm_resource_band_rubber = 30 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 80 extracted = yes } }
+        set_variable = { tbm_resource_band_rubber = 20 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 40 extracted = yes } }
+        set_variable = { tbm_resource_band_rubber = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 20 extracted = yes } }
+        set_variable = { tbm_resource_band_rubber = 5 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 8 extracted = yes } }
+        set_variable = { tbm_resource_band_rubber = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 4 extracted = yes } }
+        set_variable = { tbm_resource_band_rubber = 1 }
+    }
+
+    set_variable = { tbm_resource_band_oil = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = oil amount > 180 extracted = yes } }
+        set_variable = { tbm_resource_band_oil = 30 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 120 extracted = yes } }
+        set_variable = { tbm_resource_band_oil = 20 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 60 extracted = yes } }
+        set_variable = { tbm_resource_band_oil = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 30 extracted = yes } }
+        set_variable = { tbm_resource_band_oil = 5 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 12 extracted = yes } }
+        set_variable = { tbm_resource_band_oil = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 6 extracted = yes } }
+        set_variable = { tbm_resource_band_oil = 1 }
+    }
+
+    set_variable = { tbm_cached_total_resource_score = tbm_resource_band_steel }
+    add_to_variable = { tbm_cached_total_resource_score = tbm_resource_band_aluminium }
+    add_to_variable = { tbm_cached_total_resource_score = tbm_resource_band_tungsten }
+    add_to_variable = { tbm_cached_total_resource_score = tbm_resource_band_chromium }
+    add_to_variable = { tbm_cached_total_resource_score = tbm_resource_band_rubber }
+    add_to_variable = { tbm_cached_total_resource_score = tbm_resource_band_oil }
+    clamp_variable = { var = tbm_cached_total_resource_score min = 0 max = 40 }
+
+    set_variable = { tbm_cached_land_steel_bonus = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = steel amount > 150 extracted = yes } }
+        set_variable = { tbm_cached_land_steel_bonus = 15 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 120 extracted = yes } }
+        set_variable = { tbm_cached_land_steel_bonus = 12 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 80 extracted = yes } }
+        set_variable = { tbm_cached_land_steel_bonus = 8 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 50 extracted = yes } }
+        set_variable = { tbm_cached_land_steel_bonus = 5 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 20 extracted = yes } }
+        set_variable = { tbm_cached_land_steel_bonus = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 10 extracted = yes } }
+        set_variable = { tbm_cached_land_steel_bonus = 1 }
+    }
+
+    set_variable = { tbm_cached_land_tungsten_bonus = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 60 extracted = yes } }
+        set_variable = { tbm_cached_land_tungsten_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 48 extracted = yes } }
+        set_variable = { tbm_cached_land_tungsten_bonus = 8 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 36 extracted = yes } }
+        set_variable = { tbm_cached_land_tungsten_bonus = 6 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 24 extracted = yes } }
+        set_variable = { tbm_cached_land_tungsten_bonus = 4 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 12 extracted = yes } }
+        set_variable = { tbm_cached_land_tungsten_bonus = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 6 extracted = yes } }
+        set_variable = { tbm_cached_land_tungsten_bonus = 1 }
+    }
+
+    set_variable = { tbm_cached_air_aluminium_bonus = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 75 extracted = yes } }
+        set_variable = { tbm_cached_air_aluminium_bonus = 15 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 60 extracted = yes } }
+        set_variable = { tbm_cached_air_aluminium_bonus = 12 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 45 extracted = yes } }
+        set_variable = { tbm_cached_air_aluminium_bonus = 9 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 30 extracted = yes } }
+        set_variable = { tbm_cached_air_aluminium_bonus = 6 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 15 extracted = yes } }
+        set_variable = { tbm_cached_air_aluminium_bonus = 3 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 5 extracted = yes } }
+        set_variable = { tbm_cached_air_aluminium_bonus = 1 }
+    }
+
+    set_variable = { tbm_cached_air_rubber_bonus = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 50 extracted = yes } }
+        set_variable = { tbm_cached_air_rubber_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 40 extracted = yes } }
+        set_variable = { tbm_cached_air_rubber_bonus = 8 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 30 extracted = yes } }
+        set_variable = { tbm_cached_air_rubber_bonus = 6 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 20 extracted = yes } }
+        set_variable = { tbm_cached_air_rubber_bonus = 4 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 10 extracted = yes } }
+        set_variable = { tbm_cached_air_rubber_bonus = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 5 extracted = yes } }
+        set_variable = { tbm_cached_air_rubber_bonus = 1 }
+    }
+
+    set_variable = { tbm_cached_air_oil_bonus = 0 }
+    set_variable = { tbm_cached_naval_oil_bonus = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = oil amount > 80 extracted = yes } }
+        set_variable = { tbm_cached_air_oil_bonus = 10 }
+        set_variable = { tbm_cached_naval_oil_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 64 extracted = yes } }
+        set_variable = { tbm_cached_air_oil_bonus = 8 }
+        set_variable = { tbm_cached_naval_oil_bonus = 8 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 48 extracted = yes } }
+        set_variable = { tbm_cached_air_oil_bonus = 6 }
+        set_variable = { tbm_cached_naval_oil_bonus = 6 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 32 extracted = yes } }
+        set_variable = { tbm_cached_air_oil_bonus = 4 }
+        set_variable = { tbm_cached_naval_oil_bonus = 4 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 16 extracted = yes } }
+        set_variable = { tbm_cached_air_oil_bonus = 2 }
+        set_variable = { tbm_cached_naval_oil_bonus = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = oil amount > 8 extracted = yes } }
+        set_variable = { tbm_cached_air_oil_bonus = 1 }
+        set_variable = { tbm_cached_naval_oil_bonus = 1 }
+    }
+
+    set_variable = { tbm_cached_naval_steel_bonus = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = steel amount > 100 extracted = yes } }
+        set_variable = { tbm_cached_naval_steel_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 80 extracted = yes } }
+        set_variable = { tbm_cached_naval_steel_bonus = 8 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 60 extracted = yes } }
+        set_variable = { tbm_cached_naval_steel_bonus = 6 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 40 extracted = yes } }
+        set_variable = { tbm_cached_naval_steel_bonus = 4 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 20 extracted = yes } }
+        set_variable = { tbm_cached_naval_steel_bonus = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = steel amount > 10 extracted = yes } }
+        set_variable = { tbm_cached_naval_steel_bonus = 1 }
+    }
+
+    set_variable = { tbm_cached_naval_chromium_bonus = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 50 extracted = yes } }
+        set_variable = { tbm_cached_naval_chromium_bonus = 10 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 40 extracted = yes } }
+        set_variable = { tbm_cached_naval_chromium_bonus = 8 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 30 extracted = yes } }
+        set_variable = { tbm_cached_naval_chromium_bonus = 6 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 20 extracted = yes } }
+        set_variable = { tbm_cached_naval_chromium_bonus = 4 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 10 extracted = yes } }
+        set_variable = { tbm_cached_naval_chromium_bonus = 2 }
+    }
+    else_if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 5 extracted = yes } }
+        set_variable = { tbm_cached_naval_chromium_bonus = 1 }
+    }
+
+    set_variable = { tbm_cached_industry_breadth_bonus = 0 }
+    if = {
+        limit = { has_resources_in_country = { resource = steel amount > 8 extracted = yes } }
+        add_to_variable = { tbm_cached_industry_breadth_bonus = 1 }
+    }
+    if = {
+        limit = { has_resources_in_country = { resource = aluminium amount > 8 extracted = yes } }
+        add_to_variable = { tbm_cached_industry_breadth_bonus = 1 }
+    }
+    if = {
+        limit = { has_resources_in_country = { resource = tungsten amount > 8 extracted = yes } }
+        add_to_variable = { tbm_cached_industry_breadth_bonus = 1 }
+    }
+    if = {
+        limit = { has_resources_in_country = { resource = chromium amount > 8 extracted = yes } }
+        add_to_variable = { tbm_cached_industry_breadth_bonus = 1 }
+    }
+    if = {
+        limit = { has_resources_in_country = { resource = rubber amount > 8 extracted = yes } }
+        add_to_variable = { tbm_cached_industry_breadth_bonus = 1 }
+    }
+    if = {
+        limit = { has_resources_in_country = { resource = oil amount > 8 extracted = yes } }
+        add_to_variable = { tbm_cached_industry_breadth_bonus = 1 }
+    }
+    clamp_variable = { var = tbm_cached_industry_breadth_bonus min = 0 max = 6 }
+}
+
+###################################
+# Master scoring dispatcher
+###################################
+tbm_calculate_global_power = {
+    tbm_calculate_economy_score = yes
+    tbm_calculate_science_score = yes
+    tbm_calculate_mobilization_score = yes
+    tbm_calculate_resource_score = yes
+    tbm_calculate_war_posture_score = yes
+
+    set_variable = { tbm_global_power = tbm_economy_score }
+    add_to_variable = { tbm_global_power = tbm_science_score }
+    add_to_variable = { tbm_global_power = tbm_mobilization_score }
+    add_to_variable = { tbm_global_power = tbm_resource_score }
+    add_to_variable = { tbm_global_power = tbm_war_posture_score }
+}
+
+###################################
+# Economy Score
+# Diminishing returns per factory type:
+#   First 80: full weight
+#   81-160: half weight
+#   161+: quarter weight
+# Weights: civ x1.0, mil x1.5, dock x1.2
+###################################
+tbm_calculate_economy_score = {
+    # ---- Civilian factories (weight 1.0) ----
+    set_temp_variable = { tbm_civ_raw = num_of_civilian_factories }
+    set_variable = { tbm_civ_score = 0 }
+    if = {
+        limit = { check_variable = { var = tbm_civ_raw value = 160 compare = greater_than } }
+        # 80 full + 80*0.5 + remainder*0.25
+        set_temp_variable = { tbm_civ_excess = tbm_civ_raw }
+        subtract_from_temp_variable = { tbm_civ_excess = 160 }
+        multiply_temp_variable = { tbm_civ_excess = 0.25 }
+        set_variable = { tbm_civ_score = 120 }
+        add_to_variable = { tbm_civ_score = tbm_civ_excess }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_civ_raw value = 80 compare = greater_than } }
+        # 80 full + remainder*0.5
+        set_temp_variable = { tbm_civ_mid = tbm_civ_raw }
+        subtract_from_temp_variable = { tbm_civ_mid = 80 }
+        multiply_temp_variable = { tbm_civ_mid = 0.5 }
+        set_variable = { tbm_civ_score = 80 }
+        add_to_variable = { tbm_civ_score = tbm_civ_mid }
+    }
+    else = {
+        set_variable = { tbm_civ_score = tbm_civ_raw }
+    }
+    # civ weight is 1.0 — no multiplier needed
+
+    # ---- Military factories (weight 1.5) ----
+    set_temp_variable = { tbm_mil_raw = num_of_military_factories }
+    set_variable = { tbm_mil_score = 0 }
+    if = {
+        limit = { check_variable = { var = tbm_mil_raw value = 160 compare = greater_than } }
+        set_temp_variable = { tbm_mil_excess = tbm_mil_raw }
+        subtract_from_temp_variable = { tbm_mil_excess = 160 }
+        multiply_temp_variable = { tbm_mil_excess = 0.25 }
+        set_variable = { tbm_mil_score = 120 }
+        add_to_variable = { tbm_mil_score = tbm_mil_excess }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_mil_raw value = 80 compare = greater_than } }
+        set_temp_variable = { tbm_mil_mid = tbm_mil_raw }
+        subtract_from_temp_variable = { tbm_mil_mid = 80 }
+        multiply_temp_variable = { tbm_mil_mid = 0.5 }
+        set_variable = { tbm_mil_score = 80 }
+        add_to_variable = { tbm_mil_score = tbm_mil_mid }
+    }
+    else = {
+        set_variable = { tbm_mil_score = tbm_mil_raw }
+    }
+    multiply_variable = { tbm_mil_score = 1.5 }
+
+    # ---- Dockyards (weight 1.2) ----
+    set_temp_variable = { tbm_dock_raw = num_of_naval_factories }
+    set_variable = { tbm_dock_score = 0 }
+    if = {
+        limit = { check_variable = { var = tbm_dock_raw value = 160 compare = greater_than } }
+        set_temp_variable = { tbm_dock_excess = tbm_dock_raw }
+        subtract_from_temp_variable = { tbm_dock_excess = 160 }
+        multiply_temp_variable = { tbm_dock_excess = 0.25 }
+        set_variable = { tbm_dock_score = 120 }
+        add_to_variable = { tbm_dock_score = tbm_dock_excess }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_dock_raw value = 80 compare = greater_than } }
+        set_temp_variable = { tbm_dock_mid = tbm_dock_raw }
+        subtract_from_temp_variable = { tbm_dock_mid = 80 }
+        multiply_temp_variable = { tbm_dock_mid = 0.5 }
+        set_variable = { tbm_dock_score = 80 }
+        add_to_variable = { tbm_dock_score = tbm_dock_mid }
+    }
+    else = {
+        set_variable = { tbm_dock_score = tbm_dock_raw }
+    }
+    multiply_variable = { tbm_dock_score = 1.2 }
+
+    # ---- Sum economy ----
+    set_variable = { tbm_economy_score = tbm_civ_score }
+    add_to_variable = { tbm_economy_score = tbm_mil_score }
+    add_to_variable = { tbm_economy_score = tbm_dock_score }
+}
+
+###################################
+# Science Score
+# Research slots (threshold chain)
+###################################
+tbm_calculate_science_score = {
+    set_variable = { tbm_science_score = tbm_cached_science_score }
+}
+
+###################################
+# Mobilization Score
+# Battalions (variable) + manpower (threshold)
+###################################
+tbm_calculate_mobilization_score = {
+    set_variable = { tbm_mobilization_score = 0 }
+
+    # Battalions x0.1, capped at 15
+    set_temp_variable = { tbm_bat_raw = num_battalions }
+    multiply_temp_variable = { tbm_bat_raw = 0.1 }
+    clamp_temp_variable = { var = tbm_bat_raw min = 0 max = 15 }
+    add_to_variable = { tbm_mobilization_score = tbm_bat_raw }
+
+    # Deployed manpower — threshold chain
+    add_to_variable = { tbm_mobilization_score = tbm_cached_mobilization_manpower_bonus }
+}
+
+###################################
+# Resource Score
+# Threshold chains for all 6 resources
+# Total capped at 40
+###################################
+tbm_calculate_resource_score = {
+    set_variable = { tbm_resource_score = tbm_cached_total_resource_score }
+}
+
+###################################
+# War Posture Score
+# Stability, war support, at-war bonus,
+# political power gain approximation
+###################################
+tbm_calculate_war_posture_score = {
+    set_variable = { tbm_war_posture_score = tbm_cached_war_posture_stability_bonus }
+    add_to_variable = { tbm_war_posture_score = tbm_cached_war_support_bonus }
+
+    if = {
+        limit = { has_war = yes }
+        add_to_variable = { tbm_war_posture_score = 15 }
+    }
+
+    add_to_variable = { tbm_war_posture_score = tbm_cached_pp_bonus }
+}
+
+###################################
+# BRANCH COMPETENCE EFFECTS
+###################################
+
+###################################
+# Land Competence
+# mil_factories x1.0 (first 60 full, rest 0.5)
+# manpower thresholds (cap 25)
+# steel/10 (cap 15)
+# tungsten/6 (cap 10)
+# at war +10
+###################################
+tbm_calculate_land_competence = {
+    set_variable = { tbm_land_competence = 0 }
+
+    # ---- Military factories x1.0 (first 60 full, rest 0.5) ----
+    set_temp_variable = { tbm_lc_mil = num_of_military_factories }
+    if = {
+        limit = { check_variable = { var = tbm_lc_mil value = 60 compare = greater_than } }
+        set_temp_variable = { tbm_lc_mil_excess = tbm_lc_mil }
+        subtract_from_temp_variable = { tbm_lc_mil_excess = 60 }
+        multiply_temp_variable = { tbm_lc_mil_excess = 0.5 }
+        set_temp_variable = { tbm_lc_mil = 60 }
+        add_to_temp_variable = { tbm_lc_mil = tbm_lc_mil_excess }
+    }
+    add_to_variable = { tbm_land_competence = tbm_lc_mil }
+
+    add_to_variable = { tbm_land_competence = tbm_cached_land_manpower_bonus }
+
+    add_to_variable = { tbm_land_competence = tbm_cached_land_steel_bonus }
+
+    add_to_variable = { tbm_land_competence = tbm_cached_land_tungsten_bonus }
+
+    # ---- At war +10 ----
+    if = {
+        limit = { has_war = yes }
+        add_to_variable = { tbm_land_competence = 10 }
+    }
+}
+
+###################################
+# Air Competence
+# mil_factories x0.8 (first 60 full, rest 0.4)
+# aluminium/5 (cap 15)
+# rubber/5 (cap 10)
+# oil/8 (cap 10)
+# research_slots x8 (threshold chain)
+###################################
+tbm_calculate_air_competence = {
+    set_variable = { tbm_air_competence = 0 }
+
+    # ---- Military factories x0.8 (first 60 full, rest 0.4) ----
+    set_temp_variable = { tbm_ac_mil = num_of_military_factories }
+    if = {
+        limit = { check_variable = { var = tbm_ac_mil value = 60 compare = greater_than } }
+        set_temp_variable = { tbm_ac_mil_excess = tbm_ac_mil }
+        subtract_from_temp_variable = { tbm_ac_mil_excess = 60 }
+        multiply_temp_variable = { tbm_ac_mil_excess = 0.4 }
+        set_temp_variable = { tbm_ac_mil = 60 }
+        add_to_temp_variable = { tbm_ac_mil = tbm_ac_mil_excess }
+    }
+    multiply_temp_variable = { tbm_ac_mil = 0.8 }
+    add_to_variable = { tbm_air_competence = tbm_ac_mil }
+
+    add_to_variable = { tbm_air_competence = tbm_cached_air_aluminium_bonus }
+
+    add_to_variable = { tbm_air_competence = tbm_cached_air_rubber_bonus }
+
+    add_to_variable = { tbm_air_competence = tbm_cached_air_oil_bonus }
+
+    add_to_variable = { tbm_air_competence = tbm_cached_air_slots_bonus }
+}
+
+###################################
+# Naval Competence
+# dockyards x2.0 (first 30 full, rest 1.0)
+# oil/8 (cap 10)
+# steel/10 (cap 10)
+# chromium/5 (cap 10)
+# research_slots x5 (threshold chain)
+###################################
+tbm_calculate_naval_competence = {
+    set_variable = { tbm_naval_competence = 0 }
+
+    # ---- Dockyards x2.0 (first 30 full, rest 1.0) ----
+    set_temp_variable = { tbm_nc_dock = num_of_naval_factories }
+    if = {
+        limit = { check_variable = { var = tbm_nc_dock value = 30 compare = greater_than } }
+        set_temp_variable = { tbm_nc_dock_excess = tbm_nc_dock }
+        subtract_from_temp_variable = { tbm_nc_dock_excess = 30 }
+        multiply_temp_variable = { tbm_nc_dock_excess = 1.0 }
+        set_temp_variable = { tbm_nc_dock = 30 }
+        add_to_temp_variable = { tbm_nc_dock = tbm_nc_dock_excess }
+    }
+    multiply_temp_variable = { tbm_nc_dock = 2.0 }
+    add_to_variable = { tbm_naval_competence = tbm_nc_dock }
+
+    add_to_variable = { tbm_naval_competence = tbm_cached_naval_oil_bonus }
+
+    add_to_variable = { tbm_naval_competence = tbm_cached_naval_steel_bonus }
+
+    add_to_variable = { tbm_naval_competence = tbm_cached_naval_chromium_bonus }
+
+    add_to_variable = { tbm_naval_competence = tbm_cached_naval_slots_bonus }
+}
+
+###################################
+# Industry Competence
+# civ_factories x0.8 (first 60 full, rest 0.4)
+# research_slots x12 (threshold chain)
+# stability x0.3 (max 30, threshold chain)
+# resource_breadth_bonus (+3 per resource
+#   with 8+ access, max +18)
+###################################
+tbm_calculate_industry_competence = {
+    set_variable = { tbm_industry_competence = 0 }
+
+    # ---- Civilian factories x0.8 (first 60 full, rest 0.4) ----
+    set_temp_variable = { tbm_ic_civ = num_of_civilian_factories }
+    if = {
+        limit = { check_variable = { var = tbm_ic_civ value = 60 compare = greater_than } }
+        set_temp_variable = { tbm_ic_civ_excess = tbm_ic_civ }
+        subtract_from_temp_variable = { tbm_ic_civ_excess = 60 }
+        multiply_temp_variable = { tbm_ic_civ_excess = 0.4 }
+        set_temp_variable = { tbm_ic_civ = 60 }
+        add_to_temp_variable = { tbm_ic_civ = tbm_ic_civ_excess }
+    }
+    multiply_temp_variable = { tbm_ic_civ = 0.8 }
+    add_to_variable = { tbm_industry_competence = tbm_ic_civ }
+
+    # ---- Research slots x12 (threshold chain) ----
+    add_to_variable = { tbm_industry_competence = tbm_cached_industry_slots_bonus }
+
+    # ---- Stability x0.3 (max 30) — threshold chain at 0.1 intervals ----
+    add_to_variable = { tbm_industry_competence = tbm_cached_industry_stability_bonus }
+
+    # ---- Resource breadth bonus (+3 per resource with 8+ access, max +18) ----
+    add_to_variable = { tbm_industry_competence = tbm_cached_industry_breadth_bonus }
+}
+
+###################################
+# Structural branch bands
+# Persistent shared structure used by scoring, category gates,
+# and dashboard blocker text.
+###################################
+tbm_define_structural_bands = {
+    set_variable = { tbm_struct_total_factories = num_of_civilian_factories }
+    add_to_variable = { tbm_struct_total_factories = num_of_military_factories }
+    add_to_variable = { tbm_struct_total_factories = num_of_naval_factories }
+
+    set_variable = { tbm_struct_land_band = 0 }
+    set_variable = { tbm_struct_air_band = 0 }
+    set_variable = { tbm_struct_naval_band = 0 }
+    set_variable = { tbm_struct_industry_band = 0 }
+
+    set_variable = { tbm_struct_air_resource_total = tbm_cached_air_aluminium_bonus }
+    add_to_variable = { tbm_struct_air_resource_total = tbm_cached_air_rubber_bonus }
+    add_to_variable = { tbm_struct_air_resource_total = tbm_cached_air_oil_bonus }
+
+    set_variable = { tbm_struct_naval_resource_total = tbm_cached_naval_oil_bonus }
+    add_to_variable = { tbm_struct_naval_resource_total = tbm_cached_naval_steel_bonus }
+    add_to_variable = { tbm_struct_naval_resource_total = tbm_cached_naval_chromium_bonus }
+
+    set_variable = { tbm_struct_battalion_count = num_battalions }
+
+    if = {
+        limit = {
+            num_of_military_factories > 2
+            check_variable = { var = tbm_struct_battalion_count value = 20 compare = greater_than }
+        }
+        set_variable = { tbm_struct_land_band = 1 }
+    }
+    if = {
+        limit = {
+            num_of_military_factories > 7
+            check_variable = { var = tbm_struct_battalion_count value = 60 compare = greater_than }
+        }
+        set_variable = { tbm_struct_land_band = 2 }
+    }
+    if = {
+        limit = {
+            num_of_military_factories > 15
+            check_variable = { var = tbm_struct_battalion_count value = 140 compare = greater_than }
+        }
+        set_variable = { tbm_struct_land_band = 3 }
+    }
+    if = {
+        limit = {
+            num_of_military_factories > 31
+            check_variable = { var = tbm_struct_battalion_count value = 260 compare = greater_than }
+        }
+        set_variable = { tbm_struct_land_band = 4 }
+    }
+
+    if = {
+        limit = {
+            num_of_military_factories > 4
+            amount_research_slots > 1
+            check_variable = { var = tbm_struct_air_resource_total value = 2 compare = greater_than }
+        }
+        set_variable = { tbm_struct_air_band = 1 }
+    }
+    if = {
+        limit = {
+            num_of_military_factories > 10
+            amount_research_slots > 2
+            check_variable = { var = tbm_struct_air_resource_total value = 7 compare = greater_than }
+        }
+        set_variable = { tbm_struct_air_band = 2 }
+    }
+    if = {
+        limit = {
+            num_of_military_factories > 20
+            amount_research_slots > 3
+            check_variable = { var = tbm_struct_air_resource_total value = 14 compare = greater_than }
+        }
+        set_variable = { tbm_struct_air_band = 3 }
+    }
+    if = {
+        limit = {
+            num_of_military_factories > 36
+            amount_research_slots > 4
+            check_variable = { var = tbm_struct_air_resource_total value = 22 compare = greater_than }
+        }
+        set_variable = { tbm_struct_air_band = 4 }
+    }
+
+    if = {
+        limit = {
+            num_of_naval_factories > 0
+            amount_research_slots > 1
+            check_variable = { var = tbm_struct_naval_resource_total value = 1 compare = greater_than }
+        }
+        set_variable = { tbm_struct_naval_band = 1 }
+    }
+    if = {
+        limit = {
+            num_of_naval_factories > 4
+            amount_research_slots > 2
+            check_variable = { var = tbm_struct_naval_resource_total value = 6 compare = greater_than }
+        }
+        set_variable = { tbm_struct_naval_band = 2 }
+    }
+    if = {
+        limit = {
+            num_of_naval_factories > 10
+            amount_research_slots > 3
+            check_variable = { var = tbm_struct_naval_resource_total value = 12 compare = greater_than }
+        }
+        set_variable = { tbm_struct_naval_band = 3 }
+    }
+    if = {
+        limit = {
+            num_of_naval_factories > 20
+            amount_research_slots > 4
+            check_variable = { var = tbm_struct_naval_resource_total value = 20 compare = greater_than }
+        }
+        set_variable = { tbm_struct_naval_band = 4 }
+    }
+
+    if = {
+        limit = {
+            num_of_civilian_factories > 5
+            check_variable = { var = tbm_struct_total_factories value = 10 compare = greater_than }
+            amount_research_slots > 1
+        }
+        set_variable = { tbm_struct_industry_band = 1 }
+    }
+    if = {
+        limit = {
+            num_of_civilian_factories > 12
+            check_variable = { var = tbm_struct_total_factories value = 24 compare = greater_than }
+            amount_research_slots > 2
+        }
+        set_variable = { tbm_struct_industry_band = 2 }
+    }
+    if = {
+        limit = {
+            num_of_civilian_factories > 24
+            check_variable = { var = tbm_struct_total_factories value = 45 compare = greater_than }
+            amount_research_slots > 3
+        }
+        set_variable = { tbm_struct_industry_band = 3 }
+    }
+    if = {
+        limit = {
+            num_of_civilian_factories > 45
+            check_variable = { var = tbm_struct_total_factories value = 80 compare = greater_than }
+            amount_research_slots > 4
+        }
+        set_variable = { tbm_struct_industry_band = 4 }
+    }
+}
+
+###################################
+# Structural blockers
+# 0 none, 1 low mil, 2 small army, 3 low slots,
+# 4 weak resources, 5 no dockyards, 6 low dockyards,
+# 7 low civ, 8 small base
+###################################
+tbm_define_structural_blockers = {
+    set_variable = { tbm_struct_land_blocker = 0 }
+    set_variable = { tbm_struct_air_blocker = 0 }
+    set_variable = { tbm_struct_naval_blocker = 0 }
+    set_variable = { tbm_struct_industry_blocker = 0 }
+
+    if = {
+        limit = {
+            check_variable = { var = tbm_struct_land_band value = 0 compare = equals }
+            NOT = { num_of_military_factories > 2 }
+        }
+        set_variable = { tbm_struct_land_blocker = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_land_band value = 0 compare = equals } }
+        set_variable = { tbm_struct_land_blocker = 2 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_land_band value = 1 compare = equals }
+            NOT = { num_of_military_factories > 7 }
+        }
+        set_variable = { tbm_struct_land_blocker = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_land_band value = 1 compare = equals } }
+        set_variable = { tbm_struct_land_blocker = 2 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_land_band value = 2 compare = equals }
+            NOT = { num_of_military_factories > 15 }
+        }
+        set_variable = { tbm_struct_land_blocker = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_land_band value = 2 compare = equals } }
+        set_variable = { tbm_struct_land_blocker = 2 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_land_band value = 3 compare = equals }
+            NOT = { num_of_military_factories > 31 }
+        }
+        set_variable = { tbm_struct_land_blocker = 1 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_land_band value = 3 compare = equals } }
+        set_variable = { tbm_struct_land_blocker = 2 }
+    }
+
+    if = {
+        limit = {
+            check_variable = { var = tbm_struct_air_band value = 0 compare = equals }
+            NOT = { num_of_military_factories > 4 }
+        }
+        set_variable = { tbm_struct_air_blocker = 1 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_air_band value = 0 compare = equals }
+            NOT = { amount_research_slots > 1 }
+        }
+        set_variable = { tbm_struct_air_blocker = 3 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_air_band value = 0 compare = equals } }
+        set_variable = { tbm_struct_air_blocker = 4 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_air_band value = 1 compare = equals }
+            NOT = { num_of_military_factories > 10 }
+        }
+        set_variable = { tbm_struct_air_blocker = 1 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_air_band value = 1 compare = equals }
+            NOT = { amount_research_slots > 2 }
+        }
+        set_variable = { tbm_struct_air_blocker = 3 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_air_band value = 1 compare = equals } }
+        set_variable = { tbm_struct_air_blocker = 4 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_air_band value = 2 compare = equals }
+            NOT = { num_of_military_factories > 20 }
+        }
+        set_variable = { tbm_struct_air_blocker = 1 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_air_band value = 2 compare = equals }
+            NOT = { amount_research_slots > 3 }
+        }
+        set_variable = { tbm_struct_air_blocker = 3 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_air_band value = 2 compare = equals } }
+        set_variable = { tbm_struct_air_blocker = 4 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_air_band value = 3 compare = equals }
+            NOT = { num_of_military_factories > 36 }
+        }
+        set_variable = { tbm_struct_air_blocker = 1 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_air_band value = 3 compare = equals }
+            NOT = { amount_research_slots > 4 }
+        }
+        set_variable = { tbm_struct_air_blocker = 3 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_air_band value = 3 compare = equals } }
+        set_variable = { tbm_struct_air_blocker = 4 }
+    }
+
+    if = {
+        limit = { NOT = { num_of_naval_factories > 0 } }
+        set_variable = { tbm_struct_naval_blocker = 5 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_naval_band value = 0 compare = equals }
+            NOT = { amount_research_slots > 1 }
+        }
+        set_variable = { tbm_struct_naval_blocker = 3 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_naval_band value = 0 compare = equals } }
+        set_variable = { tbm_struct_naval_blocker = 4 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_naval_band value = 1 compare = equals }
+            NOT = { num_of_naval_factories > 4 }
+        }
+        set_variable = { tbm_struct_naval_blocker = 6 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_naval_band value = 1 compare = equals }
+            NOT = { amount_research_slots > 2 }
+        }
+        set_variable = { tbm_struct_naval_blocker = 3 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_naval_band value = 1 compare = equals } }
+        set_variable = { tbm_struct_naval_blocker = 4 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_naval_band value = 2 compare = equals }
+            NOT = { num_of_naval_factories > 10 }
+        }
+        set_variable = { tbm_struct_naval_blocker = 6 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_naval_band value = 2 compare = equals }
+            NOT = { amount_research_slots > 3 }
+        }
+        set_variable = { tbm_struct_naval_blocker = 3 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_naval_band value = 2 compare = equals } }
+        set_variable = { tbm_struct_naval_blocker = 4 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_naval_band value = 3 compare = equals }
+            NOT = { num_of_naval_factories > 20 }
+        }
+        set_variable = { tbm_struct_naval_blocker = 6 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_naval_band value = 3 compare = equals }
+            NOT = { amount_research_slots > 4 }
+        }
+        set_variable = { tbm_struct_naval_blocker = 3 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_naval_band value = 3 compare = equals } }
+        set_variable = { tbm_struct_naval_blocker = 4 }
+    }
+
+    if = {
+        limit = {
+            check_variable = { var = tbm_struct_industry_band value = 0 compare = equals }
+            NOT = { num_of_civilian_factories > 5 }
+        }
+        set_variable = { tbm_struct_industry_blocker = 7 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_industry_band value = 0 compare = equals }
+            check_variable = { var = tbm_struct_total_factories value = 10 compare = less_than_or_equals }
+        }
+        set_variable = { tbm_struct_industry_blocker = 8 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_industry_band value = 0 compare = equals } }
+        set_variable = { tbm_struct_industry_blocker = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_industry_band value = 1 compare = equals }
+            NOT = { num_of_civilian_factories > 12 }
+        }
+        set_variable = { tbm_struct_industry_blocker = 7 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_industry_band value = 1 compare = equals }
+            check_variable = { var = tbm_struct_total_factories value = 24 compare = less_than_or_equals }
+        }
+        set_variable = { tbm_struct_industry_blocker = 8 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_industry_band value = 1 compare = equals } }
+        set_variable = { tbm_struct_industry_blocker = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_industry_band value = 2 compare = equals }
+            NOT = { num_of_civilian_factories > 24 }
+        }
+        set_variable = { tbm_struct_industry_blocker = 7 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_industry_band value = 2 compare = equals }
+            check_variable = { var = tbm_struct_total_factories value = 45 compare = less_than_or_equals }
+        }
+        set_variable = { tbm_struct_industry_blocker = 8 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_industry_band value = 2 compare = equals } }
+        set_variable = { tbm_struct_industry_blocker = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_industry_band value = 3 compare = equals }
+            NOT = { num_of_civilian_factories > 45 }
+        }
+        set_variable = { tbm_struct_industry_blocker = 7 }
+    }
+    else_if = {
+        limit = {
+            check_variable = { var = tbm_struct_industry_band value = 3 compare = equals }
+            check_variable = { var = tbm_struct_total_factories value = 80 compare = less_than_or_equals }
+        }
+        set_variable = { tbm_struct_industry_blocker = 8 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_industry_band value = 3 compare = equals } }
+        set_variable = { tbm_struct_industry_blocker = 3 }
+    }
+}
+
+###################################
+# Structural competence caps
+###################################
+tbm_apply_structural_competence_caps = {
+    if = {
+        limit = { check_variable = { var = tbm_struct_land_band value = 0 compare = equals } }
+        clamp_variable = { var = tbm_land_competence min = 0 max = 14 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_land_band value = 1 compare = equals } }
+        clamp_variable = { var = tbm_land_competence min = 0 max = 34 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_land_band value = 2 compare = equals } }
+        clamp_variable = { var = tbm_land_competence min = 0 max = 59 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_land_band value = 3 compare = equals } }
+        clamp_variable = { var = tbm_land_competence min = 0 max = 84 }
+    }
+
+    if = {
+        limit = { check_variable = { var = tbm_struct_air_band value = 0 compare = equals } }
+        clamp_variable = { var = tbm_air_competence min = 0 max = 14 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_air_band value = 1 compare = equals } }
+        clamp_variable = { var = tbm_air_competence min = 0 max = 34 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_air_band value = 2 compare = equals } }
+        clamp_variable = { var = tbm_air_competence min = 0 max = 59 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_air_band value = 3 compare = equals } }
+        clamp_variable = { var = tbm_air_competence min = 0 max = 84 }
+    }
+
+    if = {
+        limit = { check_variable = { var = tbm_struct_naval_blocker value = 5 compare = equals } }
+        set_variable = { tbm_naval_competence = 0 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_naval_band value = 0 compare = equals } }
+        clamp_variable = { var = tbm_naval_competence min = 0 max = 14 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_naval_band value = 1 compare = equals } }
+        clamp_variable = { var = tbm_naval_competence min = 0 max = 34 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_naval_band value = 2 compare = equals } }
+        clamp_variable = { var = tbm_naval_competence min = 0 max = 59 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_naval_band value = 3 compare = equals } }
+        clamp_variable = { var = tbm_naval_competence min = 0 max = 84 }
+    }
+
+    if = {
+        limit = { check_variable = { var = tbm_struct_industry_band value = 0 compare = equals } }
+        clamp_variable = { var = tbm_industry_competence min = 0 max = 14 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_industry_band value = 1 compare = equals } }
+        clamp_variable = { var = tbm_industry_competence min = 0 max = 34 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_industry_band value = 2 compare = equals } }
+        clamp_variable = { var = tbm_industry_competence min = 0 max = 59 }
+    }
+    else_if = {
+        limit = { check_variable = { var = tbm_struct_industry_band value = 3 compare = equals } }
+        clamp_variable = { var = tbm_industry_competence min = 0 max = 84 }
+    }
+}
+
+###################################
+# Structural power ceiling
+###################################
+tbm_apply_structural_power_ceiling = {
+    set_variable = { tbm_struct_power_stage = 0 }
+    set_variable = { tbm_structural_power_ceiling = 35 }
+
+    if = {
+        limit = {
+            check_variable = { var = tbm_struct_total_factories value = 11 compare = greater_than }
+            num_of_civilian_factories > 5
+            num_of_military_factories > 2
+            amount_research_slots > 1
+        }
+        set_variable = { tbm_struct_power_stage = 1 }
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_struct_total_factories value = 23 compare = greater_than }
+            num_of_civilian_factories > 12
+            num_of_military_factories > 6
+            amount_research_slots > 2
+        }
+        set_variable = { tbm_struct_power_stage = 2 }
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_struct_total_factories value = 44 compare = greater_than }
+            num_of_civilian_factories > 24
+            num_of_military_factories > 12
+            amount_research_slots > 3
+        }
+        set_variable = { tbm_struct_power_stage = 3 }
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_struct_total_factories value = 79 compare = greater_than }
+            num_of_civilian_factories > 45
+            num_of_military_factories > 24
+            amount_research_slots > 4
+        }
+        set_variable = { tbm_struct_power_stage = 4 }
+    }
+    if = {
+        limit = {
+            check_variable = { var = tbm_struct_total_factories value = 119 compare = greater_than }
+            num_of_civilian_factories > 55
+            num_of_military_factories > 35
+            amount_research_slots > 4
+        }
+        set_variable = { tbm_struct_power_stage = 5 }
+    }
+
+    if = {
+        limit = {
+            OR = {
+                has_game_rule = { rule = tbm_auto_research_intensity option = TBM_REALISTIC }
+                has_game_rule = { rule = tbm_auto_research_intensity option = TBM_HISTORICAL }
+            }
+        }
+        if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 5 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 310 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 4 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 235 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 3 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 185 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 2 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 125 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 1 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 70 }
+        }
+    }
+    else_if = {
+        limit = { has_game_rule = { rule = tbm_auto_research_intensity option = TBM_BALANCED } }
+        if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 5 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 325 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 4 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 260 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 3 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 205 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 2 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 145 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 1 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 85 }
+        }
+        else = {
+            set_variable = { tbm_structural_power_ceiling = 45 }
+        }
+    }
+    else = {
+        if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 5 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 360 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 4 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 295 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 3 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 235 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 2 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 165 }
+        }
+        else_if = {
+            limit = { check_variable = { var = tbm_struct_power_stage value = 1 compare = equals } }
+            set_variable = { tbm_structural_power_ceiling = 100 }
+        }
+        else = {
+            set_variable = { tbm_structural_power_ceiling = 55 }
+        }
+    }
+
+    if = {
+        limit = { check_variable = { var = tbm_global_power value = tbm_structural_power_ceiling compare = greater_than } }
+        set_variable = { tbm_global_power = tbm_structural_power_ceiling }
+    }
+}
+
+###################################
+# Shared structural runtime entrypoint
+###################################
+tbm_apply_structural_capability_rules = {
+    tbm_define_structural_bands = yes
+    tbm_define_structural_blockers = yes
+    tbm_apply_structural_competence_caps = yes
+    tbm_apply_structural_power_ceiling = yes
+}
+

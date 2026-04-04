@@ -1,0 +1,1750 @@
+ARMS RACE MECHANICS -- TECH LIST GENERATION REPORT
+============================================================
+
+Total techs parsed:    913
+Successfully mapped:   768
+Unmapped (unknown):    86
+
+BRANCH SUMMARY
+----------------------------------------
+  air                             112 techs
+  industry_electronics            185 techs
+  land                            320 techs
+  naval                           151 techs
+
+CATEGORY DETAIL
+------------------------------------------------------------
+
+  [air / cas] -- 14 techs
+    1922  early_bombs
+          [from: extended_tech_tree_1960]
+    1936  CAS1
+    1936  cv_CAS1
+    1936  armor_piercing_bombs
+          [from: extended_tech_tree_1960]
+    1936  air_torpedoe_1
+          [from: extended_tech_tree_1960]
+    1940  CAS2
+    1940  cv_CAS2
+    1940  heavy_bombs
+          [from: extended_tech_tree_1960]
+    1940  air_torpedoe_2
+          [from: extended_tech_tree_1960]
+    1944  CAS3
+    1944  cv_CAS3
+    1944  air_torpedoe_3
+          [from: extended_tech_tree_1960]
+    1947  imp_bomb_rack
+          [from: extended_tech_tree_1960]
+    1950  bomb_pods
+          [from: extended_tech_tree_1960]
+
+  [air / fighters] -- 43 techs
+    1922  aa_lmg
+          [from: extended_tech_tree_1960]
+    1922  engines_1
+          [from: extended_tech_tree_1960]
+    1926  iw_small_airframe
+          [from: extended_tech_tree_1960]
+    1933  early_fighter
+    1933  cv_early_fighter
+    1936  fighter1
+    1936  cv_fighter1
+    1936  scout_plane1
+    1936  basic_small_airframe
+          [from: extended_tech_tree_1960]
+    1936  survivability_studies
+          [from: extended_tech_tree_1960]
+    1936  aa_hmg
+          [from: extended_tech_tree_1960]
+    1936  aa_cannon_1
+          [from: extended_tech_tree_1960]
+    1936  engines_2
+          [from: extended_tech_tree_1960]
+    1936  range_improvements
+          [from: extended_tech_tree_1960]
+    1940  fighter2
+    1940  cv_fighter2
+    1940  scout_plane2
+    1940  improved_small_airframe
+          [from: extended_tech_tree_1960]
+    1940  aa_cannon_2
+          [from: extended_tech_tree_1960]
+    1940  engines_3
+          [from: extended_tech_tree_1960]
+    1943  advanced_small_airframe
+          [from: extended_tech_tree_1960]
+    1943  rocket_airframe_tech_1
+          [from: extended_tech_tree_1960]
+    1943  aa_hmg_2
+          [from: extended_tech_tree_1960]
+    1943  aa_cannon_3
+          [from: extended_tech_tree_1960]
+    1943  engines_4
+          [from: extended_tech_tree_1960]
+    1944  fighter3
+    1944  cv_fighter3
+    1944  rocket_airframe_tech_2
+          [from: extended_tech_tree_1960]
+    1945  jet_fighter1
+    1945  modern_small_airframe
+          [from: extended_tech_tree_1960]
+    1947  rocket_airframe_tech_3
+          [from: extended_tech_tree_1960]
+    1947  aa_cannon_4
+          [from: extended_tech_tree_1960]
+    1947  modern_small_airframe_2
+          [from: extended_tech_tree_1960]
+    1950  jet_fighter2
+    1950  supersonic_fighter1
+    1950  modern_small_airframe_3
+          [from: extended_tech_tree_1960]
+    1950  rocket_airframe_tech_4
+          [from: extended_tech_tree_1960]
+    1950  supersonic_small_airframe
+          [from: extended_tech_tree_1960]
+    1955  modern_small_airframe_4
+          [from: extended_tech_tree_1960]
+    1955  rocket_airframe_tech_5
+          [from: extended_tech_tree_1960]
+    1960  modern_small_airframe_5
+          [from: extended_tech_tree_1960]
+    1960  jump_jet_1
+          [from: extended_tech_tree_1960]
+    1960  aa_cannon_5
+          [from: extended_tech_tree_1960]
+
+  [air / heavy_fighters] -- 12 techs
+    1926  iw_medium_airframe
+          [from: extended_tech_tree_1960]
+    1936  heavy_fighter1
+    1936  basic_medium_airframe
+          [from: extended_tech_tree_1960]
+    1940  heavy_fighter2
+    1940  improved_medium_airframe
+          [from: extended_tech_tree_1960]
+    1943  advanced_medium_airframe
+          [from: extended_tech_tree_1960]
+    1944  heavy_fighter3
+    1945  modern_medium_airframe
+          [from: extended_tech_tree_1960]
+    1947  modern_medium_airframe_2
+          [from: extended_tech_tree_1960]
+    1950  modern_medium_airframe_3
+          [from: extended_tech_tree_1960]
+    1955  modern_medium_airframe_4
+          [from: extended_tech_tree_1960]
+    1960  modern_medium_airframe_5
+          [from: extended_tech_tree_1960]
+
+  [air / naval_bombers] -- 6 techs
+    1936  naval_bomber1
+    1936  cv_naval_bomber1
+    1940  naval_bomber2
+    1940  cv_naval_bomber2
+    1944  naval_bomber3
+    1944  cv_naval_bomber3
+
+  [air / strategic_bombers] -- 21 techs
+    1926  iw_large_airframe
+          [from: extended_tech_tree_1960]
+    1936  strategic_bomber1
+    1936  basic_large_airframe
+          [from: extended_tech_tree_1960]
+    1936  mothership_aircraft_tech_0
+          [from: extended_tech_tree_1960]
+    1938  reinforced_wings_mothership
+          [from: extended_tech_tree_1960]
+    1940  strategic_bomber2
+    1940  improved_large_airframe
+          [from: extended_tech_tree_1960]
+    1942  mothership_aircraft_tech_1
+          [from: extended_tech_tree_1960]
+    1943  advanced_large_airframe
+          [from: extended_tech_tree_1960]
+    1944  strategic_bomber3
+    1944  miniature_fighters
+          [from: extended_tech_tree_1960]
+    1945  modern_large_airframe
+          [from: extended_tech_tree_1960]
+    1946  mothership_aircraft_tech_2
+          [from: extended_tech_tree_1960]
+    1947  modern_large_airframe_2
+          [from: extended_tech_tree_1960]
+    1949  advanced_parasite_fighter
+          [from: extended_tech_tree_1960]
+    1950  jet_strategic_bomber1
+    1950  modern_large_airframe_3
+          [from: extended_tech_tree_1960]
+    1952  mothership_aircraft_tech_3
+          [from: extended_tech_tree_1960]
+    1955  modern_large_airframe_4
+          [from: extended_tech_tree_1960]
+    1957  aerial_hangars
+          [from: extended_tech_tree_1960]
+    1960  modern_large_airframe_5
+          [from: extended_tech_tree_1960]
+
+  [air / tactical_bombers] -- 6 techs
+    1933  early_bomber
+    1936  tactical_bomber1
+    1940  tactical_bomber2
+    1944  tactical_bomber3
+    1945  jet_tactical_bomber1
+    1950  jet_tactical_bomber2
+
+  [air / transport] -- 10 techs
+    1933  early_transport_plane
+    1933  bba_early_transport_plane
+          [from: extended_tech_tree_1960]
+    1936  bba_improved_transport_plane
+          [from: extended_tech_tree_1960]
+    1940  improved_transport_plane
+    1942  bba_strategic_airlifter
+          [from: extended_tech_tree_1960]
+    1945  transport_plane_4
+          [from: extended_tech_tree_1960]
+    1948  strategic_airlifter
+    1950  transport_plane_5
+          [from: extended_tech_tree_1960]
+    1955  transport_plane_6
+          [from: extended_tech_tree_1960]
+    1960  transport_plane_7
+          [from: extended_tech_tree_1960]
+
+  [industry_electronics / electronics] -- 25 techs
+    1936  electronic_mechanical_engineering
+          [from: extended_tech_tree_1960]
+    1936  radio
+          [from: extended_tech_tree_1960]
+    1936  mechanical_computing
+          [from: extended_tech_tree_1960]
+    1936  basic_fire_control_system
+          [from: extended_tech_tree_1960]
+    1936  improved_fire_control_system
+          [from: extended_tech_tree_1960]
+    1936  advanced_fire_control_system
+          [from: extended_tech_tree_1960]
+    1938  improved_radio
+          [from: extended_tech_tree_1960]
+    1938  computing_machine
+          [from: extended_tech_tree_1960]
+    1938  basic_encryption
+          [from: extended_tech_tree_1960]
+    1938  basic_decryption
+          [from: extended_tech_tree_1960]
+    1940  improved_computing_machine
+          [from: extended_tech_tree_1960]
+    1940  improved_encryption
+          [from: extended_tech_tree_1960]
+    1940  improved_decryption
+          [from: extended_tech_tree_1960]
+    1941  advanced_radio
+          [from: extended_tech_tree_1960]
+    1942  advanced_computing_machine
+          [from: extended_tech_tree_1960]
+    1942  advanced_encryption
+          [from: extended_tech_tree_1960]
+    1942  advanced_decryption
+          [from: extended_tech_tree_1960]
+    1944  fire_control_radar
+          [from: extended_tech_tree_1960]
+    1944  anti_ship_missile_1
+          [from: extended_tech_tree_1960]
+    1947  postwar_computing_tech1
+          [from: extended_tech_tree_1960]
+    1950  fire_control_radar_1
+          [from: extended_tech_tree_1960]
+    1950  postwar_computing_tech2
+          [from: extended_tech_tree_1960]
+    1955  postwar_computing_tech3
+          [from: extended_tech_tree_1960]
+    1960  fire_control_radar_2
+          [from: extended_tech_tree_1960]
+    1960  postwar_computing_tech4
+          [from: extended_tech_tree_1960]
+
+  [industry_electronics / industry] -- 85 techs
+    1936  basic_fortification_tech
+          [from: extended_tech_tree_1960]
+    1936  coastal_fort_tech_1
+          [from: extended_tech_tree_1960]
+    1936  basic_machine_tools
+          [from: extended_tech_tree_1960]
+    1936  concentrated_industry
+          [from: extended_tech_tree_1960]
+    1936  dispersed_industry
+          [from: extended_tech_tree_1960]
+    1936  fuel_silos
+          [from: extended_tech_tree_1960]
+    1936  fuel_refining
+          [from: extended_tech_tree_1960]
+    1936  synth_oil_experiments
+          [from: extended_tech_tree_1960]
+    1936  construction1
+          [from: extended_tech_tree_1960]
+    1936  excavation1
+          [from: extended_tech_tree_1960]
+    1936  agriculture_1
+          [from: extended_tech_tree_1960]
+    1937  improved_machine_tools
+          [from: extended_tech_tree_1960]
+    1937  improved_equipment_conversion
+          [from: extended_tech_tree_1960]
+    1937  concentrated_industry2
+          [from: extended_tech_tree_1960]
+    1937  dispersed_industry2
+          [from: extended_tech_tree_1960]
+    1937  fuel_refining2
+          [from: extended_tech_tree_1960]
+    1937  oil_processing
+          [from: extended_tech_tree_1960]
+    1937  rubber_processing
+          [from: extended_tech_tree_1960]
+    1937  construction2
+          [from: extended_tech_tree_1960]
+    1937  excavation2
+          [from: extended_tech_tree_1960]
+    1938  land_fort_tech_1
+          [from: extended_tech_tree_1960]
+    1939  advanced_machine_tools
+          [from: extended_tech_tree_1960]
+    1939  advanced_equipment_conversion
+          [from: extended_tech_tree_1960]
+    1939  concentrated_industry3
+          [from: extended_tech_tree_1960]
+    1939  dispersed_industry3
+          [from: extended_tech_tree_1960]
+    1939  fuel_refining3
+          [from: extended_tech_tree_1960]
+    1939  improved_oil_processing
+          [from: extended_tech_tree_1960]
+    1939  improved_rubber_processing
+          [from: extended_tech_tree_1960]
+    1939  construction3
+          [from: extended_tech_tree_1960]
+    1939  excavation3
+          [from: extended_tech_tree_1960]
+    1940  land_fort_tech_2
+          [from: extended_tech_tree_1960]
+    1940  coastal_fort_tech_2
+          [from: extended_tech_tree_1960]
+    1941  assembly_line_production
+          [from: extended_tech_tree_1960]
+    1941  concentrated_industry4
+          [from: extended_tech_tree_1960]
+    1941  dispersed_industry4
+          [from: extended_tech_tree_1960]
+    1941  fuel_refining4
+          [from: extended_tech_tree_1960]
+    1941  advanced_oil_processing
+          [from: extended_tech_tree_1960]
+    1941  advanced_rubber_processing
+          [from: extended_tech_tree_1960]
+    1941  construction4
+          [from: extended_tech_tree_1960]
+    1941  excavation4
+          [from: extended_tech_tree_1960]
+    1941  agriculture_2
+          [from: extended_tech_tree_1960]
+    1943  flexible_line
+          [from: extended_tech_tree_1960]
+    1943  streamlined_line
+          [from: extended_tech_tree_1960]
+    1943  concentrated_industry5
+          [from: extended_tech_tree_1960]
+    1943  dispersed_industry5
+          [from: extended_tech_tree_1960]
+    1943  fuel_refining5
+          [from: extended_tech_tree_1960]
+    1943  modern_oil_processing
+          [from: extended_tech_tree_1960]
+    1943  modern_rubber_processing
+          [from: extended_tech_tree_1960]
+    1943  construction5
+          [from: extended_tech_tree_1960]
+    1943  excavation5
+          [from: extended_tech_tree_1960]
+    1945  fuel_refining6
+          [from: extended_tech_tree_1960]
+    1945  oil_processing_1945
+          [from: extended_tech_tree_1960]
+    1945  rubber_processing_1945
+          [from: extended_tech_tree_1960]
+    1945  construction6
+          [from: extended_tech_tree_1960]
+    1945  excavation6
+          [from: extended_tech_tree_1960]
+    1945  industry6
+          [from: extended_tech_tree_1960]
+    1945  assembly_line_6
+          [from: extended_tech_tree_1960]
+    1945  plastics_1
+          [from: extended_tech_tree_1960]
+    1946  agriculture_3
+          [from: extended_tech_tree_1960]
+    1950  fuel_refining7
+          [from: extended_tech_tree_1960]
+    1950  oil_processing_1950
+          [from: extended_tech_tree_1960]
+    1950  rubber_processing_1950
+          [from: extended_tech_tree_1960]
+    1950  construction7
+          [from: extended_tech_tree_1960]
+    1950  excavation7
+          [from: extended_tech_tree_1960]
+    1950  industry7
+          [from: extended_tech_tree_1960]
+    1950  assembly_line_7
+          [from: extended_tech_tree_1960]
+    1950  plastics_2
+          [from: extended_tech_tree_1960]
+    1951  agriculture_4
+          [from: extended_tech_tree_1960]
+    1955  fuel_refining8
+          [from: extended_tech_tree_1960]
+    1955  oil_processing_1955
+          [from: extended_tech_tree_1960]
+    1955  rubber_processing_1955
+          [from: extended_tech_tree_1960]
+    1955  construction8
+          [from: extended_tech_tree_1960]
+    1955  excavation8
+          [from: extended_tech_tree_1960]
+    1955  industry8
+          [from: extended_tech_tree_1960]
+    1955  assembly_line_8
+          [from: extended_tech_tree_1960]
+    1955  plastics_3
+          [from: extended_tech_tree_1960]
+    1956  agriculture_5
+          [from: extended_tech_tree_1960]
+    1960  fuel_refining9
+          [from: extended_tech_tree_1960]
+    1960  oil_processing_1960
+          [from: extended_tech_tree_1960]
+    1960  rubber_processing_1960
+          [from: extended_tech_tree_1960]
+    1960  construction9
+          [from: extended_tech_tree_1960]
+    1960  excavation9
+          [from: extended_tech_tree_1960]
+    1960  assembly_line_9
+          [from: extended_tech_tree_1960]
+    1960  plastics_4
+          [from: extended_tech_tree_1960]
+    1961  agriculture_6
+          [from: extended_tech_tree_1960]
+
+  [industry_electronics / nuclear] -- 6 techs
+    1940  atomic_research
+          [from: extended_tech_tree_1960]
+    1943  isotope_separation_centrifugal
+    1943  nuclear_reactor
+          [from: extended_tech_tree_1960]
+    1943  nuclear_reactor_heavy_water
+          [from: extended_tech_tree_1960]
+    1945  nukes
+          [from: extended_tech_tree_1960]
+    1950  thermonuclear_bombs
+
+  [industry_electronics / radar] -- 14 techs
+    1936  radio_detection
+          [from: extended_tech_tree_1960]
+    1938  cavity_magnatron
+          [from: extended_tech_tree_1960]
+    1940  centimetric_radar
+          [from: extended_tech_tree_1960]
+    1941  phased_array
+          [from: extended_tech_tree_1960]
+    1942  monopulse_radar
+          [from: extended_tech_tree_1960]
+    1944  postwar_radar_tech_1
+          [from: extended_tech_tree_1960]
+    1947  postwar_radar_tech_2
+          [from: extended_tech_tree_1960]
+    1950  postwar_radar_tech_3
+          [from: extended_tech_tree_1960]
+    1950  air_air_missile_2
+          [from: extended_tech_tree_1960]
+    1955  naval_chaff
+          [from: extended_tech_tree_1960]
+    1955  postwar_radar_tech_4
+          [from: extended_tech_tree_1960]
+    1955  air_air_missile_3
+          [from: extended_tech_tree_1960]
+    1960  postwar_radar_tech_5
+          [from: extended_tech_tree_1960]
+    1960  air_air_missile_4
+          [from: extended_tech_tree_1960]
+
+  [industry_electronics / rockets] -- 55 techs
+    1936  hardened_silo
+          [from: extended_tech_tree_1960]
+    1939  motorized_rocket_unit
+          [from: extended_tech_tree_1960]
+    1940  rocket_artillery
+          [from: extended_tech_tree_1960]
+    1941  rocket_artillery2
+          [from: extended_tech_tree_1960]
+    1942  rocket_artillery3
+          [from: extended_tech_tree_1960]
+    1942  experimental_rockets
+          [from: extended_tech_tree_1960]
+    1943  rocket_artillery4
+          [from: extended_tech_tree_1960]
+    1943  sp_rockets_improved_guidance
+          [from: extended_tech_tree_1960]
+    1943  sp_flying_bomb
+          [from: extended_tech_tree_1960]
+    1943  sp_ballistic_missile
+          [from: extended_tech_tree_1960]
+    1943  interceptor_engine_1
+          [from: extended_tech_tree_1960]
+    1943  parasite_fighter_tech_1
+          [from: extended_tech_tree_1960]
+    1944  sp_rockets_rocket_bomber
+    1944  sp_rockets_dual_chamber_rocket_engine_1
+    1944  rocket_artillery_a
+          [from: extended_tech_tree_1960]
+    1944  rocket_engines
+          [from: extended_tech_tree_1960]
+    1944  jet_engines
+          [from: extended_tech_tree_1960]
+    1944  motorized_rocket_unit_2
+          [from: extended_tech_tree_1960]
+    1945  sp_rockets_improved_rocket_bomber
+    1945  improved_rocket_engines
+          [from: extended_tech_tree_1960]
+    1945  sp_flying_bomb_2
+          [from: extended_tech_tree_1960]
+    1945  sp_ballistic_missile_2
+          [from: extended_tech_tree_1960]
+    1945  sp_sam_missile
+          [from: extended_tech_tree_1960]
+    1945  air_air_missile_1
+          [from: extended_tech_tree_1960]
+    1945  parasite_fighter_tech_2
+          [from: extended_tech_tree_1960]
+    1946  sp_rockets_dual_chamber_rocket_engine_2
+    1946  advanced_rocket_engines
+          [from: extended_tech_tree_1960]
+    1947  rocket_artillery_b
+          [from: extended_tech_tree_1960]
+    1947  jet_engines_2
+          [from: extended_tech_tree_1960]
+    1947  sp_rockets_improved_guidance_2
+          [from: extended_tech_tree_1960]
+    1948  interceptor_engine_2
+          [from: extended_tech_tree_1960]
+    1949  rocket_artillery_c
+          [from: extended_tech_tree_1960]
+    1950  rocket_artillery_d
+          [from: extended_tech_tree_1960]
+    1950  sp_flying_bomb_3
+          [from: extended_tech_tree_1960]
+    1950  sp_ballistic_missile_3
+          [from: extended_tech_tree_1960]
+    1950  sp_sam_missile_2
+          [from: extended_tech_tree_1960]
+    1950  sp_nuclear_missile_1
+          [from: extended_tech_tree_1960]
+    1950  parasite_fighter_tech_3
+          [from: extended_tech_tree_1960]
+    1950  parasite_fighter_tech_4
+          [from: extended_tech_tree_1960]
+    1950  motorized_rocket_unit_3
+          [from: extended_tech_tree_1960]
+    1951  interceptor_engine_3
+          [from: extended_tech_tree_1960]
+    1953  sp_rockets_improved_guidance_3
+          [from: extended_tech_tree_1960]
+    1953  slcm_tech_1
+          [from: extended_tech_tree_1960]
+    1955  rocket_artillery_e
+          [from: extended_tech_tree_1960]
+    1955  interceptor_engine_4
+          [from: extended_tech_tree_1960]
+    1955  sp_flying_bomb_4
+          [from: extended_tech_tree_1960]
+    1955  sp_sam_missile_3
+          [from: extended_tech_tree_1960]
+    1955  sp_nuclear_missile_2
+          [from: extended_tech_tree_1960]
+    1957  sp_rockets_improved_guidance_4
+          [from: extended_tech_tree_1960]
+    1957  slcm_tech_2
+          [from: extended_tech_tree_1960]
+    1960  sp_flying_bomb_5
+          [from: extended_tech_tree_1960]
+    1960  sp_sam_missile_4
+          [from: extended_tech_tree_1960]
+    1960  sp_nuclear_missile_3
+          [from: extended_tech_tree_1960]
+    1960  sp_slbm_1
+          [from: extended_tech_tree_1960]
+    1960  rocket_artillery_f
+          [from: extended_tech_tree_1960]
+
+  [land / anti_air] -- 13 techs
+    1025  infantry_aa
+          [from: extended_tech_tree_1960]
+    1936  interwar_antiair
+          [from: extended_tech_tree_1960]
+    1939  antiair1
+          [from: extended_tech_tree_1960]
+    1940  antiair2
+          [from: extended_tech_tree_1960]
+    1941  antiair3
+          [from: extended_tech_tree_1960]
+    1942  antiair4
+          [from: extended_tech_tree_1960]
+    1943  antiair5
+          [from: extended_tech_tree_1960]
+    1944  antiair_a
+          [from: extended_tech_tree_1960]
+    1947  antiair_b
+          [from: extended_tech_tree_1960]
+    1949  antiair_c
+          [from: extended_tech_tree_1960]
+    1950  antiair_d
+          [from: extended_tech_tree_1960]
+    1955  antiair_e
+          [from: extended_tech_tree_1960]
+    1960  antiair_f
+          [from: extended_tech_tree_1960]
+
+  [land / anti_tank] -- 29 techs
+    1922  photo_reconnaisance
+          [from: extended_tech_tree_1960]
+    1936  mountain_tanks
+    1936  interwar_antitank
+          [from: extended_tech_tree_1960]
+    1936  SWE_bofors_antitank_gun
+          [from: extended_tech_tree_1960]
+    1936  pre_dreadnoughts
+          [from: extended_tech_tree_1960]
+    1936  coastal_defense_ships
+          [from: extended_tech_tree_1960]
+    1939  antitank1
+          [from: extended_tech_tree_1960]
+    1940  antitank2
+          [from: extended_tech_tree_1960]
+    1941  antitank3
+          [from: extended_tech_tree_1960]
+    1942  antitank4
+          [from: extended_tech_tree_1960]
+    1943  antitank5
+          [from: extended_tech_tree_1960]
+    1944  antitank_a
+          [from: extended_tech_tree_1960]
+    1945  turboprops
+          [from: extended_tech_tree_1960]
+    1945  sp_centrifugal_jet_tech
+          [from: extended_tech_tree_1960]
+    1947  antitank_b
+          [from: extended_tech_tree_1960]
+    1949  antitank_c
+          [from: extended_tech_tree_1960]
+    1949  antitank_f
+          [from: extended_tech_tree_1960]
+    1950  antitank_d
+          [from: extended_tech_tree_1960]
+    1950  second_gen_jet_engines
+          [from: extended_tech_tree_1960]
+    1950  ship_torpedo_launcher_5
+          [from: extended_tech_tree_1960]
+    1955  ship_asm_battery_1_tech
+          [from: extended_tech_tree_1960]
+    1955  ship_sam_missile_battery_1_tech
+          [from: extended_tech_tree_1960]
+    1955  ship_dp_missile_battery_1_tech
+          [from: extended_tech_tree_1960]
+    1955  ship_dp_missile_battery_2_tech
+          [from: extended_tech_tree_1960]
+    1960  antitank_e
+          [from: extended_tech_tree_1960]
+    1960  third_gen_jet_engines
+          [from: extended_tech_tree_1960]
+    1960  compressor_bleed_engine_tech
+          [from: extended_tech_tree_1960]
+    1960  ship_asm_battery_2_tech
+          [from: extended_tech_tree_1960]
+    1960  ship_sam_missile_battery_2_tech
+          [from: extended_tech_tree_1960]
+
+  [land / artillery] -- 34 techs
+    1918  gw_artillery
+          [from: extended_tech_tree_1960]
+    1922  basic_battery
+          [from: extended_tech_tree_1960]
+    1934  adv_gw_artillery
+          [from: extended_tech_tree_1960]
+    1936  interwar_artillery
+          [from: extended_tech_tree_1960]
+    1936  basic_light_battery
+          [from: extended_tech_tree_1960]
+    1936  basic_light_shell
+          [from: extended_tech_tree_1960]
+    1936  basic_heavy_battery
+          [from: extended_tech_tree_1960]
+    1936  basic_heavy_shell
+          [from: extended_tech_tree_1960]
+    1936  railway_gun
+          [from: extended_tech_tree_1960]
+    1939  artillery1
+          [from: extended_tech_tree_1960]
+    1939  improved_light_battery
+          [from: extended_tech_tree_1960]
+    1939  improved_heavy_battery
+          [from: extended_tech_tree_1960]
+    1939  basic_dp_light_battery
+          [from: extended_tech_tree_1960]
+    1939  improved_dp_light_battery
+          [from: extended_tech_tree_1960]
+    1940  artillery2
+          [from: extended_tech_tree_1960]
+    1940  sp_artillery_rocket_assisted_projectiles_tech
+          [from: extended_tech_tree_1960]
+    1940  sp_artillery_purpose_built_gun_motor_carriages_tech
+          [from: extended_tech_tree_1960]
+    1941  artillery3
+          [from: extended_tech_tree_1960]
+    1941  sp_shock_hardening_techniques
+          [from: extended_tech_tree_1960]
+    1942  artillery4
+          [from: extended_tech_tree_1960]
+    1942  sp_variable_time_fuze_shells
+          [from: extended_tech_tree_1960]
+    1942  improved_light_shell
+          [from: extended_tech_tree_1960]
+    1942  improved_heavy_shell
+          [from: extended_tech_tree_1960]
+    1943  artillery5
+          [from: extended_tech_tree_1960]
+    1944  artillery_a
+          [from: extended_tech_tree_1960]
+    1944  advanced_light_battery
+          [from: extended_tech_tree_1960]
+    1944  advanced_heavy_battery
+          [from: extended_tech_tree_1960]
+    1944  advanced_dp_light_battery
+          [from: extended_tech_tree_1960]
+    1947  artillery_b
+          [from: extended_tech_tree_1960]
+    1949  artillery_c
+          [from: extended_tech_tree_1960]
+    1950  artillery_d
+          [from: extended_tech_tree_1960]
+    1950  modern_dp_light_battery
+          [from: extended_tech_tree_1960]
+    1955  artillery_e
+          [from: extended_tech_tree_1960]
+    1960  artillery_f
+          [from: extended_tech_tree_1960]
+
+  [land / heavy_tanks] -- 20 techs
+    1934  basic_heavy_tank
+    1934  basic_heavy_tank_chassis
+          [from: extended_tech_tree_1960]
+    1940  improved_heavy_tank_chassis
+          [from: extended_tech_tree_1960]
+    1941  improved_heavy_tank
+    1941  super_heavy_tank
+    1943  advanced_heavy_tank
+    1943  advanced_heavy_tank_chassis
+          [from: extended_tech_tree_1960]
+    1943  super_heavy_tank_chassis
+          [from: extended_tech_tree_1960]
+    1943  land_cruiser_chassis
+          [from: extended_tech_tree_1960]
+    1943  sp_armored_lc_naval_engine_conversion_tech
+          [from: extended_tech_tree_1960]
+    1943  sp_armored_lc_transmission_improvements_tech
+          [from: extended_tech_tree_1960]
+    1943  sp_armored_lc_specialized_field_manuals_tech
+          [from: extended_tech_tree_1960]
+    1943  sp_armored_lc_high_impact_obliterator_cannon_tech
+          [from: extended_tech_tree_1960]
+    1945  heavy_tank_chassis_4
+          [from: extended_tech_tree_1960]
+    1945  sp_armored_lc_weapon_fire_control_tech
+          [from: extended_tech_tree_1960]
+    1947  heavy_tank_chassis_5
+          [from: extended_tech_tree_1960]
+    1950  heavy_tank_chassis_6
+          [from: extended_tech_tree_1960]
+    1955  sp_land_cruiser_2
+          [from: extended_tech_tree_1960]
+    1955  land_cruiser_reactor
+          [from: extended_tech_tree_1960]
+    1960  sp_land_cruiser_3
+          [from: extended_tech_tree_1960]
+
+  [land / infantry] -- 60 techs
+    1918  infantry_weapons
+          [from: extended_tech_tree_1960]
+    1918  support_weapons
+          [from: extended_tech_tree_1960]
+    1936  infantry_weapons1
+          [from: extended_tech_tree_1960]
+    1936  paratroopers
+          [from: extended_tech_tree_1960]
+    1936  marines
+          [from: extended_tech_tree_1960]
+    1936  tech_mountaineers
+          [from: extended_tech_tree_1960]
+    1936  rangers_tech
+          [from: extended_tech_tree_1960]
+    1936  high_altitude_ballistics (XP)
+          [from: extended_tech_tree_1960]
+    1936  widespread_mountain_training (XP)
+          [from: extended_tech_tree_1960]
+    1936  mountain_motorization (XP)
+          [from: extended_tech_tree_1960]
+    1936  mechanized_mountain_combat (XP)
+          [from: extended_tech_tree_1960]
+    1936  high_altitude_engines (XP)
+          [from: extended_tech_tree_1960]
+    1936  ifv_operations_doctrine (XP)
+          [from: extended_tech_tree_1960]
+    1936  helicopter_infiltration (XP)
+          [from: extended_tech_tree_1960]
+    1938  infantry_weapons2
+          [from: extended_tech_tree_1960]
+    1938  tech_special_forces
+          [from: extended_tech_tree_1960]
+    1938  support_weapons2
+          [from: extended_tech_tree_1960]
+    1939  improved_infantry_weapons
+          [from: extended_tech_tree_1960]
+    1939  paratroopers2
+          [from: extended_tech_tree_1960]
+    1939  marines2
+          [from: extended_tech_tree_1960]
+    1939  tech_mountaineers2
+          [from: extended_tech_tree_1960]
+    1939  rangers_tech2
+          [from: extended_tech_tree_1960]
+    1940  improved_infantry_weapons_2
+          [from: extended_tech_tree_1960]
+    1940  advanced_special_forces
+          [from: extended_tech_tree_1960]
+    1940  improved_special_forces
+          [from: extended_tech_tree_1960]
+    1940  support_weapons3
+          [from: extended_tech_tree_1960]
+    1941  advanced_infantry_weapons
+          [from: extended_tech_tree_1960]
+    1942  infantry_at
+          [from: extended_tech_tree_1960]
+    1942  extreme_environment_training
+          [from: extended_tech_tree_1960]
+    1942  survival_training
+          [from: extended_tech_tree_1960]
+    1942  support_weapons4
+          [from: extended_tech_tree_1960]
+    1943  infantry_at2
+          [from: extended_tech_tree_1960]
+    1943  paratroopers3
+          [from: extended_tech_tree_1960]
+    1943  marines3
+          [from: extended_tech_tree_1960]
+    1943  tech_mountaineers3
+          [from: extended_tech_tree_1960]
+    1943  rangers_tech3
+          [from: extended_tech_tree_1960]
+    1944  advanced_infantry_weapons2
+          [from: extended_tech_tree_1960]
+    1944  elite_forces
+          [from: extended_tech_tree_1960]
+    1945  urban_specialization
+          [from: extended_tech_tree_1960]
+    1945  wilderness_specialization
+          [from: extended_tech_tree_1960]
+    1945  support_weapons5
+          [from: extended_tech_tree_1960]
+    1947  marines_a
+          [from: extended_tech_tree_1960]
+    1947  rangers_tech4
+          [from: extended_tech_tree_1960]
+    1947  infantry_equipment_4
+          [from: extended_tech_tree_1960]
+    1947  mountaineers_a
+          [from: extended_tech_tree_1960]
+    1947  paratroopers_a
+          [from: extended_tech_tree_1960]
+    1950  marines_b
+          [from: extended_tech_tree_1960]
+    1950  super_elite_forces
+          [from: extended_tech_tree_1960]
+    1950  massed_forces
+          [from: extended_tech_tree_1960]
+    1953  infantry_at3
+          [from: extended_tech_tree_1960]
+    1953  rangers_tech5
+          [from: extended_tech_tree_1960]
+    1953  support_weapons6
+          [from: extended_tech_tree_1960]
+    1955  independent_strike_groups
+          [from: extended_tech_tree_1960]
+    1955  assault_squadrons
+          [from: extended_tech_tree_1960]
+    1955  veteran_experience
+          [from: extended_tech_tree_1960]
+    1955  army_integration
+          [from: extended_tech_tree_1960]
+    1955  mountaineers_b
+          [from: extended_tech_tree_1960]
+    1955  paratroopers_b
+          [from: extended_tech_tree_1960]
+    1960  infantry_at4
+          [from: extended_tech_tree_1960]
+    1960  infantry_equipment_5
+          [from: extended_tech_tree_1960]
+
+  [land / light_tanks] -- 11 techs
+    1918  gwtank
+    1918  gwtank_chassis
+          [from: extended_tech_tree_1960]
+    1934  basic_light_tank
+    1934  basic_light_tank_chassis
+          [from: extended_tech_tree_1960]
+    1936  improved_light_tank
+    1936  improved_light_tank_chassis
+          [from: extended_tech_tree_1960]
+    1938  paradrop_tank_chassis
+          [from: extended_tech_tree_1960]
+    1941  advanced_light_tank
+    1941  advanced_light_tank_chassis
+          [from: extended_tech_tree_1960]
+    1950  modern_light_tank_chassis
+          [from: extended_tech_tree_1960]
+    1950  paradrop_tank_chassis_2
+          [from: extended_tech_tree_1960]
+
+  [land / mechanised] -- 11 techs
+    1940  mechanised_infantry
+          [from: extended_tech_tree_1960]
+    1941  amphibious_mechanized_infantry
+          [from: extended_tech_tree_1960]
+    1942  mechanised_infantry2
+          [from: extended_tech_tree_1960]
+    1943  amphibious_mechanized_infantry_2
+          [from: extended_tech_tree_1960]
+    1944  mechanised_infantry3
+          [from: extended_tech_tree_1960]
+    1947  mechanised_infantry4
+          [from: extended_tech_tree_1960]
+    1950  mechanised_infantry5
+          [from: extended_tech_tree_1960]
+    1953  mechanised_infantry6
+          [from: extended_tech_tree_1960]
+    1953  amphibious_mechanized_infantry_3
+          [from: extended_tech_tree_1960]
+    1960  mechanised_infantry7
+          [from: extended_tech_tree_1960]
+    1960  ifv_infantry
+          [from: extended_tech_tree_1960]
+
+  [land / medium_tanks] -- 9 techs
+    1938  basic_medium_tank_chassis
+          [from: extended_tech_tree_1960]
+    1939  basic_medium_tank
+    1940  improved_medium_tank_chassis
+          [from: extended_tech_tree_1960]
+    1941  improved_medium_tank
+    1943  advanced_medium_tank
+    1943  advanced_medium_tank_chassis
+          [from: extended_tech_tree_1960]
+    1947  main_battle_tank_chassis_2
+          [from: extended_tech_tree_1960]
+    1950  main_battle_tank_chassis_3
+          [from: extended_tech_tree_1960]
+    1960  main_battle_tank_chassis_4
+          [from: extended_tech_tree_1960]
+
+  [land / modern_tanks] -- 2 techs
+    1945  main_battle_tank
+    1945  main_battle_tank_chassis
+          [from: extended_tech_tree_1960]
+
+  [land / motorised] -- 4 techs
+    1936  tech_trucks
+          [from: extended_tech_tree_1960]
+    1936  motorised_infantry
+          [from: extended_tech_tree_1960]
+    1941  motorised_infantry_2
+          [from: extended_tech_tree_1960]
+    1950  motorised_infantry_3
+          [from: extended_tech_tree_1960]
+
+  [land / support] -- 59 techs
+    1910  basic_train
+          [from: extended_tech_tree_1960]
+    1918  tech_support
+          [from: extended_tech_tree_1960]
+    1936  tech_engineers
+          [from: extended_tech_tree_1960]
+    1936  tech_recon
+          [from: extended_tech_tree_1960]
+    1936  tech_military_police
+          [from: extended_tech_tree_1960]
+    1936  tech_maintenance_company
+          [from: extended_tech_tree_1960]
+    1936  armored_train
+          [from: extended_tech_tree_1960]
+    1936  tech_recon_focus_bonus
+          [from: extended_tech_tree_1960]
+    1936  tech_field_hospital
+          [from: extended_tech_tree_1960]
+    1936  tech_logistics_company
+          [from: extended_tech_tree_1960]
+    1936  tech_signal_company
+          [from: extended_tech_tree_1960]
+    1938  sp_armored_engineer_tech
+          [from: extended_tech_tree_1960]
+    1938  sp_armored_maintenance_tech
+          [from: extended_tech_tree_1960]
+    1938  sp_armored_signal_tech
+          [from: extended_tech_tree_1960]
+    1938  sp_helicopter_transport_pods_tech
+          [from: extended_tech_tree_1960]
+    1938  sp_helicopter_artillery_observers_tech
+          [from: extended_tech_tree_1960]
+    1938  sp_helicopter_med_evac_tech
+          [from: extended_tech_tree_1960]
+    1938  sp_armored_motorized_military_police_tech
+          [from: extended_tech_tree_1960]
+    1939  tech_engineers2
+          [from: extended_tech_tree_1960]
+    1939  tech_recon2
+          [from: extended_tech_tree_1960]
+    1939  tech_military_police2
+          [from: extended_tech_tree_1960]
+    1939  tech_maintenance_company2
+          [from: extended_tech_tree_1960]
+    1939  tech_logistics_company2
+          [from: extended_tech_tree_1960]
+    1939  tech_signal_company2
+          [from: extended_tech_tree_1960]
+    1939  wartime_train
+          [from: extended_tech_tree_1960]
+    1939  tech_field_hospital2
+          [from: extended_tech_tree_1960]
+    1942  tech_engineers3
+          [from: extended_tech_tree_1960]
+    1942  tech_recon3
+          [from: extended_tech_tree_1960]
+    1942  tech_military_police3
+          [from: extended_tech_tree_1960]
+    1942  tech_maintenance_company3
+          [from: extended_tech_tree_1960]
+    1942  tech_field_hospital3
+          [from: extended_tech_tree_1960]
+    1942  tech_logistics_company3
+          [from: extended_tech_tree_1960]
+    1942  tech_signal_company3
+          [from: extended_tech_tree_1960]
+    1942  aa_train
+          [from: extended_tech_tree_1960]
+    1945  night_vision
+          [from: extended_tech_tree_1960]
+    1945  tech_engineers4
+          [from: extended_tech_tree_1960]
+    1945  tech_recon4
+          [from: extended_tech_tree_1960]
+    1945  tech_military_police4
+          [from: extended_tech_tree_1960]
+    1945  tech_maintenance_company4
+          [from: extended_tech_tree_1960]
+    1945  tech_logistics_company4
+          [from: extended_tech_tree_1960]
+    1945  tech_signal_company4
+          [from: extended_tech_tree_1960]
+    1945  tech_field_hospital4
+          [from: extended_tech_tree_1960]
+    1948  post_war_diesel_locomotives
+          [from: extended_tech_tree_1960]
+    1950  tech_engineers5
+          [from: extended_tech_tree_1960]
+    1950  tech_recon5
+          [from: extended_tech_tree_1960]
+    1950  tech_military_police5
+          [from: extended_tech_tree_1960]
+    1950  tech_maintenance_company5
+          [from: extended_tech_tree_1960]
+    1950  tech_logistics_company5
+          [from: extended_tech_tree_1960]
+    1950  tech_signal_company5
+          [from: extended_tech_tree_1960]
+    1950  tech_field_hospital5
+          [from: extended_tech_tree_1960]
+    1955  night_vision2
+          [from: extended_tech_tree_1960]
+    1955  tech_engineers6
+          [from: extended_tech_tree_1960]
+    1955  tech_recon6
+          [from: extended_tech_tree_1960]
+    1955  tech_military_police6
+          [from: extended_tech_tree_1960]
+    1955  tech_maintenance_company6
+          [from: extended_tech_tree_1960]
+    1955  tech_logistics_company6
+          [from: extended_tech_tree_1960]
+    1955  tech_signal_company6
+          [from: extended_tech_tree_1960]
+    1955  diesel_electric_locomotives
+          [from: extended_tech_tree_1960]
+    1955  tech_field_hospital6
+          [from: extended_tech_tree_1960]
+
+  [land / tanks_generic] -- 68 techs
+    1914  armored_car1
+          [from: extended_tech_tree_1960]
+    1934  basic_light_td
+    1934  basic_light_art
+    1934  basic_light_spaa
+    1934  basic_heavy_td
+    1934  basic_heavy_art
+    1934  basic_heavy_spaa
+    1934  engine_tech_1
+          [from: extended_tech_tree_1960]
+    1936  improved_light_td
+    1936  improved_light_art
+    1936  improved_light_spaa
+    1936  JAP_lighter_tanks
+          [from: extended_tech_tree_1960]
+    1936  GER_heavy_armored_car
+          [from: extended_tech_tree_1960]
+    1936  armor_tech_1
+          [from: extended_tech_tree_1960]
+    1936  NOR_rikstanken_tech
+          [from: extended_tech_tree_1960]
+    1938  amphibious_tank_chassis
+          [from: extended_tech_tree_1960]
+    1938  armor_tech_2
+          [from: extended_tech_tree_1960]
+    1938  engine_tech_2
+          [from: extended_tech_tree_1960]
+    1939  basic_medium_td
+    1939  basic_medium_art
+    1939  basic_medium_spaa
+    1940  amphibious_tank
+    1940  armored_car2
+          [from: extended_tech_tree_1960]
+    1941  advanced_light_td
+    1941  advanced_light_art
+    1941  advanced_light_spaa
+    1941  improved_medium_td
+    1941  improved_medium_art
+    1941  improved_medium_spaa
+    1941  improved_heavy_td
+    1941  improved_heavy_art
+    1941  improved_heavy_spaa
+    1941  amphibious_drive
+          [from: extended_tech_tree_1960]
+    1941  armor_tech_3
+          [from: extended_tech_tree_1960]
+    1941  engine_tech_3
+          [from: extended_tech_tree_1960]
+    1941  sp_armored_advanced_flamethrower_tech
+          [from: extended_tech_tree_1960]
+    1942  amphibious_tank_2
+    1942  armored_car3
+          [from: extended_tech_tree_1960]
+    1942  armored_car_at_upgrade
+          [from: extended_tech_tree_1960]
+    1942  SWE_lynx_armored_car
+          [from: extended_tech_tree_1960]
+    1943  advanced_medium_td
+    1943  advanced_medium_art
+    1943  advanced_medium_spaa
+    1943  advanced_heavy_td
+    1943  advanced_heavy_art
+    1943  advanced_heavy_spaa
+    1943  super_heavy_td
+    1943  super_heavy_art
+    1943  super_heavy_spaa
+    1944  armored_car4
+          [from: extended_tech_tree_1960]
+    1944  armor_tech_4
+          [from: extended_tech_tree_1960]
+    1944  engine_tech_4
+          [from: extended_tech_tree_1960]
+    1945  modern_td
+    1945  modern_art
+    1945  modern_spaa
+    1945  rangefinder1
+          [from: extended_tech_tree_1960]
+    1945  imp_stab
+          [from: extended_tech_tree_1960]
+    1947  armor_tech_5
+          [from: extended_tech_tree_1960]
+    1947  engine_tech_5
+          [from: extended_tech_tree_1960]
+    1950  rangefinder2
+          [from: extended_tech_tree_1960]
+    1953  armored_car5
+          [from: extended_tech_tree_1960]
+    1953  armored_car_at_upgrade_1
+          [from: extended_tech_tree_1960]
+    1955  armor_tech_6
+          [from: extended_tech_tree_1960]
+    1955  engine_tech_6
+          [from: extended_tech_tree_1960]
+    1955  twoplane_stab
+          [from: extended_tech_tree_1960]
+    1960  armored_car6
+          [from: extended_tech_tree_1960]
+    1960  armored_car_at_upgrade_2
+          [from: extended_tech_tree_1960]
+    1960  comp_armor
+          [from: extended_tech_tree_1960]
+
+  [naval / battleships] -- 17 techs
+    1922  early_battlecruiser
+    1922  early_battleship
+    1922  early_ship_hull_heavy
+          [from: extended_tech_tree_1960]
+    1936  basic_battleship
+    1936  heavy_battleship
+    1936  basic_ship_hull_heavy
+          [from: extended_tech_tree_1960]
+    1936  ship_hull_super_heavy
+          [from: extended_tech_tree_1960]
+    1936  basic_heavy_armor_scheme (XP)
+          [from: extended_tech_tree_1960]
+    1939  improved_ship_hull_heavy
+          [from: extended_tech_tree_1960]
+    1939  ship_hull_super_heavy_2
+          [from: extended_tech_tree_1960]
+    1939  improved_heavy_armor_scheme (XP)
+          [from: extended_tech_tree_1960]
+    1940  basic_battlecruiser
+    1940  improved_battleship
+    1943  advanced_ship_hull_heavy
+          [from: extended_tech_tree_1960]
+    1944  advanced_battleship
+    1944  heavy_battleship2
+    1954  ship_hull_heavy_5
+          [from: extended_tech_tree_1960]
+
+  [naval / carriers] -- 14 techs
+    1922  early_carrier
+    1922  early_ship_hull_carrier
+          [from: extended_tech_tree_1960]
+    1936  basic_carrier
+    1936  basic_ship_hull_carrier
+          [from: extended_tech_tree_1960]
+    1936  ship_hull_escort_carrier
+          [from: extended_tech_tree_1960]
+    1939  improved_ship_hull_carrier
+          [from: extended_tech_tree_1960]
+    1940  improved_carrier
+    1942  sp_refined_pykrete
+    1943  advanced_ship_hull_carrier
+          [from: extended_tech_tree_1960]
+    1944  sp_ice_composite_runawayas
+    1944  advanced_carrier
+    1949  ship_hull_carrier_4
+          [from: extended_tech_tree_1960]
+    1954  ship_hull_carrier_5
+          [from: extended_tech_tree_1960]
+    1958  ship_hull_carrier_6
+          [from: extended_tech_tree_1960]
+
+  [naval / destroyers] -- 24 techs
+    1922  early_destroyer
+    1922  early_ship_hull_light
+          [from: extended_tech_tree_1960]
+    1922  smoke_generator
+          [from: extended_tech_tree_1960]
+    1922  basic_depth_charges (XP)
+          [from: extended_tech_tree_1960]
+    1922  sonar
+          [from: extended_tech_tree_1960]
+    1936  basic_destroyer
+    1936  basic_ship_hull_light
+          [from: extended_tech_tree_1960]
+    1936  improved_depth_charges (XP)
+          [from: extended_tech_tree_1960]
+    1936  improved_sonar
+          [from: extended_tech_tree_1960]
+    1939  improved_ship_hull_light
+          [from: extended_tech_tree_1960]
+    1939  advanced_depth_charges (XP)
+          [from: extended_tech_tree_1960]
+    1940  improved_destroyer
+    1941  advanced_sonar
+          [from: extended_tech_tree_1960]
+    1943  advanced_ship_hull_light
+          [from: extended_tech_tree_1960]
+    1943  modern_depth_charges (XP)
+          [from: extended_tech_tree_1960]
+    1944  advanced_destroyer
+    1949  ship_hull_light_5
+          [from: extended_tech_tree_1960]
+    1949  depth_charges_5 (XP)
+          [from: extended_tech_tree_1960]
+    1950  modern_sonar
+          [from: extended_tech_tree_1960]
+    1954  ship_hull_light_6
+          [from: extended_tech_tree_1960]
+    1954  depth_charges_6 (XP)
+          [from: extended_tech_tree_1960]
+    1958  ship_hull_light_7
+          [from: extended_tech_tree_1960]
+    1958  towed_sonar
+          [from: extended_tech_tree_1960]
+    1958  depth_charges_7 (XP)
+          [from: extended_tech_tree_1960]
+
+  [naval / heavy_cruisers] -- 5 techs
+    1922  early_heavy_cruiser
+    1922  basic_cruiser_armor_scheme (XP)
+          [from: extended_tech_tree_1960]
+    1936  basic_heavy_cruiser
+    1940  improved_heavy_cruiser
+    1944  advanced_heavy_cruiser
+
+  [naval / light_cruisers] -- 12 techs
+    1922  early_light_cruiser
+    1922  early_ship_hull_cruiser
+          [from: extended_tech_tree_1960]
+    1936  basic_light_cruiser
+    1936  basic_ship_hull_cruiser
+          [from: extended_tech_tree_1960]
+    1939  improved_ship_hull_cruiser
+          [from: extended_tech_tree_1960]
+    1940  improved_light_cruiser
+    1943  advanced_ship_hull_cruiser
+          [from: extended_tech_tree_1960]
+    1944  advanced_light_cruiser
+    1949  ship_hull_cruiser_5
+          [from: extended_tech_tree_1960]
+    1954  ship_hull_cruiser_6
+          [from: extended_tech_tree_1960]
+    1954  ship_hull_helicopter_carrier
+          [from: extended_tech_tree_1960]
+    1958  ship_hull_cruiser_7
+          [from: extended_tech_tree_1960]
+
+  [naval / naval_support] -- 51 techs
+    1922  transport
+    1922  basic_torpedo
+          [from: extended_tech_tree_1960]
+    1922  basic_naval_mines
+          [from: extended_tech_tree_1960]
+    1922  submarine_mine_laying
+          [from: extended_tech_tree_1960]
+    1922  mtg_transport
+          [from: extended_tech_tree_1960]
+    1936  magnetic_detonator (XP)
+          [from: extended_tech_tree_1960]
+    1936  improved_ship_torpedo_launcher
+          [from: extended_tech_tree_1960]
+    1936  damage_control_1 (XP)
+          [from: extended_tech_tree_1960]
+    1936  damage_control_2 (XP)
+          [from: extended_tech_tree_1960]
+    1936  damage_control_3 (XP)
+          [from: extended_tech_tree_1960]
+    1936  damage_control_4 (XP)
+          [from: extended_tech_tree_1960]
+    1936  fire_control_methods_1 (XP)
+          [from: extended_tech_tree_1960]
+    1936  fire_control_methods_2 (XP)
+          [from: extended_tech_tree_1960]
+    1936  fire_control_methods_3 (XP)
+          [from: extended_tech_tree_1960]
+    1936  fire_control_methods_4 (XP)
+          [from: extended_tech_tree_1960]
+    1936  improved_naval_mines
+          [from: extended_tech_tree_1960]
+    1938  sp_multi_product_supply_ships (XP)
+          [from: extended_tech_tree_1960]
+    1938  degaussing
+          [from: extended_tech_tree_1960]
+    1940  landing_craft
+    1940  electric_torpedo (XP)
+          [from: extended_tech_tree_1960]
+    1940  advanced_ship_torpedo_launcher
+          [from: extended_tech_tree_1960]
+    1940  improved_submarine_mine_laying
+          [from: extended_tech_tree_1960]
+    1940  mtg_landing_craft
+          [from: extended_tech_tree_1960]
+    1942  homing_torpedo (XP)
+          [from: extended_tech_tree_1960]
+    1942  advanced_naval_mines
+          [from: extended_tech_tree_1960]
+    1942  airdrop_mines
+          [from: extended_tech_tree_1960]
+    1942  airdrop_mines_bba
+          [from: extended_tech_tree_1960]
+    1942  sp_improved_support_ship (XP)
+          [from: extended_tech_tree_1960]
+    1942  sp_improved_repair_ship (XP)
+          [from: extended_tech_tree_1960]
+    1943  sp_standard_tenshioned_replenishment_alongside_method (XP)
+          [from: extended_tech_tree_1960]
+    1944  tank_landing_craft
+    1944  modern_ship_torpedo_launcher
+          [from: extended_tech_tree_1960]
+    1944  airsweep_mines
+          [from: extended_tech_tree_1960]
+    1944  airsweep_mines_bba
+          [from: extended_tech_tree_1960]
+    1944  mtg_tank_landing_craft
+          [from: extended_tech_tree_1960]
+    1945  modern_naval_mines
+          [from: extended_tech_tree_1960]
+    1950  asw_torpedo (XP)
+          [from: extended_tech_tree_1960]
+    1950  advanced_submarine_mine_laying
+          [from: extended_tech_tree_1960]
+    1950  naval_mines_1950
+          [from: extended_tech_tree_1960]
+    1950  naval_mines_1950b
+          [from: extended_tech_tree_1960]
+    1950  adv_tank_landing_craft
+          [from: extended_tech_tree_1960]
+    1954  anechoic_tiles_tech
+          [from: extended_tech_tree_1960]
+    1955  wire_torpedo (XP)
+          [from: extended_tech_tree_1960]
+    1955  naval_mines_1955
+          [from: extended_tech_tree_1960]
+    1955  naval_mines_1955b
+          [from: extended_tech_tree_1960]
+    1955  landing_ship_dock
+          [from: extended_tech_tree_1960]
+    1957  cruiser_reactor
+          [from: extended_tech_tree_1960]
+    1957  heavy_reactor
+          [from: extended_tech_tree_1960]
+    1957  carrier_reactor
+          [from: extended_tech_tree_1960]
+    1960  high_performance_torpedo (XP)
+          [from: extended_tech_tree_1960]
+    1960  landing_platform_helicopter
+          [from: extended_tech_tree_1960]
+
+  [naval / submarines] -- 28 techs
+    1922  early_submarine
+    1922  early_ship_hull_submarine
+          [from: extended_tech_tree_1960]
+    1922  midget_submarine
+          [from: extended_tech_tree_1960]
+    1936  basic_submarine
+    1936  basic_ship_hull_submarine
+          [from: extended_tech_tree_1960]
+    1936  tanker_submarines
+          [from: extended_tech_tree_1960]
+    1936  cruiser_submarines
+          [from: extended_tech_tree_1960]
+    1936  cruiser_submarines
+          [from: extended_tech_tree_1960]
+    1936  midget_submarines
+          [from: extended_tech_tree_1960]
+    1939  improved_ship_hull_submarine
+          [from: extended_tech_tree_1960]
+    1939  basic_submarine_snorkel
+          [from: extended_tech_tree_1960]
+    1939  sp_aip_engine_improved_tech
+          [from: extended_tech_tree_1960]
+    1940  improved_submarine
+    1943  advanced_ship_hull_submarine
+          [from: extended_tech_tree_1960]
+    1943  ship_hull_carrier_submarine
+          [from: extended_tech_tree_1960]
+    1943  ship_hull_fleet_submarine
+          [from: extended_tech_tree_1960]
+    1943  improved_submarine_snorkel (XP)
+          [from: extended_tech_tree_1960]
+    1943  sp_aip_engine_advanced_tech
+          [from: extended_tech_tree_1960]
+    1944  advanced_submarine
+    1949  ship_hull_fleet_submarine_2
+          [from: extended_tech_tree_1960]
+    1949  basic_submarine_sail (XP)
+          [from: extended_tech_tree_1960]
+    1954  ship_hull_attack_boat
+          [from: extended_tech_tree_1960]
+    1954  ship_hull_carrier_submarine_2
+          [from: extended_tech_tree_1960]
+    1954  ship_hull_fleet_submarine_3
+          [from: extended_tech_tree_1960]
+    1954  improved_submarine_sail (XP)
+          [from: extended_tech_tree_1960]
+    1956  ship_hull_rocket_submarine
+          [from: extended_tech_tree_1960]
+    1958  ship_hull_nuclear_attack_sub
+          [from: extended_tech_tree_1960]
+    1958  ship_hull_missile_submarine
+          [from: extended_tech_tree_1960]
+
+UNMAPPED TECHS
+------------------------------------------------------------
+These techs could not be assigned to a branch.
+Add entries to custom_mappings.txt to include them.
+
+  BEL_chasseurs_ardennais
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  BEL_chasseurs_ardennais_ncns
+    categories: []
+    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\infantry.txt
+  ETH_improved_irregular_infantry_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  HUN_light_infantry_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  JAP_silver_wheels
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  PHI_battalion_combat_teams
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  SWE_sami_support_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  SWI_mountaineer_paratroopers_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  TOA_jungle_pioneers_support_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  ToA_river_boats_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  advanced_modern_tank_turret_tech
+    categories: []
+    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
+  air_advanced_construction
+    categories: ['air_equipment', 'plane_modules_tech']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  air_improved_construction
+    categories: ['air_equipment', 'plane_modules_tech']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  air_modern_construction
+    categories: ['air_equipment', 'plane_modules_tech']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  aircraft_construction
+    categories: ['air_equipment', 'plane_modules_tech']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  bicycle_infantry
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  blackshirt_assault_battalion_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  camelry
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  camicie_nere_security_militias
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\support.txt
+  cargo_helicopter_1
+    categories: ['light_air']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  commercial_nuclear_reactor_tech
+    categories: []
+    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
+  converted_guided_missile_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval_Support.txt
+  desert_training_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  ecm_pod_1
+    categories: ['air_equipment', 'plane_modules_tech']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  ecm_pod_2
+    categories: ['air_equipment', 'plane_modules_tech']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  ecm_pod_3
+    categories: ['air_equipment', 'plane_modules_tech']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  elephantry
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  health_1
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\support.txt
+  health_2
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\support.txt
+  health_3
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\support.txt
+  health_4
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\support.txt
+  health_5
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\support.txt
+  hills_training_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  industry9
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\industry.txt
+  jungle_training_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  jungle_warfare
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  land_multi_charge_large_caliber_gun_tech
+    categories: []
+    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
+  lar_decryption_bonus_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\electronic_mechanical_engineering.txt
+  long_range_patrol_support_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  lotta_svard_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  militia_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  molotov_cocktails_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  mountain_defensive_training
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  mountain_gun
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\artillery.txt
+  mountain_warfare
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  mountain_warfare_militias_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  naval_helicopter_1
+    categories: ['light_air']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  naval_helicopter_2
+    categories: ['naval_equipment', 'light_air']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  nsb_gyrocopter
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  panzerschiffe
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  penal_infantry
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  radar_jammers
+    categories: ['air_equipment', 'plane_modules_tech']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  repair_ship_tech_1
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  repair_ship_tech_2
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  repair_ship_tech_3
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sami_pathfinders_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  scout_helicopter_1
+    categories: ['light_air']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  scout_helicopter_2
+    categories: ['light_air']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  scout_helicopter_3
+    categories: ['light_air']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  sp_lenticular_missile_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  sp_naval_proximity_fuze_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sp_naval_repair_ships_pick_a
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sp_naval_repair_ships_pick_b
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sp_naval_repair_ships_pick_c
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sp_naval_support_ships_pick_a
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sp_naval_support_ships_pick_b
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sp_naval_support_ships_pick_c
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sp_naval_underway_replenishment_pick_a
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  sp_naval_underway_replenishment_pick_b
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  stronghold_network_tech
+    categories: []
+    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\special_projects_tech.txt
+  sturmtruppe_battalion_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  suicide_charge
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  suicide_craft
+    categories: []
+    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\air_techs.txt
+  support_ship_tech_1
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  support_ship_tech_2
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  support_ship_tech_3
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  tech_fleet_oiler_1
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  tech_fleet_oiler_2
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  tech_fleet_oiler_3
+    categories: ['naval_equipment']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  torpedo_cruiser
+    categories: []
+    source: vanilla / E:\SteamLibrary\steamapps\common\Hearts of Iron IV\common\technologies\naval.txt
+  torpedo_cruiser_mtg
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\MTG_naval.txt
+  uranium_tipped_bullets
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  urban_training_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt
+  utility_helicopter_1
+    categories: ['light_air']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  utility_helicopter_2
+    categories: ['light_air']
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\bba_air_techs.txt
+  winter_logistics_support_tech
+    categories: []
+    source: extended_tech_tree_1960 / E:\SteamLibrary\steamapps\workshop\content\394360\1778255798\common\technologies\infantry.txt

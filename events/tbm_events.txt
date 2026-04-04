@@ -1,0 +1,130 @@
+###############################################
+# Tech Baseline Mechanics — Events
+###############################################
+
+add_namespace = tbm_event
+
+###############################################
+# tbm_event.1 — Major Milestone Tech Grant Notification
+# Triggered by grant logic when Great Power+ gets a milestone tech
+###############################################
+country_event = {
+	id = tbm_event.1
+	title = tbm_event.1.t
+	desc = tbm_event.1.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = tbm_event.1.a
+		ai_chance = { base = 100 }
+	}
+}
+
+###############################################
+# tbm_event.2 — Tier Change Notification
+# Triggered when a country's power tier changes
+###############################################
+country_event = {
+	id = tbm_event.2
+	title = tbm_event.2.t
+	desc = tbm_event.2.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = tbm_event.2.a
+		ai_chance = { base = 100 }
+	}
+}
+
+###############################################
+# tbm_event.100 — Debug: Power Score Report
+###############################################
+country_event = {
+	id = tbm_event.100
+	title = tbm_event.100.t
+	desc = tbm_event.100.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = tbm_event.100.a
+		ai_chance = { base = 100 }
+	}
+}
+
+###############################################
+# tbm_event.101 — Debug: Branch Competence Report
+###############################################
+country_event = {
+	id = tbm_event.101
+	title = tbm_event.101.t
+	desc = tbm_event.101.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = tbm_event.101.a
+		ai_chance = { base = 100 }
+	}
+}
+
+###############################################
+# tbm_event.102 — Debug: Effective Lag Report
+###############################################
+country_event = {
+	id = tbm_event.102
+	title = tbm_event.102.t
+	desc = tbm_event.102.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = tbm_event.102.a
+		ai_chance = { base = 100 }
+	}
+}
+
+###############################################
+# tbm_event.200 — News: Nation Enters Jet Age
+# Major event shown to all players
+###############################################
+country_event = {
+	id = tbm_event.200
+	title = tbm_event.200.t
+	desc = tbm_event.200.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = tbm_event.200.a
+		ai_chance = { base = 100 }
+	}
+}
+
+###############################################
+# tbm_event.201 — News: Nuclear Technology Achieved
+# Major event shown to all players
+###############################################
+country_event = {
+	id = tbm_event.201
+	title = tbm_event.201.t
+	desc = tbm_event.201.desc
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = tbm_event.201.a
+		ai_chance = { base = 100 }
+	}
+}

@@ -1,0 +1,89 @@
+###############################################################################
+# tbm_runtime_bootstrap.txt - Save-safe TBM bootstrap
+# Tech Baseline Mechanics mod
+#
+# Initializes TBM globals and country state for both fresh campaigns and
+# existing saves that install the mod later.
+###############################################################################
+
+tbm_resolve_runtime_bucket_count = {
+    set_variable = { global.tbm_bucket_count = 6 }
+    if = {
+        limit = { has_game_rule = { rule = tbm_bucket_spread option = TBM_SPREAD_1 } }
+        set_variable = { global.tbm_bucket_count = 1 }
+    }
+    if = {
+        limit = { has_game_rule = { rule = tbm_bucket_spread option = TBM_SPREAD_2 } }
+        set_variable = { global.tbm_bucket_count = 2 }
+    }
+    if = {
+        limit = { has_game_rule = { rule = tbm_bucket_spread option = TBM_SPREAD_3 } }
+        set_variable = { global.tbm_bucket_count = 3 }
+    }
+}
+
+tbm_advance_runtime_bucket_counter = {
+    add_to_variable = { global.tbm_bucket_counter = 1 }
+    set_temp_variable = { tbm_max_bucket = global.tbm_bucket_count }
+    subtract_from_temp_variable = { tbm_max_bucket = 1 }
+    if = {
+        limit = { check_variable = { var = global.tbm_bucket_counter value = var:tbm_max_bucket compare = greater_than } }
+        set_variable = { global.tbm_bucket_counter = 0 }
+    }
+}
+
+tbm_bootstrap_runtime_state = {
+
+    # Reset the global counters TBM expects before per-country setup.
+    set_variable = { global.tbm_current_year = 0 }
+    set_variable = { global.tbm_month_counter = 0 }
+    set_variable = { global.tbm_processing_bucket = 0 }
+    set_variable = { global.tbm_bucket_counter = 0 }
+    set_variable = { global.tbm_start_year = 0 }
+    # Reserved for future scheduling logic; currently unused by runtime pulses.
+    set_variable = { global.tbm_start_month_offset = 0 }
+    set_variable = { global.tbm_elapsed_months = 0 }
+
+    # Resolve bucket spread game rule into global.tbm_bucket_count.
+    tbm_resolve_runtime_bucket_count = yes
+
+    # Resolve current year and active compat profile from a valid country scope.
+    random_country = {
+        limit = { always = yes }
+        tbm_update_current_year = yes
+        tbm_auto_detect_compat_profile = yes
+    }
+
+    # Reassign runtime buckets once on bootstrap so existing saves and
+    # compatibility updates converge on the same deterministic schedule.
+    every_country = {
+        limit = {
+            OR = {
+                has_country_flag = tbm_bucket_initialized
+                num_of_civilian_factories > 0
+                num_of_military_factories > 0
+            }
+        }
+
+        set_variable = { tbm_bucket = global.tbm_bucket_counter }
+        tbm_advance_runtime_bucket_counter = yes
+        set_country_flag = tbm_bucket_initialized
+
+        # Legacy saves without TBM state need a full first-time refresh.
+        if = {
+            limit = { NOT = { has_country_flag = tbm_tier_initialized } }
+            set_variable = { tbm_tier_index = 0 }
+            set_variable = { tbm_global_power = 0 }
+            set_variable = { tbm_land_competence = 0 }
+            set_variable = { tbm_air_competence = 0 }
+            set_variable = { tbm_naval_competence = 0 }
+            set_variable = { tbm_industry_competence = 0 }
+            set_variable = { tbm_grant_counter = 0 }
+            tbm_refresh_country_state_runtime = yes
+        }
+    }
+
+    set_global_flag = tbm_runtime_bootstrapped
+    set_global_flag = tbm_runtime_schema_v2
+    clr_global_flag = tbm_6bucket_migrated
+}

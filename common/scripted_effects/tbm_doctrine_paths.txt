@@ -1,0 +1,19 @@
+###############################################################################
+# tbm_doctrine_paths.txt
+# Safe doctrine stubs while the core tech grant pipeline is stabilized.
+###############################################################################
+
+tbm_assign_doctrine_paths = {
+    # Keep deterministic defaults so any downstream checks have defined values.
+    set_variable = { tbm_land_doctrine_path = 1 }
+    set_variable = { tbm_naval_doctrine_path = 0 }
+    set_variable = { tbm_air_doctrine_path = 0 }
+}
+
+tbm_initialize_doctrine_paths = {
+    if = {
+        limit = { NOT = { has_country_flag = tbm_doctrine_paths_initialized } }
+        tbm_assign_doctrine_paths = yes
+        set_country_flag = tbm_doctrine_paths_initialized
+    }
+}

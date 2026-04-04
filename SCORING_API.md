@@ -1,4 +1,4 @@
-# Arms Race Scoring & Tier System
+# Tech Baseline Scoring & Tier System
 
 A drop-in power scoring and tier classification system for Hearts of Iron IV mods. Evaluates every country's global power, branch-specific military competence, and assigns a tier that other systems can key off.
 
@@ -11,20 +11,20 @@ Use this if your mod needs to answer "how powerful is this country?" at runtime.
 Copy these files into your mod:
 
 ```
-common/scripted_effects/arm_scoring.txt       # power & competence calculation
-common/scripted_effects/arm_evaluation.txt    # tier assignment, lag, category gating
-common/scripted_triggers/arm_triggers.txt     # helper triggers
+common/scripted_effects/tbm_scoring.txt       # power & competence calculation
+common/scripted_effects/tbm_evaluation.txt    # tier assignment, lag, category gating
+common/scripted_triggers/tbm_triggers.txt     # helper triggers
 ```
 
 Call from any country scope:
 
 ```
-arm_calculate_global_power = yes        # sets arm_global_power
-arm_calculate_land_competence = yes     # sets arm_land_competence
-arm_calculate_air_competence = yes      # sets arm_air_competence
-arm_calculate_naval_competence = yes    # sets arm_naval_competence
-arm_calculate_industry_competence = yes # sets arm_industry_competence
-arm_assign_power_tier = yes             # sets arm_tier_index (0-5)
+tbm_calculate_global_power = yes        # sets tbm_global_power
+tbm_calculate_land_competence = yes     # sets tbm_land_competence
+tbm_calculate_air_competence = yes      # sets tbm_air_competence
+tbm_calculate_naval_competence = yes    # sets tbm_naval_competence
+tbm_calculate_industry_competence = yes # sets tbm_industry_competence
+tbm_assign_power_tier = yes             # sets tbm_tier_index (0-5)
 ```
 
 All variables are set on the country scope and persist until the next evaluation.
@@ -35,36 +35,36 @@ All variables are set on the country scope and persist until the next evaluation
 
 ### Global power
 
-After calling `arm_calculate_global_power`:
+After calling `tbm_calculate_global_power`:
 
 | Variable | Type | Description |
 |---|---|---|
-| `arm_global_power` | float | Sum of all five component scores |
-| `arm_economy_score` | float | Factories with diminishing returns |
-| `arm_science_score` | float | Research slots |
-| `arm_mobilization_score` | float | Battalions + deployed manpower |
-| `arm_resource_score` | float | Weighted resource access (capped at 40) |
-| `arm_war_posture_score` | float | Stability + war support + at-war bonus + political power |
+| `tbm_global_power` | float | Sum of all five component scores |
+| `tbm_economy_score` | float | Factories with diminishing returns |
+| `tbm_science_score` | float | Research slots |
+| `tbm_mobilization_score` | float | Battalions + deployed manpower |
+| `tbm_resource_score` | float | Weighted resource access (capped at 40) |
+| `tbm_war_posture_score` | float | Stability + war support + at-war bonus + political power |
 
 ### Branch competence
 
 | Variable | Type | Description |
 |---|---|---|
-| `arm_land_competence` | float | Military factories + manpower + steel + tungsten + at-war bonus |
-| `arm_air_competence` | float | Military factories + aluminium + rubber + oil + research slots |
-| `arm_naval_competence` | float | Dockyards + oil + steel + chromium + research slots |
-| `arm_industry_competence` | float | Civilian factories + research slots + stability + resource breadth |
+| `tbm_land_competence` | float | Military factories + manpower + steel + tungsten + at-war bonus |
+| `tbm_air_competence` | float | Military factories + aluminium + rubber + oil + research slots |
+| `tbm_naval_competence` | float | Dockyards + oil + steel + chromium + research slots |
+| `tbm_industry_competence` | float | Civilian factories + research slots + stability + resource breadth |
 
 ### Tier assignment
 
-After calling `arm_assign_power_tier`:
+After calling `tbm_assign_power_tier`:
 
 | Variable | Type | Description |
 |---|---|---|
-| `arm_tier_index` | int | 0-5, current power tier |
-| `arm_base_lag` | float | Base technology lag in years |
-| `arm_quarterly_cap` | int | Tech grants allowed per 6-month evaluation cycle |
-| `arm_tier_avg` | float | Expected average competence for this tier (used for bonus thresholds) |
+| `tbm_tier_index` | int | 0-5, current power tier |
+| `tbm_base_lag` | float | Base technology lag in years |
+| `tbm_quarterly_cap` | int | Tech grants allowed per 6-month evaluation cycle |
+| `tbm_tier_avg` | float | Expected average competence for this tier (used for bonus thresholds) |
 
 ---
 
@@ -184,24 +184,24 @@ All triggers run in country scope.
 
 | Trigger | Returns true when |
 |---|---|
-| `arm_system_enabled` | ARM is not disabled by game rule |
-| `arm_country_eligible` | Country should be evaluated (not capitulated, has factories, AI or rule allows) |
-| `arm_is_in_faction_with_major` | In faction with a Great Power+ leader |
-| `arm_is_puppet_eligible` | Is subject and puppet-sharing rule not disabled |
-| `arm_is_desperation_eligible` | At war, losing territory, rule not disabled |
-| `arm_doctrine_allowed` | Doctrine auto-research permitted for this country |
-| `arm_is_defensive_war` | Enemy controls at least one core state |
+| `tbm_system_enabled` | TBM is not disabled by game rule |
+| `tbm_country_eligible` | Country should be evaluated (not capitulated, has factories, AI or rule allows) |
+| `tbm_is_in_faction_with_major` | In faction with a Great Power+ leader |
+| `tbm_is_puppet_eligible` | Is subject and puppet-sharing rule not disabled |
+| `tbm_is_desperation_eligible` | At war, losing territory, rule not disabled |
+| `tbm_doctrine_allowed` | Doctrine auto-research permitted for this country |
+| `tbm_is_defensive_war` | Enemy controls at least one core state |
 
 ---
 
 ## Using tier in your own mod
 
-The simplest integration -- check `arm_tier_index` in your own triggers or effects:
+The simplest integration -- check `tbm_tier_index` in your own triggers or effects:
 
 ```
 # Give a bonus to Great Powers and above
 if = {
-    limit = { check_variable = { arm_tier_index > 3 } }
+    limit = { check_variable = { tbm_tier_index > 3 } }
     add_political_power = 50
 }
 ```
@@ -209,11 +209,11 @@ if = {
 ```
 # Scale an effect by tier
 if = {
-    limit = { check_variable = { arm_tier_index = 5 } }
+    limit = { check_variable = { tbm_tier_index = 5 } }
     add_stability = 0.05
 }
 else_if = {
-    limit = { check_variable = { arm_tier_index = 4 } }
+    limit = { check_variable = { tbm_tier_index = 4 } }
     add_stability = 0.03
 }
 ```
@@ -222,21 +222,21 @@ else_if = {
 # Gate a decision behind branch competence
 my_build_carriers_decision = {
     available = {
-        check_variable = { arm_naval_competence > 60 }
+        check_variable = { tbm_naval_competence > 60 }
     }
 }
 ```
 
-If ARM isn't loaded, `arm_tier_index` will be 0 (unset) and competence variables will be 0. Design your fallbacks accordingly.
+If TBM isn't loaded, `tbm_tier_index` will be 0 (unset) and competence variables will be 0. Design your fallbacks accordingly.
 
 ---
 
 ## Dependencies
 
-None. The scoring system uses only vanilla triggers and variables -- no DLC required, no other mods required. Remove the game rule checks from `arm_evaluation.txt` if you don't want the configurable rules.
+None. The scoring system uses only vanilla triggers and variables -- no DLC required, no other mods required. Remove the game rule checks from `tbm_evaluation.txt` if you don't want the configurable rules.
 
 ---
 
 ## License
 
-Part of [Arms Race Mechanics](https://github.com/henri14871/hoi4-arms-race-mechanics). Free to use and adapt in your own mods.
+Part of [Tech Baseline Mechanics](https://github.com/henri14871/hoi4-arms-race-mechanics). Free to use and adapt in your own mods.

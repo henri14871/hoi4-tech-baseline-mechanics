@@ -1,4 +1,4 @@
-# ARM Internal Reference
+# TBM Internal Reference
 
 This is your personal reference for how the mod works under the hood. Use it to understand the system, ask for changes, or plan improvements.
 
@@ -6,7 +6,7 @@ This is your personal reference for how the mod works under the hood. Use it to 
 
 ## The Big Picture
 
-ARM runs a background loop that gives AI countries tech they "should" have based on how powerful and specialized they are. It doesn't replace the AI's research — it fills in gaps so the AI doesn't show up to WW2 with WW1 equipment.
+TBM runs a background loop that gives AI countries tech they "should" have based on how powerful and specialized they are. It doesn't replace the AI's research — it fills in gaps so the AI doesn't show up to WW2 with WW1 equipment.
 
 **Default:** AI-only, Balanced mode, 6-month evaluation cycles.
 
@@ -198,7 +198,7 @@ Within each branch, techs are granted in this order (first listed = first grante
 
 ## Compatibility Profile System
 
-ARM auto-detects overhaul mods by checking for mod-specific country tags. Each profile has its own:
+TBM auto-detects overhaul mods by checking for mod-specific country tags. Each profile has its own:
 - Tier thresholds (some mods need different power breakpoints)
 - Tech grant lists (mapped to that mod's tech tree)
 - Doctrine handling (some mods have safe doctrine paths, others don't)
@@ -211,21 +211,21 @@ ARM auto-detects overhaul mods by checking for mod-specific country tags. Each p
 
 | File | What it does |
 |---|---|
-| `common/on_actions/arm_on_actions.txt` | Main loop: startup, daily, weekly, monthly hooks |
-| `common/scripted_effects/arm_scoring.txt` | Power and competence calculations |
-| `common/scripted_effects/arm_evaluation.txt` | Tier assignment, lag, category gating |
-| `common/scripted_effects/arm_grant.txt` | Orchestrates evaluation + tech granting |
-| `common/scripted_effects/arm_research_speed.txt` | Spirit assignment |
-| `common/scripted_effects/arm_runtime_bootstrap.txt` | Save-safe initialization |
-| `common/scripted_effects/arm_historical_bias.txt` | Historical mode bonuses |
-| `common/scripted_effects/arm_time.txt` | Year resolution from game dates |
-| `common/scripted_effects/arm_doctrine_paths.txt` | Doctrine handling stubs |
+| `common/on_actions/tbm_on_actions.txt` | Main loop: startup, daily, weekly, monthly hooks |
+| `common/scripted_effects/tbm_scoring.txt` | Power and competence calculations |
+| `common/scripted_effects/tbm_evaluation.txt` | Tier assignment, lag, category gating |
+| `common/scripted_effects/tbm_grant.txt` | Orchestrates evaluation + tech granting |
+| `common/scripted_effects/tbm_research_speed.txt` | Spirit assignment |
+| `common/scripted_effects/tbm_runtime_bootstrap.txt` | Save-safe initialization |
+| `common/scripted_effects/tbm_historical_bias.txt` | Historical mode bonuses |
+| `common/scripted_effects/tbm_time.txt` | Year resolution from game dates |
+| `common/scripted_effects/tbm_doctrine_paths.txt` | Doctrine handling stubs |
 | `common/scripted_effects/auto_research_techlist.txt` | Vanilla tech grant lists |
-| `common/scripted_effects/arm_compat_generated_*.txt` | Profile-specific dispatch + grants |
-| `common/scripted_triggers/arm_triggers.txt` | All eligibility and helper triggers |
-| `common/game_rules/arm_game_rules.txt` | 13 game rules |
-| `events/arm_events.txt` | Notifications and debug events |
-| `localisation/english/arm_l_english.yml` | All user-facing text |
+| `common/scripted_effects/tbm_compat_generated_*.txt` | Profile-specific dispatch + grants |
+| `common/scripted_triggers/tbm_triggers.txt` | All eligibility and helper triggers |
+| `common/game_rules/tbm_game_rules.txt` | 13 game rules |
+| `events/tbm_events.txt` | Notifications and debug events |
+| `localisation/english/tbm_l_english.yml` | All user-facing text |
 | `Tools/build_builtin_compat_profiles.py` | Compiles compat profiles into mod |
 
 ---
@@ -236,17 +236,17 @@ Here are the kinds of things you can ask to change and where they live:
 
 | "I want to..." | What to change |
 |---|---|
-| Adjust tier thresholds | `arm_evaluation.txt` — promote/demote values in `arm_assign_power_tier` |
-| Change base lag for a tier | `arm_evaluation.txt` — `arm_base_lag` values |
-| Change grant caps | `arm_evaluation.txt` — `arm_quarterly_cap` values |
-| Add/remove catch-up bonuses | `arm_evaluation.txt` — `arm_prepare_country_context_cache` and `arm_compute_effective_lag` |
-| Change which techs need which competence | `arm_evaluation.txt` — `arm_apply_structural_capability_rules` |
-| Adjust scoring weights | `arm_scoring.txt` — component formulas for power/competence |
+| Adjust tier thresholds | `tbm_evaluation.txt` — promote/demote values in `tbm_assign_power_tier` |
+| Change base lag for a tier | `tbm_evaluation.txt` — `tbm_base_lag` values |
+| Change grant caps | `tbm_evaluation.txt` — `tbm_quarterly_cap` values |
+| Add/remove catch-up bonuses | `tbm_evaluation.txt` — `tbm_prepare_country_context_cache` and `tbm_compute_effective_lag` |
+| Change which techs need which competence | `tbm_evaluation.txt` — `tbm_apply_structural_capability_rules` |
+| Adjust scoring weights | `tbm_scoring.txt` — component formulas for power/competence |
 | Change tech grant order | `auto_research_techlist.txt` — order of `set_technology` calls |
-| Add historical bias for a country | `arm_historical_bias.txt` — add a new country block |
-| Change research speed bonuses | `arm_research_speed.txt` — spirit thresholds and values |
-| Change evaluation frequency | `arm_on_actions.txt` — bucket count and month_counter logic |
-| Add a new game rule option | `arm_game_rules.txt` + `arm_l_english.yml` + wherever the rule is checked |
+| Add historical bias for a country | `tbm_historical_bias.txt` — add a new country block |
+| Change research speed bonuses | `tbm_research_speed.txt` — spirit thresholds and values |
+| Change evaluation frequency | `tbm_on_actions.txt` — bucket count and month_counter logic |
+| Add a new game rule option | `tbm_game_rules.txt` + `tbm_l_english.yml` + wherever the rule is checked |
 | Add a new compat profile | Run the Python tools, add staging bundle to `compat_generated/` |
 
 ---
@@ -270,7 +270,7 @@ Here are the kinds of things you can ask to change and where they live:
 - Scoring uses threshold chains instead of real math (Clausewitz limitation) — can feel "steppy"
 - No per-country customization — all countries at the same tier get the same treatment
 - Competence scoring doesn't account for terrain, strategic situation, or doctrine choice
-- The `arm_quarterly_cap` variable name is misleading (it's actually per 6-month cycle now)
+- The `tbm_quarterly_cap` variable name is misleading (it's actually per 6-month cycle now)
 - No awareness of what the AI is actually building — a country might get tank tech but never build tanks
 - Nuclear/rockets are very restricted by default (Superpower + industry 85+) — maybe too restrictive
 - Historical bias mode only covers 7 majors, ignores secondary powers like Canada, Australia, etc.
@@ -296,6 +296,6 @@ Here are the kinds of things you can ask to change and where they live:
 ### Quality of Life
 - **Better debug UI** — Show all info in the decision category tooltip instead of requiring event popups
 - **Notification customization** — Let players pick which milestone events they care about
-- **Rename `arm_quarterly_cap`** — Rename to `arm_cycle_cap` or `arm_grant_cap` to match the actual 6-month cycle
+- **Rename `tbm_quarterly_cap`** — Rename to `tbm_cycle_cap` or `tbm_grant_cap` to match the actual 6-month cycle
 - **Profile auto-generation** — Detect unknown mods and auto-generate basic tech lists instead of requiring manual profile creation
 - **Localization for more languages** — Currently English-only

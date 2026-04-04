@@ -1,0 +1,114 @@
+##############################################
+# Tech Baseline Mechanics — Scripted Triggers
+# All triggers run in COUNTRY scope
+##############################################
+
+# Returns true if the TBM system is NOT disabled
+tbm_system_enabled = {
+    NOT = { has_game_rule = { rule = tbm_auto_research_scope option = TBM_DISABLED } }
+}
+
+# Returns true if this country should be evaluated by TBM
+tbm_country_eligible = {
+    NOT = { has_game_rule = { rule = tbm_auto_research_scope option = TBM_DISABLED } }
+    has_capitulated = no
+    OR = {
+        num_of_civilian_factories > 0
+        num_of_military_factories > 0
+    }
+    OR = {
+        is_ai = yes
+        has_game_rule = { rule = tbm_auto_research_scope option = TBM_EVERYONE }
+    }
+}
+
+# Checks Rule 1 = Everyone (players included)
+tbm_is_player_included = {
+    has_game_rule = { rule = tbm_auto_research_scope option = TBM_EVERYONE }
+}
+
+# At war AND war/faction catch-up rule not disabled
+tbm_is_at_war_combat_bonus = {
+    has_war = yes
+    NOT = { has_game_rule = { rule = tbm_war_faction_catchup option = TBM_WF_DISABLED } }
+}
+
+# In faction with a great-power+ leader (tier > 3)
+tbm_is_in_faction_with_major = {
+    is_in_faction = yes
+    any_country = {
+        is_faction_leader = yes
+        is_in_faction_with = ROOT
+        check_variable = { var = tbm_tier_index value = 3 compare = greater_than }
+    }
+}
+
+# Is subject AND puppet-sharing rule not disabled
+tbm_is_puppet_eligible = {
+    is_subject = yes
+    NOT = { has_game_rule = { rule = tbm_puppet_sharing option = TBM_PUP_DISABLED } }
+}
+
+# At war, not capitulated, losing territory, rule not disabled
+tbm_is_desperation_eligible = {
+    has_war = yes
+    has_capitulated = no
+    NOT = { has_game_rule = { rule = tbm_anti_death_spiral option = TBM_ADS_DISABLED } }
+    OR = {
+        surrender_progress > 0.2
+        AND = {
+            has_game_rule = { rule = tbm_anti_death_spiral option = TBM_ADS_ENHANCED }
+            surrender_progress > 0.1
+        }
+    }
+}
+
+# Doctrine auto-research permitted for this country
+tbm_doctrine_allowed = {
+    OR = {
+        has_game_rule = { rule = tbm_doctrine_handling option = TBM_DOC_EVERYONE }
+        AND = {
+            is_ai = yes
+            has_game_rule = { rule = tbm_doctrine_handling option = TBM_DOC_AI_ONLY }
+        }
+    }
+}
+
+# Nuclear/rockets allowed
+tbm_advanced_tech_allowed = {
+    OR = {
+        has_game_rule = { rule = tbm_advanced_tech option = TBM_ADV_INCLUDED }
+        AND = {
+            has_game_rule = { rule = tbm_advanced_tech option = TBM_ADV_SUPERPOWERS }
+            check_variable = { var = tbm_tier_index value = 4 compare = greater_than }
+        }
+    }
+    check_variable = { var = tbm_industry_competence value = 84 compare = greater_than }
+}
+
+# Rule 3 includes air/naval tech
+tbm_tech_scope_includes_air_naval = {
+    OR = {
+        has_game_rule = { rule = tbm_tech_scope option = TBM_CORE_AIR_NAVAL }
+        has_game_rule = { rule = tbm_tech_scope option = TBM_ALL_EXCEPT_DOCTRINES }
+        has_game_rule = { rule = tbm_tech_scope option = TBM_EVERYTHING }
+    }
+}
+
+# Rule 3 includes everything except doctrines
+tbm_tech_scope_includes_all = {
+    OR = {
+        has_game_rule = { rule = tbm_tech_scope option = TBM_ALL_EXCEPT_DOCTRINES }
+        has_game_rule = { rule = tbm_tech_scope option = TBM_EVERYTHING }
+    }
+}
+
+# Enemy controls at least one of our core states
+tbm_is_defensive_war = {
+    has_war = yes
+    any_enemy_country = {
+        any_controlled_state = {
+            is_core_of = ROOT
+        }
+    }
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-One-command rebuild for ARM's bundled major-mod compatibility profiles.
+One-command rebuild for TBM's generated compatibility bundles and core cleanup.
 """
 
 from __future__ import annotations
@@ -20,8 +20,8 @@ def run_step(args: list[str]) -> None:
 
 
 def main() -> None:
-    run_step(["Tools/arm_compat_tool.py", "rebuild"])
-    print("Rebuilt bundled major-mod compatibility profiles.")
+    run_step(["Tools/tbm_compat_tool.py", "rebuild"])
+    print("Rebuilt TBM compatibility bundles and cleaned legacy baked runtime files.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,277 @@
+###############################################################################
+# tbm_grant.txt - Master Evaluation Orchestrator
+# Tech Baseline Mechanics mod
+#
+# Contains:
+#   tbm_evaluate_and_grant  - main per-country evaluation pipeline
+#   tbm_grant_doctrines     - doctrine granting (separate cap)
+#   tbm_update_current_year - resolves global.tbm_current_year from the current game date
+###############################################################################
+
+# ---------------------------------------------------------------------------
+# tbm_refresh_country_state_runtime_core
+# Recomputes persistent TBM state up to the point where UI and
+# grant logic share the same derived variables.
+# Assumes global.tbm_current_year has already been updated.
+# ---------------------------------------------------------------------------
+tbm_refresh_country_state_runtime_core = {
+
+    # Prepare cached score inputs once per refresh.
+    tbm_prepare_score_inputs = yes
+
+    # Step 1: Calculate scores
+    tbm_calculate_global_power = yes
+    tbm_calculate_land_competence = yes
+    tbm_calculate_air_competence = yes
+    tbm_calculate_naval_competence = yes
+    tbm_calculate_industry_competence = yes
+
+    # Step 1b: Apply historical major-power bias if Historical mode is enabled
+    if = {
+        limit = {
+            has_game_rule = { rule = tbm_auto_research_intensity option = TBM_HISTORICAL }
+        }
+        tbm_apply_historical_bias = yes
+    }
+
+    # Step 1c: Apply structural branch gates and universal power ceilings.
+    tbm_apply_structural_capability_rules = yes
+
+    # Step 2: Assign tier using the active compatibility profile
+    tbm_assign_power_tier_for_profile = yes
+
+    # Step 2a: Compute per-branch grant caps from tier and competence
+    tbm_compute_branch_caps = yes
+
+    # Step 2b: Lock doctrine preferences after branch scores exist
+    tbm_initialize_doctrine_paths_for_profile = yes
+
+    # Step 3: Assign allowed categories
+    tbm_assign_allowed_categories = yes
+
+    # Step 4: Compute effective lag per branch
+    tbm_compute_effective_lag = yes
+
+    # Step 5: Compute target years
+    tbm_compute_target_years = yes
+
+    # Step 5b: Cache the next monthly grant window for the UI.
+    tbm_compute_next_grant_window = yes
+}
+
+# ---------------------------------------------------------------------------
+# tbm_refresh_country_state_ui_runtime
+# UI-only runtime refresh used by weekly visible-state updates.
+# Does not grant techs or change the power tier.  Tier assignment is
+# intentionally skipped so that the weekly cadence cannot cascade a
+# country through multiple tier demotions between 6-month evaluations.
+# Research-speed spirits ARE updated so the player sees correct ideas
+# even in AI-Only mode where the full evaluation never runs for humans.
+# ---------------------------------------------------------------------------
+tbm_refresh_country_state_ui_runtime = {
+
+    # Prepare cached score inputs once per refresh.
+    tbm_prepare_score_inputs = yes
+
+    # Step 1: Calculate scores
+    tbm_calculate_global_power = yes
+    tbm_calculate_land_competence = yes
+    tbm_calculate_air_competence = yes
+    tbm_calculate_naval_competence = yes
+    tbm_calculate_industry_competence = yes
+
+    # Step 1b: Apply historical major-power bias if Historical mode is enabled
+    if = {
+        limit = {
+            has_game_rule = { rule = tbm_auto_research_intensity option = TBM_HISTORICAL }
+        }
+        tbm_apply_historical_bias = yes
+    }
+
+    # Step 1c: Apply structural branch gates and universal power ceilings.
+    tbm_apply_structural_capability_rules = yes
+
+    # NOTE: Step 2 (tbm_assign_power_tier_for_profile) is deliberately
+    # omitted here.  The tier must only change during the 6-month
+    # monthly evaluation to honour the one-tier-per-cycle guard.
+
+    # Step 2a: Recompute per-branch caps (uses existing tier + fresh competence)
+    tbm_compute_branch_caps = yes
+
+    # Step 2b: Lock doctrine preferences after branch scores exist
+    tbm_initialize_doctrine_paths_for_profile = yes
+
+    # Step 3: Assign allowed categories (uses existing tier)
+    tbm_assign_allowed_categories = yes
+
+    # Step 4: Compute effective lag per branch
+    tbm_compute_effective_lag = yes
+
+    # Step 5: Compute target years
+    tbm_compute_target_years = yes
+
+    # Step 5b: Cache the next monthly grant window for the UI.
+    tbm_compute_next_grant_window = yes
+
+    # Step 6: Keep research-speed spirits in sync with current scores.
+    # In AI-Only mode, human countries never run the full monthly
+    # evaluation, so without this the spirits freeze at their
+    # initialization values and never reflect actual competence.
+    tbm_update_research_speed_spirit = yes
+}
+
+# ---------------------------------------------------------------------------
+# tbm_refresh_country_state_runtime
+# Full runtime refresh used by evaluation and initialization paths.
+# Includes research-speed spirit updates.
+# ---------------------------------------------------------------------------
+tbm_refresh_country_state_runtime = {
+    tbm_refresh_country_state_runtime_core = yes
+
+    # Step 6: Update research speed spirits
+    tbm_update_research_speed_spirit = yes
+}
+
+# ---------------------------------------------------------------------------
+# tbm_refresh_country_state
+# Recomputes all persistent TBM state for a country without granting techs.
+# Safe for startup initialization and debug refreshes.
+# ---------------------------------------------------------------------------
+tbm_refresh_country_state = {
+
+    # Keep the derived current year fresh for debug views and manual evaluation.
+    tbm_update_current_year = yes
+    tbm_refresh_country_state_runtime = yes
+}
+
+# ---------------------------------------------------------------------------
+# tbm_handle_tech_grant_notification
+# Called immediately after a tech grant succeeds.
+# Reuses the existing notification rule surface without adding new settings.
+# ---------------------------------------------------------------------------
+tbm_handle_tech_grant_notification = {
+    set_variable = { tbm_any_tech_granted_this_pass = 1 }
+
+    if = {
+        limit = {
+            has_game_rule = { rule = tbm_notifications option = TBM_NOTIFY_ALL }
+            is_ai = no
+        }
+        country_event = { id = tbm_event.1 }
+    }
+}
+
+# ---------------------------------------------------------------------------
+# tbm_handle_major_milestone_notifications
+# Fires one-time global milestone news after a successful tech-grant pass.
+# ---------------------------------------------------------------------------
+tbm_handle_major_milestone_notifications = {
+    if = {
+        limit = { NOT = { has_game_rule = { rule = tbm_notifications option = TBM_NOTIFY_SILENT } } }
+
+        if = {
+            limit = {
+                NOT = { has_country_flag = tbm_major_notified_jet_age }
+                OR = {
+                    has_tech = jet_fighter1
+                    has_tech = jet_tactical_bomber1
+                    has_tech = jet_strategic_bomber1
+                    has_tech = modern_small_airframe
+                    has_tech = sp_centrifugal_jet_tech
+                }
+            }
+            set_country_flag = tbm_major_notified_jet_age
+            country_event = { id = tbm_event.200 }
+        }
+
+        if = {
+            limit = {
+                NOT = { has_country_flag = tbm_major_notified_nuclear_age }
+                OR = {
+                    has_tech = atomic_research
+                    has_tech = nuclear_reactor
+                    has_tech = nuclear_reactor_heavy_water
+                    has_tech = isotope_separation_centrifugal
+                }
+            }
+            set_country_flag = tbm_major_notified_nuclear_age
+            country_event = { id = tbm_event.201 }
+        }
+    }
+}
+
+# ---------------------------------------------------------------------------
+# tbm_evaluate_and_grant
+# Runs in COUNTRY SCOPE. Called for each country during its bucket's
+# evaluation month.
+# ---------------------------------------------------------------------------
+tbm_evaluate_and_grant = {
+
+    tbm_refresh_country_state = yes
+    set_variable = { tbm_any_tech_granted_this_pass = 0 }
+
+    # Step 7-8: Grant technologies using per-branch caps
+    tbm_grant_techs_for_profile = yes
+
+    # Step 9: Doctrines (if the active profile supports them)
+    tbm_grant_doctrines_for_profile = yes
+
+    if = {
+        limit = { check_variable = { var = tbm_any_tech_granted_this_pass value = 0 compare = greater_than } }
+        tbm_handle_major_milestone_notifications = yes
+    }
+}
+
+# ---------------------------------------------------------------------------
+# tbm_evaluate_and_grant_runtime
+# Runtime-only variant used by monthly pulses after the year has been resolved.
+# ---------------------------------------------------------------------------
+tbm_evaluate_and_grant_runtime = {
+
+    tbm_refresh_country_state_runtime = yes
+    set_variable = { tbm_any_tech_granted_this_pass = 0 }
+
+    # Skip grant dispatch for micro-nations with negligible power.
+    # Tier 0 countries with very low power have maximum lag and almost
+    # never qualify for any grants — skipping saves the full dispatch scan.
+    if = {
+        limit = {
+            OR = {
+                check_variable = { var = tbm_tier_index value = 0 compare = greater_than }
+                check_variable = { var = tbm_global_power value = 9 compare = greater_than }
+            }
+        }
+
+        # Step 7-8: Grant technologies using per-branch caps
+        tbm_grant_techs_for_profile = yes
+
+        # Step 9: Doctrines (if the active profile supports them)
+        tbm_grant_doctrines_for_profile = yes
+
+        if = {
+            limit = { check_variable = { var = tbm_any_tech_granted_this_pass value = 0 compare = greater_than } }
+            tbm_handle_major_milestone_notifications = yes
+        }
+    }
+}
+
+# ---------------------------------------------------------------------------
+# tbm_grant_doctrines
+# Handles doctrine granting with a separate cap of 1 per evaluation.
+# ---------------------------------------------------------------------------
+tbm_grant_doctrines = {
+    set_variable = { tbm_doctrine_grant_counter = 0 }
+}
+
+# ---------------------------------------------------------------------------
+# tbm_update_current_year
+# Resolves the current in-game year from explicit date checks.
+# ---------------------------------------------------------------------------
+tbm_update_current_year = {
+    tbm_resolve_current_year_from_date = yes
+
+    if = {
+        limit = { check_variable = { var = global.tbm_start_year value = 1 compare = less_than } }
+        set_variable = { var = global.tbm_start_year value = global.tbm_current_year }
+    }
+}
