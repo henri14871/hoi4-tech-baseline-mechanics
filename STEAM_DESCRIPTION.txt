@@ -28,4 +28,4 @@ Every country is scored for overall power, placed into a tier, and then granted 
 
 [b]Version:[/b] 2.0.0 | [b]HOI4:[/b] 1.17.5.2 | [b]DLC Required:[/b] None
 
-[url=https://github.com/henri14871/hoi4-arms-race-mechanics]Source & Devbuild[/url]
+[url=https://github.com/henri14871/hoi4-tech-baseline-mechanics]Source & Devbuild[/url]

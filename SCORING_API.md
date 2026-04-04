@@ -239,4 +239,4 @@ None. The scoring system uses only vanilla triggers and variables -- no DLC requ
 
 ## License
 
-Part of [Tech Baseline Mechanics](https://github.com/henri14871/hoi4-arms-race-mechanics). Free to use and adapt in your own mods.
+Part of [Tech Baseline Mechanics](https://github.com/henri14871/hoi4-tech-baseline-mechanics). Free to use and adapt in your own mods.
