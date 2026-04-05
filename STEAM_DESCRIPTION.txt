@@ -1,31 +1,66 @@
 [h1]Tech Baseline Mechanics[/h1]
 
-[b]Keep AI countries technologically credible without taking over player research.[/b]
+Tired of watching Germany roll into 1943 without medium tanks? Or China fighting with 1918 infantry equipment in 1945? TBM fixes that.
 
-TBM gives each country a believable tech baseline based on overall power and branch competence. Majors stop missing obvious tank, air, radar, or naval tech. Regional powers stay dangerous in the branches they can actually support. Minors stay relevant without turning into ahistorical superpowers.
+[b]Tech Baseline Mechanics[/b] gives every country a believable technology floor based on its actual national power. Majors research what majors should. Minors stay relevant without becoming ahistorical superpowers. Late-game wars are decided by production, planning, and execution — not absurd tech gaps.
 
-[h2]What It Changes[/h2]
-[list]
-[*] AI nations stay closer to a believable tech floor
-[*] Countries under pressure get catch-up help instead of collapsing forever
-[*] Late-game wars are decided more by production, planning, and execution
-[*] Research still matters because TBM sets the floor, not the ceiling
-[*] AI-only by default, with optional player support through game rules
-[/list]
+[b]Your research is never touched.[/b] TBM targets AI by default. You stay in full control.
 
+[hr][/hr]
 [h2]How It Works[/h2]
-Every country is scored for overall power, placed into a tier, and then granted tech only in branches it can realistically support. Naval powers get naval tech. Land-focused industrial states get tanks, artillery, and support tech. The system runs on a 6-month rotation to keep performance stable.
 
-[h2]Highlights[/h2]
+Every country is scored across five dimensions — economy, science, mobilization, resources, and war posture — and placed into one of [b]six power tiers[/b] (Micro to Superpower). Higher tiers stay closer to the tech frontier. Lower tiers lag behind, but never fall off a cliff.
+
+Four independent [b]branch competence scores[/b] (Land, Air, Naval, Industry) determine which techs a country actually receives. A landlocked nation won't magically get submarine tech. A country with no air industry won't get jets.
+
+Countries at war, in strong alliances, or losing territory get [b]catch-up bonuses[/b] so they don't spiral into permanent irrelevance.
+
+[hr][/hr]
+[h2]Features[/h2]
+
 [list]
-[*] 6 power tiers with baseline lag and grant caps
-[*] Separate Land, Air, Naval, and Industry competence
-[*] War, faction, puppet, and desperation catch-up bonuses
-[*] Research-speed spirits tied to national competence
-[*] 13 game rules for scope, intensity, doctrines, notifications, and debug visibility
-[*] Save-safe and no DLC required
+[*] [b]Six power tiers[/b] with hysteresis — no constant bouncing between tiers
+[*] [b]Four branch scores[/b] — Land, Air, Naval, Industry evaluated independently
+[*] [b]Smart tech gating[/b] — countries only get tech they can plausibly support
+[*] [b]Catch-up mechanics[/b] — war, factions, puppets, and desperation all help
+[*] [b]Research speed spirits[/b] — national competence affects your research rate
+[*] [b]Historical mode[/b] — gives Germany, UK, Japan, USA, USSR, Italy, France authentic strengths
+[*] [b]13 game rules[/b] — customize scope, intensity, tech coverage, doctrines, notifications, and more
+[*] [b]Save-safe[/b] — install mid-campaign without breaking your save
+[*] [b]Performance-friendly[/b] — staggered evaluation spreads the load across months
 [/list]
 
-[b]Version:[/b] 2.0.0 | [b]HOI4:[/b] 1.17.5.2 | [b]DLC Required:[/b] None
+[hr][/hr]
+[h2]Game Rules[/h2]
 
-[url=https://github.com/henri14871/hoi4-tech-baseline-mechanics]Source & Devbuild[/url]
+Everything is configurable from the game rules screen:
+
+[list]
+[*] [b]Scope[/b] — AI only, everyone, or disabled
+[*] [b]Intensity[/b] — Realistic, Balanced, Arcade, or Historical
+[*] [b]Tech scope[/b] — Core only, core + air/naval, all except doctrines, or everything
+[*] [b]Doctrines[/b] — Disabled, AI only, or everyone
+[*] [b]Advanced tech[/b] — Nuclear/rockets: excluded, superpowers only, or included
+[*] [b]Catch-up strength[/b] — War bonuses, faction sharing, puppet tech, anti-death-spiral
+[*] [b]Grant caps[/b] — Strict, standard, or unlimited
+[*] [b]Bucket spread[/b] — 1/2/3/6 month evaluation cycles (performance tuning)
+[*] [b]Notifications[/b] — Silent, major milestones only, or everything
+[*] [b]Visibility[/b] — Hide, show own score, or full debug view
+[/list]
+
+[hr][/hr]
+[h2]Compatibility[/h2]
+
+Works with vanilla HOI4. No DLC required.
+
+Built-in compatibility profiles for 14 major mods including:
+[list]
+[*] BlackICE, Road to 56, Kaiserreich, KaiserreduX
+[*] The New Order, Millennium Dawn, The Great War
+[*] Cold War Iron Curtain, Endsieg, Extended Tech Tree 1960
+[*] And more — auto-detected at game start
+[/list]
+
+[hr][/hr]
+[h2]Links[/h2]
+[url=https://github.com/Henri-Jacques/TechBaselineMechanics]GitHub[/url] | [url=https://github.com/Henri-Jacques/TechBaselineMechanics/issues]Bug Reports[/url]

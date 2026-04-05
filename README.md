@@ -1,37 +1,19 @@
 # Tech Baseline Mechanics
 
-**Keep AI countries technologically credible without taking over player research.**
+**Stop AI nations from showing up to WW2 with WW1 equipment.**
 
-TBM gives each country a believable tech baseline based on overall power and branch competence. Majors stop missing obvious armor, air, radar, or naval tech. Regional powers stay dangerous in the branches they can actually support. Minors remain relevant without turning into ahistorical superpowers.
+TBM gives every country a believable technology floor based on its actual national power and military specialization. Majors get the tech majors should have. Minors stay relevant without becoming ahistorical superpowers. Your research is never touched — TBM targets AI by default.
 
-**Version:** 2.0.0  
-**HOI4:** 1.17.5.2  
-**DLC Required:** None  
+**Version:** 2.0.0 | **HOI4:** 1.17.5.2 | **DLC Required:** None  
 **Steam Workshop:** https://steamcommunity.com/sharedfiles/filedetails/?id=3683996696
-
----
-
-## What It Changes
-
-- AI nations stay closer to a believable tech floor.
-- Countries under pressure get catch-up help instead of falling permanently irrelevant.
-- Late-game wars are decided more by production, planning, and execution than wild tech gaps.
-- Research still matters because TBM sets a baseline, not the ceiling.
-- Players are untouched by default; player support is optional through game rules.
 
 ---
 
 ## How It Works
 
-Every country gets a global power score. That score places it into one of six tiers, which determines how far behind the frontier it is allowed to fall and how many techs it can receive per evaluation.
+Every country is scored across five dimensions (economy, science, mobilization, resources, war posture) and placed into one of **six power tiers**:
 
-TBM then checks four separate branch scores: Land, Air, Naval, and Industry. Countries only receive tech in branches they can plausibly support. A naval power gets naval tech. A land-heavy industrial state gets tanks, artillery, and support tech. Landlocked countries do not get free submarine progression.
-
-Countries are processed on a 6-month rotation to keep performance predictable. Nations at war, in strong factions, under puppet support, or in bad strategic situations can receive catch-up reductions to effective lag so they do not spiral into permanent tech collapse.
-
-### Power Tiers
-
-| Tier | Name | Base Lag | Grants / Cycle |
+| Tier | Name | Base Tech Lag | Grants / Cycle |
 |---|---|---|---|
 | 5 | Superpower | 0.25 years | 12 |
 | 4 | Great Power | 1.5 years | 10 |
@@ -40,43 +22,57 @@ Countries are processed on a 6-month rotation to keep performance predictable. N
 | 1 | Minor | 4.5 years | 4 |
 | 0 | Micro | 6.0 years | 2 |
 
+Four independent **branch competence scores** — Land, Air, Naval, Industry — determine which techs a country actually receives. A landlocked nation won't get submarine tech. A country with no air industry won't get jets. Each branch gates its own tech categories based on competence thresholds.
+
+Countries at war, in strong alliances, receiving lend-lease, or losing territory get **catch-up bonuses** to prevent permanent tech collapse.
+
 ---
 
-## Highlights
+## Features
 
-- Six power tiers with hysteresis to prevent constant promotion and demotion
-- Independent Land, Air, Naval, and Industry competence scoring
-- Per-branch tech gating and grant caps
-- War, faction, puppet, and anti-death-spiral catch-up logic
-- Research-speed spirits tied to national competence
-- Historical bias mode for stronger historical majors
-- 13 game rules for scope, intensity, doctrines, notifications, and debug visibility
-- Save-safe behavior for mid-campaign installation
+- **Six power tiers** with hysteresis to prevent constant tier bouncing
+- **Four branch scores** (Land, Air, Naval, Industry) evaluated independently
+- **Smart tech gating** — countries only get tech they can plausibly support
+- **Catch-up mechanics** — war, factions, puppets, lend-lease, and desperation all reduce lag
+- **Research speed spirits** — 26 national spirits tied to tier and branch competence
+- **Historical mode** — authentic strength bonuses for Germany, UK, Japan, USA, USSR, Italy, France
+- **13 game rules** — full control over scope, intensity, coverage, and behavior
+- **Save-safe** — install mid-campaign without issues
+- **Performance-friendly** — staggered bucket evaluation spreads load across months
 
 ---
 
 ## Game Rules
 
-TBM exposes rules for:
+All configurable from the game rules screen before starting a game:
 
-- Scope: AI only, everyone, or disabled
-- Intensity: realistic, balanced, arcade, or historical
-- Tech scope: from core-only to full coverage
-- Doctrine handling: disabled, AI only, or everyone
-- Catch-up strength, grant caps, puppet sharing, and anti-death-spiral behavior
-- Notifications and debug visibility
-
-The default setup is tuned for AI-only use and a conservative frontier buffer.
+| Rule | Options |
+|---|---|
+| **Scope** | AI only, everyone, or disabled |
+| **Intensity** | Realistic, Balanced, Arcade, Historical |
+| **Tech scope** | Core only, core + air/naval, all except doctrines, everything |
+| **Doctrines** | Disabled, AI only, everyone |
+| **Advanced tech** | Excluded, superpowers only, included |
+| **War/faction catch-up** | Disabled, standard, enhanced |
+| **Grant caps** | Strict, standard, unlimited |
+| **Anti-death-spiral** | Disabled, standard, enhanced |
+| **Puppet sharing** | Disabled, standard, enhanced |
+| **Research speed bonuses** | Full, tier only, disabled |
+| **Bucket spread** | 1 / 2 / 3 / 6 months |
+| **Notifications** | Silent, major only, all |
+| **Power visibility** | Hidden, own country, all (debug) |
 
 ---
 
 ## Compatibility
 
-The core mod targets vanilla HOI4.
+Works with vanilla HOI4. No DLC required.
 
-This repository also includes generated compatibility bundles under `compat_generated/` for major overhaul and expansion mods. Those bundles are separate generated outputs and should load after TBM and the target mod.
+Built-in auto-detected compatibility profiles for 14 major mods:
 
-Rebuild generated compatibility bundles with:
+> BlackICE, Road to 56, Kaiserreich, KaiserreduX, The New Order, Millennium Dawn, The Great War, Great War Redux, Cold War Iron Curtain, Endsieg, Extended Tech Tree 1960, Novum Vexillum, Rise of Nations, The Fire Rises
+
+Compatibility bundles are in `compat_generated/`. Rebuild them with:
 
 ```bash
 python Tools/rebuild_builtin_major_compat.py
@@ -86,7 +82,7 @@ python Tools/rebuild_builtin_major_compat.py
 
 ## For Modders
 
-- Debug tools: use the Power Visibility rule to inspect scores, branch competence, lag, and next grant windows.
-- Scoring API: see [SCORING_API.md](SCORING_API.md).
-- Compatibility tooling: use `Tools/tbm_compat_tool.py`.
-- Custom category mappings: `Tools/custom_mappings.txt`.
+- **Debug tools:** Set Power Visibility to "All" in game rules for full score inspection
+- **Scoring API:** See [SCORING_API.md](SCORING_API.md)
+- **Compatibility tooling:** `Tools/tbm_compat_tool.py`
+- **Custom category mappings:** `Tools/custom_mappings.txt`
